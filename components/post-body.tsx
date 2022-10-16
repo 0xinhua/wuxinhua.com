@@ -4,7 +4,9 @@ type Props = {
   content: string
 }
 
+
 const PostBody = ({ content }: Props) => {
+  console.log('content==', content)
   return (
     <div className="max-w-2xl mx-auto">
       <div

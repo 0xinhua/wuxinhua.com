@@ -15,15 +15,15 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
-        <Avatar name={author.name} picture={author.picture} />
-      </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
+      { author && author?.picture ? <div className="max-w-2xl mx-auto">
+        <Avatar name={author?.name} picture={author?.picture} />
+      </div> : null }
+      { coverImage ? <div className="max-w-2xl mx-auto">
         <CoverImage title={title} src={coverImage} />
-      </div>
+      </div> : null }
       <div className="max-w-2xl mx-auto">
         <div className="block md:hidden mb-6">
-          <Avatar name={author.name} picture={author.picture} />
+          {author && author?.name ? <Avatar name={author.name} picture={author.picture} /> : null }
         </div>
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />

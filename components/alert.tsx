@@ -29,14 +29,11 @@ const Alert = ({ preview }: Props) => {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
-              <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline hover:text-blue-600 duration-200 transition-colors"
-              >
-                available on GitHub
-              </a>
-              .
+              <ul className='justify-end flex'>
+                <li className='ml-3'><a href="/" className='underline'>home</a></li>
+                <li className='ml-3'><a href="/" className='underline'>archives</a></li>
+                <li className='ml-3'><a href="/" className='underline'>about</a></li>
+              </ul>
             </>
           )}
         </div>
