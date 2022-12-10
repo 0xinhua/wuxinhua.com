@@ -1,12 +1,14 @@
 ---
 title: '关于React的几道面试题'
+excerpt: '这篇内容是对一些React面试题的思考总结'
 date: '2018-03-17 00:02:20'
 tags:
 ---
 面试的过程也是一个学习的过程，能够及时定位到自己的知识盲点或者掌握得不够好的地方，这篇内容是对一些React面试题的思考总结。
-一个合格的开发者，不应该满足于写出机器可运行的代码，而应该试着去理解代码背后的一些原理和思想，我用React开发移动端应用也是一边摸索学习一边实践的过程，期间我犯了很多错误，也学习到了很多东西，我以为我应该能hold住React的这些问题，但在面试过程中，我的回答并不总是让面试官满意，甚至有些偏差，所以我总结了一下近期几次面试中问到的React相关的问题，我希望在学习React的过程中能帮到你，避免犯同样的错误，也许问下面这些问题并不是最好的方法来证明一个开发者是否精通React，但这些题可以从一定程度上了解到候选人对React的掌握情况。  
+一个合格的开发者，不应该满足于写出机器可运行的代码，而应该试着去理解代码背后的一些原理和思想，我用React开发移动端应用也是一边摸索学习一边实践的过程，期间我犯了很多错误，也学习到了很多东西，我以为我应该能hold住React的这些问题，但在面试过程中，我的回答并不总是让面试官满意，甚至有些偏差，所以我总结了一下近期几次面试中问到的React相关的问题，我希望在学习React的过程中能帮到你，避免犯同样的错误，也许问下面这些问题并不是最好的方法来证明一个开发者是否精通React，但这些题可以从一定程度上了解到候选人对React的掌握情况。  
 
-##### 目录
+##### 目录
+
 1. [关于setState](#关于setState？)
 1. [props和state的区别](#props和state的区别？)
 1. [无状态组件和状态组件？](#无状态组件和状态组件？)
@@ -68,13 +70,13 @@ class App extends Component {
 ```javascript
   setTimeout(() => {console.log(this.state.counter)}, 0)
 ```
-官方的解释说可以把setState看作是一个请求，而不是更新的命令，为了获得更好的性能，React会延迟更新操作，达到一次更新几个组件的目的；React的setState是异步的，有人提出质疑，这是历史原因导致的？还是说当初有意设计成异步的？[@gaearon](https://github.com/gaearon)对这个问题做了回应[issue#11527](https://github.com/facebook/react/issues/11527#issuecomment-360199710)，总结一下是出于以下几个目的：
+官方的解释说可以把setState看作是一个请求，而不是更新的命令，为了获得更好的性能，React会延迟更新操作，达到一次更新几个组件的目的；React的setState是异步的，有人提出质疑，这是历史原因导致的？还是说当初有意设计成异步的？[@gaearon](https://github.com/gaearon)对这个问题做了回应[issue#11527](https://github.com/facebook/react/issues/11527#issuecomment-360199710)，总结一下是出于以下几个目的：
 1. 保持内部的一致性，跟props一样；
 2. 在许多情况下，setState的同步渲染效率不高，异步可以将几个更新合并，提高效率；
-3. 并不仅仅是出于优化方面的考虑，可以利用异步特征去做其他的事，例如你的navigator路由足够快，你跳转到别的页面了，还是能继续执行异步操作；
+3. 并不仅仅是出于优化方面的考虑，可以利用异步特征去做其他的事，例如你的navigator路由足够快，你跳转到别的页面了，还是能继续执行异步操作；
 
 **3.setState的两种使用方式？**  
-除了上面这种传入新的对象外，还可以使用方法作为参数来更新state，[@DanAbramov](https://twitter.com/dan_abramov)之前在twitter上的[status](https://twitter.com/dan_abramov/status/824309659775467527)也解释了这一个方法；
+除了上面这种传入新的对象外，还可以使用方法作为参数来更新state，[@DanAbramov](https://twitter.com/dan_abramov)之前在twitter上的[status](https://twitter.com/dan_abramov/status/824309659775467527)也解释了这一个方法；
 ![](https://assets.wuxinhua.com/setState.jpg)
 ```javascript
 // 例子
@@ -93,8 +95,8 @@ const d = Object.assign({}, a, b, c);
 console.log(d); // {counter: 3}
 ```
 二者主要的区别在于：
-1. 如果是通过传入Object来计算next state，并不是安全的，this.props和this.state不是同步地被更新；
-2. 如果在一个方法内多次调用setState()，并不会执行多次的setState，但是如果是传入的function,这些function会被React塞到队列中，并且按顺序依次执行，具体可以查看下面的代码例子；  
+1. 如果是通过传入Object来计算next state，并不是安全的，this.props和this.state不是同步地被更新；
+2. 如果在一个方法内多次调用setState()，并不会执行多次的setState，但是如果是传入的function,这些function会被React塞到队列中，并且按顺序依次执行，具体可以查看下面的代码例子；  
 3. 在function方式下，我们的更新操作就不一定需要写在当前Class里，并且如果我们需要额外的参数来计算或者操作下一步的state的时候，还可以使用闭包：
 
 ```javascript
@@ -131,7 +133,7 @@ function multiplyAdd (value) {
 3. props是不可变的，而state是可变的；  
 4. 使用props比state会有更好的性能；    
 
-##### 无状态组件和状态组件？
+##### 无状态组件和状态组件？
 
 **有状态和无状态两种形式的组件：**  
 
@@ -224,8 +226,8 @@ shouldComponentUpdate是生命周期函数中比较重要的函数，在使用sh
 最主要的原因是：
 
 1. 在componentWillUnMount中无法确保在执行render前已经获得了异步请求的数据，componentDidMount不存在这个问题；  
-2. 为了性能的需要，Fiber有了调度render执行顺序的能力，所以componentWillMount方法的执行变得不确定了；  
-3. 无法保证ajax请求在组件的更新阶段里成功返回数据，有可能当我们进行setState处理的时候，组件已经被销毁了；
+2. 为了性能的需要，Fiber有了调度render执行顺序的能力，所以componentWillMount方法的执行变得不确定了；  
+3. 无法保证ajax请求在组件的更新阶段里成功返回数据，有可能当我们进行setState处理的时候，组件已经被销毁了；
 
 ##### 什么是高阶组件(HOC)？  
  
@@ -308,28 +310,28 @@ HOC提供了一些额外的能力来操作组件：例如操作Props，通过ref
 ```
 不同在于：
 1. 在React中添加事件需要使用**camelCase**格式；
-2. 无法使用return false的方式来阻止事件的一些默认行为，必须得使用preventDefault。
-3. 在JSX中我们传递方法作为事件的参数，而不是一个字符串；
+2. 无法使用return false的方式来阻止事件的一些默认行为，必须得使用preventDefault。
+3. 在JSX中我们传递方法作为事件的参数，而不是一个字符串；
 
-我们知道e.preventDefault是w3c定义的方法，在IE中得使用e.returnValue = false来阻止默认行为，那React是如何做到兼容的呢？  
-React使用了一个叫SyntheticEventd的对象，所有的事件继承至SyntheticEvent，并且它是跨浏览器的，它和浏览器的原生事件接口一样，包括提供stopPropagation() 和 preventDefault()方法来阻止冒泡和阻止默认行为。
+我们知道e.preventDefault是w3c定义的方法，在IE中得使用e.returnValue = false来阻止默认行为，那React是如何做到兼容的呢？  
+React使用了一个叫SyntheticEventd的对象，所有的事件继承至SyntheticEvent，并且它是跨浏览器的，它和浏览器的原生事件接口一样，包括提供stopPropagation() 和 preventDefault()方法来阻止冒泡和阻止默认行为。
 SyntheticEvent的特点：  
 1. 跨浏览器
-2. 为了性能问题，SyntheticEvent是重复利用的，无法再异步的情况下调用事件
+2. 为了性能问题，SyntheticEvent是重复利用的，无法再异步的情况下调用事件
 
-[Handling Events 文档](https://reactjs.org/docs/handling-events.html) 以及[SyntheticEvent 接口](https://reactjs.org/docs/events.html)  
+[Handling Events 文档](https://reactjs.org/docs/handling-events.html) 以及[SyntheticEvent 接口](https://reactjs.org/docs/events.html)  
 
 ##### Key值如何选择？
 
-在我面试的时候被问了两个关于key值的问题：
-1. key值的作用？
+在我面试的时候被问了两个关于key值的问题：
+1. key值的作用？
 2. 你会怎样设置key值？
 
-刚刚接触写React代码的时候，如果没有设置key值或key值重复的情况，都会出现关于key值的warning警告，那key值起到什么作用？先来看看官方文档是怎么说的：
+刚刚接触写React代码的时候，如果没有设置key值或key值重复的情况，都会出现关于key值的warning警告，那key值起到什么作用？先来看看官方文档是怎么说的：
 
  > Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity:
 
-翻译过来就是便于React用key值来标识哪些元素是改变的，新增的，或者移除的。通常我的用法是使用每项的ID来作为key值，我的写法类似下面这种：
+翻译过来就是便于React用key值来标识哪些元素是改变的，新增的，或者移除的。通常我的用法是使用每项的ID来作为key值，我的写法类似下面这种：
 ```JavaScript
 {todos.map((todo, index) =>
   <Todo
@@ -338,11 +340,11 @@ SyntheticEvent的特点：
   />
 )}
 ```
-
-但有时并不是所有数据项都具备ID这个字段，所以我一般还会加上下标，官方提示说不建议使用index下标来做作为key值，它可能会对性能和组件的状态造成影响。所以总结下来是：
 
-1. 使用数据项中的ID；
-2. 生成唯一标识字符串，例如使用[shortid](https://www.npmjs.com/package/shortid)；  
+但有时并不是所有数据项都具备ID这个字段，所以我一般还会加上下标，官方提示说不建议使用index下标来做作为key值，它可能会对性能和组件的状态造成影响。所以总结下来是：
+
+1. 使用数据项中的ID；
+2. 生成唯一标识字符串，例如使用[shortid](https://www.npmjs.com/package/shortid)；  
 3. 使用index数组下标； 
 
 以上。

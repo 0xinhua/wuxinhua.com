@@ -21,13 +21,13 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
       { coverImage ? <div className="max-w-2xl mx-auto">
         <CoverImage title={title} src={coverImage} />
       </div> : null }
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto mt-2">
         <div className="block md:hidden mb-6">
           {author && author?.name ? <Avatar name={author.name} picture={author.picture} /> : null }
         </div>
-        <div className="mb-6 text-lg">
-          <DateFormatter dateString={date} />
-        </div>
+        { date ? <div className="mb-6 text-lg">
+          @wuxinhua 分布于 <DateFormatter dateString={date} />
+        </div> : null }
       </div>
     </>
   )

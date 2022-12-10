@@ -1,5 +1,6 @@
 ---
 title: 'ES6(ECMAScript 6.0)新特征'
+excerpt: 'ECMAScript 6.0已经在2015年6月17日正式发布（以下简称ES6）到现在已经过去了2年时间，发布的很多新的特征已成为了标准'
 date: '2017-08-28 17:54:57'
 tags:
 ---
@@ -10,7 +11,7 @@ tags:
 
 ### #目录  
 
-ECMAScript 6.0已经在2015年6月17日正式发布（以下简称ES6）到现在已经过去了2年时间，发布的很多新的特征已成为了标准，如今ES8草案也公布了，Javascript的未来还是值得期待的；我从去年下半年开始接触ES6的，在代码上搭配babel来开发基于React框架的应用，发现其中许多特性确实简化了很多代码的编写，之前一直没有系统性得去学习这些新的特征，这篇博客算是我的ES6学习笔记，从简单的数组的一些新方法开始，ES6模块系统、class类...到较复杂的generator函数结束。完成之后，我会再陆续记录ES7、ES8..学习笔记。本篇包含以下内容：
+ECMAScript 6.0已经在2015年6月17日正式发布（以下简称ES6）到现在已经过去了2年时间，发布的很多新的特征已成为了标准，如今ES8草案也公布了，Javascript的未来还是值得期待的；我从去年下半年开始接触ES6的，在代码上搭配babel来开发基于React框架的应用，发现其中许多特性确实简化了很多代码的编写，之前一直没有系统性得去学习这些新的特征，这篇博客算是我的ES6学习笔记，从简单的数组的一些新方法开始，ES6模块系统、class类...到较复杂的generator函数结束。完成之后，我会再陆续记录ES7、ES8..学习笔记。本篇包含以下内容：
 * 数组方法扩展
 * 解构赋值
 * let和const
@@ -30,14 +31,14 @@ tags:
 
 #### Array.prototype.includes
 
-新增includes方法，类似于[String.prototype.includes](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/includes)，在这之前我们一般是使用下面这样的代码来判断数组中是否存在某个元素,
+新增includes方法，类似于[String.prototype.includes](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/includes)，在这之前我们一般是使用下面这样的代码来判断数组中是否存在某个元素,
 ```javascript
 if (arr.indexOf(el) !== -1) {
     ...
 }
 ```
 这里用indexOf有两个问题：
- - 违背“所见即所得”原则，indexOf方法它是用来返回下标位置的，并不能直观表达是否存在包含关系。
+ - 违背“所见即所得”原则，indexOf方法它是用来返回下标位置的，并不能直观表达是否存在包含关系。
  - 无法判断NaN,[NaN].indexOf(NaN) > 0 // false
 
 注意：includes只接受两个参数，接收2参数，查询的项以及查询起始位置
@@ -62,7 +63,7 @@ console.log(Array.from('hello')); // [ 'h', 'e', 'l', 'l', 'o' ]
 const objLike = { 0: 0,  1: 1,  2: 2, length: 3 }; 
 console.log(Array.from(objLike)); // [0, 1, 2]
 ```
-from还接受第二个方法类型的参数，类似map方法返回经方法处理过的值。
+from还接受第二个方法类型的参数，类似map方法返回经方法处理过的值。
 
 ```javascript
 const objLike = { 0: 0,  1: 1,  2: 2, length: 3 }; 
@@ -121,7 +122,7 @@ console.log(arr.find((k) => Object.is(NaN, k) )); // NaN
 
 ####   Array.prototype.fill 和 copyWithin
 
-fill可以理解为数组元素替换，可以指定填充开始位置和结束位置，copyWithin则可以理解为用指定元素填充到数组的对应位置，
+fill可以理解为数组元素替换，可以指定填充开始位置和结束位置，copyWithin则可以理解为用指定元素填充到数组的对应位置，
 arr.copyWithin(target, start, end) target: 从指定下标开始 index:复制元素的下标 end: 复制元素结束下标
 来看下面的例子：
 
@@ -145,17 +146,17 @@ console.log([1, 2, 3, 4, 5, 6].copyWithin(2, 1, 4)); // [1, 2, 2, 3, 4, 6] 可�
 ### [#解构赋值](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 使用类似数组或对象字面量的语法将数组和对象的属性赋给各种变量;   
 可以很方便得将值和从数组中、属性从对象中提取到不同的变量中：
-在写React的过程中，也会用到JSX的一个类型写法（Spread Attributes），中文名延展属性，例如子组件需要需要父组件传递a、b、c参数：
+在写React的过程中，也会用到JSX的一个类型写法（Spread Attributes），中文名延展属性，例如子组件需要需要父组件传递a、b、c参数：
 
 ```javascript
-// 子组件需要对应的a、b、c三个参数
+// 子组件需要对应的a、b、c三个参数
 <Component a = {this.props.a} b = {this.props.b} c = {this.props.c} />;
 ```
 
  JSX延展属性写法：
 
 ```javascript
-// 子组件需要对应的a、b、c三个参数
+// 子组件需要对应的a、b、c三个参数
 <Component {...this.props} />;
 
 ```
@@ -197,10 +198,10 @@ console.log(red); // 'red'
 console.log(rest); // ['blue', 'orange']
 ```
 
-扩展运算符和剩余操作符都是以三点省略号开头，二者很像，用法上还是有一定区别:
+扩展运算符和剩余操作符都是以三点省略号开头，二者很像，用法上还是有一定区别:
 
 ```javascript
-// 剩余操作符在函数中的使用
+// 剩余操作符在函数中的使用
 
 function fn(a, b, ...args) {  
    console.log(args);
@@ -209,7 +210,7 @@ fn(1, 2, 3, 4, 5 ); // [3, 4, 5]
 
 ```
 
-扩展运算符和剩余操作符都是以三点省略号开头，二者很像，用法上还是有一定区别。扩展运算类似于使用‘...’分解数组中的值、对象属性；而剩余操作符是使用‘...’是用来解构和提取数据，多个元素合成一个元素。
+扩展运算符和剩余操作符都是以三点省略号开头，二者很像，用法上还是有一定区别。扩展运算类似于使用‘...’分解数组中的值、对象属性；而剩余操作符是使用‘...’是用来解构和提取数据，多个元素合成一个元素。
 
 ###  #let和const
 
@@ -220,16 +221,16 @@ fn(1, 2, 3, 4, 5 ); // [3, 4, 5]
 - let定义的变量只存在于块级作用域；
 - const只定义不赋值，会报错，var、let返回undefined；
 - let和const 声明的变量不再属于window的属性，可以在下面的例子中体现;
-- const除了声明的是常量外，其它和let是一样的;
+- const除了声明的是常量外，其它和let是一样的;
 
 ```javascript
-// let和const均不能重复声明
+// let和const均不能重复声明
 const a = 'Hi';
 const a = 'Hello'; // Identifier 'a' has already been declared
 ```
 
 ```javascript
-// const 、let的块级作用域(block-scoping)
+// const 、let的块级作用域(block-scoping)
 const city = 'Beijing';
 {
   const city = 'Shanghai';  
@@ -239,14 +240,14 @@ console.log(city); // Shanghai
 ```
 
 ```javascript
-//  const 、let的块级作用域(block-scoping),let在for循环里
+//  const 、let的块级作用域(block-scoping),let在for循环里
 for(let i=0;i<3;i++) {
 }
 console.log(i); // undefined
 ```
 
 ```javascript
-//  const 、let的块级作用域(block-scoping),let在if条件
+//  const 、let的块级作用域(block-scoping),let在if条件
 if(..) {
     let a = 'boo';
 } else {
@@ -260,7 +261,7 @@ console.log(a); // undefined
 const PI = 3.14159;
 console.log(window.c); // undefined
 ```
-关于`暂存死区`：在下面的这个例子，在let初始化之前，使用let重复定义在块中的变量，这时会抛错，因为这个变量存在于定义到待初始化处理的一个'暂存死区'中，具体可以查看[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let)上的解释。
+关于`暂存死区`：在下面的这个例子，在let初始化之前，使用let重复定义在块中的变量，这时会抛错，因为这个变量存在于定义到待初始化处理的一个'暂存死区'中，具体可以查看[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let)上的解释。
 ```javascript
 if (x) {
   let foo;
@@ -315,7 +316,7 @@ ES6引入了一种新型的反撇号（`）字符串字面量语法；
 ### #Promise
 什么是Promise?  
 Promise是抽象异步处理对象以及对其进行各种操作的组件;
-Promise对象出现避免了使用层层嵌套的回调函数，再也不用担心陷入地狱回调了，Promise的意义就在于 then 链式调用 ，它避免了异步函数之间的层层嵌套，将原来异步函数的嵌套关系 转变为便于阅读和理解的 链式步骤关系，代码也更加直观。
+Promise对象出现避免了使用层层嵌套的回调函数，再也不用担心陷入地狱回调了，Promise的意义就在于 then 链式调用 ，它避免了异步函数之间的层层嵌套，将原来异步函数的嵌套关系 转变为便于阅读和理解的 链式步骤关系，代码也更加直观。
 
 ```javascript
 // 回调地狱
@@ -368,7 +369,7 @@ var promise = new Promise(function(resolve, reject) {
     • 处理结果正常的话，调用 resolve(处理结果值);
     • 处理结果错误的话，调用 reject(Error对象);
 
-Promise对象有以下几个特点：
+Promise对象有以下几个特点：
 - 1.有三种状态：
     - pending: 初始状态，不是成功或失败状态;
     - fulfilled: 意味着操作成功完成;
@@ -404,7 +405,7 @@ promise
  .then(taskB)
  .catch(onRejected)
 ```
-正常流程A task成功->B task成功-> C task,如果B task失败，将绕过C直接到catch方法，看下面这个例子：
+正常流程A task成功->B task成功-> C task,如果B task失败，将绕过C直接到catch方法，看下面这个例子：
 ```javascript
 function taskA(value) {
     return value +1;
@@ -503,7 +504,7 @@ Map内置的方法和属性：
  
 ### #Symbol
 
-Symbol既不是值也不是对象，它是第七种原始类型，是可以用来作为对象属性键的值。
+Symbol既不是值也不是对象，它是第七种原始类型，是可以用来作为对象属性键的值。
 Symbol的目的就是为了实现一个唯一不重复不可变的值；有两种方法来生产一个Symbol类型的值：
 
 ```javascript
@@ -837,9 +838,9 @@ g1.next(); // Object {value: "it is a generator", done: true}
 g1.next(); // Object {value: undefined, done: true}
 ```
 
-* 实际上function* stepGenerator 和 function * stepGenerator 或者 function *stepGenerator得到的结果是一样的，只是写法不一样；
+* 实际上function* stepGenerator 和 function * stepGenerator 或者 function *stepGenerator得到的结果是一样的，只是写法不一样；
 
-调用stepGenerator对象的时候，Generator并没有被立即执行，调用next方法时，函数开始执行，next 方法返回一个拥有 value 和 done 两个字段的对象,下次调用 next，函数会从 yield 的下一个语句继续执行,等到整个函数执行完，next 方法返回的 done 字段会变成true。
+调用stepGenerator对象的时候，Generator并没有被立即执行，调用next方法时，函数开始执行，next 方法返回一个拥有 value 和 done 两个字段的对象,下次调用 next，函数会从 yield 的下一个语句继续执行,等到整个函数执行完，next 方法返回的 done 字段会变成true。
 
 不仅仅yield语句会中断执行，如果Generator中在yield前有return，同样也会停止执行。
 

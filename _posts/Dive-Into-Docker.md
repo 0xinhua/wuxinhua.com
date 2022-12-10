@@ -1,7 +1,7 @@
 ---
 
 title: '认识Docker'
-excerpt: '出于工作的需要，今年才真正开始接触到Docker，买了一些容器相关的书，读了大牛一系列的文章博客，希望深入了解Docker的一些核心概念，Docker运行原理等，并在公司同事的帮助下玩一把容器技术，了解学习Docker最好的方法是阅读[文档](https://docs.docker.com/)，本篇主要记录下这个学习过程中积累的一些知识，通过这篇可以了解到Docker相关的基础知识。'
+excerpt: '出于工作的需要，今年才真正开始接触到Docker，买了一些容器相关的书，读了大牛一系列的文章博客，希望深入了解Docker的一些核心概念，Docker运行原理等'
 coverImage: ''
 date: '2021-02-18 20:04:46'
 
@@ -130,7 +130,7 @@ cd hello-world
 npm init
 
 ```
-我们只需安装`express`依赖，创建index.js文件用来启动、监听服务。
+我们只需安装`express`依赖，创建index.js文件用来启动、监听服务。
 
 ```bash
 npm i express --save

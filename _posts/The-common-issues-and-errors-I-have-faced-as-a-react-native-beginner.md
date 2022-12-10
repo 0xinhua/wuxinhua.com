@@ -1,5 +1,6 @@
 ---
 title: 'React Native 新手常见问题及体验总结'
+excerpt: '使用 React Native 的开发经历，记录下了开发过程的常见的错误和解决方案，也算是从头趟了一遍 RN 开发过程的坑，本篇主要包括日常踩得一些坑以及我使用 React Native 开发体验总结'
 date: '2019-07-31 17:46:47'
 tags: React Native
 ---
@@ -252,7 +253,7 @@ $ react-native log-android
 
 ### #万能的清除缓存和重启
 
-经常碰到一些莫名其妙的错误，发现以下命令删除本地包，重装依赖重启总是很管用：
+经常碰到一些莫名其妙的错误，发现以下命令删除本地包，重装依赖重启总是很管用：
 
 ```sh
 watchman watch-del-all // 清除 Watchman：

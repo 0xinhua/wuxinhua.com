@@ -1,9 +1,11 @@
+import style from './container.module.css'
+
 type Props = {
   children?: React.ReactNode
 }
 
 const Container = ({ children }: Props) => {
-  return <div className="container mx-auto px-5">{children}</div>
+  return <div className={style.postsContainer}>{children}</div>
 }
 
 export default Container

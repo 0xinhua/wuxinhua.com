@@ -1,5 +1,6 @@
 ---
 title: 'www背后的故事'
+excerpt: '为什么域名的URL会需要带上www？有的网站二者都能访问，有的却不能？不加www的域名更加简短优雅，更容易被记住'
 date: '2018-11-16 21:47:06'
 tags: www domain
 ---
@@ -14,10 +15,9 @@ tags: www domain
 
 在万维网出现之前，是存在互联网的，但是它并不是用来浏览网页罢了，它被用来干很多事，例如telnet、email、gopher、FTP传输等，在那个时期，人们通常习惯把域名跟功能绑在一起，例如：smtp.example.com代表这是一个使用SMTP协议的邮件服务，ftp.example.com代表这是一个FTP服务器。同样的到了1990年，人们使用 www.example.com 来区分这是个web服务器。
 
-
 # DNS解析记录
 
-在网络世界中，我们知道ip地址才是网站或者应用资源的真正地址，但网站的数目很多，如果用IP来访问，使用者很难记住，于是有了域名，我们记住了域名，也就记住了资源的地址；那互联网是如果通过域名找到正确的IP地址呢？这个过程需要使用到DNS服务器，也就是网络世界的通讯地址簿，通过DNS解析把这两者联系起来。 
+在网络世界中，我们知道ip地址才是网站或者应用资源的真正地址，但网站的数目很多，如果用IP来访问，使用者很难记住，于是有了域名，我们记住了域名，也就记住了资源的地址；那互联网是如果通过域名找到正确的IP地址呢？这个过程需要使用到DNS服务器，也就是网络世界的通讯地址簿，通过DNS解析把这两者联系起来。
 
 域名注册购买后，我们只是拥有了域名的使用权，还无法通过域名直接访问自己的网站，因为互联网只识别IP地址，只有在域名解析服务商处建立域名和IP地址对应关系记录后，才能通过域名访问到该网站。拿阿里云的DNS解析服务来说（并非给阿里云打广告，可自行选择），域名下有个DNS服务器选项，配置阿里的DNS服务器后，它会将网站域名解析成网站的IP地址，从而将最终用户的访问路由到相应的网站或应用资源上。  
 
@@ -26,20 +26,19 @@ tags: www domain
 # 关于SEO
 
 www网站真的对SEO更友好？看看谷歌怎么说：
-> “If you specify your preferred domain as http://www.example.com and we find a link to http://example.com, we’ll consider both links the same.”  
+> “If you specify your preferred domain as <http://www.example.com> and we find a link to <http://example.com>, we’ll consider both links the same.”  
 
 谷歌说我们的引擎并没有偏向于喜欢抓哪个，那我们能改吗？例如把裸域名网站切换到www域名上？最好不要，加和不加对SEO来说是有很大区别的，因为不加www的域名是主网站，而加上www的相当于一个二级域名，对于搜索引擎来说，example.com和www.example.com完全是两回事，经常更换不利于搜索引擎准确地抓取到内容。
-
 
 # 关于Cookie
 
 两者带来的一些问题也体现在cookie上，cookie设置在主域名上，也可以传递给子域名，举例：如果主站example.com设置了cookie，那么在访问 www.example.com或email.example时浏览器也能拿到这些cookie，相反如果在www.example.com上设置了cookie，它并不能传递到主域名和其它子域名上[RFC6265](https://tools.ietf.org/html/rfc6265)。带来的问题是在你在共享cookie的同时一方面请求带上并不需要的cookie会影响网页响应性能，另一方面可能存在安全性的问题。如果你坚持使用裸域名的时候，那么cookie会被传递到所有的子域名上，这样还可能导致子域名对静态内容的访问出现问题，例如[Twitter](https://twitter.com)就是使用的裸域名，为了避免这个问题，它使用了另一个新的域名来存放静态资源。
 
-## 废弃 www
+## 废弃 www
 
- - 不加www的域名更加简短优雅，更容易被记住，加上3w是多余的，意味着你还需要多按下3个w，并且现在大多数的网页在没有www的情况下也能正常访问。  
- - 多余的字符意味着占用更多的空间和带宽，www 将会额外占用32 bits，在DNS解析这个域名时也将耗费更长的时间。  
- - 容易造成一些困惑，例如在使用邮箱时，www 不应该出现在邮箱后缀。  
+- 不加www的域名更加简短优雅，更容易被记住，加上3w是多余的，意味着你还需要多按下3个w，并且现在大多数的网页在没有www的情况下也能正常访问。  
+- 多余的字符意味着占用更多的空间和带宽，www 将会额外占用32 bits，在DNS解析这个域名时也将耗费更长的时间。  
+- 容易造成一些困惑，例如在使用邮箱时，www 不应该出现在邮箱后缀。  
 
 ## 坚持www
 
@@ -49,8 +48,8 @@ www网站真的对SEO更友好？看看谷歌怎么说：
 
 那用还是不用，这取决于你。
 
-
 # 附录
+
 1、[webmaster 设置首选域使用www还是非www?](https://support.google.com/webmasters/answer/44231?hl=zh-Hans)
 2、[为什么使用www](https://www.yes-www.org/why-use-www/)  
 3、[When should one use a 'www' subdomain?](https://stackoverflow.com/questions/486621/when-should-one-use-a-www-subdomain)

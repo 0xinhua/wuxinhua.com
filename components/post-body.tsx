@@ -6,11 +6,10 @@ type Props = {
 
 
 const PostBody = ({ content }: Props) => {
-  console.log('content==', content)
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto mt-10">
       <div
-        className={markdownStyles['markdown']}
+        className={[markdownStyles['markdown-body']].join(' ')}
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>

@@ -1,5 +1,6 @@
 ---
 title: 'Node.js 包管理及 npm 依赖安装机制'
+excerpt: 'Node.js 包管理历史，npm、yarn、pnpm 之间的关系区别，pnpm 的优势，npm install 后发生了什么? node_modules 为什么这么重'
 date: '2022-03-23 17:20:47'
 tags: npm node.js pnpm yarn packages.json node_modules
 ---
@@ -7,7 +8,7 @@ tags: npm node.js pnpm yarn packages.json node_modules
 
 ## 主要分享探讨以下几个问题
 
-- Node.js 包管理、npm、cnpm、yarn、pnpm 之间的关系区别，pnpm 的优势
+- Node.js 包管理、npm、cnpm、yarn、pnpm 之间的关系区别，pnpm 的优势
 - npm 包管理历史
 - npm install 后发生了什么? 模块安装机制
 - Why node_modules are so heavy ? ( node_modules 为什么这么重）
@@ -28,7 +29,7 @@ tags: npm node.js pnpm yarn packages.json node_modules
 
 各种语言基本都有自己的包管理工具，Ruby的软件包单元为[RubyGem](https://link.zhihu.com/?target=https://rubygems.org/)，Python 有 [PyPi](https://pypi.org/) ，JavaScritp 有 [npm](https://www.npmjs.com/)，除了语言有包管理工具之外，操作系统也有包管理器，我们从最 Linux 的包管理器说起，简单得来说 package manager "包管理器"或“软件包管理器”是一种工具，包管理器可以是一种 GUI 图形应用也可以是 cli 命令行工具，允许用户在操作系统、或特定环境上安装、升级、删除管理软件包，其实并不是只有 MacOS 和 Linux 官方才有软件包管理工具，微软官方也为 Windows 系统发布了一款名为 [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/)的软件包管理工具，包管理器在各种系统软件和应用软件的安装管理中均有广泛应用。
 
-## **npm** **、cnpm、** **yarn** **、** **pnpm** **主要区别**
+## **npm** **、cnpm、** **yarn** **、** **pnpm** **主要区别**
 
 #### npm 简介
 

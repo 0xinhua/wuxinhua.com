@@ -93,7 +93,7 @@ steps:
 
 它使用 [actions/setup-go](https://github.com/actions/setup-go) action 来安装我们指定的Go版本。这很酷。
 
-实际上，我几乎立刻就看到了使用多个 Go 版本运行测试的好处，因为 Go 1.13增 加了一些新功能，我的一些测试代码已经无法通过。
+实际上，我几乎立刻就看到了使用多个 Go 版本运行测试的好处，因为 Go 1.13增 加了一些新功能，我的一些测试代码已经无法通过。
 
 查看发布说明:
 
@@ -134,7 +134,7 @@ services:
 
 幸运的是使用诸如 [bats](https://github.com/sstephenson/bats/) 之类的工具，CLI 的测试变得相当容易。我有一些现有的正在使用的 bats 测试 [脚本代码](https://github.com/markphelps/flipt/blob/4157e9b154a01b09a4eb60a8e43484cd3928fc89/script/test/cli.bats) 运行在 Travis 构建中，所以我只需要找到一种方法让他们运行在 Actions 上即可。
 
-同样，看起来 Actions 的虚拟机并没有安装 bats，但是 GitHub Actions 的 fork 版本似乎已经意识到到了这一点，可以构建了一个你可以在工作流程中引用的 [bats action](https://github.com/actions/bin/tree/master/bats)。我就是这么做的:
+同样，看起来 Actions 的虚拟机并没有安装 bats，但是 GitHub Actions 的 fork 版本似乎已经意识到到了这一点，可以构建了一个你可以在工作流程中引用的 [bats action](https://github.com/actions/bin/tree/master/bats)。我就是这么做的:
 
 ```sh
 - name: Test CLI
@@ -161,7 +161,7 @@ services:
 . 创建 Tag 版本推送 Docker 镜像到 Docker Hub
 幸运的是 [goreleaser](https://goreleaser.com/) 已经为此做了 100% 工作! 我所需要做的就是在管道中的最后一步为它提供所需的环境变量，并使用正确的参数调用它。
 我已经在本地[使用脚本](https://github.com/markphelps/flipt/blob/c82b47b7522caf80bc3f5219ea62e9e37c416dd2/script/build/release)运行，这意味着在调用脚本之前，我必须在本地机器上设置 `GITHUB_TOKEN`、`DOCKER_USERNAME` 和 `DOCKER_PASSWORD`。
-为了将这个过程转移到 GitHub Actions 操作，我需要一种安全的方法来存储这些值并将它们注入到工作流中。幸运的是 GitHub 也为我们提供了对[保密](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables)的支持:
+为了将这个过程转移到 GitHub Actions 操作，我需要一种安全的方法来存储这些值并将它们注入到工作流中。幸运的是 GitHub 也为我们提供了对[保密](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables)的支持:
 ```sh
 - name: Release
   run: ./script/build/release

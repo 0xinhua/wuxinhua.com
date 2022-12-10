@@ -1,5 +1,6 @@
 ---
 title: 'Flexbox布局完全指南'
+excerpt: '本篇适用于所有刚接触到 flexbox 布局的同学，也适用于那些想更近一步了解 flexbox 的人，我将尽可能详细地用文字、图片、代码介绍、学习 flexbox 布局'
 date: '2019-02-25 18:47:45'
 tags:
 ---
@@ -58,7 +59,7 @@ BFC(block formatting context"块级格式化上下文")
 
 FFC(Flex Formatting Contexts"自适应格式化上下文")
 
-display 值为 flex 或 inline-flex 的元素会变成一个 flex 容器，内部元素变成子项目。容器是一个相对独立的渲染区域，会按照自适应渲染规则来布局。
+display 值为 flex 或 inline-flex 的元素会变成一个 flex 容器，内部元素变成子项目。容器是一个相对独立的渲染区域，会按照自适应渲染规则来布局。
 
 ## flex基本概念
 
@@ -90,7 +91,7 @@ flex-direction: row(默认) | row-reverse | column | column-reverse
 ```
 `row` flex容器的主轴与文本方向相同，以行（水平）方向排列:
 ![](https://assets.wuxinhua.com//blog/assets/flexbox/flex-direction-row.png)
-`column` 以列（垂直）方向排列:  
+`column` 以列（垂直）方向排列:  
 
 ![](https://assets.wuxinhua.com//blog/assets/flexbox/flex-direction-column.png)
 而 `row-reverse`和`column-reverse` 分别是行列的反向，如下图所示:  

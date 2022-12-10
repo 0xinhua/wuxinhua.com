@@ -1,5 +1,6 @@
 ---
 title: '对React-redux中connect方法的理解'
+excerpt: 'Redux由Flux框架演变而来，但在Flux的基础上，Redux改变了整个框架中某些角色的作用，例如在Flux中你可以拥有多个store，每个store存储自己对应的那部分状态,在Redux中，你只能维护一个store,存储了整个应用的所有状态'
 date: '2017-07-30 14:11:48'
 tags:
 ---

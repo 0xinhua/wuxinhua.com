@@ -1,5 +1,6 @@
 ---
 title: '放弃 newsfeed 拥抱 newsletter'
+excerpt: '订阅的 list 会持续更新，更多的资源详见上方提到的 Newsletter 导航'
 date: '2021-08-02 18:32:21'
 tags: Newsletter订阅 Newsletter
 ---

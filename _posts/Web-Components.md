@@ -1,5 +1,6 @@
 ---
 title: '初探 Web Components'
+excerpt: '这篇将简单介绍 Web Components，了解它的标准，解决什么问题以及它的优势，它提供的接口 API、兼容程度、如何使用它写一个简单的组件等'
 date: '2020-08-02 16:58:01'
 tags: Web Components
 ---
@@ -34,10 +35,10 @@ HTML 内的 DOM 模板，在 template 元素内声明，内联样式 style 需�
 
 template 标签本质上合 HTML 内置标签是一样的，但在 template 标签被激活前：
 
-  - 标签不会被渲染，标签的内容也是会被隐藏 ，页面上看不到标签展示效果
-  - 模板里的内容不会有副作用，例如  script 标签里不的脚本不会执行，图片不会加载，
+- 标签不会被渲染，标签的内容也是会被隐藏 ，页面上看不到标签展示效果
+- 模板里的内容不会有副作用，例如  script 标签里不的脚本不会执行，图片不会加载，
 视频不会播放
-  - 基本上可以放置于任何节点上，例如 header、body 等；激活一个 template 最简单的方式是对它的内容做个深拷贝，然后再插入节点中，举个 🌰：
+- 基本上可以放置于任何节点上，例如 header、body 等；激活一个 template 最简单的方式是对它的内容做个深拷贝，然后再插入节点中，举个 🌰：
 
 ```html
 <!DOCTYPE html>
@@ -122,21 +123,22 @@ document.body.appendChild(template.content);
 
 - ***Custom Elements***
 
-    - 创建自定义 HTML 标签
-    - 创建自定义 class 类
-    - 使用生命周期的 Methods 方法
+  - 创建自定义 HTML 标签
+  - 创建自定义 class 类
+  - 使用生命周期的 Methods 方法
 
 定义新的元素标签，可以被解析成 HTML。定义时首先需要声明一个类，这个类需要继承 HTMLElement 类，这样能够使用组件的一些生命周期回调函数，这些函数帮助我们增强组件的能力。总结一下要点：
 
-  - 新的定制类需继承 HTMLElement
-  - 当元素被挂载后会调用 connectedCallback 方法，代码中的this指向定制元素，这样我们可以在这个回调中使用 this.innerHtml 方法设置定制元素里的内容
-  - 定制元素带来的问题是你在里面定义的样式可能会影响到外部的dom元素样式，如何进行隔离内，这是下面要介绍的一个 api  Shaodow DOM 。
+- 新的定制类需继承 HTMLElement
+- 当元素被挂载后会调用 connectedCallback 方法，代码中的this指向定制元素，这样我们可以在这个回调中使用 this.innerHtml 方法设置定制元素里的内容
+- 定制元素带来的问题是你在里面定义的样式可能会影响到外部的dom元素样式，如何进行隔离内，这是下面要介绍的一个 api  Shaodow DOM 。
 
 生命周期回调函数：
-  - connectedCallback 元素被插入DOM 时触发
-  - disconnectedCallback 元素从DOM 被移除时时触发
-  - adoptedCallback 被移到新的文档中时触发
-  - attributeChangedCallback 元素的属性被添加、移除、更新、取代时触发
+
+- connectedCallback 元素被插入DOM 时触发
+- disconnectedCallback 元素从DOM 被移除时时触发
+- adoptedCallback 被移到新的文档中时触发
+- attributeChangedCallback 元素的属性被添加、移除、更新、取代时触发
 
 执行顺序(这里 attributeChangedCallback 在前面是因为需要调整配置，应该在插入 DOM 之前完成)：
 
@@ -179,12 +181,12 @@ window.customElements.define('user-card', UserCard);
 
 这里的 Shaodow DOM 不应该跟常用的几个框架中的 Virtual DOM 混淆（Virtual DOM 主要是做性能层的优化），Shadow DOM 让我们能够创建一套完全独立于其它元素的 DOM 树，也叫“影子DOM”,有了它可以保证当前的这个组件是个具备独立功能的组件，与其它DOM元素互不干扰。跟 iframe 相似，是一个独立是沙盒，但它没有自己的 window，有一个轻量级 document，另外 shadowRoot 对象不支持所有的 DOM API ，支持主流的 getElementById、querySelector 和 querySelectorAll 等方法
 
-
 ![](https://assets.wuxinhua.com//blog/assets/web-components/shadow-tree.png)
 
 ![](https://assets.wuxinhua.com//blog/assets/web-components/shadow-dom.png)
 
 结构：
+
 - Shadow host： 一个常规 DOM 节点，Shadow DOM 会被附加到这个节点上。
 - Shadow tree：Shadow DOM 内部的 DOM 树。
 - Shadow boundary：Shadow DOM 结束的地方，也是常规 DOM 开始的地方。
@@ -261,8 +263,8 @@ document.createElement('img').attachShadow({mode: 'open'});
   - 主流三大框架 Vue 、React 、Angular 均支持使用 Web components，目前也有一些库或工具实现讲框架的组件转成通用的 Web components 组件，以及例如 [hybird](https://github.com/hybridsjs/hybrids) 这样的 UI 库能用 functional 方式来编写 Web components 组件
 
 - 组件传值监听和事件绑定：
-    - 如何传值及监听值的变化
-    - 通过 DOM 属性，使用 getAttribute 能拿到组件设置的值，同时利用 setAttribute 也能更新组件的属性值
+  - 如何传值及监听值的变化
+  - 通过 DOM 属性，使用 getAttribute 能拿到组件设置的值，同时利用 setAttribute 也能更新组件的属性值
     - 同时利用 observedAttributes 及生命周期函数 attributeChangedCallback 完成对属性值的更新
 
 ```javascript
@@ -313,12 +315,11 @@ counter.addEventListener("clicked", (evt) => {
 
 ## 附
 
-- https://github.com/webcomponents
-- https://www.webcomponents.org/
+- <https://github.com/webcomponents>
+- <https://www.webcomponents.org/>
 - [精读《Web Components 的困境》](https://github.com/dt-fe/weekly/issues/15)
-- https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/
-- https://robdodson.me/regarding-the-broken-promise-of-web-components/
+- <https://dmitriid.com/blog/2017/03/the-broken-promise-of-web-components/>
+- <https://robdodson.me/regarding-the-broken-promise-of-web-components/>
 - [shadow dom open vs close](https://blog.revillweb.com/open-vs-closed-shadow-dom-9f3d7427d1af)
-- [从HTML Components的衰落看Web Components的危机 ](https://github.com/xufei/blog/issues/3)
-- https://zh-hans.reactjs.org/docs/web-components.html
-
+- [从HTML Components的衰落看Web Components的危机](https://github.com/xufei/blog/issues/3)
+- <https://zh-hans.reactjs.org/docs/web-components.html>

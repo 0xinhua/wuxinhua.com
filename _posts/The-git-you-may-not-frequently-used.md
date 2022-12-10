@@ -1,17 +1,18 @@
 ---
 title: '你可能不知道git rerere'
+excerpt: '关于git rerere先卖个关子，在文章的最后会介绍这个命令，可能大多数人对git的认识停留在日常的pull、commit等'
 date: '2017-07-15 02:02:37'
 tags: git
 cover: https://assets.wuxinhua.com/Hoxe-post-git.png
 ---
 
 
-关于git rerere先卖个关子，在文章的最后会介绍这个命令，可能大多数人对git的认识停留在日常的pull、commit等，不信可以试着回答一下下面几个问题：
+关于git rerere先卖个关子，在文章的最后会介绍这个命令，可能大多数人对git的认识停留在日常的pull、commit等，不信可以试着回答一下下面几个问题：
 
-* git push origin master命令中，origin 代表的是什么？如何查看和修改这个origin？
+* git push origin master命令中，origin 代表的是什么？如何查看和修改这个origin？
 * git fetch和git pull的不同？而git merge和rebase又有什么区别？
 
-上面几个问题的答案请点击这里[你们仍未掌握那天所学的 git 知识](http://yonghaowu.github.io/2017/06/18/TheGitYouShouldKnow/)查看，而这篇你可以理解为一些平时不怎么用到但却很实用的git命令，希望我总结的这些能进一步加强你的git技能。
+上面几个问题的答案请点击这里[你们仍未掌握那天所学的 git 知识](http://yonghaowu.github.io/2017/06/18/TheGitYouShouldKnow/)查看，而这篇你可以理解为一些平时不怎么用到但却很实用的git命令，希望我总结的这些能进一步加强你的git技能。
 
 如果你还没用过git,可以在你的浏览器上输入[try.github.io](http://try.github.io/)去探索git的世界。
 
@@ -118,7 +119,7 @@ git log --graph --pretty=format:"%Cgreen(%h)%Creset-%d-%s by %C(yellow)%cN%Crese
 
 ### git rerere
 
-帮助你解决冲突
+帮助你解决冲突
 
 ```
 

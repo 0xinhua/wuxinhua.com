@@ -15,7 +15,7 @@ const Alert = ({ preview }: Props) => {
       })}
     >
       <Container>
-        <div className="py-2 text-center text-sm">
+        <div className="py-2 text-center text-lg">
           {preview ? (
             <>
               This page is a preview.{' '}
@@ -28,13 +28,14 @@ const Alert = ({ preview }: Props) => {
               to exit preview mode.
             </>
           ) : (
-            <>
+            <div className='flex justify-between'>
+              <a>0xinhua's Notes</a>
               <ul className='justify-end flex'>
-                <li className='ml-3'><a href="/" className='underline'>home</a></li>
-                <li className='ml-3'><a href="/" className='underline'>archives</a></li>
-                <li className='ml-3'><a href="/" className='underline'>about</a></li>
+                <li className='ml-3'><a href="/">Home</a></li>
+                <li className='ml-3'><a href="/posts/archives">Archives</a></li>
+                <li className='ml-3'><a href="/posts/about">About</a></li>
               </ul>
-            </>
+            </div>
           )}
         </div>
       </Container>
