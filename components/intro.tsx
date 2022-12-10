@@ -7,7 +7,7 @@ const Intro = () => {
         Notes
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5">
-        这个我的个人博客，主要记录日常的问题、新知识、想法等.
+        我的个人博客，主要记录日常遇到的开发问题、新知识、想法等.
       </h4>
     </section>
   )
