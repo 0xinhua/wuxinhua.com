@@ -1,21 +1,43 @@
-import Container from './container'
-import cn from 'classnames'
+import Container from '@/components/container'
 import { EXAMPLE_PATH } from '../lib/constants'
+import { useTheme } from 'next-themes'
+import ThemeModeIcon from '@/components/theme-icon'
+import Nav from './nav'
 
 type Props = {
   preview?: boolean
 }
 
 const Alert = ({ preview }: Props) => {
+  const { theme, setTheme } = useTheme()
+  const links = [
+    {
+      path: '/',
+      label: 'Home'
+    },
+    // TODO
+    // {
+    //   path: '/newsletter',
+    //   label: 'Newsletter',
+    // },
+    {
+      path: '/posts/archives',
+      label: 'Archives',
+    },
+    {
+      path: '/posts/about',
+      label: 'About'
+    }
+  ]
   return (
     <div
-      className={cn('border-b', {
-        'bg-neutral-800 border-neutral-800 text-white': preview,
-        'bg-neutral-50 border-neutral-200': !preview,
-      })}
+      // className={cn('border-b', {
+      //   'bg-neutral-800 border-neutral-800 text-white': preview,
+      //   'bg-neutral-50 border-neutral-200': !preview,
+      // })}
     >
       <Container>
-        <div className="py-2 text-center text-lg">
+        <div className="py-2 text-center text-lg bordeer-bottom border-solid border-b">
           {preview ? (
             <>
               This page is a preview.{' '}
@@ -28,13 +50,15 @@ const Alert = ({ preview }: Props) => {
               to exit preview mode.
             </>
           ) : (
-            <div className='flex justify-between'>
-              <a>0xinhua's Notes</a>
-              <ul className='justify-end flex'>
-                <li className='ml-3'><a href="/">Home</a></li>
-                <li className='ml-3'><a href="/posts/archives">Archives</a></li>
-                <li className='ml-3'><a href="/posts/about">About</a></li>
-              </ul>
+            <div className='flex justify-between items-center'>
+              {/* <a>0xinhua's Notes</a> */}
+              <Nav links={links}/>
+              <button
+                className='px-6 py-2 text-gray-600 dark:text-gray-400'
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              >
+                <ThemeModeIcon />
+                </button>
             </div>
           )}
         </div>
