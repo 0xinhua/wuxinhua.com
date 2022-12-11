@@ -9,7 +9,7 @@ type Props = {
   coverImage: string
   date: string
   author: Author
-}
+};
 
 const PostHeader = ({ title, coverImage, date, author }: Props) => {
   return (
@@ -26,7 +26,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
           {author && author?.name ? <Avatar name={author.name} picture={author.picture} /> : null }
         </div>
         { date ? <div className="mb-6 text-lg">
-          @wuxinhua 分布于 <DateFormatter dateString={date} />
+          @wuxinhua 发布于 <DateFormatter dateString={date} />
         </div> : null }
       </div>
     </>

@@ -9,22 +9,21 @@ date: '2017-07-15 18:34:20'
 
 > *—— Alan Turing*
 
-
-Hi，欢迎你访问我的博客，可以叫我 xinhua 或英文名 Kevin ~
-
-🎉 我最近开始了一个 newsletter 项目： [321来信](https://321laixin.zhubai.love/)，如果你喜欢我推送的内容，欢迎邮箱或微信订阅 ❤️
+Update： 🎉 2022 年开始了一个 newsletter 项目： [321来信](https://321laixin.zhubai.love/)，截止到年底收获了近 300 读者订阅，如果你喜欢我推送的内容，欢迎邮箱或微信订阅 ❤️
 
 ![](https://assets.wuxinhua.com/blog/assets/newsletter/image.png)
 
-我是一名软件开发工程师<img src="https://assets.wuxinhua.com//blog/assets/coder.gif" width="30" alt="https://assets.wuxinhua.com//blog/assets/coder.gif" style="max-width:100%;display:inline-block"> 在北京，会一些 JAVA 和移动端开发，目前专注于前端
+Hi，欢迎你访问我的博客，可以叫我 xinhua 或英文名 Kevin ~
+
+是一名软件开发工程师<img src="https://assets.wuxinhua.com//blog/assets/coder.gif" width="30" alt="https://assets.wuxinhua.com//blog/assets/coder.gif" style="max-width:100%;display:inline-block">，在北京，之前在[字节跳动](https://www.bytedance.com/zh)、[掘金社区](https://juejin.cn/)写代码
+
+喜欢开源的东西，热爱互联网，保持好奇心，一直想为这个世界变得更好做出微小的努力
+
+热衷于在网上分享自己的知识、见解
 
 只要命运的齿轮沒有出差错，这个博客应该会一直更下去
 
-喜欢开源的东西，热爱互联网，一直保持一颗好奇心
-
-线上线下都很友好，热衷于在网上分享自己的知识、见解
-
-任何博客的问题、技术职业交流、找工作、或者打个招呼都可以通过邮箱 wuxinhua.cn@gmail.com 联系到我
+任何博客的问题、技术讨论、职业交流、或者打个招呼都可以通过邮箱 wuxinhua.cn@gmail.com 联系到我
 
 如果喜欢我写的东西也可以订阅博客的 [RSS](https://wuxinhua.com/atom.xml)
 

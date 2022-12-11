@@ -24,7 +24,7 @@ const PostPreview = ({
   return (
     <div className="mb-8">
       <h3 className="text-2xl mb-3 leading-snug">
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
+        <Link as={`/posts/${slug}`} href="/posts/[slug]" legacyBehavior>
           <a className="hover:underline">{title}</a>
         </Link>
       </h3>
