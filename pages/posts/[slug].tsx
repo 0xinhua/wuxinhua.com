@@ -19,6 +19,7 @@ type Props = {
 }
 
 export default function Post({ post, morePosts, preview }: Props) {
+  console.log('post', post)
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -36,6 +37,8 @@ export default function Post({ post, morePosts, preview }: Props) {
                 <title>
                   {post.title} | Notes {CMS_NAME}
                 </title>
+                <meta name="description" content={post.excerpt} />
+                <meta name="keywords" content={post.tags}></meta>
                 {post?.ogImage?.url ? <meta property="og:image" content={post.ogImage.url} /> : null}
               </Head>
               <PostHeader
@@ -68,6 +71,8 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
+    'excerpt',
+    'tags'
   ])
   const content = await markdownToHtml(post.content || '')
 
