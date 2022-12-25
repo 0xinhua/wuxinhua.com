@@ -28,12 +28,15 @@ export default function About ({ }: Props) {
 
         <p>Hi，欢迎你访问我的博客，可以叫我 xinhua 或英文名 Kevin ~</p>
 
-        <p>是一名软件开发工程师<img src="https://assets.wuxinhua.com//blog/assets/coder.gif" width="30" alt="https://assets.wuxinhua.com//blog/assets/coder.gif" className="inline" />，在北京，之前曾在
-        <Link className="underline" href="https://www.bytedance.com/zh">@字节跳动</Link>、<Link className="underline" href={`https://juejin.cn/`}>@掘金社区</Link>写代码</p>
+        <p>软件开发工程师<img src="https://assets.wuxinhua.com//blog/assets/coder.gif" width="30" alt="https://assets.wuxinhua.com//blog/assets/coder.gif" className="inline" />，在北京，之前曾在
+        
+        <Link className="underline" href="https://www.bytedance.com/zh">@字节跳动</Link>、
+        
+        <Link className="underline" href={`https://juejin.cn/`}>@掘金社区</Link>写代码</p>
 
-        <p>喜欢开源的东西，热爱互联网，保持好奇心，一直想为这个世界变得更好做出微小的努力</p>
+        <p>喜欢开源，热爱互联网，一直想为这个世界变得更好做出微小的努力</p>
 
-        <p>热衷于在网上分享自己的知识、见解</p>
+        <p>保持好奇心，热衷于在网上分享自己的知识、见解</p>
 
         <p>只要命运的齿轮沒有出差错，这个博客应该会一直更下去</p>
 
