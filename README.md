@@ -1,4 +1,4 @@
-# wuxinhua.com
+# https://wuxinhua.com
 
 My version 2.0 Blog using Next.js, Markdown, TypeScript and [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter), I deploy it to the cloud with [Vercel](https://vercel.com/).
 
