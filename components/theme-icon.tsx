@@ -7,12 +7,13 @@ import darkIcon from '@/assets/dark-icon.svg';
 const alt = `theme icon`;
 
 const ThemeModeIcon = (props) => {
-  const { theme } = useTheme();
+  const { theme, setTheme } = useTheme();
   return (
     <Image
+      onClick={() => setTheme(theme)}
       placeholder={alt}
       alt={alt}
-      src={theme === 'dark' ? lightIcon : darkIcon}
+      src={theme === 'dark' ? darkIcon : lightIcon}
       {...props}
     />
   );

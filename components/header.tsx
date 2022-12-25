@@ -8,7 +8,7 @@ const Header = () => {
     //   </Link>
     //   .
     // </h2>
-    <div className='md:text-4xl mb-20 mt-8'>
+    <div className='md:text-4xl mb-10 mt-4'>
 
     </div>
   )
