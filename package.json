@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next -p 1024",
     "build": "next build",
-    "postbuild": "npm run sitemap && npm run rss",
+    "postbuild": "pnpm sitemap && pnpm run rss",
     "start": "next start -p 1024",
     "typecheck": "tsc",
     "sitemap": "ts-node ./scripts/sitemap.ts",

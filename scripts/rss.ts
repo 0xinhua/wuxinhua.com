@@ -29,7 +29,6 @@ const genRssFeed = async () => {
   const feed = new RSS(feedOptions);
 
   allPosts.map((post) => {
-    console.log('d', site_url.length)
     feed.item(
       {
         title: post.title,

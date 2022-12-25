@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Blog posts | RSS Feed]]></title>
+        <description><![CDATA[Welcome to this blog posts!]]></description>
+        <link>https://wuxinhua.com</link>
+        <image>
+            <url>https://wuxinhua.com/logo.png</url>
+            <title>Blog posts | RSS Feed</title>
+            <link>https://wuxinhua.com</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 25 Dec 2022 15:48:49 GMT</lastBuildDate>
+        <atom:link href="https://wuxinhua.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sun, 25 Dec 2022 15:48:49 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2022, Ibas]]></copyright>
+        <item>
+            <title><![CDATA[macOS 前端开发环境配置]]></title>
+            <description><![CDATA[当我们更换新的电脑或者入职新公司的时候，通常会需要重新配置一下电脑的开发环境，比较理想的方式就是能够复制我上一台设备的一些配置和软件，这样能快速地开始开发工作，这篇文档记录的是常用的软件、前端开发环境配置等，以及如果使用 dotfiles 重复利用这些配置]]></description>
+            <link>https://wuxinhua.com/posts/macOS-Front-end-Dev-Environment-Configuration</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/macOS-Front-end-Dev-Environment-Configuration</guid>
+            <pubDate>Mon, 01 Aug 2022 04:32:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[我的 Newsletter 321来信]]></title>
+            <description><![CDATA[321来信是我一周的阅读推荐及见闻思考，包括我看的书、文章、碎片化的知识、播客、音乐或者视频等，篇幅不会太长，希望对看到这封信的你有所启发。]]></description>
+            <link>https://wuxinhua.com/posts/Newsletter-321laixin</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Newsletter-321laixin</guid>
+            <pubDate>Thu, 14 Apr 2022 13:33:23 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Node.js 包管理及 npm 依赖安装机制]]></title>
+            <description><![CDATA[Node.js 包管理历史，npm、yarn、pnpm 之间的关系区别，pnpm 的优势，npm install 后发生了什么? node_modules 为什么这么重]]></description>
+            <link>https://wuxinhua.com/posts/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism</guid>
+            <pubDate>Wed, 23 Mar 2022 09:20:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[知识的碎片(2021)]]></title>
+            <description><![CDATA[记录日常的问题、新知识、想法 💡，欢迎交流，没用的知识又增加了]]></description>
+            <link>https://wuxinhua.com/posts/The-Daily-Notes-Of-2021</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-Daily-Notes-Of-2021</guid>
+            <pubDate>Fri, 31 Dec 2021 09:19:42 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[放弃 newsfeed 拥抱 newsletter]]></title>
+            <description><![CDATA[订阅的 list 会持续更新，更多的资源详见上方提到的 Newsletter 导航]]></description>
+            <link>https://wuxinhua.com/posts/Newsletter-List-I-Subscribed</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Newsletter-List-I-Subscribed</guid>
+            <pubDate>Mon, 02 Aug 2021 10:32:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[混迹于 Clubhouse 两周后的一些想法🤔]]></title>
+            <description><![CDATA[知乎上有个问题[为什么都说富文本编辑器是天坑？],很早就听说了实现一个富文本编辑器需要填很多的坑，“有幸”接触到富文本编辑器，记录下遇到的一些问题及解决方案]]></description>
+            <link>https://wuxinhua.com/posts/Discussion-On-The-Popularity-Of-Clubhouse</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Discussion-On-The-Popularity-Of-Clubhouse</guid>
+            <pubDate>Thu, 18 Feb 2021 12:04:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[认识Docker]]></title>
+            <description><![CDATA[出于工作的需要，今年才真正开始接触到Docker，买了一些容器相关的书，读了大牛一系列的文章博客，希望深入了解Docker的一些核心概念，Docker运行原理等]]></description>
+            <link>https://wuxinhua.com/posts/Dive-Into-Docker</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Dive-Into-Docker</guid>
+            <pubDate>Thu, 18 Feb 2021 12:04:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[知识的碎片（2020）]]></title>
+            <description><![CDATA[记录日常的问题、新知识、想法 💡，欢迎 comment、补充，奇怪的知识增加了]]></description>
+            <link>https://wuxinhua.com/posts/The-Daily-Notes-Of-2020</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-Daily-Notes-Of-2020</guid>
+            <pubDate>Thu, 31 Dec 2020 12:14:18 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[初探 Web Components]]></title>
+            <description><![CDATA[这篇将简单介绍 Web Components，了解它的标准，解决什么问题以及它的优势，它提供的接口 API、兼容程度、如何使用它写一个简单的组件等]]></description>
+            <link>https://wuxinhua.com/posts/Web-Components</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Web-Components</guid>
+            <pubDate>Sun, 02 Aug 2020 08:58:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Linux 命令行之 Crontab]]></title>
+            <description><![CDATA[这篇是 Linux 命令行学习、使用笔记中的一篇，主要介绍 Linux 下的任务管理 crontab，包括 cron服务、crontab 相关命令的使用]]></description>
+            <link>https://wuxinhua.com/posts/Learning-Linux-Series-Command-Line-Crontab</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Learning-Linux-Series-Command-Line-Crontab</guid>
+            <pubDate>Tue, 21 Jan 2020 06:04:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[今年看的书📚(2019)]]></title>
+            <description><![CDATA[年底了来复盘一下今年的读书情况，总结一下这一年读的一些书]]></description>
+            <link>https://wuxinhua.com/posts/The-Books-I-Read-In-2019</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-Books-I-Read-In-2019</guid>
+            <pubDate>Mon, 30 Dec 2019 11:43:48 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[译文：从 Travis 迁移至 GitHub Actions]]></title>
+            <description><![CDATA[声明一下！非原创，这是一篇翻译文章，发布于 GTCC 社区，一篇讲 CI 从 Travis 迁移到 GitHub-Actions 的英语文章， 我将它翻译成了中文，顺便学习了一下 GitHub Actions，如果你想了解作者和原文]]></description>
+            <link>https://wuxinhua.com/posts/Migrating-from-travis-to-GitHub-Actions</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Migrating-from-travis-to-GitHub-Actions</guid>
+            <pubDate>Sat, 30 Nov 2019 06:02:06 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[适配 iOS 13]]></title>
+            <description><![CDATA[Apple 在 10 月份推送了 iOS13 公开版后，iOS 用户进行更新版本，如果应用没有做适配会导致 Crash 、兼容适配等问题，这里记录一下当时适配过程遇到的一些问题以及体验移动开发的一些收获]]></description>
+            <link>https://wuxinhua.com/posts/Whats-new-in-iOS-13-and-adapting-app-to-new-version</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Whats-new-in-iOS-13-and-adapting-app-to-new-version</guid>
+            <pubDate>Sat, 02 Nov 2019 15:56:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React Native 新手常见问题及体验总结]]></title>
+            <description><![CDATA[使用 React Native 的开发经历，记录下了开发过程的常见的错误和解决方案，也算是从头趟了一遍 RN 开发过程的坑，本篇主要包括日常踩得一些坑以及我使用 React Native 开发体验总结]]></description>
+            <link>https://wuxinhua.com/posts/The-common-issues-and-errors-I-have-faced-as-a-react-native-beginner</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-common-issues-and-errors-I-have-faced-as-a-react-native-beginner</guid>
+            <pubDate>Wed, 31 Jul 2019 09:46:47 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ES10(ECMAScript2019)特征预览]]></title>
+            <description><![CDATA[2019年1月末的时候，ECMA TC39终于确定了ES2019版JavaScript的新增内容，ES2019 将会增加arrays, objects, strings, symbols, try/catch 和 JSON 等方面的特征。]]></description>
+            <link>https://wuxinhua.com/posts/A-Preview-Of-ECMAScript2019-ES10</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/A-Preview-Of-ECMAScript2019-ES10</guid>
+            <pubDate>Sat, 27 Apr 2019 04:32:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Flexbox布局完全指南]]></title>
+            <description><![CDATA[本篇适用于所有刚接触到 flexbox 布局的同学，也适用于那些想更近一步了解 flexbox 的人，我将尽可能详细地用文字、图片、代码介绍、学习 flexbox 布局]]></description>
+            <link>https://wuxinhua.com/posts/The-Guide-To-Flexbox</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-Guide-To-Flexbox</guid>
+            <pubDate>Mon, 25 Feb 2019 10:47:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[今年看的书📚(2018)]]></title>
+            <description><![CDATA[年底了来复盘一下今年的读书情况]]></description>
+            <link>https://wuxinhua.com/posts/The-Books-I-Read-In-2018</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-Books-I-Read-In-2018</guid>
+            <pubDate>Sat, 29 Dec 2018 02:46:46 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[《从0到1 - 如何创造未来 》书评]]></title>
+            <description><![CDATA[这可能是我写的最长的一篇书评，共4587字，TL;DR。 这本书的电子版、纸质版我都有买，收获很大，颠覆了我对创业、资本、团队…的一些看法，我也浏览Blake Masters整理发布在网上的笔记，事实上讲义的内容更加精彩，建议大家网上自行获取阅读。 我会对这本书的章节和观点进行总结，也加入我自己的一些想法，希望这些能帮助你更好地理解这本书]]></description>
+            <link>https://wuxinhua.com/posts/Book-Review-Zero-To-One-By-Peter-Thiel</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Book-Review-Zero-To-One-By-Peter-Thiel</guid>
+            <pubDate>Fri, 28 Dec 2018 15:26:20 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[www背后的故事]]></title>
+            <description><![CDATA[为什么域名的URL会需要带上www？有的网站二者都能访问，有的却不能？不加www的域名更加简短优雅，更容易被记住]]></description>
+            <link>https://wuxinhua.com/posts/Story-behind-the-www-in-domain</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Story-behind-the-www-in-domain</guid>
+            <pubDate>Fri, 16 Nov 2018 13:47:06 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[contenteditable 踩坑记]]></title>
+            <description><![CDATA[实现一个富文本编辑器需要填很多的坑，contenteditable，而使用contenteditable无疑是最简单的一种方式，但是 DOM 的处理存在很多兼容性的问题，并且处理起来异常麻烦]]></description>
+            <link>https://wuxinhua.com/posts/Contenteditable-The-Good-Part-And-The-Ugly</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Contenteditable-The-Good-Part-And-The-Ugly</guid>
+            <pubDate>Thu, 05 Jul 2018 15:33:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Good Code vs Bad Code in Golang]]></title>
+            <description><![CDATA[最近我被问到关于`Golang`好代码和不好的代码的一些细节问题，我发现这个问题非常有趣，有趣到可以就这个问题写一篇文章]]></description>
+            <link>https://wuxinhua.com/posts/Good-Code-vs-Bad-Code-in-Golang(翻译)</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Good-Code-vs-Bad-Code-in-Golang(翻译)</guid>
+            <pubDate>Mon, 30 Apr 2018 06:04:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[关于React的几道面试题]]></title>
+            <description><![CDATA[这篇内容是对一些React面试题的思考总结]]></description>
+            <link>https://wuxinhua.com/posts/The-questions-about-react-and-redux-in-interview</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-questions-about-react-and-redux-in-interview</guid>
+            <pubDate>Fri, 16 Mar 2018 16:02:20 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[SVG动画实践]]></title>
+            <description><![CDATA[利用SVG可以做非常多炫酷的动画，结合HTML5、CSS3，SVG就变得更加强大;本篇是SVG实践总结，主要包含以下方面的内容]]></description>
+            <link>https://wuxinhua.com/posts/The-svg-animation-in-action</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-svg-animation-in-action</guid>
+            <pubDate>Sat, 20 Jan 2018 03:13:03 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[今年看的书📚(2017)]]></title>
+            <description><![CDATA[仅仅罗列总结今年的阅读情况，老实说今年真没看几本书，我的阅读的时间基本集中在上下班的地铁上、等车、进站的排队过程中，书架陆陆续续加了37本书，到年底了才发现真正读完的只有16本]]></description>
+            <link>https://wuxinhua.com/posts/The-reading-book-list-in-2017</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-reading-book-list-in-2017</guid>
+            <pubDate>Fri, 22 Dec 2017 08:25:52 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[对比几种常见的排序算法]]></title>
+            <description><![CDATA[本文将详细地介绍、比较、实践我们常用到的几种排序算法:计数排序、桶排序、冒泡排序、插入排序等]]></description>
+            <link>https://wuxinhua.com/posts/The-think-of-sort-algorithms</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-think-of-sort-algorithms</guid>
+            <pubDate>Wed, 13 Dec 2017 03:53:11 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[React服务端渲染(SSR)初探]]></title>
+            <description><![CDATA[Isomorphic JavaScript”表示JavaScript代码可以在Server及Client两端执行。SSR(Server side Render)服务端渲染，顾名思义页面的渲染工作将在服务端完成，目前通常有两种选择：SSR(服务器渲染) 与 CSR(客户端渲染)，无论哪种方式，最终用户所看到的页面是一致的。]]></description>
+            <link>https://wuxinhua.com/posts/React-ssr-exploration</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/React-ssr-exploration</guid>
+            <pubDate>Mon, 20 Nov 2017 03:16:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[从面试题“输入URL...发生了什么”学到的(下)]]></title>
+            <description><![CDATA[较详细地描述了输入URL到页面展现的过程，而下篇将扩展补充这一过程涉及的另一些知识点]]></description>
+            <link>https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out-part2</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out-part2</guid>
+            <pubDate>Mon, 23 Oct 2017 16:15:09 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[从面试题“输入URL...发生了什么?”学到的(上)]]></title>
+            <description><![CDATA[较详细地描述了输入URL到页面展现的过程，而下篇将扩展补充这一过程涉及的另一些知识点]]></description>
+            <link>https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out</guid>
+            <pubDate>Fri, 13 Oct 2017 08:47:45 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ES6(ECMAScript 6.0)新特征]]></title>
+            <description><![CDATA[ECMAScript 6.0已经在2015年6月17日正式发布（以下简称ES6）到现在已经过去了2年时间，发布的很多新的特征已成为了标准]]></description>
+            <link>https://wuxinhua.com/posts/The-es6-features-learning-notes</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-es6-features-learning-notes</guid>
+            <pubDate>Mon, 28 Aug 2017 09:54:57 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[对React-redux中connect方法的理解]]></title>
+            <description><![CDATA[Redux由Flux框架演变而来，但在Flux的基础上，Redux改变了整个框架中某些角色的作用，例如在Flux中你可以拥有多个store，每个store存储自己对应的那部分状态,在Redux中，你只能维护一个store,存储了整个应用的所有状态]]></description>
+            <link>https://wuxinhua.com/posts/React-redux-connect-Explain-in-detail</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/React-redux-connect-Explain-in-detail</guid>
+            <pubDate>Sun, 30 Jul 2017 06:11:48 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[我的 RSS 订阅列表]]></title>
+            <description><![CDATA[RSS 订阅列表推荐]]></description>
+            <link>https://wuxinhua.com/posts/My-favorite-feed-RSS-feed-list</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/My-favorite-feed-RSS-feed-list</guid>
+            <pubDate>Mon, 17 Jul 2017 06:35:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[《空谷幽兰》书评]]></title>
+            <description><![CDATA[这是一本很安静的书，跟随作者的文字，置身于仙气缭绕的终南深处，也是一次愉悦的体验。原版英文名《Road To Heaven,Encounters with Chinese Hermits》，中文版意译为“空谷幽兰”，境界确实提升一截]]></description>
+            <link>https://wuxinhua.com/posts/Book-review-Road-to-Heaven</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Book-review-Road-to-Heaven</guid>
+            <pubDate>Sat, 15 Jul 2017 16:39:30 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[你可能不知道git rerere]]></title>
+            <description><![CDATA[关于git rerere先卖个关子，在文章的最后会介绍这个命令，可能大多数人对git的认识停留在日常的pull、commit等]]></description>
+            <link>https://wuxinhua.com/posts/The-git-you-may-not-frequently-used</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/The-git-you-may-not-frequently-used</guid>
+            <pubDate>Fri, 14 Jul 2017 18:02:37 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[webpack v2升级踩坑笔记]]></title>
+            <description><![CDATA[前端模块打包技术日新月异，webpack在今年1月份和6月份左右接连更新了v2和v3版本,为了减少冗余模块，缩减bundle文件大小，webpack v2中也加入了tree-shacking,关于tree-shacking的特征，可以查看知乎[如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？](https://www.zhihu.com/question/41922432)的讨论]]></description>
+            <link>https://wuxinhua.com/posts/Migrating-webpack-from-v1-to-v2</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Migrating-webpack-from-v1-to-v2</guid>
+            <pubDate>Fri, 14 Jul 2017 09:37:22 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
