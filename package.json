@@ -3,12 +3,13 @@
   "type": "commonjs",
   "scripts": {
     "dev": "next -p 1024",
-    "build": "next build",
+    "build": "pnpm seo && next build",
     "postbuild": "pnpm sitemap && pnpm run rss",
     "start": "next start -p 1024",
     "typecheck": "tsc",
     "sitemap": "ts-node ./scripts/sitemap.ts",
-    "rss": "ts-node ./scripts/rss.ts"
+    "rss": "ts-node ./scripts/rss.ts",
+    "seo": "pnpm rss && pnpm sitemap"
   },
   "dependencies": {
     "@next/env": "^13.0.6",
