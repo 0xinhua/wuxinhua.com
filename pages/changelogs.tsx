@@ -6,6 +6,8 @@ import Link from "next/link"
 import classnames from "classnames"
 import Post from '../interfaces/post'
 import { formatDate } from "@/lib/utils"
+// import Image from 'next/image'
+// import CommitIcon from '@/assets/commit.svg'
 
 type Props = {
   allPosts: Post[]
