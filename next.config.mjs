@@ -2,6 +2,8 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  trailingSlash: true,
+  reactStrictMode: true,
   /* config options here */
   async redirects() {
     return [
