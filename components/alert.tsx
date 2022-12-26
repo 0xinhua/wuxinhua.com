@@ -21,11 +21,11 @@ const Alert = ({ preview }: Props) => {
     //   label: 'Newsletter',
     // },
     {
-      path: '/changelogs',
+      path: '/changelogs/',
       label: 'Changelogs',
     },
     {
-      path: '/about',
+      path: '/about/',
       label: 'About'
     }
   ]
