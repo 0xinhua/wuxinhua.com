@@ -13,7 +13,7 @@ const Navigator = (props: { links: Link[] }) => {
   const { links } = props;
   const router = useRouter();
   const isActive = (path: string): boolean => router.asPath === path;
-
+  console.log('isActive', isActive)
   console.log('theme', theme, router.asPath);
 
   return (
@@ -22,7 +22,6 @@ const Navigator = (props: { links: Link[] }) => {
         <li className="ml-3 first:ml-0" key={link.label}>
           <a className={cn(`
             font-normal
-            text-base
             text-gray-600
             dark:text-gray-400
             md:inline-block
@@ -34,7 +33,6 @@ const Navigator = (props: { links: Link[] }) => {
             rounded-lg
             transition-all`, isActive(link.path) ? `font-semibold text-gray-800 dark:text-gray-200` : `font-normal
             text-base
-            text-gray-600
             dark:text-gray-400`)} 
             href={link.path}>{link.label}
           </a>

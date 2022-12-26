@@ -5,6 +5,18 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   /* config options here */
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/2022/04/14/newsletter-321laixin/',
+  //       destination: '/posts/newsletter-321laixin', // Matched parameters can be used in the destination
+  //     },
+  //     {
+  //       source: '/2022/03/23/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism/',
+  //       destination: '/posts/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism',
+  //     },
+  //   ]
+  // },
   async redirects() {
     return [
       {
@@ -15,6 +27,11 @@ const nextConfig = {
       {
         source: '/2022/04/14/newsletter-321laixin/',
         destination: '/posts/newsletter-321laixin',
+        permanent: true,
+      },
+      {
+        source: '/2022/03/23/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism/',
+        destination: '/posts/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism',
         permanent: true,
       },
       {
