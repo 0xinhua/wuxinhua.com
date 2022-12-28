@@ -46,7 +46,7 @@ export default function About ({ }: Props) {
 
         更多:
 
-        <p><Link className="underline" href={`https://github.com/M1seRy`}>🐙 GitHub</Link></p>
+        <p><Link className="underline" href={`https://github.com/0xinhua`}>🐙 GitHub</Link></p>
         <p><Link className="underline" href={`https://web.okjike.com/u/BC942F46-A5E2-40A0-B419-5AB8B3A02BE1`}>🌎 日常朋友圈</Link></p>
         <p><Link className="underline" href={`https://twitter.com/wuxinhua_cn`}>🐦 Twitter</Link></p> 
         <p><Link className="underline" href={`http://music.163.com/#/user/home?id=15767523`}>🎧 Music</Link></p>
@@ -71,7 +71,7 @@ export default function About ({ }: Props) {
 
         <p>More:</p>
 
-        <p><Link className="underline" href={`https://github.com/M1seRy`}> 🐙 GitHub </Link></p>
+        <p><Link className="underline" href={`https://github.com/0xinhua`}> 🐙 GitHub </Link></p>
         <p><Link className="underline" href={`https://web.okjike.com/u/BC942F46-A5E2-40A0-B419-5AB8B3A02BE1`}>🌎 Daily </Link></p>
         <p><Link className="underline" href={`https://twitter.com/wuxinhua_cn`}>🐦 Twitter</Link></p> 
         <p><Link className="underline" href={`http://music.163.com/#/user/home?id=15767523`}>🎧 Music</Link></p>
