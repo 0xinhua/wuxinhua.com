@@ -50,7 +50,7 @@ AI 似乎有取代搜索引擎的能力和潜力，我也有体会到 AI 产品�
 
 ## 👍 推荐：
 
-📃 [对话羊了个羊CEO：从月薪3000到年薪400万，用了10年](https://mp.weixin.qq.com/s/FS4wiGx3qetKb6h0Z1EjnQ) - 深网腾讯新闻
+### [📃 对话羊了个羊CEO：从月薪3000到年薪400万，用了10年 - 深网腾讯新闻](https://mp.weixin.qq.com/s/FS4wiGx3qetKb6h0Z1EjnQ)
 
 腾讯新闻采访了爆火的小程序游戏羊了个羊的 CEO 张佳旭 ，分享他对设计游戏以及创业的一些理解：
 
@@ -60,7 +60,7 @@ AI 似乎有取代搜索引擎的能力和潜力，我也有体会到 AI 产品�
 社交游戏其实是游戏服务于社交，社交它需要什么样的内容，游戏就做什么样的内容。
 以数据驱动做公司，不具备创意性。数据算法非常精准，可以拿捏用户的喜好，但是创意只通过数据是拿不出来的。
 
-📃 [The Age of Social Media Is Ending 社交媒体的时代正在结束](https://www.theatlantic.com/technology/archive/2022/11/twitter-facebook-social-media-decline/672074/)  - theatlantic.com
+### [📃 The Age of Social Media Is Ending 社交媒体的时代正在结束 - theatlantic.com](https://www.theatlantic.com/technology/archive/2022/11/twitter-facebook-social-media-decline/672074/)
 
 社交媒体公司陷入空前的混乱中，Facebook 在衰退，Twitter变得混乱。
 
@@ -78,7 +78,7 @@ Twitter 可能是目前最大的也是真正的社交媒体网站，该站点不
 社交媒体运营商发现，内容越是充满情感，它在用户网络中的传播就越好。
 社交媒体表明每个人都有以低成本和高收益接触大量受众的潜力。
 
-🎬 [为什么《星际穿越》的配乐，你一听就想哭?](https://www.bilibili.com/video/BV1524y1k787/) - 银屏系漫游指南
+### [🎬 为什么《星际穿越》的配乐，你一听就想哭? - 银屏系漫游指南](https://www.bilibili.com/video/BV1524y1k787/)
 
 音乐真的是很神奇的东西，一首歌一段旋律好听或者好哭那么它大概率都是有原因的。
 
