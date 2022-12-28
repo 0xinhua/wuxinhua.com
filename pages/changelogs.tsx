@@ -26,7 +26,7 @@ export default function Changelogs({ allPosts }: Props) {
                 <dl className="left-0 top-0 mr-3">
                   <dt className="sr-only">Date</dt>
                   <dd className={classnames('whitespace-nowrap text-sm leading-6 dark:text-slate-400 text-[#64748b]')}>
-                    <time dateTime={post.date}>{formatDate(post.date, 'yyyy-dd-mm')}</time>
+                    <time dateTime={post.date}>{formatDate(post.date, 'yyyy-MM-dd')}</time>
                   </dd>
                 </dl>
                 <Link className="underline" href={`/posts/${encodeURIComponent(post.slug)}`}>{post.title}</Link>
