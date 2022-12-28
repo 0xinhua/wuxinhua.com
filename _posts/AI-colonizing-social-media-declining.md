@@ -45,6 +45,7 @@ AI 似乎有取代搜索引擎的能力和潜力，我也有体会到 AI 产品�
 ![](https://assets.wuxinhua.com/newsletter/assets/22-chrome.gif)
 
 - 好消息电影沙丘 2 已经完成了拍摄，视觉效果很震撼
+
 ![](https://assets.wuxinhua.com/newsletter/assets/22-dune.png)
 
 
