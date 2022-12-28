@@ -26,7 +26,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
           {author && author?.name ? <Avatar name={author.name} picture={author.picture} /> : null }
         </div>
         { date ? <div className="mb-4 text-base text-slate-600">
-          @wuxinhua 发布于 <DateFormatter dateString={date} />
+          @0xinhua 发布于 <DateFormatter dateString={date} />
         </div> : null }
       </div>
     </>
