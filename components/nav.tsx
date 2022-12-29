@@ -1,5 +1,4 @@
 
-import { useTheme } from 'next-themes'
 import cn from 'classnames';
 import { useRouter } from 'next/router'
 
@@ -9,12 +8,9 @@ type Link = {
 };
 
 const Navigator = (props: { links: Link[] }) => {
-  const { theme } = useTheme();
   const { links } = props;
   const router = useRouter();
   const isActive = (path: string): boolean => router.asPath === path;
-  console.log('isActive', isActive)
-  console.log('theme', theme, router.asPath);
 
   return (
     <ul className='justify-end flex'>

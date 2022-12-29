@@ -1,6 +1,6 @@
 # https://wuxinhua.com
 
-My version 2.0 Blog using Next.js, Markdown, TypeScript and [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter), I deploy it to the cloud with [Vercel](https://vercel.com/).
+My version 2.0 Blog using Next.js, Markdown, TypeScript, [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) and deploy it to the cloud with [Vercel](https://vercel.com/).
 
 ## How to use
 
@@ -16,5 +16,4 @@ npm install -g pnpm && pnpm install
 pnpm dev
 ```
 
-the blog should be up and running on [http://localhost:1024](http://localhost:1024)
-
+The blog should be up and running on [http://localhost:1024](http://localhost:1024)

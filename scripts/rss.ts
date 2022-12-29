@@ -1,12 +1,11 @@
 import RSS from 'rss';
-import { getAllPosts } from '../lib/api';
 import fs from 'fs';
+import { getAllPosts } from '../lib/api';
+import { CMS_NAME, SITE_URL } from '../lib/constants';
 
 const genRssFeed = async () => {
 
   // console.log(' process.env', process.env.HOSTNAME, process.env.PORT)
-
-  const site_url = 'https://wuxinhua.com'
 
   const allPosts = getAllPosts([
     'title',
@@ -17,11 +16,11 @@ const genRssFeed = async () => {
   ]);
 
   const feedOptions = {
-    title: 'Blog posts | RSS Feed',
-    description: 'Welcome to this blog posts!',
-    site_url: site_url,
-    feed_url: `${site_url}/rss.xml`,
-    image_url: `${site_url}/logo.png`,
+    title: `${CMS_NAME} Blog posts | RSS Feed`,
+    description: `Welcome to this ${CMS_NAME}'s Blog`,
+    site_url: SITE_URL,
+    feed_url: `${SITE_URL}/rss.xml`,
+    image_url: `${SITE_URL}/logo.png`,
     pubDate: new Date(),
     copyright: `All rights reserved ${new Date().getFullYear()}, Ibas`,
   };
@@ -33,8 +32,9 @@ const genRssFeed = async () => {
       {
         title: post.title,
         description: post.excerpt,
-        url: `${site_url}/posts/${post.slug}`,
+        url: `${SITE_URL}/posts/${post.slug}`,
         date: post.date,
+        author: CMS_NAME
       }
     )
   })

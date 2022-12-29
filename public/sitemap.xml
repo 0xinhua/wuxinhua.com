@@ -2,239 +2,260 @@
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-          <loc>https://wuxinhua.com/posts/macOS-Front-end-Dev-Environment-Configuration</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <loc>https://wuxinhua.com/posts/be-positive</loc>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
-          <loc>https://wuxinhua.com/posts/Newsletter-321laixin</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <loc>https://wuxinhua.com/posts/top-front-end-developer-interview-questions</loc>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
+        </url>
+      
+        <url>
+          <loc>https://wuxinhua.com/posts/AI-colonizing-social-media-declining</loc>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
+        </url>
+      
+        <url>
+          <loc>https://wuxinhua.com/posts/macOS-Front-end-Dev-Environment-Configuration</loc>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
+        </url>
+      
+        <url>
+          <loc>https://wuxinhua.com/posts/newsletter-321laixin</loc>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-Daily-Notes-Of-2021</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Newsletter-List-I-Subscribed</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Discussion-On-The-Popularity-Of-Clubhouse</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Dive-Into-Docker</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-Daily-Notes-Of-2020</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Web-Components</loc>
-          <lastmod>2022-12-25T16:01:10.193Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Learning-Linux-Series-Command-Line-Crontab</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-Books-I-Read-In-2019</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Migrating-from-travis-to-GitHub-Actions</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Whats-new-in-iOS-13-and-adapting-app-to-new-version</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-common-issues-and-errors-I-have-faced-as-a-react-native-beginner</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/A-Preview-Of-ECMAScript2019-ES10</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-Guide-To-Flexbox</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-Books-I-Read-In-2018</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Book-Review-Zero-To-One-By-Peter-Thiel</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Story-behind-the-www-in-domain</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Contenteditable-The-Good-Part-And-The-Ugly</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
-          <loc>https://wuxinhua.com/posts/Good-Code-vs-Bad-Code-in-Golang(翻译)</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <loc>https://wuxinhua.com/posts/Good-Code-vs-Bad-Code-in-Golang</loc>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-questions-about-react-and-redux-in-interview</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-svg-animation-in-action</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-reading-book-list-in-2017</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-think-of-sort-algorithms</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/React-ssr-exploration</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out-part2</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-es6-features-learning-notes</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/React-redux-connect-Explain-in-detail</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/My-favorite-feed-RSS-feed-list</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Book-review-Road-to-Heaven</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/The-git-you-may-not-frequently-used</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
       
         <url>
           <loc>https://wuxinhua.com/posts/Migrating-webpack-from-v1-to-v2</loc>
-          <lastmod>2022-12-25T16:01:10.194Z</lastmod>
+          <lastmod>2022-12-29T01:17:22.516Z</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>

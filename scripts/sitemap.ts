@@ -1,5 +1,6 @@
 import { writeFileSync } from "fs";
 import { getAllPosts } from './../lib/api';
+import { SITE_URL } from '../lib/constants';
 
 const generate = async () => {
 
@@ -9,7 +10,6 @@ const generate = async () => {
     'slug',
     'author',
   ]);
-  console.log('posts', posts)
 
   const sitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
@@ -18,7 +18,7 @@ const generate = async () => {
       .map((post) => {
         return `
         <url>
-          <loc>${`https://wuxinhua.com/posts/` + post.slug}</loc>
+          <loc>${`${SITE_URL}/posts/` + post.slug}</loc>
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
