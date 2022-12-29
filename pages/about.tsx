@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { useRouter } from "next/router"
 import { Props } from "next/script"
 import style from './style.module.css'
 
@@ -8,13 +7,11 @@ import Header from './../components/header'
 import Layout from './../components/layout'
 
 export default function About ({ }: Props) {
-  const router = useRouter()
   return (
     <Layout>
       <Container>
         <Header />
         <div className={style.content}>
-
         <figure className={style.blockquote}>
           <blockquote cite="https://www.turing.ac.uk/blog/what-alan-turing-means-us">
             <p>“ We can only see a short distance ahead, but we can see plenty there that needs to be done. ”</p>

@@ -5,7 +5,7 @@ My version 2.0 Blog using Next.js, Markdown, TypeScript, [blog-starter](https://
 ## How to use
 
 ```bash
-git clone https://github.com/0xinhua/blog-site.git my-blog
+git clone https://github.com/0xinhua/wuxinhua.com.git my-blog
 ```
 
 ```bash
