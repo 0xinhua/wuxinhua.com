@@ -3,7 +3,7 @@ title: '#22 AI 在殖民，社交媒体在衰退'
 excerpt: 'AI 殖民以及AI 会不会取代我的工作，社交媒体公司陷入空前的混乱和衰退中，一段旋律好听或者好哭那么它大概率都是有原因的'
 coverImage:
 date: '2022-12-13 09:32:49'
-tag: 'AI 羊了个羊 Cornfield chase 社交网络 社交媒体'
+tags: '321来信 AI 羊了个羊 Cornfield chase 社交网络'
 ---
 
 ![](https://assets.wuxinhua.com/newsletter/assets/22-ai.png)

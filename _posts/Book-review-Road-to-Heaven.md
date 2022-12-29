@@ -3,7 +3,7 @@ title: '《空谷幽兰》书评'
 excerpt: '这是一本很安静的书，跟随作者的文字，置身于仙气缭绕的终南深处，也是一次愉悦的体验。原版英文名《Road To Heaven,Encounters with Chinese Hermits》，中文版意译为“空谷幽兰”，境界确实提升一截'
 coverImage:
 date: '2017-07-16 00:39:30'
-tags: 'book 禅'
+tags: '空谷幽兰 禅'
 
 ---
 

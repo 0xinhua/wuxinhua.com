@@ -1,5 +1,5 @@
 import Container from './container'
-import { CMS_NAME, EXAMPLE_PATH } from '../lib/constants'
+import { CMS_NAME } from '../lib/constants'
 
 const currentYear = new Date().getFullYear()
 
@@ -13,7 +13,6 @@ const Footer = () => {
             <p>Blog's <a href='https://github.com/0xinhua/wuxinhua.com' className="underline hover:text-blue-600 duration-200 transition-colors mr-0.5" target={"_blank"}>source code </a> Powered by
               <a href="https://vercel.com/" className="underline hover:text-blue-600 duration-200 transition-colors ml-1" target={"_blank"}>Vercel</a>
             </p>
-
           </div>
         </div>
       </Container>

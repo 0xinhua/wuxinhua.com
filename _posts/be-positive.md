@@ -3,7 +3,7 @@ title: '#23 Be positive'
 excerpt: '这是 321来信发出的第 24 封信，这也是 2022 年投递的最后一封信，包含以下内容：足球和自由，如何回忆疫情这三年，这三年创造出的新词，30 岁 30 条建议的清单，托尼·法德尔的《Build》，关于新冠、疫苗和阳了之后的一些科普'
 coverImage:
 date: '2022-12-28 09:32:49'
-tag: '疫情 阳性 Build 托尼·法德尔'
+tags: '321来信 疫情 阳性 《Build》托尼·法德尔'
 ---
 
 ![](https://assets.wuxinhua.com/newsletter/assets/huayanshi.jpeg)

@@ -2,7 +2,7 @@
 title: '我的 Newsletter 321来信'
 excerpt: '321来信是我一周的阅读推荐及见闻思考，包括我看的书、文章、碎片化的知识、播客、音乐或者视频等，篇幅不会太长，希望对看到这封信的你有所启发。'
 date: '2022-04-14 21:33:23'
-tags: 321来信 Newsletter 竹白 wutopia 疫情、乌克兰 🇺🇦 马斯克 太空艺术 321
+tags: 321来信 Newsletter 竹白 疫情、乌克兰 马斯克 太空艺术
 ---
 
 ![](https://assets.wuxinhua.com/blog/assets/newsletter/321.jpg)
