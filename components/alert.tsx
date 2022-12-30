@@ -54,7 +54,7 @@ const Alert = ({ preview }: Props) => {
               {/* <a>0xinhua's Notes</a> */}
               <Nav links={links}/>
               <button
-                className='px-6 py-2 text-gray-600 dark:text-gray-400'
+                className='py-2 text-gray-600 dark:text-gray-400'
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               >
                 <ThemeModeIcon />
