@@ -8,7 +8,7 @@ const Tags = (props) => {
   const { tags } = props
   const tagList = tags ? tags.split(' ').filter(tag => tag) : []
   return (
-    tagList.length ? <div className="mx-1 flex">
+    tagList.length ? <div className="md:mx-1 flex mt-1.5 md:mt-0 flex-wrap">
       <Image
         className="text-base"
         alt={alt}

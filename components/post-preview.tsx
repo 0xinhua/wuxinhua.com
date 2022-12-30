@@ -39,7 +39,7 @@ const PostPreview = ({
         </div>
         : null
       }
-      <div className="text-sm mb-4 text-left text-gray-500 md:text-left md:mb-0 flex">
+      <div className="text-sm mb-4 text-left text-gray-500 md:text-left md:mb-0 flex flex-col md:flex-row">
         <DateFormatter dateString={date} /> <Tags tags={tags} />
       </div>
       {/* {author && author?.name ? <Avatar name={author.name} picture={author.picture} /> : null} */}

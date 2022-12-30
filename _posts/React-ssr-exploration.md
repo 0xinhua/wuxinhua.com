@@ -2,7 +2,7 @@
 title: 'React服务端渲染(SSR)初探'
 excerpt: 'Isomorphic JavaScript”表示JavaScript代码可以在Server及Client两端执行。SSR(Server side Render)服务端渲染，顾名思义页面的渲染工作将在服务端完成，目前通常有两种选择：SSR(服务器渲染) 与 CSR(客户端渲染)，无论哪种方式，最终用户所看到的页面是一致的。'
 date: '2017-11-20 11:16:30'
-tags: React
+tags: React服务端渲染 SSR React
 ---
 在本周(11月16日)小组的前端技能分享会上，我作了主题为“React服务端渲染初探”的前端分享，分享讨论的主要内容是如何使用React完成服务器端渲染，及尝试使用 Next.js构建服务端渲染应用，也是我第一次边讲边码代码，虽然中途出了bug,但还好顺利地解决并完成了演示，本文是基于我的keynote做的分享内容总结。
 
