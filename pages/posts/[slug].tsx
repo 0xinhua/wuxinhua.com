@@ -19,7 +19,6 @@ type Props = {
 }
 
 export default function Post({ post, morePosts, preview }: Props) {
-  console.log('post', post)
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
