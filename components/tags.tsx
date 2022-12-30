@@ -16,7 +16,7 @@ const Tags = (props) => {
       />
       {
         tagList.map(tag => {
-          return (<span className='mr-1'>{tag}</span>)
+          return (<span key={tag} className='mr-1'>{tag}</span>)
         })
       }
     </div>: null
