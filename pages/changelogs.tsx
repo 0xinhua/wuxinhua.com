@@ -6,6 +6,8 @@ import Link from "next/link"
 import classnames from "classnames"
 import Post from '../interfaces/post'
 import { formatDate } from "@/lib/utils"
+import Head from "next/head"
+import { CMS_NAME } from "@/lib/constants"
 // import Image from 'next/image'
 // import CommitIcon from '@/assets/commit.svg'
 
@@ -20,6 +22,11 @@ export default function Changelogs({ allPosts }: Props) {
       <Layout >
         <Container>
         <Header />
+        <Head>
+          <title>
+            Changelogs - {CMS_NAME}
+          </title>
+        </Head>
           { allPosts.map(post => {
             return (
               <div className="mb-3 text-base flex" key={post.slug}>

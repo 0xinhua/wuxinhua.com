@@ -1,13 +1,13 @@
 ---
 
 title: 'webpack v2升级踩坑笔记'
-excerpt: '前端模块打包技术日新月异，webpack在今年1月份和6月份左右接连更新了v2和v3版本,为了减少冗余模块，缩减bundle文件大小，webpack v2中也加入了tree-shacking,关于tree-shacking的特征，可以查看知乎[如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？](https://www.zhihu.com/question/41922432)的讨论'
+excerpt: '前端模块打包技术日新月异，webpack在今年1月份和6月份左右接连更新了 v2 和 v3 版本,为了减少冗余模块，缩减bundle文件大小，webpack v2 中也加入了 tree-shacking,关于 tree-shacking 的特征，可以查看知乎如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术的讨论'
 coverImage: ''
 date: '2017-07-14 17:37:22'
 tags: 'Webpack Webpack升级'
 ---
 
-从Grunt->gulp->webpack,再到目前当红明星[rollup](https://rollupjs.org/)，前端模块打包技术日新月异，webpack在今年1月份和6月份左右接连更新了v2和v3版本,为了减少冗余模块，缩减bundle文件大小，webpack v2中也加入了tree-shacking,关于tree-shacking的特征，可以查看知乎[如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？](https://www.zhihu.com/question/41922432)的讨论。
+从Grunt->gulp->webpack,再到目前当红明星 [rollup](https://rollupjs.org/)，前端模块打包技术日新月异，webpack在今年1月份和6月份左右接连更新了v2和v3版本,为了减少冗余模块，缩减bundle文件大小，webpack v2中也加入了tree-shacking,关于tree-shacking的特征，可以查看知乎[如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？](https://www.zhihu.com/question/41922432)的讨论。
 
 webpack在推出 v2之后迅速推出了v3版本，前段时间在知乎看到webpack[作者LarkInn(他已经入驻sf)](https://segmentfault.com/u/thelarkinn)说后续会维持一个更快、一致和更稳定的发布周期[点这](https://www.zhihu.com/question/61533563)，难道要步Angular的后尘，作为吃瓜群众表示很震惊，因为目前自己这边项目webpack还停留在1.x版本，鉴于减少日后升级难度的想法，包括后续要做代码和流程优化，我将webpack升级到了v2版本，在这主要想把这个升级过程遇到的一些问题分享出来，也方便大家踩坑。
 

@@ -4,12 +4,19 @@ import style from './style.module.css'
 import Container from './../components/container'
 import Header from './../components/header'
 import Layout from './../components/layout'
+import Head from 'next/head'
+import { CMS_NAME } from "@/lib/constants"
 
 export default function About ({ }: Props) {
   return (
     <Layout>
       <Container>
         <Header />
+        <Head>
+          <title>
+            About me - {CMS_NAME}
+          </title>
+        </Head>
         <div className={style.content}>
         <figure className={style.blockquote}>
           <blockquote cite="https://www.turing.ac.uk/blog/what-alan-turing-means-us">
