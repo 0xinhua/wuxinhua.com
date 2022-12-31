@@ -4,7 +4,7 @@ title: '译文：从 Travis 迁移至 GitHub Actions'
 excerpt: '声明一下！非原创，这是一篇翻译文章，发布于 GTCC 社区，一篇讲 CI 从 Travis 迁移到 GitHub-Actions 的英语文章， 我将它翻译成了中文，顺便学习了一下 GitHub Actions，如果你想了解作者和原文'
 coverImage: ''
 date: '2019-11-30 14:02:06'
-
+tags: 'Github Actions'
 
 ---
 

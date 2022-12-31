@@ -4,6 +4,7 @@ title: 'Linux 命令行之 Crontab'
 excerpt: '这篇是 Linux 命令行学习、使用笔记中的一篇，主要介绍 Linux 下的任务管理 crontab，包括 cron服务、crontab 相关命令的使用'
 coverImage: ''
 date: '2020-01-21 14:04:21'
+tags: 'Crontab Linux'
 
 ---
 

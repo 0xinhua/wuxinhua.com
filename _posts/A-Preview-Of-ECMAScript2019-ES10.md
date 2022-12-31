@@ -3,6 +3,7 @@ title: 'ES10(ECMAScript2019)特征预览'
 excerpt: '2019年1月末的时候，ECMA TC39终于确定了ES2019版JavaScript的新增内容，ES2019 将会增加arrays, objects, strings, symbols, try/catch 和 JSON 等方面的特征。'
 coverImage:
 date: '2019-04-27 12:32:49'
+tags: 'ECMAScript2019'
 
 ---
 

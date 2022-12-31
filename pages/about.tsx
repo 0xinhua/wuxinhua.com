@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Props } from "next/script"
 import style from './style.module.css'
 import Container from './../components/container'
 import Header from './../components/header'
@@ -7,7 +6,7 @@ import Layout from './../components/layout'
 import Head from 'next/head'
 import { CMS_NAME } from "@/lib/constants"
 
-export default function About ({ }: Props) {
+export default function About () {
   return (
     <Layout>
       <Container>

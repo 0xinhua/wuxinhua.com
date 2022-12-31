@@ -2,7 +2,7 @@
 title: 'Flexbox布局完全指南'
 excerpt: '本篇适用于所有刚接触到 flexbox 布局的同学，也适用于那些想更近一步了解 flexbox 的人，我将尽可能详细地用文字、图片、代码介绍、学习 flexbox 布局'
 date: '2019-02-25 18:47:45'
-tags:
+tags: 'Flexbox'
 ---
 
 ![](https://assets.wuxinhua.com//blog/assets/flexbox/flex.png)

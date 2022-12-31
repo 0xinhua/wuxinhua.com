@@ -2,7 +2,7 @@
 title: '今年看的书📚(2018)'
 excerpt: '年底了来复盘一下今年的读书情况'
 date: '2018-12-29 10:46:46'
-tags: 阅读
+tags: 年度书单 阅读总结
 ---
 
 ![](https://assets.wuxinhua.com/blog/assets/book-read-2018/book.jpg)

@@ -2,7 +2,7 @@
 title: '今年看的书📚(2017)'
 excerpt: '仅仅罗列总结今年的阅读情况，老实说今年真没看几本书，我的阅读的时间基本集中在上下班的地铁上、等车、进站的排队过程中，书架陆陆续续加了37本书，到年底了才发现真正读完的只有16本'
 date: '2017-12-22 16:25:52'
-tags: '阅读'
+tags: '年度书单 阅读'
 ---
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=22649427&auto=1&height=66"></iframe>

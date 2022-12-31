@@ -2,7 +2,7 @@
 title: 'ES6(ECMAScript 6.0)新特征'
 excerpt: 'ECMAScript 6.0已经在2015年6月17日正式发布（以下简称ES6）到现在已经过去了2年时间，发布的很多新的特征已成为了标准'
 date: '2017-08-28 17:54:57'
-tags:
+tags: 'ECMAScript6.0'
 ---
 
 <!-- ![title](https://assets.wuxinhua.com/es6.jpeg) -->
