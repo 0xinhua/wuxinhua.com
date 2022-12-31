@@ -1,5 +1,4 @@
 import Container from '@/components/container'
-import { EXAMPLE_PATH } from '../lib/constants'
 import { useTheme } from 'next-themes'
 import ThemeModeIcon from '@/components/theme-icon'
 import Nav from './nav'
@@ -51,7 +50,6 @@ const Alert = ({ preview }: Props) => {
             </>
           ) : (
             <div className='flex justify-between items-center'>
-              {/* <a>0xinhua's Notes</a> */}
               <Nav links={links}/>
               <button
                 className='py-2 text-gray-600 dark:text-gray-400'
