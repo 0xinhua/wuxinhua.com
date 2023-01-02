@@ -1,19 +1,19 @@
 ---
 title: '前端面试系列 - 前端八股文'
-excerpt: '前端面试八股文是指前端面试出现频率较高的问题，基本也是必问的基础题'
+excerpt: '前端八股文是指前端面试过程中经常被问到的问题，基本也是必问的一些问题。相比于国外公司面试，国内互联网公司前端面试里，考八股文和手写代码是逃不了的两部分，这里汇总了最近面试被问到频率较高的一些基础题及我的简要回答'
 date: '2022-12-26 22:50:00'
-tags: 前端面试题 前端八股文
+tags: 面试 前端面试题 前端八股文
 ---
 
-前端八股文是指前端面试过程中经常被问到的问题，基本也是必问的一些问题。相比于国外公司面试，国内互联网公司前端面试里，考八股文和手写代码是逃不了的两部分，这里汇总了最近面试被问到频率较高的一些基础题及简要回答。
+前端八股文是指前端面试过程中经常被问到的问题，基本也是必问的一些问题。相比于国外公司面试，国内互联网公司前端面试里，考八股文和手写代码是逃不了的两部分，这里汇总了最近面试被问到频率较高的一些基础题及简要回答，如有错误或遗漏欢迎斧正，后续有新问题会持续更新，也希望大家在 2023 年都能找到合适满意的工作。
 
 # Html
 
 ## DOM 和 BOM 的区别
 
-- Document Object Model（文档对象模型）把「文档」当做一个「对象」来处理，即把 html页面结构解析成一个对象，提供一个接口API，让你去操作所有的节点dom，通过document属性就可以访问、检索、修改XHTML文档内容与结构。 最核心的对象是 document。
-- Browser Object Model（浏览器对象模型）,即把「浏览器」当做一个「对象」来看待，BOM的最核心对象是window对象
-- BOM的window包含了document，所以可以说 BOM 包含了 DOM。
+- Document Object Model（文档对象模型）把「文档」当做一个「对象」来处理，即把 html 页面结构解析成一个对象，提供一个接口API，让你去操作所有的节点 dom，通过 document 属性就可以访问、检索、修改 XHTML 文档内容与结构。 最核心的对象是 document。
+- Browser Object Model（浏览器对象模型）,即把「浏览器」当做一个「对象」来看待，BOM 的最核心对象是 window 对象
+- BOM 的 window 包含了document，所以可以说 BOM 包含了 DOM。
 
 ## position 取值：
 
@@ -26,13 +26,13 @@ tags: 前端面试题 前端八股文
 
 ## H5 语义化
 
-html语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；在没有样式CCS情况下也以一种文档格式显示，并且是容易阅读的。搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于 SEO
+html 语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；在没有样式 CCS 情况下也以一种文档格式显示，并且是容易阅读的。搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于 SEO。
 
-- 延迟加载，script标签为什么放后面？引出 defer 和 async 区别
+## 延迟加载，script 标签为什么放后面？引出 defer 和 async 区别
 
 前端加载 html，html 解析器运行于主线程中，如果遇到\<script> 标签后会阻塞，直到脚本从网络中下载并被执行，也就是说\<script>标签的脚本会阻塞浏览器的渲染。这里还涉及到页面生命周期：
 
-- `DOMContentLoaded` 页面已经完全加载了Html 并且构建了 dom 树，但样式和 img 这样的资源还没有加载完
+- `DOMContentLoaded` 页面已经完全加载了 html 并且构建了 dom 树，但样式和 img 这样的资源还没有加载完
 - `load` —— 浏览器不仅加载完成了 HTML，还加载完成了所有外部资源：图片，样式等。
 - `beforeunload/unload` —— 当用户正在离开页面时。
 
@@ -44,10 +44,10 @@ html语义化就是让页面的内容结构化，便于对浏览器、搜索引�
 
 ## 前端 cookie，怎么获取cookie及更新cookie
 
-- 前端通过 document.cookie 就能拿到cookie，清除的话可以通过更新过期时间
-- 之所以会出现 cookie，是因为http是一个无状态的协议，使同一个客户端连续两次发送请求给服务器，服务器也识别不出这是同一个客户端发送的请求。cookie 的出现就是为了解决这个问题。
+- 前端通过 document.cookie 就能拿到 cookie，清除的话可以通过更新过期时间
+- 之所以会出现 cookie，是因为 http 是一个无状态的协议，使同一个客户端连续两次发送请求给服务器，服务器也识别不出这是同一个客户端发送的请求。cookie 的出现就是为了解决这个问题。
 - cookie 在维基百科的解释是小型文本文件，指某些网站为了辨别用户身份存储在用户本地终端的数据，一般大小不会超过 4 kb，以键值对形式存在。
-- cookie的设置可以在服务端的响应头里添加 set-Cookie字段
+- cookie 的设置可以在服务端的响应头里添加 set-Cookie字段
 - cookie 的属性：
 
 - Expires 用于设置 Cookie 的过期时间，Max-Age 表示 cookie失效前的经过的秒数
@@ -64,12 +64,12 @@ html语义化就是让页面的内容结构化，便于对浏览器、搜索引�
 
 ## ie67兼容问题
 
-- 在IE6，7下输入类型的表单控件加border:none无效。border:0。
-- IE6下块元素有浮动和横向margin的时候，横向的margin值被放大成两倍。给浮动元素加 display:inline。
+- 在IE6，7下输入类型的表单控件加 `border:none` 无效，设置 `border:0`。
+- IE6下块元素有浮动和横向 margin 的时候，横向的 margin 值被放大成两倍。给浮动元素加 `display:inline`。
 
 ## 重排跟重绘
 
-要讲明白这两个概念，需要先说一下浏览器的页面生成过程，当我们通过 url 链接访问一个页面时，在加载完html、css 、script资源后会有一个解析布局绘制页面的过程，对应的三个操作解析、布局、绘制，网页生成的时候，至少需要排列及绘制一次，随着用户的操作后续有可能而后面会触发重排和重绘。
+要讲明白这两个概念，需要先说一下浏览器的页面生成过程，当我们通过 url 链接访问一个页面时，在加载完 html、css 、script资源后会有一个解析布局绘制页面的过程，对应的三个操作解析、布局、绘制，网页生成的时候，至少需要排列及绘制一次，随着用户的操作后续有可能而后面会触发重排和重绘。
 
 过程：
 
@@ -79,11 +79,11 @@ html语义化就是让页面的内容结构化，便于对浏览器、搜索引�
 - 生成布局，也就是在屏幕上画出渲染树节点的位置
 - 将布局绘制在屏幕上，即显示出整个画面
 
-重排(reflow)：当dom的变化影响了元素的几何信息（例如它的位置，尺寸等），这个时候浏览器会重新计算它的属性值，并且把它放在正确位置上，这个叫重排（重新生成布局，重新排列）
+重排(reflow)：当 dom 的变化影响了元素的几何信息（例如它的位置，尺寸等），这个时候浏览器会重新计算它的属性值，并且把它放在正确位置上，这个叫重排（重新生成布局，重新排列）
 
 常见的触发属性或方法：width，height、font-size、display、scrollTo等
 
-重绘(repaints)：当一个元素的外观发生了变化，但没有改变布局，浏览器会把元素外观重新绘制出来。常见的触发属性： color，border-style、background-position等
+重绘(repaints)：当一个元素的外观发生了变化，但没有改变布局，浏览器会把元素外观重新绘制出来。常见的触发属性： color，border-style、background-position 等
 
 重绘不一定会导致重排，但是重排一定会导致重绘。
 
@@ -115,11 +115,11 @@ div.style.top = curTop + 1 + 'px';
 
 ## 盒子模型及box-sizing
 
-每一个元素在浏览器中都可以理解成一个盒子，它包含对应的四个属性值：宽高、boder边框、padding 内边距、外边距 margin
+每一个元素在浏览器中都可以理解成一个盒子，它包含对应的四个属性值：宽高、boder 边框、padding 内边距、外边距 margin
 
-分为了W3C盒子模型(标准盒模型)和IE盒子模型(怪异盒模型)
+分为了 W3C 盒子模型(标准盒模型)和 IE 盒子模型(怪异盒模型)
 
-标准盒子模型的内容空间的宽度是由width属性设置的，例如宽度 = width + border + 内边距的值，也就是说 width 只是里面的内容的宽度，实际大小会加上 border + padding的值。
+标准盒子模型的内容空间的宽度是由 width 属性设置的，例如宽度 = width + border + 内边距的值，也就是说 width 只是里面的内容的宽度，实际大小会加上 border + padding的值。
 
 - 盒子总宽度 = width + padding + border + margin;
 - 盒子总高度 = height + padding + border + margin
@@ -145,31 +145,28 @@ div.style.top = curTop + 1 + 'px';
 三个参数分别对应的是 flex-grow, flex-shrink 和 flex-basis，默认值为0 1 auto。
 
 - 1.flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
-
 - 2.flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
-
 - 3.flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。
-
 ## BFC
 
 `BFC`（Block Formatting Context），即块级格式化上下文，它是页面中的一块渲染区域，容器页面里的子元素不会影响到外部的元素，并且有一套属于自己的渲染规则：
 
 - 例如盒子的排列会在垂直方向上一个个排列
-- 相邻盒子间的margin会发生重叠
+- 相邻盒子间的 margin 会发生重叠
 
 触发条件：
 
 - 根元素，即 html
 - 浮动元素：float 为 left right
-- position 为 absolute 或fixed
-- overflow 不是visible的
+- position 为 absolute 或 fixed
+- overflow 不是 visible 的
 
 （创建BFC的方式：根元素、浮动元素和绝对定位元素，非块级盒子的块级容器，`overflow`
  值不为 `visiable`的块级盒子）
 
 应用场景：
 
-- 防止margin塌陷，例如两个p 取大的值，这个时候可以在外层包一层 div
+- 防止 margin 塌陷，例如两个 p 取大的值，这个时候可以在外层包一层 div
 - 清除浮动，例如在子元素浮动的情况，父元素没有被撑开，BFC 在计算高度时浮动元素也会计算的，给父元素加上 overflow hidden
 - 自适应多栏布局，例如使用 float 布局两栏布局，左侧 float left，左边依然会与包含块的左边相接触，这个时候可以给外边距加`verflow: hidden;`
 
@@ -216,18 +213,18 @@ div.style.top = curTop + 1 + 'px';
 - 使用 defer 和 async 后JavaScript 脚本下载在新的线程中进行，不会阻塞 HTML 解析。
 - 不同点是执行：
   - async 执行时机：下载完后，立即执行
-  - defer 下载完后，在dom解析完之后、触发DOMContentLoaded之前执行
+  - defer 下载完后，在 dom 解析完之后、触发 DOMContentLoaded 方法之前执行
 
 ## link 和 @import 的区别
 
-- 两种都是加载 css 的方式，link 是一个html 标签，但import是css 提供的
-- link会跟页面加载时同时加载，import 会等页面加载完再加载
+- 两种都是加载 css 的方式，link 是一个html 标签，但 import 是css 提供的
+- link 会跟页面加载时同时加载，import 会等页面加载完再加载
 - link 的权重会高于 import
 
 ## 清除浮动的方法
 
-- 添加一个类名为clear的节点，设置clear both
-- 给父元素添加样式 overflow:hidden 触发bfc
+- 添加一个类名为 clear 的节点，设置 clear both
+- 给父元素添加样式 overflow:hidden 触发 bfc
 - 给父元素添加伪类 :after 和 zoom （推荐）
 
 ## DOMContentLoaded 和 load 区别
@@ -327,7 +324,7 @@ IIFE（立即调用函数表达式）是一个在定义时就会立即执行的 
 
 ## use strict 模式
 
- use strict现在用得不是特别多，其实根据字面意思也能知道它其实是要去我们用严格的行为模式来写代码执行代码。"use strict" 是在ECMAScript5 中新增的一个声明，但它不是一条语句，是一个字面量表达式。可以在脚本或函数的头部添加 use strict 来声明。
+ use strict 现在用得不是特别多，其实根据字面意思也能知道它其实是要去我们用严格的行为模式来写代码执行代码。"use strict" 是在ECMAScript5 中新增的一个声明，但它不是一条语句，是一个字面量表达式。可以在脚本或函数的头部添加 use strict 来声明。
 
 例子：
 
@@ -338,14 +335,14 @@ IIFE（立即调用函数表达式）是一个在定义时就会立即执行的 
 作用：
 
 - 消除代码运行的一些不安全、不严谨的地方，以及减少怪异行为，保证运行的安全
-- 为下一代 js 做准备，为什么这么说呢，严格模式新增了一些保留关键字 像 interface package
+- 为下一代 js 做准备，为什么这么说呢，严格模式新增了一些保留关键字像 interface package
 
 ## arguments及用法
 
 - arguments 是一个类数组对象，代表传给一个 function 的参数列表。相关问题：[为什么 JS 的 arguments 没有被设计成数组](https://stackoverflow.com/questions/3242485/why-isnt-a-functions-arguments-object-an-array-in-javascript)
 - 伪数组：
-  - 没有数组Array.prototype的属性值，类型是Object，而数组类型是Array
-  - 数组是基于索引的实现，length会自动更新，而对象是键值对；
+  - 没有数组 Array.prototype 的属性值，类型是 Object，而数组类型是 Array
+  - 数组是基于索引的实现，length 会自动更新，而对象是键值对；
   - 使用对象可以创建伪数组，伪数组可以正常使用数组的大部分方法；
 
 
@@ -359,13 +356,13 @@ IIFE（立即调用函数表达式）是一个在定义时就会立即执行的 
 
 每个js复杂数据类型（Object Function Array）等都会自带一个 prototype 对象，这个对象就是我们说的原型。
 
-_proto_ 访问器属性，它指向原型对象，所以不管你是Function 还是 Object 都会有__proto__属性，这些最终都指向了Object.protoype原型对象，它也是对象，它也有 _proto_ ，它的原型对象指向了 null。
+_proto_ 访问器属性，它指向原型对象，所以不管你是 Function 还是 Object 都会有__proto__属性，这些最终都指向了Object.protoype原型对象，它也是对象，它也有 _proto_ ，它的原型对象指向了 null。
 
-在JavaScript中原型是一个prototype对象，用于表示类型之间的关系。
+在 JavaScript 中原型是一个 prototype 对象，用于表示类型之间的关系。
 
 原型对象的用途是为每个实例对象存储共享的方法和属性，它仅仅是一个普通对象而已。并且所有的实例是共享同一个原型对象，因此有别于实例方法或属性，原型对象仅有一份。
 
-JavaScript万物都是对象，对象和对象之间也有关系，并不是孤立存在的。对象之间的继承关系，在JavaScript中是通过prototype对象指向父类对象，直到指向Object对象为止，这样就形成了一个原型指向的链条，专业术语称之为原型链。
+JavaScript 万物都是对象，对象和对象之间也有关系，并不是孤立存在的。对象之间的继承关系，在 JavaScript 中是通过 prototype 对象指向父类对象，直到指向 Object 对象为止，这样就形成了一个原型指向的链条，专业术语称之为原型链。
 
 ```js
 function Fn() {} // Fn为构造函数
@@ -373,13 +370,13 @@ function Fn() {} // Fn为构造函数
 var f1 = new Fn(); //f1是Fn构造函数创建出来的对象
 ```
 
-构造函数的prototype属性值就是对象原型。（Fn.prototype就是对象的原型）
+构造函数的 prototype 属性值就是对象原型。（Fn.prototype就是对象的原型）
 
-构造函数的prototype属性值的类型就是对象 typeof Fn.prototype===object.
+构造函数的 prototype 属性值的类型就是对象 typeof Fn.prototype===object.
 
-对象原型中的constructor属性指向构造函数 （Fn.prototype.constructor===Fn)
+对象原型中的 constructor 属性指向构造函数 （Fn.prototype.constructor===Fn)
 
-对象的__proto__属性值就是对象的原型。（f1.__proto__就是对象原型）
+对象的 __proto__ 属性值就是对象的原型。（f1.__proto__就是对象原型）
 
 ## 函数 curry 化
 
@@ -421,7 +418,7 @@ console.log(addCurry(1)(2, 3));// 6
 
 ## 继承的实现
 
-- ES6 中引入了 class 关键字，class 可以通过 extends 关键字实现继承,class 关键字只是原型的语法糖，JavaScript 继承仍然是基于原型实现的。
+- ES6 中引入了 class 关键字，class 可以通过 extends 关键字实现继承, class 关键字只是原型的语法糖，JavaScript 继承仍然是基于原型实现的。
 - 原型链继承
 
 ```js
@@ -517,13 +514,12 @@ mySet.size // 1
 - Map 有 size 属性，可以获取长度，object 只能自己计算
 - `Map`是 [可迭代的](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Iteration_protocols)的，所以可以直接被迭代，object 不可直接迭代，但可以使用 keys 或 entries方法
 - 场景：
-  - 针对于存在大量增删操作键值对情况的场景，使用Map更合适
-  - Map在存储大量数据的场景下表现更好，尤其是在key为未知状态，并且所有key和所有value分别为相同类型的情况下。
-  - 可迭代的情况下
+  - 针对于存在大量增删操作键值对情况的场景，使用 Map 更合适
+  - Map 在存储大量数据的场景下表现更好，尤其是在 key 为未知状态，并且所有 key 和所有 value 分别为相同类型可迭代的情况下
 
 ## consturctor
 
-- constructor属性不影响任何JavaScript的内部属性。当我们 instanceof 检测对象的原型链，通常你是无法修改的，主要是为了把实例的构造器的原型对象暴露出来，比如你写了一个构造函数，别人使用的时候其实用的是实例化的对象，如果想扩展一下对象的话，就可以用实例 constructor.prototype 去修改或扩展原型对象
+- constructor 属性不影响任何 JavaScript 的内部属性。当我们 instanceof 检测对象的原型链，通常你是无法修改的，主要是为了把实例的构造器的原型对象暴露出来，比如你写了一个构造函数，别人使用的时候其实用的是实例化的对象，如果想扩展一下对象的话，就可以用实例 constructor.prototype 去修改或扩展原型对象
 
 ## 常见的类型检测
 
@@ -533,7 +529,7 @@ mySet.size // 1
 
 ## ****Object.prototype.toString.call() 原理****
 
-`toString()`方法转换为字符串的结果。[object, type] type 其实拿到的是 Symbol.toStringTag，是一个内置 symbol，它通常作为对象的属性键使用。其实`toString`是对象上的方法，每一个对象上都有这个方法，那就意味着`数字`、`字符串`和`布尔值`这些基本数据类型不能使用`toString()`方法，但上例中的基本数据类型却是可以使用，这要归功于javascript中的包装类，即`Number`、`String`和`Boolean`。原始值不能有属性和方法，当要使用`toString()`方法时，会先将原始值包装成对象再使用。
+`toString()`方法转换为字符串的结果。[object, type] type 其实拿到的是 Symbol.toStringTag，是一个内置 symbol，它通常作为对象的属性键使用。其实 `toString` 是对象上的方法，每一个对象上都有这个方法，那就意味着`数字`、`字符串`和`布尔值`这些基本数据类型不能使用 `toString()`方法，但上例中的基本数据类型却是可以使用，这要归功于javascript中的包装类，即 `Number`、`String` 和 `Boolean`。原始值不能有属性和方法，当要使用`toString()`方法时，会先将原始值包装成对象再使用。
 
 所有类都继承自`Object`，按理来说输出结果应该都类似于`'[object Object]'`这样。不一样的原因是所有类在继承`Object`的时候，改写了`toString()`方法。所以当我们想要判断数据类型时，必须使用`Object`上的`toString()`方法。
 
@@ -542,7 +538,7 @@ mySet.size // 1
 - `Object.prototype.toString.call(arr))  //"[object Array]"`
 - `constructor` 是否是 Array，
 - `instanceof`  `instanceof`运算符用来检测 `constructor.prototype`是否存在于参数 `object` 的原型链上。但 `instanceof` 也不是特别可靠，例如多个窗口下不同frame下这个`instanceof` 的指向不同
-- `instanceof`本质上是判断右边的构造函数的`prototype`对象是否存在于左边的原型链上，是的话返回true。所以不论数组、对象还是函数，`... instanceof Object`
+- `instanceof`本质上是判断右边的构造函数的`prototype`对象是否存在于左边的原型链上，是的话返回 true。所以不论数组、对象还是函数，`... instanceof Object`
 都返回`true`
 - isArray 方法
 
@@ -573,15 +569,13 @@ console.log(greeter) // 这里会打印 world 替换成 let 后能解决这个�
 
 ```
 
-let 是块级作用域
-
-块是由 {} 界定的代码块，大括号中有一个块。大括号内的任何内容都包含在一个块级作用域中，因为变量仅在其块级作用域内存在。
+let 是块级作用域，块是由 {} 界定的代码块，大括号中有一个块。大括号内的任何内容都包含在一个块级作用域中，因为变量仅在其块级作用域内存在。
 
 区别：
 
 - var 申明的变量可以修改，也可以重复申明。
 - let 申明的变量可以修改，但无法被重复申明
-- 块级作用域，{} 里面let 定义的变量，外部访问不到，类似于for循环里使用
+- 块级作用域，{} 里面 let 定义的变量，外部访问不到，类似于 for 循环里使用
 - 变量提升也有一个区别
   - 用`var`声明的变量会被提升到其作用域的顶部，并使用 undefined 值对其进行初始化。
   - 用`let`声明的变量有暂时性死区，没有变量提升，不会对值进行初始化。访问的时候是直接 Reference Error
@@ -595,15 +589,15 @@ let 是块级作用域
 
 ## 函数的防抖和节流
 
-两个都是优化高频重复操作代码的一个方式，例如我们在使用浏览器的 resize scroll等事件时，当用户短时间内触发这些事件时，绑定的回调函数会不断地被调用，就有两种优化策略 throttle 节流 和 debounce 防抖
+两个都是优化高频重复操作代码的一个方式，例如我们在使用浏览器的 resize scroll 等事件时，当用户短时间内触发这些事件时，绑定的回调函数会不断地被调用，就有两种优化策略 throttle 节流 和 debounce 防抖
 
 - throttle n 秒内只运行一次，在 n 内重复触发，只有一次生效
 - debounce n 秒后去执行该事件，若 n 秒内被重复触发，则重新计时
 
 用发车的一个例子来描述这两种情况，如果每个乘客上车发一次车比较耗时：
 
- - 节流：第一个乘客上车后开始计时，10分钟准时发一次
- - 防抖：第一个乘客上车，攒10分钟后开始发车，10分钟内有人上车再开始重新计时
+ - 节流：第一个乘客上车后开始计时，10 分钟准时发一次
+ - 防抖：第一个乘客上车，攒 10 分钟后开始发车，10 分钟内有人上车再开始重新计时
 
 ```js
 // throttle 节流
@@ -636,12 +630,12 @@ function debounce(fn, delay) {
 
 - 原理：window.requestAnimationFrame() 方法告诉浏览器您希望执行动画并请求浏览器在下一次重绘之前调用指定的函数来更新动画
 - 最大的优势是由系统屏幕刷新率来决定回调函数的执行时机。这样就不会引起丢帧现象，也不会导致动画出现卡顿的问题。
-- 使用setTimeout实现的动画，当页面被隐藏（隐藏的\<iframe>）或最小化（后台标签页）时，setTimeout仍然在后台执行动画任务而且还浪费 CPU 资源和电池寿命。
+- 使用 setTimeout 实现的动画，当页面被隐藏（隐藏的\<iframe>）或最小化（后台标签页）时，setTimeout 仍然在后台执行动画任务而且还浪费 CPU 资源和电池寿命。
 - 函数节流：在高频率事件(resize,scroll等)中，为了防止在一个刷新间隔内发生多次函数执行，使用requestAnimationFrame可保证每个刷新间隔内，函数只被执行一次
 
 ## requestIdleCallback
 
-window.requestIdleCallback()方法使用插入一个函数，这个函数将在浏览器空闲时期被调用。这使开发者能够在主事件循环上执行后台和低优先级工作，而不会影响延迟关键事件，如动画和输入响应。函数一般会按先进先调用的顺序执行，然而，如果回调函数指定了执行超时时间`timeout`，则有可能为了在超时前执行函数而打乱执行顺序。
+window.requestIdleCallback() 方法使用插入一个函数，这个函数将在浏览器空闲时期被调用。这使开发者能够在主事件循环上执行后台和低优先级工作，而不会影响延迟关键事件，如动画和输入响应。函数一般会按先进先调用的顺序执行，然而，如果回调函数指定了执行超时时间`timeout`，则有可能为了在超时前执行函数而打乱执行顺序。
 
 ## 浅拷贝和深拷贝
 
@@ -675,10 +669,10 @@ function deepclone (obj) {
 
 ## new 具体做了什么，手动实现一个 new
 
-使用 new 来新建一个构造函数或类得到对应实例，是非常普遍的操作了，ES5中使用function 构造函数，到 ES6使用 class 都可以使用 new 来新建实例。
+使用 new 来新建一个构造函数或类得到对应实例，是非常普遍的操作了，ES5 中使用 function 构造函数，到 ES6 使用 class 都可以使用 new 来新建实例。
 
 - new一个构造函数，得到的实例继承了构造器的构造属性(this.name这些)以及原型上的属性
-- 创建一个空的对象，将它的引用赋给 this，继承函数的原型，即设置该对象的__proto__，该函数的原型对象prototype上
+- 创建一个空的对象，将它的引用赋给 this，继承函数的原型，即设置该对象的 __proto__，该函数的原型对象 prototype 上
 - 通过this将属性和方法添加到这个对象上，
 - 最后返回 this 指向的新对象
 
@@ -708,13 +702,13 @@ let newMethod = function (Parent, ...rest) {
 
 ## 作用域及作用域链
 
-js的作用域分为：全局作用域、块级作用域、函数作用域。
+js 的作用域分为：全局作用域、块级作用域、函数作用域。
 
 全局作用域是指函数或者 {} 外面的执行环境，叫全局作用域，根据 js 执行环境不同，全局作用域不同。
 
 在函数内部定义的变量，就是局部作用域。在函数作用域内，对外是封闭的，从外层作用域无法直接访问内部作用域，但是函数内部作用域可以访问外部的作用域。
 
-作用域是分层的，子作用域可以访问父作用域，不能从父作用域引用子作用域中的变量；如果一个 变量 或者其他表达式不在 “当前的作用域”，那么js机制会继续沿着作用域链向上查找直到全局作用域（Node中的global或浏览器中的window），如果找不到则表示变量不可用
+作用域是分层的，子作用域可以访问父作用域，不能从父作用域引用子作用域中的变量；如果一个变量或者其他表达式不在 “当前的作用域”，那么js机制会继续沿着作用域链向上查找直到全局作用域（ Node中 的 global 或浏览器中的 window），如果找不到则表示变量不可用
 
 ## 变量提升
 
@@ -747,7 +741,7 @@ js的作用域分为：全局作用域、块级作用域、函数作用域。
 
 为什么会存在这样的两个方法，主要是 js 存在定义时上下文、执行上下文以及上下文 context 可以改变的。换句话说其实上为了改变 this 的指向。
 
-当一个对象没有某个方法的时候，但是其它对象有，我们就可以借助call 或 apply 来实现用它对象上方法的调用。
+当一个对象没有某个方法的时候，但是其它对象有，我们就可以借助 call 或 apply 来实现用它对象上方法的调用。
 
 ```js
 function Friut {}
@@ -773,7 +767,7 @@ apple.say.call(banana) // color is: yellow
 bind，call 和 apply 的区别：
 
 - 目的是一样的，只是接受参数形式不一样，call 需要把参数按顺序传递进去，但 apply 则是需要使用数组
-- bind()方法也是用来改变 this 指向的，但不太一样的是返回的是对应的函数，而不是立即执行。bind()方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，绑定函数会以创建它时传入bind()方法的第一个参数作为this，传入bind()方法的第二个以及以后的参数加上绑定函数运行时本身的参数按照顺序作为原函数的参数来调用原函数。
+- bind()方法也是用来改变 this 指向的，但不太一样的是返回的是对应的函数，而不是立即执行。bind()方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，绑定函数会以创建它时传入 bind()方法的第一个参数作为 this，传入 bind()方法的第二个以及以后的参数加上绑定函数运行时本身的参数按照顺序作为原函数的参数来调用原函数。
 
 手动实现 call apply bind  [参考链接](https://juejin.cn/post/6859642206601347080)
 
@@ -867,7 +861,7 @@ obj.a();    // 'id2'
 obj.b();    // 'id1'
 ```
     
-- `.call() .apply().bind()`方法可以用来动态修改函数执行时`this`的指向。但在箭头函数里不起作用
+- `.call() .apply().bind()`方法可以用来动态修改函数执行时 `this` 的指向。但在箭头函数里不起作用
 - 箭头函数无法作为构造函数，原因是没有原型 prototype，无法链接到实例的原型链上，没有 super，箭头函数不能用作Generator函数，不能使用`yeild`关键字
 
 ## eventloop 事件循环
@@ -914,8 +908,7 @@ Mutation Observer API 用来监视 DOM 变动。DOM 的任何变动，比如节�
 
 可以理解为 DOM 发生变动就会触发 Mutation Observer 事件。但是，它与事件有一个本质不同：事件是同步触发，也就是说，DOM 的变动立刻会触发相应的事件；Mutation Observer 则是异步触发，DOM 的变动并不会马上触发，而是要等到当前所有 DOM 操作都结束才触发。
 
-通过传入一个函数来创建一个 MutationObserver
- 实例，每当有变化发生，这个函数将会被调用。函数的第一个参数是变动数组，每个变化都会提供它的类型和已经发生的变化的信息
+通过传入一个函数来创建一个 MutationObserver 实例，每当有变化发生，这个函数将会被调用。函数的第一个参数是变动数组，每个变化都会提供它的类型和已经发生的变化的信息
 
 这个被创建的对象有三个方法：
 
@@ -932,26 +925,24 @@ Mutation Observer API 用来监视 DOM 变动。DOM 的任何变动，比如节�
 常见的跨域方式
 
 - jsonp
-的原理就是利用`<script>`标签没有跨域限制，通过`<script>`标签src属性，发送带有callback参数的GET请求，服务端将接口返回数据拼凑到callback函数中，返回给浏览器，浏览器解析执行。
-- 跨域资源共享（CORS）（Cross-origin resource sharing）。 它允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。
+的原理就是利用`<script>`标签没有跨域限制，通过`<script>`标签src属性，发送带有 callback 参数的 GET 请求，服务端将接口返回数据拼凑到callback 函数中，返回给浏览器，浏览器解析执行。
+- 跨域资源共享（CORS）（Cross-origin resource sharing）。 它允许浏览器向跨源服务器，发出 XMLHttpRequest 请求，从而克服了 AJAX 只能同源使用的限制。
     
 浏览器将CORS跨域请求分为简单请求和非简单请求。
   - 请求方式 head get post
   - header 头 content-type限于 application/x-www-form-urlencoded、multipart/form-data、text/plain
 
-简单请求里会新增加一个Origin字段。需要传递你接口的源的信息，后端判断是否同意这次请求，对应的相应头里也会返回Access-Control开头的字段，Access-Control-Allow-Origin。Allow-Credentials，默认是不带 cookie，如果需要带设置成 true
+简单请求里会新增加一个 Origin 字段。需要传递你接口的源的信息，后端判断是否同意这次请求，对应的相应头里也会返回 Access-Control 开头的字段，Access-Control-Allow-Origin。Allow-Credentials，默认是不带 cookie，如果需要带设置成 true
 
-不是简单请求，会多发一个预请求，预检"请求用的请求方法是 OPTIONS，表示这个请求是用来询问的。请求头信息里面，关键字段是Origin，表示请求来自哪个源。除了Origin字段，"预检"请求的头信息包括两个特殊字段，
+不是简单请求，会多发一个预请求，预检"请求用的请求方法是 OPTIONS，表示这个请求是用来询问的。请求头信息里面，关键字段是 Origin，表示请求来自哪个源。除了 Origin 字段，"预检"请求的头信息包括两个特殊字段：
 
  - Access-Control-Request-Method
-
  - Access-Control-Request-Headers
-
 - Nginx代理跨域和nodejs中间件跨域原理都相似
 
 ## 事件冒泡捕获
 
-两种实现，例如当中一个div元素当中有一个p子元素，如果两个元素都有一个click的处理函数，那么我们怎么才能知道哪一个函数会首先被触发呢？微软提出了名为事件冒泡(event bubbling)的事件流。事件冒泡可以形象地比喻为把一颗石头投入水中，泡泡会一直从水底冒出水面。也就是说，事件会从最内层的元素开始发生，一直向上传播，直到document对象。
+两种实现，例如当中一个 div 元素当中有一个 p 子元素，如果两个元素都有一个 click 的处理函数，那么我们怎么才能知道哪一个函数会首先被触发呢？微软提出了名为事件冒泡 (event bubbling) 的事件流。事件冒泡可以形象地比喻为把一颗石头投入水中，泡泡会一直从水底冒出水面。也就是说，事件会从最内层的元素开始发生，一直向上传播，直到 document 对象。
 
 ## 什么是内存泄露，怎么监控内存泄露问题
 
@@ -1004,7 +995,7 @@ function add(num1, num2) {
 
 ## gc 回收机制
 
-`JavaScript`垃圾回收机制的原理说白了也就是定期找出那些不再用到的内存（变量），然后释放其内存。这里主要讲一下 v8 的gc回收算法，主要是两种：
+`JavaScript`垃圾回收机制的原理说白了也就是定期找出那些不再用到的内存（变量），然后释放其内存。这里主要讲一下 v8 的 gc 回收算法，主要是两种：
 
 - 标记清除算法
 
@@ -1162,8 +1153,8 @@ function identity<T>(value: T): T {
 
 ## 什么是抗变、双变、协变和逆变
 
-Covariant协变，ts对象兼容性是协变，父类<=子类是可以的，子类 <= 父类错误。
-Contravariant逆变，禁用`strictFunctionTypes`编译，函数参数类型都是逆变的，父类 <= 子类，是错误。子类 <= 父类，是可以的。
+Covariant 协变，ts对象兼容性是协变，父类<=子类是可以的，子类 <= 父类错误。
+Contravariant 逆变，禁用`strictFunctionTypes`编译，函数参数类型都是逆变的，父类 <= 子类，是错误。子类 <= 父类，是可以的。
 Bivariant 双向协变，函数参数的类型默认是双向协变的。父类 <= 子类，是可以的。子类 <= 父类，是可以的。
 
 ## type 和 interface 的区别
@@ -1192,9 +1183,9 @@ implements一般是实现接口。extends 是继承类。
 
 下面罗列它俩的不同点
 
-1. extends可以实现 **接口与接口**，**接口与类** 的继承，而implements不能实现接口与接口，接口与类的实现
-2. implements可以实现 **类继承接口**，而extends不能实现类继承接口
-3. 使用implements时，需要定义或实现所有属性和方法，而extends只需要重新定义或者实现方法即可，对于属性来说，是可以直接继承，无需单独定义
+1. extends 可以实现 **接口与接口**，**接口与类** 的继承，而 implements 不能实现接口与接口，接口与类的实现
+2. implements 可以实现 **类继承接口**，而 extends 不能实现类继承接口
+3. 使用 implements 时，需要定义或实现所有属性和方法，而 extends 只需要重新定义或者实现方法即可，对于属性来说，是可以直接继承，无需单独定义
 
 `implements`实现，一个新的类，从父类或者接口实现所有的属性和方法，同时可以重写属性和方法，包含一些新的功能
 
@@ -1234,8 +1225,8 @@ result.split(' ');
 
 - application/json 消息主体是序列化后的 JSON 字符串
 - application/x-www-form-urlencoded  表单默认提交方式，key1=val1&key2=val2 的方式进行编码，key 和 val 都进行了 URL 转码。
-- multipart/form-data  Http协议最开始是不支持文件上传的，增了一个Content-Type类型用于发送文件，这就是我们今天熟知的multipart/form-data。multipart是“多部分”的意思，意味着body中的数据允许有多部分组成，可以同时传递文本数据和二进制数据。
-- text/plain 纯文本格式，body的内容就只是文本
+- multipart/form-data  Http协议最开始是不支持文件上传的，增了一个Content-Type类型用于发送文件，这就是我们今天熟知的 multipart/form-data。multipart 是“多部分”的意思，意味着 body 中的数据允许有多部分组成，可以同时传递文本数据和二进制数据。
+- text/plain 纯文本格式，body 的内容就只是文本
 
 ## http 和 https 的区别，https 的加密原理
 
@@ -1286,7 +1277,6 @@ TCP是一种面向连接的单播协议，在发送数据前，通信双方必�
 
 - 核心的区别是永久性重定向和临时重定向，301表示这个资源以及被永久删除了，而 302 表示旧的资源还在，目前只是临时从A跳转到了新的 B 地址。
 - 两个都是做页面重定向，1是告诉浏览器，访问当前页面的时候需要跳转到新的页面上，同时告诉浏览器的搜索引擎如何正确处理页面收录、索引等。301 页面会删除失效的 url 收录、索引，并替换为新的 url。而302会抓取新的内容但是保留旧的网址。
-- 
 
 ## 浏览器资源加载的优先级
 
@@ -1301,7 +1291,7 @@ TCP是一种面向连接的单播协议，在发送数据前，通信双方必�
 
 ## websocket 协议
 
-是一种网络传输协议，位于OSI模型的应用层。可在单个 TCP 连接上进行全双工通信，能更好的节省服务器资源和带宽并达到实时通迅，客户端和服务器只需要完成一次握手，两者之间就可以创建持久性的连接，并进行双向数据传输。使用场景如弹幕、协同编辑等
+是一种网络传输协议，位于 OSI 模型的应用层。可在单个 TCP 连接上进行全双工通信，能更好的节省服务器资源和带宽并达到实时通迅，客户端和服务器只需要完成一次握手，两者之间就可以创建持久性的连接，并进行双向数据传输。使用场景如弹幕、协同编辑等
 
 ## XSS攻击和CSRF攻击
 
@@ -1320,12 +1310,12 @@ xss：跨域脚本攻击，原来就叫 CSS，主要是把恶意的脚本代码H
 
 CSRF：跨站请求伪造。原理或本质就是让用户在已登录的站点上执行非本意的操作，
 
-攻击者首先盗用了你的身份，然后以你的名义进行某些非法操作，web中用户身份认证验证的一个漏洞：简单的身份验证仅仅能保证请求发自某个用户的浏览器，却不能保证请求本身是用户自愿发出的。
+攻击者首先盗用了你的身份，然后以你的名义进行某些非法操作，web 中用户身份认证验证的一个漏洞：简单的身份验证仅仅能保证请求发自某个用户的浏览器，却不能保证请求本身是用户自愿发出的。
 
 两个必要条件：
 
-- 登录受信任站点A，并在本地生成Cookie。
-- 在不登出A的情况下，訪问危急站点B。
+- 登录受信任站点 A，并在本地生成 Cookie。
+- 在不登出A的情况下，訪问危急站点 B。
 
 常见的例如：img src 属性能够以get方式发送请求第三方资源，浏览器会带上你的cookie
 
@@ -1334,18 +1324,18 @@ CSRF：跨站请求伪造。原理或本质就是让用户在已登录的站点�
 
 ## Session 和 Cookie 的区别
 
-- Cookie是客户端保存用户信息的一种机制，服务端下发，客户端下次请求时携带
-- Session代表服务器和客户端一次会话的过程，
-- cookie目的可以跟踪会话，也可以保存用户喜好或者保存用户名密码，session用来跟踪会话
-- 有效期不同，Cookie可设置为长时间保持，比如默认登录功能功能，Session一般有效时间较短，客户端关闭或者Session超时都会失效
+- Cookie 是客户端保存用户信息的一种机制，服务端下发，客户端下次请求时携带
+- Session 代表服务器和客户端一次会话的过程，
+- cookie 目的可以跟踪会话，也可以保存用户喜好或者保存用户名密码，session 用来跟踪会话
+- 有效期不同，Cookie 可设置为长时间保持，比如默认登录功能功能，Session一般有效时间较短，客户端关闭或者 Session 超时都会失效
 
 ## http1 和 http2 的区别
 
-- HTTP/1.1，使用基于文本格式，HTTP/2使用二进制格式，只有0和1的组合，协议解析实现方便且健壮
-- 从HTTP/1.0到HTTP/2，都是利用TCP作为底层协议进行通信的。
+- HTTP/1.1，使用基于文本格式，HTTP/2使用二进制格式，只有 0 和 1 的组合，协议解析实现方便且健壮
+- 从HTTP/1.0 到HTTP/2，都是利用TCP作为底层协议进行通信的。
 - HTTP/1.1，引进了长连接(keep-alive)，减少了建立和关闭连接的消耗和延迟。
 - HTTP/2，引入了多路复用：连接共享，提高了连接的利用率，降低延迟。
-- HTTP/1.1使用文本的形式传输消息头，HTTP/1.1不会压缩请求头字段和响应头字段，从而产生不必要的网络流量。HTTP/2主要基于SPDY协议，通过对HTTP头字段进行[首部压缩](https://info.support.huawei.com/info-finder/encyclopedia/zh/HTTP--2.html#section26294157125)
+- HTTP/1.1 使用文本的形式传输消息头，HTTP/1.1 不会压缩请求头字段和响应头字段，从而产生不必要的网络流量。HTTP/2 主要基于 SPDY 协议，通过对HTTP 头字段进行[首部压缩](https://info.support.huawei.com/info-finder/encyclopedia/zh/HTTP--2.html#section26294157125)
 、对数据传输采用[多路复用](https://info.support.huawei.com/info-finder/encyclopedia/zh/HTTP--2.html#section14159830131219)和增加[服务器推送](https://info.support.huawei.com/info-finder/encyclopedia/zh/HTTP--2.html#section106861538121216)等举措，来减少网络延迟，提高客户端的页面加载速度。
 
 
@@ -1373,10 +1363,10 @@ mounted
 
 ## React virtual dom
 
-virtual DOM 是一种编程理念（数据驱动视图），将ui虚拟的保持到内存中，并且通过某些库渲染成真实的dom，这个过程又叫做协调。
+virtual DOM 是一种编程理念（数据驱动视图），将 ui 虚拟 dom 保持到内存中，并且通过某些库渲染成真实的 dom，这个过程又叫做协调。
 
-1. 我们将render产生的Virtual DOM简称 ‘Vdom’
-2. 通常调用setState方法触发Vdom更新
+1. 我们将 render 产生的 Virtual DOM简称 ‘Vdom’
+2. 通常调用 setState 方法触发 Vdom 更新
 3. Virtual DOM Diff的层次
   1. 层级级别的比较
   2. 元素级别的比较
@@ -1405,8 +1395,8 @@ vue 组件响应式思想 采用代理监听数据，我在某个组件里修改
 ## computed 和 Watch区别
 
 - 相同点：他们两者都是观察页面数据变化的。
-- 不同点：computed只有当依赖的数据变化时才会计算, 当数据没有变化时, 它会读取缓存数据。 watch每次都需要执行函数。
-- watch更适用于数据变化时的异步操作。
+- 不同点：computed 只有当依赖的数据变化时才会计算, 当数据没有变化时, 它会读取缓存数据。 watch 每次都需要执行函数。
+- watch 更适用于数据变化时的异步操作。
 - watch 支持异步代码而 computed 不支持。
 
 ## Vue 的 Vdom
@@ -1473,7 +1463,9 @@ v2 核心：Object.defineProperty()对属性的读取、修改进行拦截（数
 
 # React
 
-react hook为什么得放在最上面，因为 Hook 的每一次渲染都按照同样的顺序被调用，主要是为保证在多次的 useState 和 useEffect 调用之间保持 Hook 状态的正确。详见 https://overreacted.io/zh-hans/why-do-hooks-rely-on-call-order/
+## react hook 为什么得放在最上面
+
+因为 Hook 的每一次渲染都按照同样的顺序被调用，主要是为保证在多次的 useState 和 useEffect 调用之间保持 Hook 状态的正确。详见 https://overreacted.io/zh-hans/why-do-hooks-rely-on-call-order/
 
 ## React fiber 原理
 
@@ -1492,14 +1484,14 @@ React 在 V16 之前会面临的主要性能问题是：当组件树很庞大时
 
 ## vue v3 Proxy：
 
-用于定义基本操作的自定义行为，说白了`Proxy`用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等），用到了Reflect也就是反射对象
+用于定义基本操作的自定义行为，说白了`Proxy`用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等），用到了Reflect 也就是反射对象
 
 对比：
 
 - Proxy 比 defineProperty 能观察的类型更多一点
-- 对象上定义新属性时，Proxy可以监听到，Object.defineProperty 监听不到
-- 数组新增删除修改时，Proxy可以监听到，Object.defineProperty 监听不到
-- Proxy有多达13种拦截方法,不限于apply、ownKeys、deleteProperty、has等等是Object.defineProperty不具备的
+- 对象上定义新属性时，Proxy 可以监听到，Object.defineProperty 监听不到
+- 数组新增删除修改时，Proxy 可以监听到，Object.defineProperty 监听不到
+- Proxy 有多达13种拦截方法,不限于apply、ownKeys、deleteProperty、has 等等是 Object.defineProperty 不具备的
 - Proxy 有一定的兼容问题，proxy 不兼容ie，也没有 polyfill
 
 
@@ -1513,9 +1505,9 @@ React 在 V16 之前会面临的主要性能问题是：当组件树很庞大时
 ## react 的 shouldcomponentupdate
 
 - `shouldComponentUpdate`方法接收两个传参：`(nextProps, nextState)`，分别表示变化后的 `props`（组件的参数） 和 `state`（组件的状态）；
-- 这个方法一般是在子组件里来设置使用，例如父组件状态更新了，但子组件其实props没变化，但也会因为父组件的更新而跟着更新
+- 这个方法一般是在子组件里来设置使用，例如父组件状态更新了，但子组件其实 props 没变化，但也会因为父组件的更新而跟着更新
 - 组件的首次渲染或者调用 `forceUpdate()`方法时**不会**触发用 `shouldComponentUpdate`方法
-- pureComponent 相比于React.Component 内置了`shouldComponentUpdate` 方法，它会同时对 props 和 state 的变化值进行浅比较，如果没有变化则跳过重渲染。
+- pureComponent 相比于 React.Component 内置了`shouldComponentUpdate` 方法，它会同时对 props 和 state 的变化值进行浅比较，如果没有变化则跳过重渲染。
 
 ## React.memo、useMemo 和 useCallback
 
@@ -1534,14 +1526,12 @@ useMemo：
 - 代码可读性更强，原本同一块功能的代码逻辑被拆分在了不同的生命周期函数中，容易使开发者不利于维护和迭代，通过 React Hooks 可以将功能代码聚合，方便阅读维护
 - 不再需要去处理复杂的 this指向问题，绑定事件
 
-
-
 # 其它
 
 ## webpack loader plugin的区别
 
-- loader 处理文件转换，webpack 默认只支持 js json 两种格式的文件的加载处理，它是一个转换器，将A文件进行编译成B文件，比如：将A.less转换为A.css，单纯的文件转换过程。
-- plugins 能够被用于执行更广泛的任务比如打包优化、压缩、针对是loader结束后，webpack打包的整个过程，它并不直接操作文件，而是基于事件机制工作，会监听webpack打包过程中的某些节点，执行广泛的任务
+- loader 处理文件转换，webpack 默认只支持 js json 两种格式的文件的加载处理，它是一个转换器，将A文件进行编译成 B 文件，比如：将 A.less 转换为 A.css，单纯的文件转换过程。
+- plugins 能够被用于执行更广泛的任务比如打包优化、压缩、针对是 loader 结束后，webpack 打包的整个过程，它并不直接操作文件，而是基于事件机制工作，会监听 webpack 打包过程中的某些节点，执行广泛的任务
 
 ## tree shaking原理
 
@@ -1611,4 +1601,4 @@ Read Uncommitted（未提交读）一个事务能读取到其他事务修改过�
 ## 对称加密和非对称加密
 
 - 对称加密加密与解密使用的是同样的密钥，所以速度快，但由于需要将密钥在网络传输，所以安全性不高。
-- 而非对称加密使用一对秘钥，一个用来加密，一个用来解密，而且公钥是公开的，秘钥是自己保存的，不需要像对称加密那样在通信之前要先同步秘钥。非对称加密与，其安全性更好
+- 而非对称加密使用一对秘钥，一个用来加密，一个用来解密，而且公钥是公开的，秘钥是自己保存的，不需要像对称加密那样在通信之前要先同步秘钥。非对称加密与，其安全性更好。
