@@ -25,6 +25,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/atom.xml',
+        destination: '/rss.xml',
+        permanent: true,
+      },
+      {
+        source: '/rss',
+        destination: '/rss.xml',
+        permanent: true,
+      },
+      {
         source: '/2022/04/14/newsletter-321laixin/',
         destination: '/posts/newsletter-321laixin',
         permanent: true,

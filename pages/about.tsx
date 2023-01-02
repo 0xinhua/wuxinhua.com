@@ -33,7 +33,7 @@ export default function About () {
         <p>保持好奇心，热衷于在网上分享自己的知识、见解</p>
         <p>只要命运的齿轮沒有出差错，这个博客应该会一直更下去</p>
         <p>任何博客的问题、讨论交流、或者认识我都可以通过邮箱 <Link className="underline" href={`mailto:wuxinhua.cn@gmail.com`}>wuxinhua.cn@gmail.com</Link>联系到我</p>
-        <p>如果喜欢我写的东西也可以订阅博客的 <Link className="underline" target="_blank" href={`https://wuxinhua.com/atom.xml`}>rss</Link></p>
+        <p>如果喜欢我写的东西也可以订阅博客的 <Link className="underline" target="_blank" href={`https://wuxinhua.com/rss.xml`}>rss</Link></p>
         更多:
         <p><Link className="underline" href={`https://github.com/0xinhua`}>🐙 GitHub</Link></p>
         <p><Link className="underline" href={`https://web.okjike.com/u/BC942F46-A5E2-40A0-B419-5AB8B3A02BE1`}>🌎 日常朋友圈</Link></p>
