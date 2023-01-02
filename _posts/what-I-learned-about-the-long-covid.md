@@ -123,7 +123,7 @@ Hi，见信好，这是 321来信发出的第 22 封信，跟以往一样，还�
 
 ## 👍 推荐：
 
-### [ChatGPT: Optimizing Language Models for Dialogue - openai.com](https://openai.com/blog/chatgpt/)
+### [📃 ChatGPT: Optimizing Language Models for Dialogue - openai.com](https://openai.com/blog/chatgpt/)
 
 这周看到很多人在玩 Openai 的 ChatGPT，它能够以对话方式进行人机交互。
 
@@ -135,7 +135,7 @@ OpenAI CEO Sam Altman 说 AI 已经成为下一个真正的技术基础平台，
 
 网络很多人开玩笑说随着 AI 技术的发展，越来越多岗位的人会失业，因为除了让它写产品文档，我们甚至可以提供一段报错的代码让它告诉我们如何修复它，ChatGPT 会通过对话询问开发者更多的上下文，以提供具体有效的解法。我也去官网试了一下，有被它的效果震撼到，我尝试让它帮忙回答了一些基本面试题，它甚至已经能帮我写 leetcode 的算法题目 !  = =，下面图片是让它回答两个前端框架的区别和做算法题：
 
-### [Reddit Should Drop Everything to Work on Search - every.to](https://every.to/p/reddit-should-drop-everything-to-work-on-search)
+### [📃 Reddit Should Drop Everything to Work on Search - every.to](https://every.to/p/reddit-should-drop-everything-to-work-on-search)
 
 我最近也发现自己除了编码查找问题资料外，很少直接在搜索引擎去搜索答案了，例如我在做菜或寻找旅游攻略时首先想到的是打开小红书，在搜索框搜索对应的内容。搜索引擎正在被更多垂类应用的搜索框替代。
 
@@ -143,7 +143,7 @@ OpenAI CEO Sam Altman 说 AI 已经成为下一个真正的技术基础平台，
 
 作者认为 Reddit 可以通过与谷歌在搜索领域的竞争赚取更多的钱，而且仍然有增长的空间。Reddit 目前的收入主要有两部分，广告和用户购买金币，其中广告占最大部分，其 2020 年收入的 90%（约 1.7 亿美元），Reddit 差不多拥有跟 Twitter 等量的用户，收入是它的五分之一，Reddit 甚至还没有在广告收入部分实现盈利。
 
-### [清华博士配方师：原来好的护肤，根本不需要这么多步骤！- 全嘻嘻](https://www.xiaoyuzhoufm.com/episode/6353b5d8e67030aadb38fc12)
+### [🎙️ 清华博士配方师：原来好的护肤，根本不需要这么多步骤！- 全嘻嘻](https://www.xiaoyuzhoufm.com/episode/6353b5d8e67030aadb38fc12)
 
 这周听的一个护肤相关的播客节目，挺有意思，嘉宾在欧莱雅等护肤品公司担任原料专家的化学博士后，来给大家传授护肤经验：
 
