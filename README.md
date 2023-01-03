@@ -16,8 +16,7 @@ My personal Blog using [Next.js](https://nextjs.org/), Markdown, TypeScript, [bl
 ## Structure
 
 - `lib/*` - Short for "library", utils code for external services.
-- `scripts/rss` - Generate rss xml.
-- `scripts/sitemap` - Generate sitemap xml.
+- `scripts/*` - Generate rss and sitemap xml.
 - `pages/*` - All static pages.
 - `components/*` - Basic ui components.
 - `public/*` - Static assets including fonts and images and seo verify file.
