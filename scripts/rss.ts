@@ -16,13 +16,13 @@ const genRssFeed = async () => {
   ]);
 
   const feedOptions = {
-    title: `${CMS_NAME} Blog posts | RSS Feed`,
+    title: `${CMS_NAME} Blog | RSS Feed`,
     description: `Welcome to this ${CMS_NAME}'s Blog`,
     site_url: SITE_URL,
     feed_url: `${SITE_URL}/rss.xml`,
     image_url: `${SITE_URL}/logo.png`,
     pubDate: new Date(),
-    copyright: `All rights reserved ${new Date().getFullYear()}, Ibas`,
+    copyright: `All rights reserved ${new Date().getFullYear()}`,
   };
 
   const feed = new RSS(feedOptions);
