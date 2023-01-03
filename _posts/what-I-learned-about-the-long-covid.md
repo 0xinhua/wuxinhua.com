@@ -6,6 +6,8 @@ date: '2022-12-06 08:00:00'
 tags: '321来信 新冠后遗症 ChatGPT Reddit 如何正确护肤'
 ---
 
+![](https://assets.wuxinhua.com/blog/assets/newsletter/21-ali.jpeg)
+
 2021-10-4  玛旁雍错-阿里地区
 
 Hi，见信好，这是 321来信发出的第 22 封信，跟以往一样，还是 3 个推荐 2 个碎片信息 1 个想法，由于之前有读者反馈更喜欢看我写的感想、人间观察等，每次会先跳到第三部分开始阅读，所以这期开始我稍微调整了一下位置，更新成了 123 的顺序，当然内容形式没有变化。
@@ -121,6 +123,8 @@ Hi，见信好，这是 321来信发出的第 22 封信，跟以往一样，还�
 - 作者去听了宫崎骏久石让主题音乐会，返场时乐队问大家还想听什么，成年人只敢小声说《起风了》小孩却敢大声喊《孤勇者》，乐队最终整合了两首曲子，有被感动到。愿每一个大声喊出愿望的小朋友，都可以被实现啊！ [微博源视频](https://m.weibo.cn/status/4837057589941159)。
 - 酒吧墙上黑板文案一瞥：
 
+![](https://assets.wuxinhua.com/blog/assets/newsletter/21-tiaohai.jpeg)
+
 ## 👍 推荐：
 
 ### [📃 ChatGPT: Optimizing Language Models for Dialogue - openai.com](https://openai.com/blog/chatgpt/)
@@ -134,6 +138,9 @@ ChatGPT 是 InstructGPT 的同级模型，它经过训练后可以根据一个�
 OpenAI CEO Sam Altman 说 AI 已经成为下一个真正的技术基础平台，并且是自移动互联网后又一个全新的基础平台。当 AI 模型真的强大到类似于成熟的技术平台时，我相信这里会有更大的想象空间，以及更多的 AI 公司冒出来。
 
 网络很多人开玩笑说随着 AI 技术的发展，越来越多岗位的人会失业，因为除了让它写产品文档，我们甚至可以提供一段报错的代码让它告诉我们如何修复它，ChatGPT 会通过对话询问开发者更多的上下文，以提供具体有效的解法。我也去官网试了一下，有被它的效果震撼到，我尝试让它帮忙回答了一些基本面试题，它甚至已经能帮我写 leetcode 的算法题目 !  = =，下面图片是让它回答两个前端框架的区别和做算法题：
+
+![](https://assets.wuxinhua.com/blog/assets/newsletter/21-chatgpt-1.jpeg)
+![](https://assets.wuxinhua.com/blog/assets/newsletter/21-chatgpt-2.jpeg)
 
 ### [📃 Reddit Should Drop Everything to Work on Search - every.to](https://every.to/p/reddit-should-drop-everything-to-work-on-search)
 
