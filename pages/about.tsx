@@ -25,7 +25,7 @@ export default function About () {
         </figure>
         <p>Update： 🎉 2022 年开始了一个 newsletter 项目： <Link className="underline" href={`https://321laixin.zhubai.love/`}>321来信</Link>，截止到年底收获了近 300 读者订阅，如果你喜欢我推送的内容，欢迎邮箱或微信订阅 ❤️</p>
         <img className="my-8" src="https://assets.wuxinhua.com/blog/assets/newsletter/image.png" />
-        <p>Hi，欢迎你访问我的博客，可以叫我 xinhua 或英文名 Kevin ~</p>
+        <p>👋 Hi，欢迎你访问我的博客，可以叫我 xinhua 或英文名 Kevin ~</p>
         <p>软件开发工程师<img src="https://assets.wuxinhua.com//blog/assets/coder.gif" width="30" alt="https://assets.wuxinhua.com//blog/assets/coder.gif" className="inline" />，在北京，之前曾在
         <Link className="underline" href="https://www.bytedance.com/zh">@字节跳动</Link>、
         <Link className="underline" href={`https://juejin.cn/`}>@掘金社区</Link>写代码</p>
@@ -53,7 +53,6 @@ export default function About () {
         <p><Link className="underline" href={`https://web.okjike.com/u/BC942F46-A5E2-40A0-B419-5AB8B3A02BE1`}>🌎 Daily </Link></p>
         <p><Link className="underline" href={`https://twitter.com/wuxinhua_cn`}>🐦 Twitter</Link></p> 
         <p><Link className="underline" href={`http://music.163.com/#/user/home?id=15767523`}>🎧 Music</Link></p>
-        <p>By Kevin with ❤️ ~</p>
         </div>
       </Container>
     </Layout>
