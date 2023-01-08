@@ -4,7 +4,6 @@ excerpt: '2019年1月末的时候，ECMA TC39终于确定了ES2019版JavaScript�
 coverImage:
 date: '2019-04-27 12:32:49'
 tags: 'ECMAScript2019'
-
 ---
 
 ![](https://assets.wuxinhua.com//blog/assets/es10/es2019.png) 
@@ -17,7 +16,7 @@ tags: 'ECMAScript2019'
 
 Array的原型链上增加了新的两个方法：Array.flat([tc39 proposal](https://tc39.github.io/proposal-flatMap/)) 和 Array.flat([tc39 proposal](https://tc39.github.io/proposal-flatMap/#sec-Array.prototype.flat)) 能够进行扁平化多维数组：
 
-```javascript
+```js
 var arr = [1, 2, 3, [4, 5, 6, [7, 8, 9, [10, 11, 12]]]]; 
 arr.flat(); // [1, 2, 3, 4, 5, 6, Array(4)]
 ```
@@ -41,7 +40,7 @@ arr.flat(Infinity); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 `flatMap()`方法类似于数组的`map`方法，对数组的每一项使用传入的`function`，结果得到的是扁平化的数组，值得注意的是所有的结果将不会折叠，而是展示为一维数组：
 
-```javascript
+```js
 var arr = [1, 2, 3, [4, 5, 6, [7, 8, 9, [10, 11, 12]]]]; 
 arr.flatMap(item => item * 2); // [2, 4, 6, NaN]
 // map vs flatMap
@@ -58,7 +57,7 @@ BigInt 是一个新的类型，用于表达大于 2^53 的值
 
 我们已经知道可以使用`Object.entries`返回对象自身可枚举属性键值对数组，而Object.fromEntries([tc39 proposal](https://github.com/tc39/proposal-object-from-entries))则可以看做是这一过程的逆转，用数组返回可枚举对象，loadash里提供了[_.fromPairs(pairs)](https://lodash.com/docs/4.17.11#fromPairs)类似的方法。
 
-```javascript
+```js
 var obj = { foo: 1, baz: 2 };
 Object.entries(obj); //  [Array(2), Array(2)] =>  [['foo', 1], ['baz', 2]]
 Object.fromEntries([['foo', 1], ['baz', 2]]); // {foo: 1, baz: 2}
@@ -68,7 +67,7 @@ Object.fromEntries([['foo', 1], ['baz', 2]]); // {foo: 1, baz: 2}
 
 这两个方法应该是弥补`trim`的不足，trim会直接把两头的空白均移除，`trimStart()`方法用于移除字符串开头的空白，`trimEnd()`用于移除字符串末尾的空白。
 
-```javascript
+```js
 var str = ' ECMAScript 2019  ';
 str.trim(); // "ECMAScript 2019"
 str.trimStart(); // "ECMAScript 2019  "
@@ -78,7 +77,7 @@ str.trimStart(); // "ECMAScript 2019  "
 
 Symbol类型增加`description`属性，返回Symbol对象的可选描述的字符串。
 
-```javascript
+```js
 Symbol('ECMAScript2019').description; // ECMAScript2019
 typeof Symbol('ECMAScript2019').description; // string
 Symbol('').description;  // ""
@@ -90,7 +89,7 @@ Symbol().description; // undefined
 
 opitionam binding[tc39 proposal](https://github.com/tc39/proposal-optional-catch-binding) catch参数可选。经常会有这种情况，并没有使用到catch内的参数：
 
-```javascript
+```js
 try {
   // do something when success
 } catch (unused) {
