@@ -32,6 +32,15 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+      <link
+        rel="preload"
+        href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css"
+        as="script"
+      />
+      <link
+        href={`https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css`}
+        rel="stylesheet"
+      />
       <meta
         name="description"
         content={`${CMS_NAME}'s Blog, Front-end developer, JavaScript, newsletter, 前端, wuxinhua.com`}
