@@ -6,7 +6,7 @@ date: '2022-12-28 09:32:49'
 tags: '321来信 疫情 阳性 《Build》托尼·法德尔'
 ---
 
-![](https://assets.wuxinhua.com/newsletter/assets/huayanshi.jpeg)
+![Huayan Temple Datong China](https://assets.wuxinhua.com/newsletter/assets/huayanshi.jpeg "Huayan Temple Datong China")
 
 2022-09  华严寺 - 大同
 
