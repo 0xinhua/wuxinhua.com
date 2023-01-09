@@ -33,12 +33,7 @@ const Meta = () => {
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <link
-        rel="preload"
-        href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css"
-        as="script"
-      />
-      <link
-        href={`https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css`}
+        href="/assets/style/prism-okaidia.css"
         rel="stylesheet"
       />
       <meta
