@@ -34,7 +34,7 @@ tags: '前端开发环境 macOs dev setup'
 > Xcode CLT 前端开发有很多工具依赖  Xcode Command Line Tools，可以直接使用下面命令行安装，并且可以不需要安装 Xcode
 Xcode-select 管理着 xcode的Developer Directory 你能轻松得使用 xcode-select --switch 在多个版本的 Xcode 之间切换对应的开发工具路径
 
-```shell
+```sh
 xcode-select --install
 ```
 
@@ -44,13 +44,13 @@ xcode-select --install
 
 Homebrew 是一款享有盛名的包管理工具，Homebrew 的意思是家酿啤酒。基本上下面所有的软件都可以通过它在终端通过执行命令来完成安装，例如安装 Google Chrome ：
 
-```
+```sh
 brew cask install google-chrome
 ```
 
 先安装 Homebrew
 
-```
+```sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 

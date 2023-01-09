@@ -17,12 +17,11 @@ tags: 面试 前端面试题 前端八股文
 
 ## position 取值：
 
-- static 默认的定位类型，这个时候 top right 这些值无效，浏览器决定位置
-- relative 它必须搭配`top`、`bottom`、`left`、`right`这四个属性使用，用来指定偏移的方向和距离，相对于默认位置（即`static`时的位置）进行偏移
-- `absolute`表示，相对于上级元素（一般是父元素）进行偏移，也是得搭配上下左右四个值来使用。（定位基点（一般是父元素）不能是`static`定位，否则会按 html 来计算）
-- `fixed`表示，相对于视口（viewport，浏览器窗口）进行偏移，即定位基点是浏览器窗口。这会导致元素的位置不随页面滚动而变化，好像固定在网页上一样。
-- sticky 很像`relative`和`fixed`的结合，实现吸顶效果，它的具体规则是，当页面滚动，父元素开始脱离视口时（即部分不可见），只要与`sticky`元素的距离达到生效门槛，`relative`
-定位自动切换为`fixed`定位；等到父元素完全脱离视口时（即完全不可见），`fixed`定位自动切换回`relative`定位
+- **static** 默认的定位类型，这个时候 top right 这些值无效，浏览器决定位置
+- **relative** 它必须搭配 top、bottom、left、right 这四个属性使用，用来指定偏移的方向和距离，相对于默认位置（即 static 时的位置）进行偏移
+- **absolute** 表示，相对于上级元素（一般是父元素）进行偏移，也是得搭配上下左右四个值来使用。（定位基点（一般是父元素）不能是 static 定位，否则会按 html 来计算）
+- **fixed** 表示，相对于视口（viewport，浏览器窗口）进行偏移，即定位基点是浏览器窗口。这会导致元素的位置不随页面滚动而变化，好像固定在网页上一样。
+- **sticky** 很像 relative 和 fixed 的结合，实现吸顶效果，它的具体规则是，当页面滚动，父元素开始脱离视口时（即部分不可见），只要与 sticky 元素的距离达到生效门槛，relative 定位自动切换为 fixed 定位；等到父元素完全脱离视口时（即完全不可见），fixed 定位自动切换回 relative 定位
 
 ## H5 语义化
 
@@ -32,28 +31,29 @@ html 语义化就是让页面的内容结构化，便于对浏览器、搜索引
 
 前端加载 html，html 解析器运行于主线程中，如果遇到\<script> 标签后会阻塞，直到脚本从网络中下载并被执行，也就是说\<script>标签的脚本会阻塞浏览器的渲染。这里还涉及到页面生命周期：
 
-- `DOMContentLoaded` 页面已经完全加载了 html 并且构建了 dom 树，但样式和 img 这样的资源还没有加载完
-- `load` —— 浏览器不仅加载完成了 HTML，还加载完成了所有外部资源：图片，样式等。
-- `beforeunload/unload` —— 当用户正在离开页面时。
+- **DOMContentLoaded** 页面已经完全加载了 html 并且构建了 dom 树，但样式和 img 这样的资源还没有加载完
+- **load** —— 浏览器不仅加载完成了 HTML，还加载完成了所有外部资源：图片，样式等。
+- **beforeunload/unload** —— 当用户正在离开页面时。
 
-当浏览器处理一个 HTML 文档，并在文档中遇到 `<script>`标签时，就会在继续构建 DOM 之前运行它。这是一种防范措施，因为脚本可能想要修改 DOM，甚至对其执行 `document.write`操作，所以 `DOMContentLoaded` 必须等待脚本执行结束。如何解决这个问题，可以使用 script 标签的两个属性，defer 和 async。
+当浏览器处理一个 HTML 文档，并在文档中遇到 **\<script>** 标签时，就会在继续构建 DOM 之前运行它。这是一种防范措施，因为脚本可能想要修改 DOM，甚至对其执行 **document.write** 操作，所以 `DOMContentLoaded` 必须等待脚本执行结束。如何解决这个问题，可以使用 script 标签的两个属性，defer 和 async。
 
-- 没有 `defer`或 `async`，就会阻塞了，浏览器会立即加载执行这个script 脚本，就是卡在这个标签之后的这些文档元素前加载并执行
-- 有 `async`，加载和渲染后续文档元素的过程将和 `script.js`的加载与执行并行进行。
-- 有 `defer` ，同样也是并行异步的，不同的地方就是 script js 的执行会在所有元素解析完，并且在 DOMContentLoaded 事件触发前完成。
+- 没有 **defer** 或 **async**，就会阻塞了，浏览器会立即加载执行这个script 脚本，就是卡在这个标签之后的这些文档元素前加载并执行
+- 有 **async**，加载和渲染后续文档元素的过程将和 script.js 的加载与执行并行进行。
+- 有 **defer** ，同样也是并行异步的，不同的地方就是 script js 的执行会在所有元素解析完，并且在 DOMContentLoaded 事件触发前完成。
 
 ## 前端 cookie，怎么获取cookie及更新cookie
 
 - 前端通过 document.cookie 就能拿到 cookie，清除的话可以通过更新过期时间
 - 之所以会出现 cookie，是因为 http 是一个无状态的协议，使同一个客户端连续两次发送请求给服务器，服务器也识别不出这是同一个客户端发送的请求。cookie 的出现就是为了解决这个问题。
 - cookie 在维基百科的解释是小型文本文件，指某些网站为了辨别用户身份存储在用户本地终端的数据，一般大小不会超过 4 kb，以键值对形式存在。
-- cookie 的设置可以在服务端的响应头里添加 set-Cookie字段
-- cookie 的属性：
+- cookie 的设置可以在服务端的响应头里添加 set-Cookie 字段
 
-- Expires 用于设置 Cookie 的过期时间，Max-Age 表示 cookie失效前的经过的秒数
+cookie 的属性：
+
+- Expires 用于设置 Cookie 的过期时间，Max-Age 表示 cookie 失效前的经过的秒数
 - Max-Age 可以为正数、负数、甚至是 0。
 - Domain 指定了 Cookie 可以送达的主机名
-- Path 指定了一个 URL 路径，这个路径必须出现在要请求的资源的路径中才可以发送 Cookie 首部。比如设置 `Path=/docs`，`/docs/Web/` 下的资源会带 Cookie 首部，`/test` 则不会携带 Cookie 首部。
+- Path 指定了一个 URL 路径，这个路径必须出现在要请求的资源的路径中才可以发送 Cookie 首部。比如设置 Path=/docs，/docs/Web/ 下的资源会带 Cookie 首部，/test 则不会携带 Cookie 首部。
 - 设置 HTTPOnly 属性可以防止客户端脚本通过 document.cookie 等方式访问 Cookie，有助于避免 XSS 攻击。
 - SameSite 属性可以让 Cookie 在跨站请求时不会被发送，从而可以阻止跨站请求伪造攻击（CSRF）。
 - SameSite 可以有下面三种值：
@@ -64,8 +64,8 @@ html 语义化就是让页面的内容结构化，便于对浏览器、搜索引
 
 ## ie67兼容问题
 
-- 在IE6，7下输入类型的表单控件加 `border:none` 无效，设置 `border:0`。
-- IE6下块元素有浮动和横向 margin 的时候，横向的 margin 值被放大成两倍。给浮动元素加 `display:inline`。
+- 在 IE6，7 下输入类型的表单控件加 border:none 无效，设置 border:0。
+- IE6 下块元素有浮动和横向 margin 的时候，横向的 margin 值被放大成两倍。给浮动元素加 display:inline。
 
 ## 重排跟重绘
 
@@ -149,7 +149,7 @@ div.style.top = curTop + 1 + 'px';
 - 3.flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。
 ## BFC
 
-`BFC`（Block Formatting Context），即块级格式化上下文，它是页面中的一块渲染区域，容器页面里的子元素不会影响到外部的元素，并且有一套属于自己的渲染规则：
+**BFC**（Block Formatting Context），即块级格式化上下文，它是页面中的一块渲染区域，容器页面里的子元素不会影响到外部的元素，并且有一套属于自己的渲染规则：
 
 - 例如盒子的排列会在垂直方向上一个个排列
 - 相邻盒子间的 margin 会发生重叠
@@ -161,14 +161,13 @@ div.style.top = curTop + 1 + 'px';
 - position 为 absolute 或 fixed
 - overflow 不是 visible 的
 
-（创建BFC的方式：根元素、浮动元素和绝对定位元素，非块级盒子的块级容器，`overflow`
- 值不为 `visiable`的块级盒子）
+（创建BFC的方式：根元素、浮动元素和绝对定位元素，非块级盒子的块级容器，overflow 值不为 visiable 的块级盒子）
 
 应用场景：
 
 - 防止 margin 塌陷，例如两个 p 取大的值，这个时候可以在外层包一层 div
 - 清除浮动，例如在子元素浮动的情况，父元素没有被撑开，BFC 在计算高度时浮动元素也会计算的，给父元素加上 overflow hidden
-- 自适应多栏布局，例如使用 float 布局两栏布局，左侧 float left，左边依然会与包含块的左边相接触，这个时候可以给外边距加`verflow: hidden;`
+- 自适应多栏布局，例如使用 float 布局两栏布局，左侧 float left，左边依然会与包含块的左边相接触，这个时候可以给外边距加 verflow: hidden;
 
 ## 如何画一个三角形
 
@@ -217,7 +216,7 @@ div.style.top = curTop + 1 + 'px';
 
 ## link 和 @import 的区别
 
-- 两种都是加载 css 的方式，link 是一个html 标签，但 import 是css 提供的
+- 两种都是加载 css 的方式，link 是一个 html 标签，但 import 是 css 提供的
 - link 会跟页面加载时同时加载，import 会等页面加载完再加载
 - link 的权重会高于 import
 
@@ -229,9 +228,9 @@ div.style.top = curTop + 1 + 'px';
 
 ## DOMContentLoaded 和 load 区别
 
-- `DOMContentLoaded` —— 浏览器已完全加载 HTML，并构建了 DOM 树，但像 `<img>` 和样式表之类的外部资源可能尚未加载完成。
-- `load` —— 浏览器不仅加载完成了 HTML，还加载完成了所有外部资源：图片，样式等。
-- `beforeunload/unload` —— 当用户正在离开页面时。
+- **DOMContentLoaded** —— 浏览器已完全加载 HTML，并构建了 DOM 树，但像 **\<img>** 和样式表之类的外部资源可能尚未加载完成。
+- **load** —— 浏览器不仅加载完成了 HTML，还加载完成了所有外部资源：图片，样式等。
+- **beforeunload/unload** —— 当用户正在离开页面时。
 
 ## 块状元素行内元素
 
@@ -310,7 +309,7 @@ input、img就是行内块级元素，
 
 队列是先进先出：就像一条路，有一个入口和一个出口，先进去的就可以先出去。
 
-`栈`只能从头部取数据，也就最先放入的需要遍历整个`栈` 最后才能取出来，而且在遍历数据的时候还得为数据开辟临时空间，`队列`则不同，它基于地址指针进行遍历，而且可以从头或尾部开始遍历，速度快很多
+栈只能从头部取数据，也就最先放入的需要遍历整个栈 最后才能取出来，而且在遍历数据的时候还得为数据开辟临时空间，队列则不同，它基于地址指针进行遍历，而且可以从头或尾部开始遍历，速度快很多
 
 ## IIFE
 
@@ -482,7 +481,6 @@ b.extend(a)
 常见的几种数据类型，按存储类型来分的话有 6 种：
 
 基础类型
-
 - 布尔类型
 - null 类型
 - undefined类型
@@ -490,7 +488,6 @@ b.extend(a)
 - 字符串
 
 引用类型：
-
 - 对象
 
 ## set 和 map 及对象区别
@@ -504,15 +501,15 @@ mySet.has(1); // true
 mySet.size // 1
 ```
 
-- `WeakSet` 只能是对象的集合，而不能像 `[Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set)` 那样，可以是任何类型的任意值。
+- **WeakSet** 只能是对象的集合，而不能像 [Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set) 那样，可以是任何类型的任意值。
 - 内存中对原始对象的引用是弱引用，所以不可枚举的，弱引用。
-- `Map`对象保存键值对，并且能够记住键的原始插入顺序。任何值对象或者基本类型都可以作为一个键或一个值。`Map`中的一个键只能出现一次；它在 `Map`的集合中是独一无二的。
+- **Map** 对象保存键值对，并且能够记住键的原始插入顺序。任何值对象或者基本类型都可以作为一个键或一个值。Map 中的一个键只能出现一次；它在 Map 的集合中是独一无二的。
 
 与 Object 的区别：
 
 - Map 的键可以是任意值，但 Object 只能是 string 或者 symbol
 - Map 有 size 属性，可以获取长度，object 只能自己计算
-- `Map`是 [可迭代的](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Iteration_protocols)的，所以可以直接被迭代，object 不可直接迭代，但可以使用 keys 或 entries方法
+- Map 是 [可迭代的](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Iteration_protocols)的，所以可以直接被迭代，object 不可直接迭代，但可以使用 keys 或 entries方法
 - 场景：
   - 针对于存在大量增删操作键值对情况的场景，使用 Map 更合适
   - Map 在存储大量数据的场景下表现更好，尤其是在 key 为未知状态，并且所有 key 和所有 value 分别为相同类型可迭代的情况下
@@ -529,23 +526,22 @@ mySet.size // 1
 
 ## ****Object.prototype.toString.call() 原理****
 
-`toString()`方法转换为字符串的结果。[object, type] type 其实拿到的是 Symbol.toStringTag，是一个内置 symbol，它通常作为对象的属性键使用。其实 `toString` 是对象上的方法，每一个对象上都有这个方法，那就意味着`数字`、`字符串`和`布尔值`这些基本数据类型不能使用 `toString()`方法，但上例中的基本数据类型却是可以使用，这要归功于javascript中的包装类，即 `Number`、`String` 和 `Boolean`。原始值不能有属性和方法，当要使用`toString()`方法时，会先将原始值包装成对象再使用。
+**toString()** 方法转换为字符串的结果。[object, type] type 其实拿到的是 Symbol.toStringTag，是一个内置 symbol，它通常作为对象的属性键使用。其实 toString 是对象上的方法，每一个对象上都有这个方法，那就意味着数字、字符串和布尔值这些基本数据类型不能使用 toString()方法，但上例中的基本数据类型却是可以使用，这要归功于javascript中的包装类，即 Number、String 和 Boolean。原始值不能有属性和方法，当要使用 toString() 方法时，会先将原始值包装成对象再使用。
 
-所有类都继承自`Object`，按理来说输出结果应该都类似于`'[object Object]'`这样。不一样的原因是所有类在继承`Object`的时候，改写了`toString()`方法。所以当我们想要判断数据类型时，必须使用`Object`上的`toString()`方法。
+所有类都继承自 Object，按理来说输出结果应该都类似于 [object Object] 这样。不一样的原因是所有类在继承 Object的时候，改写了 toString() 方法。所以当我们想要判断数据类型时，必须使用 Object 上的**toString()**方法。
 
 ## 如何判断一个变量是否是数组
 
-- `Object.prototype.toString.call(arr))  //"[object Array]"`
-- `constructor` 是否是 Array，
-- `instanceof`  `instanceof`运算符用来检测 `constructor.prototype`是否存在于参数 `object` 的原型链上。但 `instanceof` 也不是特别可靠，例如多个窗口下不同frame下这个`instanceof` 的指向不同
-- `instanceof`本质上是判断右边的构造函数的`prototype`对象是否存在于左边的原型链上，是的话返回 true。所以不论数组、对象还是函数，`... instanceof Object`
-都返回`true`
+- Object.prototype.toString.call(arr))  //"[object Array]"
+- constructor 是否是 Array，
+- instanceof 运算符用来检测 constructor.prototype 是否存在于参数 object 的原型链上。但 instanceof 也不是特别可靠，例如多个窗口下不同frame下这个 instanceof 的指向不同
+- instanceof 本质上是判断右边的构造函数的 prototype对象是否存在于左边的原型链上，是的话返回 true。所以不论数组、对象还是函数，instanceof Object 都返回 true
 - isArray 方法
 
 ## 如何判断一个变量是否是函数
 
-- typeof 会返回 ``function`` 字符串
-- Object.prototype.toString.call() 返回 `[object Function]`
+- typeof 会返回 function 字符串
+- Object.prototype.toString.call() 返回 **[object Function]**
 - 正则表达式匹配，匹配关键字 function 或箭头函数
 
 ## 如何判断一个变量是否是 promise
@@ -556,7 +552,7 @@ mySet.size // 1
 
 这里涉及到作用域、变量提升的问题，作用域本质上是指变量/函数可供访问的范围。
 
-当在最外层函数的外部声明`var`变量时，作用域是全局的。这意味着在最外层函数的外部用`var`声明的任何变量都可以访问到。但当你在函数范围内申明变量时，外部的代码是无法访问到这个变量的。
+当在最外层函数的外部声明 var 变量时，作用域是全局的。这意味着在最外层函数的外部用 var 声明的任何变量都可以访问到。但当你在函数范围内申明变量时，外部的代码是无法访问到这个变量的。
 
 var 的一个问题是变量被修改覆盖，举个简单的例子:
 
@@ -635,7 +631,7 @@ function debounce(fn, delay) {
 
 ## requestIdleCallback
 
-window.requestIdleCallback() 方法使用插入一个函数，这个函数将在浏览器空闲时期被调用。这使开发者能够在主事件循环上执行后台和低优先级工作，而不会影响延迟关键事件，如动画和输入响应。函数一般会按先进先调用的顺序执行，然而，如果回调函数指定了执行超时时间`timeout`，则有可能为了在超时前执行函数而打乱执行顺序。
+window.requestIdleCallback() 方法使用插入一个函数，这个函数将在浏览器空闲时期被调用。这使开发者能够在主事件循环上执行后台和低优先级工作，而不会影响延迟关键事件，如动画和输入响应。函数一般会按先进先调用的顺序执行，然而，如果回调函数指定了执行超时时间 timeout，则有可能为了在超时前执行函数而打乱执行顺序。
 
 ## 浅拷贝和深拷贝
 
@@ -842,8 +838,8 @@ let sum = function(num1, num2) {
 - 简洁更加清晰。
   - 例如当没有参数的时候，直接写空括号即可，如果一个参数也可以省去包裹的括号
   - 如果函数体只是返回一个对象或只有一句代码，可以省去函数体的大括号{ }。
-- 最重要的其实是 this 指向问题，箭头函数不会创建自己的`this`，所以它没有自己的`this`
-，它只会从自己的作用域链的上一层继承`this`，所以它的 this 捕获阶段是定义时确认的，而不是调用时。例如执行下面代码时分别输出不同的结果，普通函数执行时 this 指向传入的 obj，所以这里输出 id2，而 箭头函数的话是继承它定义时的一个全局变量的 this，也就是最外层的 id， 所以这里输出 id1。 除了没有 this，箭头函数也没有自己的`arguments`对象，但是可以通过剩余操作符 … 来输出参数列表。
+- 最重要的其实是 this 指向问题，箭头函数不会创建自己的 this，所以它没有自己的 this
+，它只会从自己的作用域链的上一层继承 this，所以它的 this 捕获阶段是定义时确认的，而不是调用时。例如执行下面代码时分别输出不同的结果，普通函数执行时 this 指向传入的 obj，所以这里输出 id2，而 箭头函数的话是继承它定义时的一个全局变量的 this，也就是最外层的 id， 所以这里输出 id1。 除了没有 this，箭头函数也没有自己的 arguments 对象，但是可以通过剩余操作符 … 来输出参数列表。
     
 ```js
 var id = 'id1';
@@ -861,8 +857,8 @@ obj.a();    // 'id2'
 obj.b();    // 'id1'
 ```
     
-- `.call() .apply().bind()`方法可以用来动态修改函数执行时 `this` 的指向。但在箭头函数里不起作用
-- 箭头函数无法作为构造函数，原因是没有原型 prototype，无法链接到实例的原型链上，没有 super，箭头函数不能用作Generator函数，不能使用`yeild`关键字
+- .call() .apply().bind() 方法可以用来动态修改函数执行时 **this** 的指向。但在箭头函数里不起作用
+- 箭头函数无法作为构造函数，原因是没有原型 prototype，无法链接到实例的原型链上，没有 super，箭头函数不能用作Generator函数，不能使用 yeild 关键字
 
 ## eventloop 事件循环
 
@@ -886,21 +882,16 @@ obj.b();    // 'id1'
 
 worker线程的使用有一些注意点：
 
-（1）同源限制：分配给 Worker 线程运行的脚本文件，必须与主线程的脚本文件同源。
-
-（2）文件限制：为了安全，Worker 线程无法读取本地文件，即不能打开本机的文件系统（`file://`），它所加载的脚本必须来自网络，且需要与主线程的脚本同源。
-
-（3）DOM操作限制：worker线程在与主线程的window不同的另一个全局上下文中运行，其中无法读取主线程所在网页的DOM对象，也不能获取 `document`、`window`等对象，但是可以获取`navigator`、`location(只读)`、`XMLHttpRequest`、`setTimeout`等浏览器API。
-
-（4）通信限制：worker线程与主线程不在同一个上下文，不能直接通信，需要通过`postMessage`方法传递消息来通信。
-
-（5）脚本限制：worker线程不能执行`alert`、`confirm`，但可以使用 `XMLHttpRequest` 对象发出ajax请求。
+- 同源限制：分配给 Worker 线程运行的脚本文件，必须与主线程的脚本文件同源。  
+- 文件限制：为了安全，Worker 线程无法读取本地文件，即不能打开本机的文件系统（file://），它所加载的脚本必须来自网络，且需要与主线程的脚本同源。
+- DOM操作限制：worker线程在与主线程的window不同的另一个全局上下文中运行，其中无法读取主线程所在网页的DOM对象，也不能获取 document、window 等对象，但是可以获取 navigator、location(只读)、XMLHttpRequest、setTimeout 等浏览器API。
+- 通信限制：worker线程与主线程不在同一个上下文，不能直接通信，需要通过 postMessage 方法传递消息来通信。
+- 脚本限制：worker 线程不能执行 alert、confirm，但可以使用 XMLHttpRequest  对象发出ajax请求。
 
 场景：
 
-1、加密数据：有些加解密的算法比较复杂，或者在加解密很多数据的时候，这会非常耗费计算资源，导致UI线程无响应，因此这是使用Web Worker的好时机，使用Worker线程可以让用户更加无缝的操作UI。
-
-2、预取数据：有时候为了提升数据加载速度，可以提前使用Worker线程获取数据，因为Worker线程是可以是用 `XMLHttpRequest` 的。
+- 加密数据：有些加解密的算法比较复杂，或者在加解密很多数据的时候，这会非常耗费计算资源，导致UI线程无响应，因此这是使用Web Worker的好时机，使用Worker线程可以让用户更加无缝的操作UI。
+- 预取数据：有时候为了提升数据加载速度，可以提前使用Worker线程获取数据，因为Worker线程是可以是用 XMLHttpRequest 的。
 
 ## 解释一下 Mutation Observer api
 
@@ -925,7 +916,7 @@ Mutation Observer API 用来监视 DOM 变动。DOM 的任何变动，比如节�
 常见的跨域方式
 
 - jsonp
-的原理就是利用`<script>`标签没有跨域限制，通过`<script>`标签src属性，发送带有 callback 参数的 GET 请求，服务端将接口返回数据拼凑到callback 函数中，返回给浏览器，浏览器解析执行。
+的原理就是利用 **\<script>** 标签没有跨域限制，通过 script 标签 src 属性，发送带有 callback 参数的 GET 请求，服务端将接口返回数据拼凑到callback 函数中，返回给浏览器，浏览器解析执行。
 - 跨域资源共享（CORS）（Cross-origin resource sharing）。 它允许浏览器向跨源服务器，发出 XMLHttpRequest 请求，从而克服了 AJAX 只能同源使用的限制。
     
 浏览器将CORS跨域请求分为简单请求和非简单请求。
@@ -973,8 +964,8 @@ Web 端和 Native 可以类比于 Client/Server 模式，Web 端调用原生接�
 实现 JSBridge 主要有两种：
 
 - js端调用Native端有两种方法
-  - **URL Schema** 的拦截操作
-  - 注入 api， App 将 Native 的相关接口注入到 JS 的 Context（window）的对象中，一般来说这个对象内的方法名与 Native 相关方法名是相同的，Web端就可以直接在全局**window** 下使用这个暴露的全局JS对象，进而调用原生端的方法。
+  - URL Schema 的拦截操作
+  - 注入 api， App 将 Native 的相关接口注入到 JS 的 Context（window）的对象中，一般来说这个对象内的方法名与 Native 相关方法名是相同的，Web端就可以直接在全局 window 下使用这个暴露的全局JS对象，进而调用原生端的方法。
 - native 调用js
   - 其中 Native 调用 Web 端是直接在 JS 的 Context 直接执行 JS 代码，只要 H5 将 JS 方法暴露在 Window 上给 Native 调用即可。
 
@@ -995,17 +986,17 @@ function add(num1, num2) {
 
 ## gc 回收机制
 
-`JavaScript`垃圾回收机制的原理说白了也就是定期找出那些不再用到的内存（变量），然后释放其内存。这里主要讲一下 v8 的 gc 回收算法，主要是两种：
+JavaScript 垃圾回收机制的原理说白了也就是定期找出那些不再用到的内存（变量），然后释放其内存。这里主要讲一下 v8 的 gc 回收算法，主要是两种：
 
 - 标记清除算法
 
-目前在 `JavaScript引擎`里这种算法是最常用的，到目前为止的大多数浏览器的 `JavaScript引擎`都在采用标记清除算法。此算法分为 `标记`和 `清除`两个阶段，这使得一位二进制位（0和1）就可以为其标记，非常简单。
+目前在 JavaScript引擎 里这种算法是最常用的，到目前为止的大多数浏览器的 JavaScript 引擎都在采用标记清除算法。此算法分为**标记**和**清除**两个阶段，这使得一位二进制位（0和1）就可以为其标记，非常简单。
 
-标记清除算法有一个很大的缺点，就是在清除之后，剩余的对象内存位置是不变的，也会导致空闲内存空间是不连续的，出现了 `内存碎片` 并且由于剩余空闲内存不是一整块，它是由不同大小内存组成的内存列表，这就牵扯出了内存分配的问题
+标记清除算法有一个很大的缺点，就是在清除之后，剩余的对象内存位置是不变的，也会导致空闲内存空间是不连续的，出现了内存碎片并且由于剩余空闲内存不是一整块，它是由不同大小内存组成的内存列表，这牵扯出了内存分配的问题
 
 - 引用计数算法
 
-这其实是早先的一种垃圾回收算法，它把 `对象是否不再需要` 简化定义为 `对象有没有其他对象引用它`。例如定义一个变量赋值时1，当它被另一个变量覆盖时，-1，当这个值的引用次数变为 0 的时候，说明没有变量在使用，清理掉内存
+这其实是早先的一种垃圾回收算法，它把对象是否不再需要简化定义为对象有没有其他对象引用它。例如定义一个变量赋值时1，当它被另一个变量覆盖时，-1，当这个值的引用次数变为 0 的时候，说明没有变量在使用，清理掉内存
 
 - 对比：
 - 引用计数一刻就会被回收，所以它可以立即回收垃圾。那边是隔一段时间得执行一下gc程序去标记及清除
@@ -1051,11 +1042,11 @@ window.moduleA = {
     - 核心有 module.exports  require
     - 模块加载器由 Node.js 提供，放在浏览器端就不太合适
   - AMD
-    - `Asynchronous Module Definition`，即异步模块定义规范。模块根据这个规范，在浏览器环境中会被异步加载
+    - Asynchronous Module Definition，即异步模块定义规范。模块根据这个规范，在浏览器环境中会被异步加载
     - define 和 require
     - 由于没有得到浏览器的原生支持，AMD 规范需要由第三方的 loader 来实现，最经典的就是 [requireJS](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Frequirejs%2Frequirejs)库
-  - ESM `ES6 Module`也被称作 `ES Module`(或 `ESM`)， 是由 ECMAScript 官方提出的模块化规范
-- commonjs Node.js是commonJS规范的主要实践者，它有四个重要的环境变量为模块化的实现提供支持：`module`、`exports`、`require`、`global`, 模块文件都写在本地磁盘里，读取很快
+  - ESM ES6 Module 也被称作 ES Module(或 ESM)， 是由 ECMAScript 官方提出的模块化规范
+- commonjs Node.js是commonJS规范的主要实践者，它有四个重要的环境变量为模块化的实现提供支持：module、exports、require、global, 模块文件都写在本地磁盘里，读取很快
 - AMD规范采用异步方式加载模块，模块的加载不影响它后面语句的运行
 - AMD 先把要用的模块都在最前面申明，CMD 是在需要用的时候再申明并引入
 - AMD 推崇依赖前置、提前执行，CMD推崇依赖就近、延迟执行
@@ -1073,24 +1064,24 @@ hash：
 
 前端配置路由表, 不需要后端的参与，因为hash值变化不会向后端发请求，所以属于前端路由，兼容性好, 浏览器都能支持。
 
-history 是 url地址规范, 不需要#，包括back,forward,go三个方法，这种模式充分利用 `history.pushState`replaceStateAPI 来完成 URL 跳转而无须重新加载页面。
+history 是 url 地址规范, 不需要#，包括back,forward,go三个方法，这种模式充分利用 history.pushState replaceStateAPI 来完成 URL 跳转而无须重新加载页面。
 
 区别：hash的传参是基于url的，如果要传递复杂的数据，会有体积的限制
 
 ## Vue 路由守卫执行流程
 
-1. `beforeRouteLeave`:路由组件的组件离开路由前钩子，可取消路由离开。
-2. `beforeEach`: 路由全局前置守卫，可用于登录验证、全局路由loading等。
-3. `beforeEnter`: 路由独享守卫
-4. `beforeRouteEnter`: 路由组件的组件进入路由前钩子。
-5. `beforeResolve`:[路由全局解析守卫]
-6. `afterEach`:路由全局后置钩子
-7. `beforeCreate`:组件生命周期，不能访问`this`。
-8. `created`:组件生命周期，可以访问`this`，不能访问dom。
-9. `beforeMount`:组件生命周期
-10. `deactivated`: 离开缓存组件a，或者触发a的`beforeDestroy`和`destroyed`组件销毁钩子。
-11. `mounted`:访问/操作dom。
-12. `activated`:进入缓存组件，进入a的嵌套子组件(如果有的话)。
+1. **beforeRouteLeave**:路由组件的组件离开路由前钩子，可取消路由离开。
+2. **beforeEach**: 路由全局前置守卫，可用于登录验证、全局路由loading等。
+3. **beforeEnter**: 路由独享守卫
+4. **beforeRouteEnter**: 路由组件的组件进入路由前钩子。
+5. **beforeResolve**: 路由全局解析守卫
+6. **afterEach**: 路由全局后置钩子
+7. **beforeCreate**: 组件生命周期，不能访问 this。
+8. **created**: 组件生命周期，可以访问 this，不能访问 dom。
+9. **beforeMount** :组件生命周期
+10. **deactivated**: 离开缓存组件a，或者触发a的 beforeDestroy 和 destroyed 组件销毁钩子。
+11. **mounted**: 访问/操作dom。
+12. **activated**:进入缓存组件，进入a的嵌套子组件(如果有的话)。
 
 
 # Node.js
@@ -1099,9 +1090,9 @@ history 是 url地址规范, 不需要#，包括back,forward,go三个方法，�
 
 1. Node.js 与操作系统交互，我们在 Javascript中调用的方法，最终都会通过 process.binding 传递到 C/C++ 层面，最终由他们来执行真正的操作。Node.js 即这样与操作系统进行互动。
 
-2、nodejs所谓的单线程，只是主线程是单线程，所有的网络请求或者异步任务都交给了内部的线程池去实现，本身只负责不断的往返调度，由事件循环不断驱动事件执行。
+2、nodejs 所谓的单线程，只是主线程是单线程，所有的网络请求或者异步任务都交给了内部的线程池去实现，本身只负责不断的往返调度，由事件循环不断驱动事件执行。
 
-3、Nodejs之所以单线程可以处理[高并发](https://so.csdn.net/so/search?q=%E9%AB%98%E5%B9%B6%E5%8F%91&spm=1001.2101.3001.7020)的原因，得益于libuv层的事件循环机制，和底层线程池实现。
+3、Nodejs 之所以单线程可以处理[高并发](https://so.csdn.net/so/search?q=%E9%AB%98%E5%B9%B6%E5%8F%91&spm=1001.2101.3001.7020)的原因，得益于 libuv 层的事件循环机制，和底层线程池实现。
 
 # TS
 
@@ -1132,29 +1123,28 @@ function identity<T>(value: T): T {
 
 ## any unkown
 
-二者都是可以赋值给任意类型的， `any`会绕过类型检查，直接可用，而 `unkonwn`
- 则必须要在判断完它是什么类型之后才能继续用
+二者都是可以赋值给任意类型的， **any** 会绕过类型检查，直接可用，而 **unkonwn** 则必须要在判断完它是什么类型之后才能继续用
 
 ## 关键字Exclude、Omit、Merge、Intersection、Overwrite的作用
 
 常用的一些关键字
 
-`Exclude<T, U>`从Y中排出可以分配给U的元素.
+**Exclude<T, U>** 从Y中排出可以分配给U的元素.
 
-`Omit<T, K>`忽略T中的某些属性.
+**Omit<T, K>** 忽略T中的某些属性.
 
-`Merge<O1, O2>`将两个对象的属性合并.
+**Merge<O1, O2>** 将两个对象的属性合并.
 
-`Compute<A & B>`将交叉类型合并.
+**Compute<A & B>** 将交叉类型合并.
 
-`Intersection<T, U>`取T的属性，此属性同样哦存在于U.
+**Intersection<T, U>** 取T的属性，此属性同样哦存在于U.
 
-`Overwrite<T, U>`用U的属性覆盖T的相同属性.
+**Overwrite<T, U>** 用U的属性覆盖T的相同属性.
 
 ## 什么是抗变、双变、协变和逆变
 
 Covariant 协变，ts对象兼容性是协变，父类<=子类是可以的，子类 <= 父类错误。
-Contravariant 逆变，禁用`strictFunctionTypes`编译，函数参数类型都是逆变的，父类 <= 子类，是错误。子类 <= 父类，是可以的。
+Contravariant 逆变，禁用 **strictFunctionTypes** 编译，函数参数类型都是逆变的，父类 <= 子类，是错误。子类 <= 父类，是可以的。
 Bivariant 双向协变，函数参数的类型默认是双向协变的。父类 <= 子类，是可以的。子类 <= 父类，是可以的。
 
 ## type 和 interface 的区别
@@ -1187,9 +1177,8 @@ implements一般是实现接口。extends 是继承类。
 2. implements 可以实现 **类继承接口**，而 extends 不能实现类继承接口
 3. 使用 implements 时，需要定义或实现所有属性和方法，而 extends 只需要重新定义或者实现方法即可，对于属性来说，是可以直接继承，无需单独定义
 
-`implements`实现，一个新的类，从父类或者接口实现所有的属性和方法，同时可以重写属性和方法，包含一些新的功能
-
-`extends`继承，一个新的接口或者类，从父类或者接口继承所有的属性和方法，不可以重写属性，但可以重写方法
+implements 实现，一个新的类，从父类或者接口实现所有的属性和方法，同时可以重写属性和方法，包含一些新的功能
+extends 继承，一个新的接口或者类，从父类或者接口继承所有的属性和方法，不可以重写属性，但可以重写方法
 
 ## Typescript如何实现一个函数的重载
 
@@ -1256,18 +1245,17 @@ TCP是一种面向连接的单播协议，在发送数据前，通信双方必�
 
 - **第一次握手** 客户端向服务端发送一个 SYN 报文（SYN = 1）
 - **第二次握手**服务器收到客户端的 SYN 报文之后，会发送 SYN 报文作为应答（SYN = 1），并且指定自己的初始化序列号 ISN
-- **三次握手**客户端收到服务器端响应的 SYN 报文之后，会发送一个 ACK 报文（：确认号。希望收到的下一个数据的第一个字节的序号），也是一样把服务器的 ISN + 1 作为 ack 的值，表示已经收到了服务端发来的的 SYN 报文服务器收到 ACK 报文之后，也处于 `Establised 状态`，至此，双方建立起了 TCP 连接。
+- **三次握手**客户端收到服务器端响应的 SYN 报文之后，会发送一个 ACK 报文（：确认号。希望收到的下一个数据的第一个字节的序号），也是一样把服务器的 ISN + 1 作为 ack 的值，表示已经收到了服务端发来的的 SYN 报文服务器收到 ACK 报文之后，也处于 Establised 状态，至此，双方建立起了 TCP 连接。
 
 ## 四次挥手
 
 这是由于 TCP 的**半关闭**（half-close）特性造成的，TCP 提供了连接的一端在结束它的发送后还能接收来自另一端数据的能力。
 
-**第一次挥手**：客户端发送一个 FIN 报文（请求连接终止：FIN = 1），报文中会指定一个序列号 seq = u。并**停止再发送数据，主动关闭 TCP 连接**
+**第一次挥手**：客户端发送一个 FIN 报文（请求连接终止：FIN = 1），报文中会指定一个序列号 seq = u。并停止再发送数据，主动关闭 TCP 连接。
 
-**第二次挥手** 服务端收到 FIN 之后，会发送 ACK 报文，且把客户端的序号值 +1 作为 ACK 报文的序列号值，表明已经收到客户端的报文了，此时服务端处于 `CLOSE_WAIT`状态。
+**第二次挥手** 服务端收到 FIN 之后，会发送 ACK 报文，且把客户端的序号值 +1 作为 ACK 报文的序列号值，表明已经收到客户端的报文了，此时服务端处于 **CLOSE_WAIT** 状态。
 
-**第三次挥手 ：**如果服务端也想断开连接了（没有要向客户端发出的数据），和客户端的第一次挥手一样，发送 FIN 报文，且指定一个序列号。此时服务端处于 `LAST_ACK`
- 的状态，等待客户端的确认
+**第三次挥手 ：**如果服务端也想断开连接了（没有要向客户端发出的数据），和客户端的第一次挥手一样，发送 FIN 报文，且指定一个序列号。此时服务端处于 LAST_ACK 的状态，等待客户端的确认
 
 **第四次挥手**客户端收到 FIN 之后，一样发送一个 ACK 报文作为应答（ack = w+1），且把服务端的序列值 +1 作为自己 ACK 报文的序号值
 
@@ -1285,7 +1273,7 @@ TCP是一种面向连接的单播协议，在发送数据前，通信双方必�
 浏览器首先会按照资源默认的优先级确定加载顺序：
 
 1. html 、 css 、 font 这三种类型的资源优先级最高；
-2. 然后是 preload 资源（通过 \<link rel=“preload"> 标签预加载）、 script 、 xhr 请求；
+2. 然后是 preload 资源（通过 link 标签 rel=“preload" 标签预加载）、 script 、 xhr 请求；
 3. 接着是图片、语音、视频；
 4. 最低的是prefetch预读取的资源。
 
@@ -1353,12 +1341,12 @@ CSRF：跨站请求伪造。原理或本质就是让用户在已登录的站点�
 
 created
 
-- 完成数据观测，属性与方法的运算，`watch`、`event`事件回调的配置
-- 可调用`methods`中的方法，访问和修改data数据触发响应式渲染`dom`，可通过`computed`和`watch`完成数据计算
+- 完成数据观测，属性与方法的运算，watch、event 事件回调的配置
+- 可调用 methods 中的方法，访问和修改data数据触发响应式渲染 dom，可通过 computed 和 watch 完成数据计算
 
 mounted
 
-- 已完成`DOM`的挂载与渲染，此刻打印`vm.$e`，发现之前的挂载点及内容已被替换成新的DOM
+- 已完成 DOM 的挂载与渲染，此刻打印 vm.$e ，发现之前的挂载点及内容已被替换成新的DOM
 
 
 ## React virtual dom
@@ -1374,9 +1362,9 @@ virtual DOM 是一种编程理念（数据驱动视图），将 ui 虚拟 dom �
 - moveChild
 - removeChild
 
-实际上它只是一层对真实`DOM`的抽象，以`JavaScript` 对象 (`VNode` 节点) 作为基础的树，用对象的属性来描述节点，最终可以通过一系列操作使这棵树映射到真实环境上
+实际上它只是一层对真实 DOM 的抽象，以 JavaScript 对象 (VNode 节点) 作为基础的树，用对象的属性来描述节点，最终可以通过一系列操作使这棵树映射到真实环境上
 
-在`Javascript`对象中，虚拟`DOM` 表现为一个 `Object`对象。并且最少包含标签名 (`tag`)、属性 (`attrs`) 和子元素对象 (`children`) 三个属性，不同框架对这三个属性的名命可能会有差别
+在 Javascript 对象中，虚拟 DOM 表现为一个 Object 对象。并且最少包含标签名 (tag)、属性 (attrs) 和子元素对象 (children) 三个属性，不同框架对这三个属性的名命可能会有差别
 
 react 函数式组件思想 当你 setstate 就会遍历 diff 当前组件所有的子节点子组件, 这种方式开销是很大的, 所以 react 16 采用了 fiber 链表代替之前的树，可以中断的，分片的在浏览器空闲时候执行
 
@@ -1399,41 +1387,35 @@ vue 组件响应式思想 采用代理监听数据，我在某个组件里修改
 - watch 更适用于数据变化时的异步操作。
 - watch 支持异步代码而 computed 不支持。
 
-## Vue 的 Vdom
-
-实际上它只是一层对真实`DOM`的抽象，以`JavaScript` 对象 (`VNode` 节点) 作为基础的树，用对象的属性来描述节点，最终可以通过一系列操作使这棵树映射到真实环境上
-
-在`Javascript`对象中，虚拟`DOM` 表现为一个 `Object`对象。并且最少包含标签名 (`tag`)、属性 (`attrs`) 和子元素对象 (`children`) 三个属性，不同框架对这三个属性的名命可能会有差别
-
 ## nextTick  的实现
 
-在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM，所以放在 Vue.nextTick()回调函数中的执行。`nextTick`本质是一种优化策略
+在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM，所以放在 Vue.nextTick() 回调函数中的执行。**nextTick** 本质是一种优化策略
 
-我们可以理解成，`Vue`在更新 `DOM`时是异步执行的。当数据发生变化，`Vue` 将开启一个异步更新队列，视图需要等队列中所有数据变化完成之后，再统一进行更新。
+我们可以理解成，Vue 在更新 DOM 时是异步执行的。当数据发生变化，Vue 将开启一个异步更新队列，视图需要等队列中所有数据变化完成之后，再统一进行更新。
 
 Vue 是异步执行 dom 更新的，一旦观察到数据变化，Vue 就会开启一个队列，然后把在同一个事件循环 (event loop) 当中观察到数据变化的 watcher 推送进这个队列。如果这个 watcher 被触发多次，只会被推送到队列一次。这种缓冲行为可以有效的去掉重复数据造成的不必要的计算和 DOm 操作。
 
 ## New vue 实例过程
 
-- `new Vue`的时候调用会调用`_init`方法
-  - 定义 `$set`、`$get` 、`$delete`、`$watch` 等方法
-  - 定义 `$on`、`$off`、`$emit`、`$off`等事件
-  - 定义 `_update`、`$forceUpdate`、`$destroy`生命周期
-- 调用`$mount`进行页面的挂载
-- 挂载的时候主要是通过`mountComponent`方法
-- 定义`updateComponent`更新函数
-- 执行`render`生成虚拟`DOM`
-- `_update`将虚拟`DOM`生成真实`DOM`结构，并且渲染到页面中
+- new Vue 的时候调用会调用 _init 方法
+  - 定义 $set、$get 、$delete、$watch 等方法
+  - 定义 $on、$off、$emit、$off 等事件
+  - 定义 _update、$forceUpdate、$destroy 生命周期
+- 调用 $mount 进行页面的挂载
+- 挂载的时候主要是通过 mountComponent 方法
+- 定义 updateComponent 更新函数
+- 执行 render 生成虚拟 DOM
+- _update 将虚拟 DOM 生成真实 DOM 结构，并且渲染到页面中
 
 ## v-if 和 v-show
 
 控制手段不同编译过程不同编译条件不同:
 
-控制手段：`v-show`隐藏则是为该元素添加`css--display:none`，`dom`元素依旧还在。`v-if`显示隐藏是将`dom`元素整个添加或删除
+控制手段：v-show 隐藏则是为该元素添加 css display:none，dom 元素依旧还在。v-if 显示隐藏是将 dom 元素整个添加或删除
 
-编译过程：切换过程中合适地销毁和重建内部的事件监听和子组件；`v-show` 只是简单的基于css切换
+编译过程：切换过程中合适地销毁和重建内部的事件监听和子组件；v-show 只是简单的基于 css 切换
 
-原理：设置`display`属性，另一个是根据条件值判断生成`DOM`
+原理：设置 display 属性，另一个是根据条件值判断生成 DOM
 
 ## styles scoped
 
@@ -1449,11 +1431,11 @@ Scope CSS 的本质是基于 HTML 和 CSS 属性选择器，即分别给 HTML �
 
 ## keep-alive
 
-`keepalive` 可以接收3个属性做为参数进行匹配对应的组件进行缓存:
+**keepalive** 可以接收3个属性做为参数进行匹配对应的组件进行缓存:
 
-- `include` 包含的组件(可以为字符串，数组，以及正则表达式，只有匹配的组件会被缓存)
-- `exclude` 排除的组件(以为字符串，数组，以及正则表达式，任何匹配的组件都不会被缓存)
-- `max` 缓存组件的最大值(类型为字符或者数字，可以控制缓存组件的个数)
+- include 包含的组件(可以为字符串，数组，以及正则表达式，只有匹配的组件会被缓存)
+- exclude 排除的组件(以为字符串，数组，以及正则表达式，任何匹配的组件都不会被缓存)
+- max 缓存组件的最大值(类型为字符或者数字，可以控制缓存组件的个数)
 
 ## vue 数据绑定原理
 
@@ -1480,11 +1462,11 @@ React 在 V16 之前会面临的主要性能问题是：当组件树很庞大时
 - react 的组件设计，如果你的一个组件加载或者更新时，带动 200 个组件更新，那么它会等这 200 个组件更新完再让出进程，如果这个时候用户有交互，是没有反应的（如果说 200 个组件需要 200 毫秒，这 200 毫秒内交互无效），为了提高用户体验
 - 把可中断的工作拆分成小任务
 - 增量渲染（把渲染任务拆分成块，匀到多帧）渲染任务拆分之后，每次只做一小段，做完一段就把时间控制权交还给主线程，而不像之前长时间占用
-- 支持`render()`返回多个元素，更好地支持 error boundary
+- 支持 **render()** 返回多个元素，更好地支持 error boundary
 
 ## vue v3 Proxy：
 
-用于定义基本操作的自定义行为，说白了`Proxy`用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等），用到了Reflect 也就是反射对象
+用于定义基本操作的自定义行为，说白了 **Proxy** 用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等），用到了Reflect 也就是反射对象
 
 对比：
 
@@ -1504,10 +1486,10 @@ React 在 V16 之前会面临的主要性能问题是：当组件树很庞大时
 
 ## react 的 shouldcomponentupdate
 
-- `shouldComponentUpdate`方法接收两个传参：`(nextProps, nextState)`，分别表示变化后的 `props`（组件的参数） 和 `state`（组件的状态）；
+- **shouldComponentUpdate** 方法接收两个传参：(nextProps, nextState)，分别表示变化后的  props（组件的参数） 和 state（组件的状态）；
 - 这个方法一般是在子组件里来设置使用，例如父组件状态更新了，但子组件其实 props 没变化，但也会因为父组件的更新而跟着更新
-- 组件的首次渲染或者调用 `forceUpdate()`方法时**不会**触发用 `shouldComponentUpdate`方法
-- pureComponent 相比于 React.Component 内置了`shouldComponentUpdate` 方法，它会同时对 props 和 state 的变化值进行浅比较，如果没有变化则跳过重渲染。
+- 组件的首次渲染或者调用 forceUpdate() 方法时**不会**触发用 shouldComponentUpdate 方法
+- pureComponent 相比于 React.Component 内置了 shouldComponentUpdate 方法，它会同时对 props 和 state 的变化值进行浅比较，如果没有变化则跳过重渲染。
 
 ## React.memo、useMemo 和 useCallback
 
@@ -1535,17 +1517,17 @@ useMemo：
 
 ## tree shaking原理
 
-- `ES6`的`import`语法可以完美使用`tree shaking`，因为可以在代码不运行的情况下就能分析出不需要的代码。
-  - `ES6 Module` 引入进行静态分析，故而编译的时候正确判断到底加载了那些模块
+- ES6 的 import 语法可以完美使用 tree shaking，因为可以在代码不运行的情况下就能分析出不需要的代码。
+  - ES6 Module 引入进行静态分析，故而编译的时候正确判断到底加载了那些模块
   - 静态分析程序流，判断那些模块和变量未被使用或者引用，进而删除对应代码
 - 核心就是去除 dead code
   - 不可达代码
   - 执行结果并用不到
   - 某个变量只有写，但没有读
 - 步骤
-  - Make 阶段，**收集**导出变量并**记录**到模块依赖图**ModuleGraph** 变量中。
-  - Seal 阶段，**遍历**ModuleGraph 标记模块导出变量**有没有被使用**
-  - 生成产物时，若变量没有被其他模块使用时则删除对应的导出语句
+  - Make 阶段，收集导出变量并记录到模块依赖图 ModuleGraph 变量中。
+  - Seal 阶段，遍历 ModuleGraph 标记模块导出变量有没有被使用。
+  - 生成产物时，若变量没有被其他模块使用时则删除对应的导出语句。
 
 ## 什么是 ast及如何写一个 babel plugin
 

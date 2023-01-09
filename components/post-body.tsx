@@ -8,6 +8,8 @@ const PostBody = ({ content }: Props) => {
       prose
       prose-stone
       prose-base
+      prose-code:before:content-none
+      prose-code:after:content-none
       dark:prose-invert
       max-w-2xl
       mx-auto
