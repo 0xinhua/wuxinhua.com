@@ -6,7 +6,7 @@ date: '2022-10-19 10:00:00'
 tags: '321来信 Stability Stable Diffusion AI 广西自驾'
 ---
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/19-qinzhouwan.jpeg)
+![The qinzhou port](https://assets.wuxinhua.com/blog/assets/newsletter/19-qinzhouwan.jpeg "The qinzhou port")
 
 2022-10-02 钦州湾-广西
 
@@ -92,7 +92,7 @@ ps：这份 newsletter 也是我的 friend catchers 之一，我期待能在互�
 - 一个完全由人工智能生成的[播客](https://podcast.ai/)，其中乔·罗根采访了史蒂夫·乔布斯。
 - 在北海第一眼看到这个招牌时还觉得挺有诗意的 ~
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/19-beihai.jpeg)
+![beihai guangxi](https://assets.wuxinhua.com/blog/assets/newsletter/19-beihai.jpeg "Beihai Guangxi China")
 
 ## 💡 思考
 
@@ -123,7 +123,7 @@ Tim Cook 在一次哈佛毕业典礼的演讲中提到：“你的导师可能�
 
 这里引用分享上周回信里一位叫 Nemo 的读者的回信，谢谢他给我分享了一些整理的语言与思维关系的内容：
 
-> "徐默凡在华东师大中文系的开学典礼上提到，我们羡慕和赞叹语言的美丽的同时，要注意语言文字存在的陷阱，例如我们在形容一个人的时候容易给人贴标签，会立马想到一个个词来形容他，往往会具体归类到那一类人，并且对他进行分类。例如我们经常被问到该内卷还是躺平时，这个问题本身已经陷入“强行分类”的陷阱了"
+> 徐默凡在华东师大中文系的开学典礼上提到，我们羡慕和赞叹语言的美丽的同时，要注意语言文字存在的陷阱，例如我们在形容一个人的时候容易给人贴标签，会立马想到一个个词来形容他，往往会具体归类到那一类人，并且对他进行分类。例如我们经常被问到该内卷还是躺平时，这个问题本身已经陷入“强行分类”的陷阱了
 >最近看了一些语言和思维关系的内容，看到这段话又想起了一些 ，想分享给你，也顺便整理整理自己的思路～
 
 >1、大脑是“懒惰”的，是追求低耗能的，所以大脑特别喜欢贴标签，便于大脑自己理解，也便于大脑转化成语言讲述给其他人。

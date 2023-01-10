@@ -37,7 +37,7 @@ Hi，见信好，这是 321来信发出的第 24 封信，这也是 2022 年投�
 - 爱心包、应检尽检、社会面清零...三年创造出很多新词，[三年疫情创造或涉及的246个名词](https://mp.weixin.qq.com/s/0ujURZW-yMbO_5OkERRmdA)
 - 1994 年的 Yahoo 长这样
 
-![](https://assets.wuxinhua.com/newsletter/assets/yahoo.png)
+![1994 yahoo](https://assets.wuxinhua.com/newsletter/assets/yahoo.png "1994 yahoo")
 
 ## 👍 推荐：
 

@@ -6,7 +6,7 @@ date: '2022-11-01 10:32:01'
 tags: '321来信 新冠疫情 创业 大脑记忆 死亡'
 ---
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/20-titian.jpeg)
+![taoyuan terrace](https://assets.wuxinhua.com/blog/assets/newsletter/20-titian.jpeg "taoyuan terrace")
 
 2022-08-13 桃源梯田-江西
 
@@ -66,7 +66,7 @@ Hi，见信好，这是 321来信发出的第 21 封信。
 
 - 我们经常会说老字号百年老店，据调查全球的创立 100年 以上的企业中，日本占了41.3%，200 年以上企业中，日本占了 65%，让我震惊的是日本有着 1340 家创业超 200 年的老店。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/20-jp-store.png)
+![Japanese century-old shop](https://assets.wuxinhua.com/blog/assets/newsletter/20-jp-store.png "Japanese century-old shop")
 
 ## 💡 思考
 

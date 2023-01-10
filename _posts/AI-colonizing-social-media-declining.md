@@ -6,7 +6,7 @@ date: '2022-12-13 09:32:49'
 tags: '321来信 AI 羊了个羊 Cornfield chase 社交网络'
 ---
 
-![](https://assets.wuxinhua.com/newsletter/assets/22-ai.png)
+![DALL·E](https://assets.wuxinhua.com/newsletter/assets/22-ai.png "DALL·E")
 
 2022-12-13 DALL·E
 
@@ -17,7 +17,6 @@ Hi，见信好，这是 321来信发出的第 23 封信。最近北京防疫政�
 - AI 殖民以及AI 会不会取代我的工作，社交媒体公司陷入空前的混乱和衰退中
 - 一段旋律好听或者好哭那么它大概率都是有原因的
 - 关键字：AI、羊了个羊、Cornfield chase、社交网络、社交媒体
-
 
 ## 💡 想法
 
@@ -42,12 +41,11 @@ AI 似乎有取代搜索引擎的能力和潜力，我也有体会到 AI 产品�
 
 - 如果你的 Chrome 升级到最新 108 版本，只需在地址栏中输入“@”即可帮助我们在 Chrome 标签页、书签和历史记录查找丢失的标签页 [](https://blog.google/products/chrome/search-your-tabs-bookmarks-and-history-in-the-chrome-address-bar/)
 
-![](https://assets.wuxinhua.com/newsletter/assets/22-chrome.gif)
+![search bookmarks chrome](https://assets.wuxinhua.com/newsletter/assets/22-chrome.gif "search bookmarks chrome")
 
 - 好消息电影沙丘 2 已经完成了拍摄，视觉效果很震撼
 
-![](https://assets.wuxinhua.com/newsletter/assets/22-dune.png)
-
+![dune 2](https://assets.wuxinhua.com/newsletter/assets/22-dune.png "dune 2")
 
 ## 👍 推荐：
 
