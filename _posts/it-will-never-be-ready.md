@@ -27,7 +27,7 @@ Hi，见信好，这是 321来信发出的第 20 封信。
 
 作者分析了 AI 价值链上的 5 个环节，认为销售或使用人工智能的公司将进行以下 5 环的一项，在某些情况下只有 1 家公司，但也有可能是多家公司。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/19-ai-circle.jpeg)
+![ai circle](https://assets.wuxinhua.com/blog/assets/newsletter/19-ai-circle.jpeg "ai circle")
 
 例如在过去的 5 年中，该行业的大多数人都在 GPU 上使用了深度学习算法，所需的计算能力急剧增加。算力层中最接近的玩家是 Nvidia。他们的 GPU 是计算竞赛的首要主力，最好、最前沿的研究通常都需要 Nvidia 芯片，这也导致了公司的股价在过去的 5 年上涨了 141 %。而最接近的基础模型公司是 OpenAI，他们目前提供 2 个基础产品：Dall-E（图像生成模型）和 GPT-3（文本生成模型）。
 
