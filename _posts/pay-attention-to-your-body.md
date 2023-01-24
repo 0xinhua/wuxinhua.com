@@ -8,7 +8,7 @@ tags: '321来信 裁员 Facebook 推荐流 晚点 中国奇谭 浪浪山'
 
 Hi，见信好，新年快乐，这是 321来信发出的第 25 封信。
 
-![guangxi jingxi](https://assets.wuxinhua.com/blog/assets/newsletter/guangxi-jingxi.jpeg "jingxi")
+![guangxi jingxi](https://assets.wuxinhua.com/blog/assets/newsletter/guangxi-jingxi.jpeg?imageMogr2/auto-orient/format/webp/interlace/1/blur/1x0/quality/75|imageslim "jingxi")
 
 2022-10  广西 - 靖西(一个陌生人给我隔空投送了他和朋友的一些旅行照片)
 
@@ -47,7 +47,7 @@ Hi，见信好，新年快乐，这是 321来信发出的第 25 封信。
 
 - 关于判断当前工作的一个方法
 
-![job](https://assets.wuxinhua.com/blog/assets/newsletter/24-job.jpeg "job")
+![job](https://assets.wuxinhua.com/blog/assets/newsletter/24-job.jpeg?imageMogr2/auto-orient/format/webp/interlace/1/blur/1x0/quality/75|imageslim "job")
 
 - 我最近在火车站总是能碰到少数几个全身穿着白色防护服带着面罩出行的乘客，我刚好坐在旁边大口吃东西，宛如两个世界的人，我有点疑惑，这套防护措施在当下还适用吗？
 

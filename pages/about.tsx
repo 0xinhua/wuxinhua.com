@@ -24,7 +24,7 @@ export default function About () {
           <figcaption>—Alan Turing</figcaption>
         </figure>
         <p>Update： 🎉 2022 年开始了一个 newsletter 项目： <Link className="underline" href={`https://321laixin.zhubai.love/`}>321来信</Link>，截止到年底收获了近 300 读者订阅，如果你喜欢我推送的内容，欢迎邮箱或微信订阅 ❤️</p>
-        <img className="my-8" src="https://assets.wuxinhua.com/blog/assets/newsletter/image.png" />
+        <img className="my-8" src="https://assets.wuxinhua.com/blog/assets/newsletter/image.png?imageMogr2/auto-orient/format/webp/interlace/1/blur/1x0/quality/75%7Cimageslim" />
         <p>👋 Hi，欢迎你访问我的博客，可以叫我 xinhua 或英文名 Kevin ~</p>
         <p>软件开发工程师<img src="https://assets.wuxinhua.com//blog/assets/coder.gif" width="30" alt="https://assets.wuxinhua.com//blog/assets/coder.gif" className="inline" />，在北京，之前曾在
         <Link className="underline" href="https://www.bytedance.com/zh">@字节跳动</Link>、
