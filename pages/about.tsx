@@ -1,8 +1,8 @@
 import Link from "next/link"
 import style from './style.module.css'
-import Container from './../components/container'
-import Header from './../components/header'
-import Layout from './../components/layout'
+import Container from '@/components/container'
+import Header from '@/components/header'
+import Layout from '@/components/layout'
 import Head from 'next/head'
 import { CMS_NAME } from "@/lib/constants"
 
