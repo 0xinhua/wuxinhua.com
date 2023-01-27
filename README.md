@@ -1,9 +1,8 @@
-# https://wuxinhua.com
+# <https://wuxinhua.com>
 
 ![](./assets/screenshot.jpeg)
 
-My personal Blog using [Next.js](https://nextjs.org/), Markdown, TypeScript, [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) and deploy it to the cloud with [Vercel](https://vercel.com/). 
-
+My personal Blog using [Next.js](https://nextjs.org/), Markdown, TypeScript, [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) and deploy it to the cloud with [Vercel](https://vercel.com/).
 
 ## Feature
 

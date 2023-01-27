@@ -37,7 +37,7 @@ tags:
 2. 如果没有找到，从操作系统中缓存中查询；
 3. 路由器也会有DNS记录，继续在路由器缓存中查询；
 4. 如果没有找到，继续在ISP(Internet Service Provider)互联网提供商机器中查询，这里是接入internet的中继站；
-4. 最后是在DNS(域名服务器)系统上查找；
+5. 最后是在DNS(域名服务器)系统上查找；
 
 **关于DNS服务器和解析器**
 DNS服务器可以理解为域名和IP地址相互映射的一个分布式数据库，你只需要记住网站域名即可，DNS服务器帮我们完成域名到IP的转换过程;DNS的本质是它发明了一种分层次的，基于域的命名方案，并且用的是一个分布式数据库系统实现此命名方案，简要地讲，DNS 的使用方法如下：为了将一个名字映射成IP地址，程序会调用一个解析器的库，利用名字解析器会往DNS服务器去查询名字，将找到的 ip 地址返回给解析器，解析器再将 ip 返回调用方，有了目标机器的 ip，应用程序和目标机器能建立一个 TCP 连接。
@@ -57,7 +57,7 @@ DNS轮询是实现负载均衡的一种方法，为什么要做负载均衡？�
 HTTP是一种无状态协议，因此在HTTP中引入了Cookie技术，服务器可以向客户端写Cookie,客户端每次的请求会带上这个Cookie;
 HTTP请求发生在客户端，HTTP的请求报文包括请求行、消息报头、请求正文三部分的内容，例如上述例子请求Google服务器中的一张图片,浏览器会向服务器发送的请求：
 
-``` sh
+```sh
 Request URL:https://www.google.com/images/branding/product/ico/googleg_lodp.ico  
 Request Method:GET  
 Status Code:200   
@@ -67,7 +67,7 @@ Remote Address:127.0.0.1:1080
 
 头部信息里标明了请求的URL，请求方法为GET,请求的返回状态码为200，该请求的远端地址等信息.  
 
-``` sh
+```sh
 :authority:www.google.com  
 :method:GET  
 :path:/images/branding/product/ico/googleg_lodp.ico  

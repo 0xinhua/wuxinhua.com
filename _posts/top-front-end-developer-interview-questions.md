@@ -975,7 +975,7 @@ Web 端和 Native 可以类比于 Client/Server 模式，Web 端调用原生接�
 
 主要原因是转换成了二进制进行运算
 
-```
+```js
 /**
  * 精确加法
  */
@@ -1330,7 +1330,7 @@ CSRF：跨站请求伪造。原理或本质就是让用户在已登录的站点�
 
 # 框架
 
-### Vue
+## Vue
 
 响应式更新流程图
 
@@ -1356,8 +1356,11 @@ virtual DOM 是一种编程理念（数据驱动视图），将 ui 虚拟 dom �
 1. 我们将 render 产生的 Virtual DOM简称 ‘Vdom’
 2. 通常调用 setState 方法触发 Vdom 更新
 3. Virtual DOM Diff的层次
-1. 层级级别的比较
-2. 元素级别的比较
+
+- 层级级别的比较
+- 元素级别的比较
+
+包括:
 
 - createChild
 - moveChild

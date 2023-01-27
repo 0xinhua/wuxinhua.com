@@ -31,7 +31,7 @@ tags: npm node.js pnpm yarn packages.json node_modules
 
 ## **npm** **、cnpm、** **yarn** **、** **pnpm** **主要区别**
 
-#### npm 简介
+### npm 简介
 
 > npm is the standard package manager for Node.js.
 
@@ -169,7 +169,7 @@ Yarn 是一个快速可靠安全的依赖管理工具，由 Facebook 联合其�
 
 这个问题类似于“在浏览器输入 url 回车之后发生了什么” 或者“如何手动实现一个 npm install”，依赖安装管理是 npm 的核心功能，原理就是执行 `npm install` 从 package.json 中的 dependencies 依赖包安装到当前目录的 ./node_modules 文件夹中，我们以安装 express 为例我们来探讨一下它的安装流程
 
-```
+```sh
 npm install express --timing=true --loglevel=verbose
 ```
 

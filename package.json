@@ -11,7 +11,7 @@
     "rss": "ts-node ./scripts/rss.ts",
     "seo": "pnpm rss && pnpm sitemap",
     "lint:md": "markdownlint ./_posts/*.md && README.md",
-    "lint:md:fix": "markdownlint ./_posts/*.md --fix && README.md --fix"
+    "lint:md:fix": "markdownlint ./_posts/*.md --fix && markdownlint README.md --fix"
   },
   "dependencies": {
     "@next/env": "^13.0.6",

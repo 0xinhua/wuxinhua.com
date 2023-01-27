@@ -8,10 +8,10 @@ tags: SVG
 SVG算不上是一种新技术，早在2001年的时候，已经出台了相应的规范，它是一种使用XML描述2D图形的语言，利用SVG可以做非常多炫酷的动画，结合HTML5、CSS3，SVG就变得更加强大;本篇是SVG实践总结，主要包含以下方面的内容：  
 
 1. 关于SVG
-1. SVG的视窗和坐标体系
-1. SVG 实践
-1. SVG 动画
-1. 附录  
+2. SVG的视窗和坐标体系
+3. SVG 实践
+4. SVG 动画
+5. 附录  
 
 #### 关于SVG
 
@@ -33,7 +33,7 @@ SVG 的优势：
 
 浏览器也有一个viewport，SVG的viewport与之类似，不同的是SVG这个窗口是可以修改的，“视窗”定义了我们以多大的区域来绘制SVG，这个概念类似于Canvas的画布，可以通过width和height来定义viewport,例如：  
 
-```
+```html
 <!-- the viewport 大小为 500px 500px -->
 <svg width="500" height="500">
     <!-- SVG content -->
@@ -50,7 +50,7 @@ SVG的坐标系和标准的笛卡尔直角坐标系还有点区别，svg坐标�
 
 viewBox顾名思意“视区盒子”，viewBox和viewport有点让人傻傻分不清楚，其实viewBox是在viewport外存在的另一个坐标体系，用来辅助定义SVG的可视范围，我的理解是类似于使用截屏软件时，viewBox即截图框区域大小，我们可以移动这个框来选择截取位置，既能截全屏，也可以截取特定区域；当没有定义viewBox时，viewBox默认为viewport的大小，viewBox定义四个坐标，分别是：x  y  width  height，x:左上角横坐标，y:左上角纵坐标，width:宽度，height:高度，通过下面的代码来查看viewBox起的作用：  
 
-```
+```html
 <!-- the viewport 大小为 300px 300px -->
 <svg class="circle-chart" width="300" height="300"  xmlns="http://www.w3.org/2000/svg">
       <circle class="pie" stroke="#4285f4" stroke-width="20" stroke-dasharray="400,0" stroke-linecap="round" fill="none" cx="0" cy="0" r="63.66197723675813" />
@@ -109,7 +109,7 @@ let data = [
   **stroke-dashoffset**: 偏移位置  
 利用dasharray画出第一个扇区，描边的长度等于它弧长，第二个扇区偏移至第一个扇区结束位置，理一下描边思路，伪代码如下：
 
-```
+```js
     // 伪代码
     // 总数
     lat total = 335 + 310 + 234 + 135 + 1548 ; // 2562
@@ -187,23 +187,23 @@ repeatCount： 重复次数indefinite表示无限重复
 
 1. 将animate标签放包裹在SVG标签中：  
 
-```HTML
-<circle id="chart5" ... >
-  <animate ... /> 
-  <!-- animate动画标签 -->
-</rect>
-```
+    ```HTML
+    <circle id="chart5" ... >
+      <animate ... /> 
+      <!-- animate动画标签 -->
+    </rect>
+    ```
 
 2. 使用`xlink:href`属性，指定作用于对应id标签：  
 
-```HTML
-<circle id="chart5" ... >
+    ```HTML
+    <circle id="chart5" ... >
 
-<animate xlink:href="#chart5" ... />
+    <animate xlink:href="#chart5" ... />
 
-</circle >
+    </circle >
 
-```
+    ```
 
 但省略xlink:href属性值后，动画默认作用于当前位置的父节点标签。  
 

@@ -211,7 +211,7 @@ flex-basis、flex-grow、flex-shrink
 
 `align-self` 允许单个项目和其它项目有不一样的align对齐方式，默认值为auto，表示继承父元素的align-items属性。可选的属性值即align-items属性值：
 
-```
+```css
 align-self: auto | flex-start | flex-end | center | baseline | stretch;
 ```
 

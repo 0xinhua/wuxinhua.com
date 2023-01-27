@@ -185,8 +185,9 @@ webpackConfig.plugins.push(extractStyles)
 
 ### 5.postcss-loader
 
-postcss-loader插件配置会麻烦一些，有两种方法：
-**一种是新建postcss.config.js文件**
+postcss-loader 插件配置会麻烦一些，有两种方法：
+
+新建postcss.config.js文件:
 
 ```javascript
 module.exports = {
@@ -196,7 +197,7 @@ module.exports = {
 }
 ```
 
-**另一种在webpack.config.js使用LoaderOptionsPlugin**
+另一种在 webpack.config.js 使用 LoaderOptionsPlugin:
 
 ```javascript
 webpackConfig.plugins.push(

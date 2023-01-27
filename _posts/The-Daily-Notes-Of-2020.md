@@ -8,12 +8,12 @@ tags: 年终总结 知识碎片 字节跳动
 ## # The fragment of knowledge
 
 > 记录日常的问题、新知识、想法 💡，欢迎 comment、补充，奇怪的知识增加了 ¯\\\_(ツ)\_/
-
+>
 > THINK BEFORE YOU WRITE! 不定期更新 \~
-
+>
 > Ps: 今年的读书笔记📒要鸽了，这是我 2020 日常记录的一些知识碎片笔记，字节跳动提倡 “context” 文化，注重信息的输入和流动，鼓励分享、交流，我也参与了比较多公司内部分享活动，收获不少，因为有些属于对内的资料、链接，这里一并剔除了 ~
 
-# # 5 月
+## #5月
 
 - 05-30
   - 最近通勤路上迷上了听 🎧\* _Podcast_ _(播客)_，\*APP 用的是 iOS 自带 “播客”，最近也在用[小宇宙](https://www.xiaoyuzhoufm.com/)，几个不错的节目：
@@ -31,10 +31,11 @@ tags: 年终总结 知识碎片 字节跳动
   - command + shift + R 打开 AirDrop
   - 空格键预览所有的 txt pdf jpg png gif psd ai sketch rmvb mkv mov 文件
 
-# # 6 月
+## #6月
 
 - 06-01
-  - [SpaceX 及“龙”飞船用的啥技术栈](https://www.reddit.com/comments/1853ap)
+
+> [SpaceX 及“龙”飞船用的啥技术栈](https://www.reddit.com/comments/1853ap)
 
 > 总结一下：操作系统用的 Linux，火箭和飞船的飞行软件主要编程语言是 C++，前端 Javascript/Knockout/Handlebars/LESS 等
 
@@ -186,13 +187,13 @@ tags: 年终总结 知识碎片 字节跳动
     - npm list 列出当前安装的依赖
     - npm home \<package> 跳转依赖 github 主页
 
-# # 7 月
+## #7月
 
 - 07-01
   - <https://uidesigndaily.com/> 开源的 UI 设计网站
   - [ntl](https://www.npmjs.com/package/ntl) 省时小工具，列出当前 Package.json 中的 script 命令：
 
-    ```
+    ```sh
     npm install -g ntl
     ```
 
@@ -318,7 +319,7 @@ tags: 年终总结 知识碎片 字节跳动
 
     > expand our thoughts far beyond text on paper - Ted Nelson
 
-# # 8 月
+## #8月
 
 - 08-01
   - [利器](https://liqi.io/community/)
@@ -422,7 +423,7 @@ tags: 年终总结 知识碎片 字节跳动
 
     - 内在的思维模式，即“组织心智”
 
-# # 9 月
+## #9月
 
 - 09-02
   - 英伟达发布 RTX 30 系列显卡
@@ -508,7 +509,7 @@ tags: 年终总结 知识碎片 字节跳动
 - 09-28
   - [作为前端，我对业务的一点理解](https://juejin.im/post/6876977166051966984)(写得不错，先 M 再看)
 
-# #10 月
+## #10月
 
 - 10-09
   - [「译」更快的 async 函数和 promises](https://mp.weixin.qq.com/s/pPMdQzq8JvSIaGQ8pzLeGw)
@@ -589,7 +590,7 @@ tags: 年终总结 知识碎片 字节跳动
   - [Kafka 原理总结](https://www.jianshu.com/p/7008d2a1e320)
   - [node 编程的书](https://salttiger.com/?s=node)
 
-# #11 月
+## #11月
 
 - 11-01
 
@@ -639,9 +640,9 @@ tags: 年终总结 知识碎片 字节跳动
 
     > 冯柳谈投资风格分为三种类型：
 
-        1. 是买大家都知道它好的公司
-        2. 二是买别人不知道它好但你知道、或者是别人都知道它好但你知道其实更好的公司
-        3. 三是买大家都不知道它好的公司，你不知道我也不知道
+      1. 是买大家都知道它好的公司
+      2. 二是买别人不知道它好但你知道、或者是别人都知道它好但你知道其实更好的公司
+      3. 三是买大家都不知道它好的公司，你不知道我也不知道
 
 - 11-08
   - 理解产品工具：判断力
@@ -723,7 +724,7 @@ tags: 年终总结 知识碎片 字节跳动
 - 11-25
   - [Barret 李靖的语雀](https://www.yuque.com/barretlee)
 
-# #12 月
+## #12月
 
 - 12-01
   - [你的第一本基金指南](内部同学做得分享，资料无法对外，后面准备自个码一个)

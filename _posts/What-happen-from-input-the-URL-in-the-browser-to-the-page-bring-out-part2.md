@@ -46,18 +46,19 @@ tags:
 
 当浏览器某个资源的请求没有命中强缓存，就会向服务器发送请求，验证协商缓存是否命中，如果协商缓存命中，返回304状态码，并且显示Not Modified，服务器判断是否命中协商缓存，靠的是Last-Modified，If-Modified-Since和ETag、If-None-Match这两对Header头部中的值来管理的，具体如下：
 
-**Last-Modified与If-Modified-Since**:  
+Last-Modified 与 If-Modified-Since:
 
 1. 浏览器第一次响应请求，返回资源的时会在响应header上加上Last-Modified值，标识该资源在服务器上的最后修改时间；  
 2. 浏览器再次请求这个资源时，会在请求头上header加上If-Modified-Since,即前一次返回的Last-Modified时间戳;  
 3. 服务器会通过比较请求头的If-Modified-Since和服务器中该资源的最后修改时间，没有变化则返回304 Not Modified；  
-**ETag、If-None-Match**  
+
+ETag 和 If-None-Match:
 
 1. 浏览器第一次向服务器请求一个资源，服务器在返回这个资源的同时，在response的header加上ETag值，这个header是服务器根据当前请求的资源生成的一个唯一标识，这个唯一标识是一个字符串，只要资源有变化字符串会更新，但是跟最后修改时间没有关系；  
 2. 客户端再次请求的时候在header头加上If-None-Match，即上一次返回的ETag值，服务器会比较Etag值来判断资源是否有变化，没有更新则返回304 Not Modified；  
 可以比较下下面的两个值，分别是Etag和Last-Modified:
 
-```
+```sh
 etag:"13545FC6301ECAFB470B0F52DE05926C"
 last-modified:Thu, 23 Mar 2017 07:35:45 GMT
 ```

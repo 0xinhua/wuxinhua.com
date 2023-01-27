@@ -10,14 +10,14 @@ tags: 'React面试题'
 ##### 目录
 
 1. [关于setState](#关于setState？)
-1. [props和state的区别](#props和state的区别？)
-1. [无状态组件和状态组件？](#无状态组件和状态组件？)
-1. [Virtual Dom的对比过程](#Virtual Dom的对比过程？)
-1. [关于React组件的生命周期](#关于React组件的生命周期？)
-1. [生命周期的哪个阶段异步请求数据](#生命周期的哪个阶段异步请求数据？)
-1. [什么是高阶组件(HOC)](#什么是高阶组件(HOC)？)
-1. [React如果处理事件绑定](#React如果处理事件绑定？)  
-1. [key如何选择](#key如何选择？)
+2. [props和state的区别](#props和state的区别？)
+3. [无状态组件和状态组件？](#无状态组件和状态组件？)
+4. [Virtual Dom 的对比过程](#VirtualDom的对比过程)
+5. [关于React组件的生命周期](#关于React组件的生命周期？)
+6. [生命周期的哪个阶段异步请求数据](#生命周期的哪个阶段异步请求数据？)
+7. [什么是高阶组件(HOC)](#什么是高阶组件(HOC)？)
+8. [React如果处理事件绑定](#React如果处理事件绑定？)  
+9. [key如何选择](#key如何选择？)
 
 ##### 关于setState？  
 
@@ -144,13 +144,13 @@ function multiplyAdd (value) {
 
 ##### 无状态组件和状态组件？
 
-**有状态和无状态两种形式的组件：**  
+有状态和无状态两种形式的组件：
 
-1. Stateless Component（无状态组件）  
+Stateless Component（无状态组件）  
 
-只有Props,没有state，当你不需要使用组件的生命周期的时候可以考虑使用这种方式，组件的数据流向更加简洁，组件也更方便测试。
+  只有Props,没有state，当你不需要使用组件的生命周期的时候可以考虑使用这种方式，组件的数据流向更加简洁，组件也更方便测试。
 
-2. Stateful Component（有状态组件）  
+Stateful Component（有状态组件）  
 
 Props和state都有使用，当你的需要再客户端保持一些数据的时候，二者会被用到；
 
@@ -179,7 +179,7 @@ Functional Components的写法：
   const Hello = ( props ) => (<div>Hello{props}</div>)
 ```
 
-##### Virtual Dom 的对比过程？
+##### VirtualDom的对比过程
 
 这个问题主要考察的是对React的Diff算法的了解，Diff算法究竟是如何工作的？
 在React中最神奇的部分莫过于Virtual Dom以及diff算法，React利用这两个东西高效地解决了页面渲染的问题。

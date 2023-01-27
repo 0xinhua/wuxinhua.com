@@ -49,9 +49,9 @@ class Provider extends Component {
 
 从源码中可以看到，作者用了React的Context,Context解决了一个React中很常见的问题：当你的组件嵌套越来越深的时候，context能让你父组件和其它里层组件之间的通信变的更方便，createProvider方法将返回一个Provider组件，该组件接受store和子组件，在Provider中定义了getChildContext方法来传递store，那么在子组件中利用contextTypes，你就能利用context访问到父级组件传递的store数据了。
 
-**<Provider store>**
+Provider store
 
-**Props**
+Props:
 
 1. store:应用中唯一的状态store
 2. children: 应用的子组件  

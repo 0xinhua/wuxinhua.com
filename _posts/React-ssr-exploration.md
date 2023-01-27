@@ -79,14 +79,14 @@ renderToStaticMarkup(react element)
 
 ##### #如何搭建基于React的服务端渲染应用
 
-**利用React + Express实现**：
+利用React + Express实现：
 
 1）结合React、React-router、Webpack等搭建一个服务端渲染项目；  
 2）利用ReactDOMServer.renderToString 和renderToStaticMarkup方法；  
 3）React-router提供对应了对应服务端渲染方案；  
 4）使用express搭建web服务器；  
 
-**利用网上的集成框架**
+利用网上的集成框架
 
 例如[Nextjs](https://zeit.co/about)。
 

@@ -95,7 +95,7 @@ git stash
 
 当你有多个改动，可能得提交在多个commit中，这时可以使用git add -p 一个个添加。
 
-```
+```bash
 git add -p
 ```
 
@@ -112,7 +112,7 @@ git remote prune
 
 挑毛病利器
 
-```
+```bash
 git blame #filename
 ```
 
@@ -122,13 +122,13 @@ git blame #filename
 
 git log是查看git历史的常用命令，但是很多时候输出的信息并不是很直观(也可以尝试一下git shortlog)，有时我们想看更多或更少的信息，这里可以使用format来定制你的log输出格式，简单点的可以这样
 
-```
+```bash
 git log --format=oneline --abbrev-commit
 ```
 
 例如这是我的：
 
-```
+```bash
 git log --graph --pretty=format:"%Cgreen(%h)%Creset-%d-%s by %C(yellow)%cN%Creset %cr" --abbrev-commit --date=relative
 
 ```
@@ -139,7 +139,7 @@ git log --graph --pretty=format:"%Cgreen(%h)%Creset-%d-%s by %C(yellow)%cN%Crese
 
 帮助你解决冲突
 
-```
+```bash
 
 # 开启git rerere
 git config --global rerere.enabled true
