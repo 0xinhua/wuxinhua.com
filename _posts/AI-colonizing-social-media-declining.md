@@ -60,9 +60,9 @@ AI 似乎有取代搜索引擎的能力和潜力，我也有体会到 AI 产品�
 
 ### [📃 The Age of Social Media Is Ending 社交媒体的时代正在结束 - theatlantic.com](https://www.theatlantic.com/technology/archive/2022/11/twitter-facebook-social-media-decline/672074/)
 
-社交媒体公司陷入空前的混乱中，Facebook 在衰退，Twitter变得混乱。
+社交媒体公司陷入空前的混乱中，Facebook 在衰退，Twitter 变得混乱。
 
-Twitter 可能是目前最大的也是真正的社交媒体网站，该站点不再关注于连接人们，而是演变了一个大型聊天室，用于时间上所有人进来聊天。扎克伯格的社交帝国在年底解雇了 1.1 万人，其广告业务岌岌可危，元宇宙幻想也陷入困境。而另一边 Musk 在 Tesla 和 SpaceX上路径是否也能成功复制在 Twitter上，目前还有很大的疑问。但可以确定的是推特的竞争对手们正准备推翻该平台，前 Twitter 员工和 Meta、Post、Mastodon 等公司正在开发可能成为下一个Twitter 的项目。
+Twitter 可能是目前最大的也是真正的社交媒体网站，该站点不再关注于连接人们，而是演变了一个大型聊天室，用于时间上所有人进来聊天。扎克伯格的社交帝国在年底解雇了 1.1 万人，其广告业务岌岌可危，元宇宙幻想也陷入困境。而另一边 Musk 在 Tesla 和 SpaceX 上路径是否也能成功复制在 Twitter上，目前还有很大的疑问。但可以确定的是推特的竞争对手们正准备推翻该平台，前 Twitter 员工和 Meta、Post、Mastodon 等公司正在开发可能成为下一个Twitter 的项目。
 
 这篇文章主要分析了社交网络和社交媒体区别：
 
