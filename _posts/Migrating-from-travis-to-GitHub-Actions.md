@@ -11,7 +11,7 @@ tags: 'Github Actions'
 声明一下！非原创，这是一篇翻译文章，发布于 GTCC 社区，一篇讲 CI 从 Travis 迁移到 GitHub-Actions 的英语文章， 我将它翻译成了中文，顺便学习了一下 GitHub Actions，如果你想了解作者和原文 🔽：
 
 文章作者：[markphelps](https://www.markphelps.me)  
-原文地址：https://www.markphelps.me/2019/09/migrating-from-travis-to-github-actions/
+原文地址：<https://www.markphelps.me/2019/09/migrating-from-travis-to-github-actions/>
 
 ## 从 Travis 迁移至 GitHub Actions
 
@@ -24,7 +24,6 @@ This conversation was marked as resolved by polaris1119
 
 ![推特截图](https://i.loli.net/2019/11/30/BDy3YCr5ZwgEbdL.png)
 
-
 ## 管道
 
 我不打算对比 workflow (流程) 、job(任务)、step(步骤) 等细节， GitHub 有广泛的文档来介绍 Actions 的 [用法](https://help.github.com/en/articles/workflow-syntax-for-github-actions) 和 [概念](https://help.github.com/en/articles/about-github-actions#core-concepts-for-github-actions)，我认为我想要的是很普通的一个 CI/CD 流程：
@@ -32,7 +31,7 @@ This conversation was marked as resolved by polaris1119
 . push 代码到分支后运行一些单元测试，最好能够使用 Go 的多个版本  
 . 在 PR 上，我还希望运行一些更广泛的集成测试，用来测试面向公众的 API 和 CLI  
 . 推送 tag 后，我想触发 [goreleaser](https://github.com/goreleaser/goreleaser) 来构建一个 Docker 镜像并推送到 [Docker Hub](https://hub.docker.com/r/markphelps/flipt)，同时打包一个发版的压缩文件  
-. 在新版本更新文档时更新 [文档网站](https://flipt.dev/) 
+. 在新版本更新文档时更新 [文档网站](https://flipt.dev/)
 
 前两个步骤主要的 TravisCI 工作是在这个 [config文件](https://github.com/markphelps/flipt/blob/90bafa834aec29cdaa3620b8ea30aa89466fe7d0/.travis.yml)配置的，虽然有一些差异:
 
@@ -56,7 +55,6 @@ uses: ./.github/actions/publish-docs
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
-
 
 它将通知 Actions 我希望使用 [local action](https://help.github.com/en/articles/workflow-syntax-for-github-actions#example-using-action-in-the-same-repository-as-the-workflow) 存在的 action，并设置 `GITHUB_TOKEN` 环境变量，该变量是推送到 GitHub pages 所必需的。
 
@@ -162,6 +160,7 @@ services:
 幸运的是 [goreleaser](https://goreleaser.com/) 已经为此做了 100% 工作! 我所需要做的就是在管道中的最后一步为它提供所需的环境变量，并使用正确的参数调用它。
 我已经在本地[使用脚本](https://github.com/markphelps/flipt/blob/c82b47b7522caf80bc3f5219ea62e9e37c416dd2/script/build/release)运行，这意味着在调用脚本之前，我必须在本地机器上设置 `GITHUB_TOKEN`、`DOCKER_USERNAME` 和 `DOCKER_PASSWORD`。
 为了将这个过程转移到 GitHub Actions 操作，我需要一种安全的方法来存储这些值并将它们注入到工作流中。幸运的是 GitHub 也为我们提供了对[保密](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables)的支持:
+
 ```sh
 - name: Release
   run: ./script/build/release
@@ -170,9 +169,13 @@ services:
     DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 ```
+
 这段代码展示了如何引用 `secrets` 并将它们设置为脚本运行时使用的环境变量。这使我可以通过 Actions 运行 goreleaser，而不必担心这些保密文件被暴露在日志或仓库本身中。
+
 ## 小结
+
 如果你决定迁移你的 pipelines 管道，这里有一些 ProTips™，可以帮助你:
+
 1. **从简单的开始**。不要试图一下就替换掉整个 CI/CD 方案。看看是否有一些可以先迁移的非关键任务。
 2. **保证现有 CI 系统正常运行**。这个不用说，不要删除你的 `travis.yml` 文件，直到你确信新的 Actions 设置一切运行正常。
 3. **优先寻找现有的解决方案**。Actions 社区中已经有很多很酷的东西，包括 [github/ Actions](https://github.com/actions) 项目。在尝试创建自己的特定任务之前先查看一下，你会发现有可能已经存在了。
@@ -182,4 +185,4 @@ services:
 
 我引用的所有工作流文件都可以在[这里](https://github.com/markphelps/flipt/tree/master/.github/workflows)找到。
 
-via: https://www.markphelps.me/2019/09/migrating-from-travis-to-github-actions/
+via: <https://www.markphelps.me/2019/09/migrating-from-travis-to-github-actions/>

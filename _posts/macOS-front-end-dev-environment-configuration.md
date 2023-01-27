@@ -144,11 +144,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 }
 ```
 
-  - [VS Code 代码片段完全入门指南](https://chinese.freecodecamp.org/news/definitive-guide-to-snippets-visual-studio-code/)
-  - [Vs Code添加自定义代码片段 snippet - 掘金](https://juejin.cn/post/6844904052950564871)
-  - [Sublime](https://www.sublimetext.com/)
-  - [webStorm](https://www.jetbrains.com/webstorm/)
-  - [Atom](https://atom.io/)
+- [VS Code 代码片段完全入门指南](https://chinese.freecodecamp.org/news/definitive-guide-to-snippets-visual-studio-code/)
+- [Vs Code添加自定义代码片段 snippet - 掘金](https://juejin.cn/post/6844904052950564871)
+- [Sublime](https://www.sublimetext.com/)
+- [webStorm](https://www.jetbrains.com/webstorm/)
+- [Atom](https://atom.io/)
 
 ## Node.js
 
@@ -159,7 +159,7 @@ brew pin node
 
 - Npm node包管理
 
-```
+```sh
 npm config set registry=http://bnpm.byted.org
 ```
 
@@ -171,10 +171,10 @@ npm config set registry=http://bnpm.byted.org
 
 1. 下载并配置本地 Git
 
-```shell
-git config --global user.name “First Last” (keep the quotes)
-git config --global user.email “Email” (keep the quotes)
-```
+    ```shell
+    git config --global user.name “First Last” (keep the quotes)
+    git config --global user.email “Email” (keep the quotes)
+    ```
 
 2. 生成 SSH 密钥
 
@@ -186,23 +186,27 @@ Git 是当前比较流行、常用的版本控制系统，例如分支、提交�
   - [git 官方文档](https://git-scm.com/book/zh/v2)
   - Git快速入门教程  
   - [commit message 提交约定](https://www.conventionalcommits.org/zh-hans/v1.0.0-beta.4/)
-  - https://juejin.cn/book/6844733697996881928
+  - <https://juejin.cn/book/6844733697996881928>
 
 ## dotfiles
-  - dotfiles 主要是指用户 home 目录下的配置文件，这类文件一般是一些工具、软件包的配置文件，比如 vim 的配置文件 .vimrc，zsh 的配置文件 .zshrc 等，关于 dotfile：
-  - [dotfiles](https://github.com/mathiasbynens/dotfiles)
-  - [https://www.atlassian.com/git/tutorials/dotfiles](https://www.atlassian.com/git/tutorials/dotfiles)
+
+- dotfiles 主要是指用户 home 目录下的配置文件，这类文件一般是一些工具、软件包的配置文件，比如 vim 的配置文件 .vimrc，zsh 的配置文件 .zshrc 等，关于 dotfile：
+- [dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [https://www.atlassian.com/git/tutorials/dotfiles](https://www.atlassian.com/git/tutorials/dotfiles)
 
 ## Tools
-  - [sourcetreeapp](https://www.sourcetreeapp.com/)
-  - [解压工具 Unarchive](https://theunarchiver.com/)
-  - [广告拦截 AdGuard](https://adguard.com/zh_cn/welcome.html)
-  - [IINA](https://iina.io/)
-  - [Alfred - 一款检索神器](https://www.alfredapp.com/)
-  - [Dash 文档检索软件](https://kapeli.com/dash)
-  - [Postman 一个调试 API 的工具](https://www.postman.com/)
-  - Charles
-    - 抓包 - [Charles](https://www.charlesproxy.com/)
-    - Charles使用教程
+
+- [sourcetreeapp](https://www.sourcetreeapp.com/)
+- [解压工具 Unarchive](https://theunarchiver.com/)
+- [广告拦截 AdGuard](https://adguard.com/zh_cn/welcome.html)
+- [IINA](https://iina.io/)
+- [Alfred - 一款检索神器](https://www.alfredapp.com/)
+- [Dash 文档检索软件](https://kapeli.com/dash)
+- [Postman 一个调试 API 的工具](https://www.postman.com/)
+- Charles
+  - 抓包 - [Charles](https://www.charlesproxy.com/)
+  - Charles使用教程
+
 ## Links
+
 - [setup-your-mac-for-development-2020-edition](https://dev.to/v3frankie/setup-your-mac-for-development-2020-edition-1c8a)

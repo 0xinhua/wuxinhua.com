@@ -90,7 +90,7 @@ class HomeScreen extends Component {
 
 ```
 
-### #0.60 版本添加 react navigation 
+### #0.60 版本添加 react navigation
 
 React Native 升级到 0.60 后，支持 AndroidX 和 Autolinked 自动连接 package 包算是两个比较大的更新，具体可以查看更新 [blog](https://facebook.github.io/react-native/blog/2019/07/03/version-60)：
 
@@ -122,6 +122,7 @@ module.exports = {
 };
 
 ```
+
 使用 jetify 处理 AndroidX 导致的问题：
 
 在`package.json`里添加 [jetify](https://github.com/mikehardy/jetifier)相关配置：
@@ -130,7 +131,7 @@ module.exports = {
 "postinstall": "npx jetify"
 ```
 
-使用 react navigation 开发路由导航过程中遇到的几个 bug 可以查看提的这几个 issues: 
+使用 react navigation 开发路由导航过程中遇到的几个 bug 可以查看提的这几个 issues:
 
 ![](https://i.loli.net/2019/07/10/5d25996d4655e23135.png)
 
@@ -169,7 +170,7 @@ com.android.builder.testing.api.DeviceException: No connected devices!
 > Warning: componentWillMount is deprecated and will be removed in the next major version. Use componentDidMount instead. As a temporary workaround, you can rename to UNSAFE_componentWillMount.
 Please update the following components: EventScreen
 Learn more about this warning here:
-https://fb.me/react-async-component-lifecycle-hooks
+<https://fb.me/react-async-component-lifecycle-hooks>
 
 在开发环境可以使用 YellowBox 忽略这些警告：
 
@@ -195,7 +196,7 @@ Execution failed for task ':RCTWeChat:verifyReleaseResources'.
 com.android.ide.common.process.ProcessException: Failed to execute aapt
 Try:
 Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
-Get more help at https://help.gradle.org
+Get more help at <https://help.gradle.org>
 
 这类问题很多情况是第三方包 gradle 版本配置与主体项目下的配置不一致导致的，例如项目使用的 `28.0.3`，而第三方包使用的是更低的版本，建议将引用库 gradle 配置更新成与 RN 项目 android 文件下 build.gradle 文件配置一致，例如：
 
@@ -233,9 +234,10 @@ iOS 模拟器可以通过 `Command⌘ + D` 快捷键来快速打开 Developer Me
 如果想查看组件的层级关系，可以全局安装 react 开发配套工具 react-devtools：
 
 ```shell
-$ npm install -g react-devtools
-$ react-devtools
+npm install -g react-devtools
+react-devtools
 ```
+
 运行后 React Native 应用会自动连接，会出现 connectting 窗口，刷新 App 即可看到当前 screen 的组件层级情况：
 
 ![](https://assets.wuxinhua.com/blog/assets/react-native/react-devtools-connect.jpg)
@@ -245,8 +247,8 @@ $ react-devtools
 如果想看控制台输出 log 日志，可以输入以下命令：
 
 ```shell
-$ react-native log-ios
-$ react-native log-android
+react-native log-ios
+react-native log-android
 ```
 
 ![](https://assets.wuxinhua.com/blog/assets/react-native/log-android.jpg)
@@ -263,7 +265,7 @@ react-native run-ios 或 react-native run-android
 
 ```
 
-### 总结：
+### 总结
 
 先后有 Airbnb 和 Udacity 表示将弃坑 React Native，回归到原生开发上。具体可查看公司技术博客：  
 
@@ -288,11 +290,10 @@ react-native run-ios 或 react-native run-android
 
 没有使用其它混合方案框架例如 Fluter、Weex 等进行开发混合应用，这里无法进行对比，只是总结最近一段时间使用 React Native 的开发体验，从初始化项目到应用上架整个过程并不是很流畅，真机调试过程经常有应用崩溃的情况发生，代码排查错误或者找问题的过程花费了我比较多的时间，另一方面是使用第三方组件、库等是一个踩坑过程，文档等没有及时更新，在添加配置的过程出现很多问题，可能是我刚好碰上 **60** 这个大版本，总的来说我认为 React Native 应该还是目前比较好并且稳定的混合应用开发方案，但在开发者使用体验上社区和团队需要进一步优化改善。
 
-
 ### 附录
 
 参考学习的一些资料：
 
 1. [Announcing React Native 0.60](https://facebook.github.io/react-native/blog/2019/07/03/version-60)  
-2. [React Native at Airbnb](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c) 
-3. [React Native: A retrospective from the mobile-engineering team at Udacity](https://engineering.udacity.com/react-native-a-retrospective-from-the-mobile-engineering-team-at-udacity-89975d6a8102) 
+2. [React Native at Airbnb](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c)
+3. [React Native: A retrospective from the mobile-engineering team at Udacity](https://engineering.udacity.com/react-native-a-retrospective-from-the-mobile-engineering-team-at-udacity-89975d6a8102)

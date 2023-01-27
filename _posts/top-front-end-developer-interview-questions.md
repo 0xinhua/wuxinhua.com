@@ -15,7 +15,7 @@ tags: 面试 前端面试题 前端八股文
 - Browser Object Model（浏览器对象模型）,即把「浏览器」当做一个「对象」来看待，BOM 的最核心对象是 window 对象
 - BOM 的 window 包含了document，所以可以说 BOM 包含了 DOM。
 
-## position 取值：
+## position 取值
 
 - **static** 默认的定位类型，这个时候 top right 这些值无效，浏览器决定位置
 - **relative** 它必须搭配 top、bottom、left、right 这四个属性使用，用来指定偏移的方向和距离，相对于默认位置（即 static 时的位置）进行偏移
@@ -60,7 +60,6 @@ cookie 的属性：
   1. **Strict** 仅允许一方请求携带 Cookie，即浏览器将只发送相同站点请求的 Cookie，即当前网页 URL 与请求目标 URL 完全一致
   2. **Lax** 允许部分第三方请求携带 Cookie
   3. **None** 无论是否跨站都发送 Cookie
-
 
 ## ie67兼容问题
 
@@ -147,6 +146,7 @@ div.style.top = curTop + 1 + 'px';
 - 1.flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
 - 2.flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
 - 3.flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。
+
 ## BFC
 
 **BFC**（Block Formatting Context），即块级格式化上下文，它是页面中的一块渲染区域，容器页面里的子元素不会影响到外部的元素，并且有一套属于自己的渲染规则：
@@ -264,7 +264,6 @@ input、img就是行内块级元素，
 - display:flex; 右边 flex-grow:1;
 - float + margin
 
-
 ```css
 .con2_l{
   float:left;
@@ -273,8 +272,8 @@ input、img就是行内块级元素，
   margin-left:200px;
 }
 ```
-- calc
 
+- calc
 
 ```css
 /* 5 calc */
@@ -344,7 +343,6 @@ IIFE（立即调用函数表达式）是一个在定义时就会立即执行的 
   - 数组是基于索引的实现，length 会自动更新，而对象是键值对；
   - 使用对象可以创建伪数组，伪数组可以正常使用数组的大部分方法；
 
-
 ## 函数的形参个数
 
 - `length`是函数对象的一个属性值，指该函数期望传入的参数数量，即形参的个数
@@ -375,7 +373,7 @@ var f1 = new Fn(); //f1是Fn构造函数创建出来的对象
 
 对象原型中的 constructor 属性指向构造函数 （Fn.prototype.constructor===Fn)
 
-对象的 __proto__ 属性值就是对象的原型。（f1.__proto__就是对象原型）
+对象的 **proto** 属性值就是对象的原型。（f1.__proto__就是对象原型）
 
 ## 函数 curry 化
 
@@ -383,14 +381,14 @@ var f1 = new Fn(); //f1是Fn构造函数创建出来的对象
 
 ```js
 function add(a, b) {
-	return a + b;
+ return a + b;
 }
 
 // curry 化
 function curryAdd(a) {
-	return function(b) {
-		return a + b
-	};
+ return function(b) {
+  return a + b
+ };
 };
 
 // 如果用箭头函数实现
@@ -481,6 +479,7 @@ b.extend(a)
 常见的几种数据类型，按存储类型来分的话有 6 种：
 
 基础类型
+
 - 布尔类型
 - null 类型
 - undefined类型
@@ -488,6 +487,7 @@ b.extend(a)
 - 字符串
 
 引用类型：
+
 - 对象
 
 ## set 和 map 及对象区别
@@ -559,7 +559,7 @@ var 的一个问题是变量被修改覆盖，举个简单的例子:
 ```js
 var greeter = 'hello'
 if (true) {
-	var greeter = 'world'
+ var greeter = 'world'
 }
 console.log(greeter) // 这里会打印 world 替换成 let 后能解决这个问题
 
@@ -592,33 +592,33 @@ let 是块级作用域，块是由 {} 界定的代码块，大括号中有一个
 
 用发车的一个例子来描述这两种情况，如果每个乘客上车发一次车比较耗时：
 
- - 节流：第一个乘客上车后开始计时，10 分钟准时发一次
- - 防抖：第一个乘客上车，攒 10 分钟后开始发车，10 分钟内有人上车再开始重新计时
+- 节流：第一个乘客上车后开始计时，10 分钟准时发一次
+- 防抖：第一个乘客上车，攒 10 分钟后开始发车，10 分钟内有人上车再开始重新计时
 
 ```js
 // throttle 节流
 const throttle = (fn, delay) => {
-	let timer = null;
-	return function (... args) {
-		if (!timer) {
-			timer = setTimeout(() => {
-				fn.apply(this, args);
-					timer = null;
-			}, delay)
-		}
-	}
+ let timer = null;
+ return function (... args) {
+  if (!timer) {
+   timer = setTimeout(() => {
+    fn.apply(this, args);
+     timer = null;
+   }, delay)
+  }
+ }
 };
 
 // debounce 防抖
 function debounce(fn, delay) {
-	let timer;
-	return function() {
-		let args = arguments;
-		if (timer) clearTimeout(timer);
-		timer = setTimeout(() => {
-			fn.apply(this, args);
-		}, delay)
-	}
+ let timer;
+ return function() {
+  let args = arguments;
+  if (timer) clearTimeout(timer);
+  timer = setTimeout(() => {
+   fn.apply(this, args);
+  }, delay)
+ }
 }
 ```
 
@@ -647,19 +647,19 @@ window.requestIdleCallback() 方法使用插入一个函数，这个函数将在
 
 ```js
 function deepclone (obj) {
-	let cloneObj = [].isArray(obj) ? [] : {};
-	if (obj && typeof obj === 'object') {
-		for (key in obj) {
-			if (obj.hasOwnProperty(key)) {
-				if (obj[key] && typeof obj[key] === 'object') {
-					cloneObj[key] = deepclone(obj[key])
-				} else {
-					cloneObj[key] = obj[key]
-				}
-			}
-		}
-	}
-	return cloneObj;
+ let cloneObj = [].isArray(obj) ? [] : {};
+ if (obj && typeof obj === 'object') {
+  for (key in obj) {
+   if (obj.hasOwnProperty(key)) {
+    if (obj[key] && typeof obj[key] === 'object') {
+     cloneObj[key] = deepclone(obj[key])
+    } else {
+     cloneObj[key] = obj[key]
+    }
+   }
+  }
+ }
+ return cloneObj;
 }
 ```
 
@@ -668,7 +668,7 @@ function deepclone (obj) {
 使用 new 来新建一个构造函数或类得到对应实例，是非常普遍的操作了，ES5 中使用 function 构造函数，到 ES6 使用 class 都可以使用 new 来新建实例。
 
 - new一个构造函数，得到的实例继承了构造器的构造属性(this.name这些)以及原型上的属性
-- 创建一个空的对象，将它的引用赋给 this，继承函数的原型，即设置该对象的 __proto__，该函数的原型对象 prototype 上
+- 创建一个空的对象，将它的引用赋给 this，继承函数的原型，即设置该对象的 **proto**，该函数的原型对象 prototype 上
 - 通过this将属性和方法添加到这个对象上，
 - 最后返回 this 指向的新对象
 
@@ -745,8 +745,8 @@ function Friut {}
 Friut.prototype = {
  color: 'red',
  say: function () {
-	console.log('color is:' + this.color)
-	}
+ console.log('color is:' + this.color)
+ }
 }
 
 var apple = new Friut;
@@ -840,7 +840,7 @@ let sum = function(num1, num2) {
   - 如果函数体只是返回一个对象或只有一句代码，可以省去函数体的大括号{ }。
 - 最重要的其实是 this 指向问题，箭头函数不会创建自己的 this，所以它没有自己的 this
 ，它只会从自己的作用域链的上一层继承 this，所以它的 this 捕获阶段是定义时确认的，而不是调用时。例如执行下面代码时分别输出不同的结果，普通函数执行时 this 指向传入的 obj，所以这里输出 id2，而 箭头函数的话是继承它定义时的一个全局变量的 this，也就是最外层的 id， 所以这里输出 id1。 除了没有 this，箭头函数也没有自己的 arguments 对象，但是可以通过剩余操作符 … 来输出参数列表。
-    
+
 ```js
 var id = 'id1';
 var obj = {
@@ -856,7 +856,7 @@ var obj = {
 obj.a();    // 'id2'
 obj.b();    // 'id1'
 ```
-    
+
 - .call() .apply().bind() 方法可以用来动态修改函数执行时 **this** 的指向。但在箭头函数里不起作用
 - 箭头函数无法作为构造函数，原因是没有原型 prototype，无法链接到实例的原型链上，没有 super，箭头函数不能用作Generator函数，不能使用 yeild 关键字
 
@@ -918,17 +918,18 @@ Mutation Observer API 用来监视 DOM 变动。DOM 的任何变动，比如节�
 - jsonp
 的原理就是利用 **\<script>** 标签没有跨域限制，通过 script 标签 src 属性，发送带有 callback 参数的 GET 请求，服务端将接口返回数据拼凑到callback 函数中，返回给浏览器，浏览器解析执行。
 - 跨域资源共享（CORS）（Cross-origin resource sharing）。 它允许浏览器向跨源服务器，发出 XMLHttpRequest 请求，从而克服了 AJAX 只能同源使用的限制。
-    
+
 浏览器将CORS跨域请求分为简单请求和非简单请求。
-  - 请求方式 head get post
-  - header 头 content-type限于 application/x-www-form-urlencoded、multipart/form-data、text/plain
+
+- 请求方式 head get post
+- header 头 content-type限于 application/x-www-form-urlencoded、multipart/form-data、text/plain
 
 简单请求里会新增加一个 Origin 字段。需要传递你接口的源的信息，后端判断是否同意这次请求，对应的相应头里也会返回 Access-Control 开头的字段，Access-Control-Allow-Origin。Allow-Credentials，默认是不带 cookie，如果需要带设置成 true
 
 不是简单请求，会多发一个预请求，预检"请求用的请求方法是 OPTIONS，表示这个请求是用来询问的。请求头信息里面，关键字段是 Origin，表示请求来自哪个源。除了 Origin 字段，"预检"请求的头信息包括两个特殊字段：
 
- - Access-Control-Request-Method
- - Access-Control-Request-Headers
+- Access-Control-Request-Method
+- Access-Control-Request-Headers
 - Nginx代理跨域和nodejs中间件跨域原理都相似
 
 ## 事件冒泡捕获
@@ -953,6 +954,7 @@ var fn = (function(){
   } 
 })()
 ```
+
 - 绑定事件时，dom已清除，但事件未清除导致
 - 计时器未及时 clear
 - 死循环调用
@@ -972,6 +974,7 @@ Web 端和 Native 可以类比于 Client/Server 模式，Web 端调用原生接�
 ## 浮点运算不准确的问题
 
 主要原因是转换成了二进制进行运算
+
 ```
 /**
  * 精确加法
@@ -1005,7 +1008,7 @@ JavaScript 垃圾回收机制的原理说白了也就是定期找出那些不再
 ## 前端模块化 CommonJS AMD CMD
 
 - 模块化历史及雏形
-    
+
 ```js
 <script>
   // your code
@@ -1036,7 +1039,7 @@ window.moduleA = {
   let data = ‘a’
 })()
 ```
-    
+
 - CMD、AMD 、ES6Moudle
   - CommonJS 模块规范，最早也是目前用的最多的，例如 node.js，主要的关键有两部分，模块化代码规范和模块加载器 loader：
     - 核心有 module.exports  require
@@ -1082,7 +1085,6 @@ history 是 url 地址规范, 不需要#，包括back,forward,go三个方法，�
 10. **deactivated**: 离开缓存组件a，或者触发a的 beforeDestroy 和 destroyed 组件销毁钩子。
 11. **mounted**: 访问/操作dom。
 12. **activated**:进入缓存组件，进入a的嵌套子组件(如果有的话)。
-
 
 # Node.js
 
@@ -1208,7 +1210,7 @@ result.split(' ');
 
 常量枚举只能使用常量枚举表达式并且不同于常规的枚举，他们在编译阶段会被删除。常量枚举成员在使用的地方会被内联起来，之所以真可以这么做是因为，常量枚举不允许包含计算成员。
 
-# http相关：
+# http相关
 
 ## Content-type的几种常见类型
 
@@ -1326,7 +1328,6 @@ CSRF：跨站请求伪造。原理或本质就是让用户在已登录的站点�
 - HTTP/1.1 使用文本的形式传输消息头，HTTP/1.1 不会压缩请求头字段和响应头字段，从而产生不必要的网络流量。HTTP/2 主要基于 SPDY 协议，通过对HTTP 头字段进行[首部压缩](https://info.support.huawei.com/info-finder/encyclopedia/zh/HTTP--2.html#section26294157125)
 、对数据传输采用[多路复用](https://info.support.huawei.com/info-finder/encyclopedia/zh/HTTP--2.html#section14159830131219)和增加[服务器推送](https://info.support.huawei.com/info-finder/encyclopedia/zh/HTTP--2.html#section106861538121216)等举措，来减少网络延迟，提高客户端的页面加载速度。
 
-
 # 框架
 
 ### Vue
@@ -1348,7 +1349,6 @@ mounted
 
 - 已完成 DOM 的挂载与渲染，此刻打印 vm.$e ，发现之前的挂载点及内容已被替换成新的DOM
 
-
 ## React virtual dom
 
 virtual DOM 是一种编程理念（数据驱动视图），将 ui 虚拟 dom 保持到内存中，并且通过某些库渲染成真实的 dom，这个过程又叫做协调。
@@ -1356,8 +1356,9 @@ virtual DOM 是一种编程理念（数据驱动视图），将 ui 虚拟 dom �
 1. 我们将 render 产生的 Virtual DOM简称 ‘Vdom’
 2. 通常调用 setState 方法触发 Vdom 更新
 3. Virtual DOM Diff的层次
-  1. 层级级别的比较
-  2. 元素级别的比较
+1. 层级级别的比较
+2. 元素级别的比较
+
 - createChild
 - moveChild
 - removeChild
@@ -1447,7 +1448,7 @@ v2 核心：Object.defineProperty()对属性的读取、修改进行拦截（数
 
 ## react hook 为什么得放在最上面
 
-因为 Hook 的每一次渲染都按照同样的顺序被调用，主要是为保证在多次的 useState 和 useEffect 调用之间保持 Hook 状态的正确。详见 https://overreacted.io/zh-hans/why-do-hooks-rely-on-call-order/
+因为 Hook 的每一次渲染都按照同样的顺序被调用，主要是为保证在多次的 useState 和 useEffect 调用之间保持 Hook 状态的正确。详见 <https://overreacted.io/zh-hans/why-do-hooks-rely-on-call-order/>
 
 ## React fiber 原理
 
@@ -1464,7 +1465,7 @@ React 在 V16 之前会面临的主要性能问题是：当组件树很庞大时
 - 增量渲染（把渲染任务拆分成块，匀到多帧）渲染任务拆分之后，每次只做一小段，做完一段就把时间控制权交还给主线程，而不像之前长时间占用
 - 支持 **render()** 返回多个元素，更好地支持 error boundary
 
-## vue v3 Proxy：
+## vue v3 Proxy
 
 用于定义基本操作的自定义行为，说白了 **Proxy** 用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等），用到了Reflect 也就是反射对象
 
@@ -1475,7 +1476,6 @@ React 在 V16 之前会面临的主要性能问题是：当组件树很庞大时
 - 数组新增删除修改时，Proxy 可以监听到，Object.defineProperty 监听不到
 - Proxy 有多达13种拦截方法,不限于apply、ownKeys、deleteProperty、has 等等是 Object.defineProperty 不具备的
 - Proxy 有一定的兼容问题，proxy 不兼容ie，也没有 polyfill
-
 
 ## useEffect 与 useLayoutEffect
 

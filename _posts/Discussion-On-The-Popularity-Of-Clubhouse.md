@@ -47,7 +47,7 @@ CH 是一个实时在线语音群聊产品，与其它语音聊天产品不同�
 ### RTC 及 WebRTC
 
  > WebRTC is a new front in the long war for an open and unencumbered web.
-
+ >
  > —— Brendan Eich, inventor of JavaScript
 
  这里简要介绍下 WebRTC, 需要注意的是 RTC 和 WebRTC 还是有一些区别，RTC 全称 Real-time Communications，直译或者广义指实时通信，狭义一般称为实时音视频通信，最典型的应用是视频会议的实施音频通话、直播等，而 WebRTC 是 RTC 技术中的一部分，WebRTC --- Web browsers with Real-Time Communications 是一个由谷歌主导的通信服务标准，也是开源项目，简单来说就是在浏览器中实现实时的音频视频和数据的通信，目前在主流的浏览器中都已经支持。在 RTC 通信中音频的采集和处理都是比较复杂的过程，比如音频流的编码解码、降噪等，在 webRTC 中这些都是已经由浏览器的底层封装完成，双方只需要安装浏览器即可建立点对点的链接实现音视频的实时通信。WebRTC 架构图如下图:

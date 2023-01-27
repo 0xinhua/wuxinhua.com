@@ -9,7 +9,7 @@ tags: iOS 13 适配
 
 目前 iOS 可下载的最新正式版是 13.3，早在今年 6 月份苹果向公众推出 iOS 13 的开发者预览版，在 9 月份发布 iOS 13.0 版本后，苹果又接连推出了 13.1 / 13.1.1 / 13.1.2，iOS 13.2 还因为频繁杀后台被用户吐槽新版本 Bug 太多。目前市场上主流的 iPhone 机型(包括iPhone 6s、6s Plus、7、7Plus、8、8Plus、SE、X 、XS 、XS Max、XR、iPod touch 7代等）都兼容升级 iOS13 版本，但值得注意的是已不再支持 A7 或 A8 处理器的机型，仅限于 A9 处理器。
 
-Apple 在 10 月份推送了 iOS13 公开版后，iOS 用户进行更新版本，如果应用没有做适配会导致 Crash 、兼容适配等问题，这里记录一下当时适配过程遇到的一些问题以及体验移动开发的一些收获，由于对 iOS 开发、Swift 等并不是很熟悉，如内容有误，请及时斧正。 
+Apple 在 10 月份推送了 iOS13 公开版后，iOS 用户进行更新版本，如果应用没有做适配会导致 Crash 、兼容适配等问题，这里记录一下当时适配过程遇到的一些问题以及体验移动开发的一些收获，由于对 iOS 开发、Swift 等并不是很熟悉，如内容有误，请及时斧正。
 
 ## 功能更新
 
@@ -45,7 +45,7 @@ Apple 在 10 月份推送了 iOS13 公开版后，iOS 用户进行更新版本�
 
 - 地图、Memoji、键盘优化等
 
-这里没有全面列举这次功能上的更新，具体可网上查看 iOS13 的更新列表。 
+这里没有全面列举这次功能上的更新，具体可网上查看 iOS13 的更新列表。
 
 ## API 层变动
 
@@ -119,6 +119,7 @@ UINavigationController *navi = [[UINavigationController alloc] initWithRootViewC
   <key>UIUserInterfaceStyle</key>
   <string>Light</string>
   ```
+
   但这样强制使用 Light 模式带来的影响就是用户切换成 Dark mode ，如果 Status Bar 的显示未兼容会影响用户查看设备状态栏信息。iOS13 对Status BarAPI 做了修改，之前 Status Bar 有两种状态：
 
   - default 默认文字黑色
@@ -130,7 +131,8 @@ UINavigationController *navi = [[UINavigationController alloc] initWithRootViewC
   - lightContent 文字白色
   - darkContent 文字黑色
 
-![](https://assets.wuxinhua.com/blog/assets/ios13/status-bar.png)
+![iOS13 status bar](https://assets.wuxinhua.com/blog/assets/ios13/status-bar.png "iOS13-status-bar")
+
 - 中等
 
   中等适配主要是颜色相关，例如针对 dark mode 修改背景颜色和字体颜色， 需要UI配合针对目前正常的颜色值给出 dark mode 的颜色值，然后整体来修改替换。
@@ -169,11 +171,11 @@ DispatchQueue.main.async {
 
 区别：
 
-  - UIWebView 使用 UIKit 框架，而 WKWebView 使用 WebKit.
-  - WKWebView 运行在应用单独的一个线程上，并且它可以利用 Safari JavaScript 引擎进行优化，这意味着 WKWebView 加载页面更快更加高效，减少内存开销
-  - WKWebView 加载本地文件在 iOS 9 中得到修复
-  - WKWebView 中无法像在 UIWebView 中那样对页面进行缩放适应
-  - WKWebView 增强了对 indexedDB 的支持
+- UIWebView 使用 UIKit 框架，而 WKWebView 使用 WebKit.
+- WKWebView 运行在应用单独的一个线程上，并且它可以利用 Safari JavaScript 引擎进行优化，这意味着 WKWebView 加载页面更快更加高效，减少内存开销
+- WKWebView 加载本地文件在 iOS 9 中得到修复
+- WKWebView 中无法像在 UIWebView 中那样对页面进行缩放适应
+- WKWebView 增强了对 indexedDB 的支持
 
 ```swift
   // UIWebView
@@ -216,17 +218,17 @@ class WKWebViewController: UIViewController, WKNavigationDelegate {
 
 使用苹果登陆是苹果推出的新功能，方便用户使用他们的苹果ID登录到你的应用程序或网站。无需填写登陆注册表单、验证电子邮件地址、选择新的密码等，可以使用“Sign In With Apple”建立一个帐户并快速开始使用该应用。苹果的在 WWDC2019 介绍PPT中提到：
 
-  - 精简的账户注册（Name + Email addresses）
-  - 使用已验证邮箱地址（依赖 AppleID 做双重验证）
-  - 反作弊
-  - 安全地（APP只能访问名称和邮件，苹果不记录信息、可以隐藏邮箱地址）
-  - 跨平台（iOS macOS watchOS tvOS JavaScript）
+- 精简的账户注册（Name + Email addresses）
+- 使用已验证邮箱地址（依赖 AppleID 做双重验证）
+- 反作弊
+- 安全地（APP只能访问名称和邮件，苹果不记录信息、可以隐藏邮箱地址）
+- 跨平台（iOS macOS watchOS tvOS JavaScript）
 
 Apple 介绍的一些使用场景：
 
-  - 用户在你的应用帐户系统功能有限的情况下创建一个帐户进行体验
-  - 用户在体验产品应用的功能后创建一个账户，例如保存进度、设置个人资料信息等
-  - 用户以访客身份完成购买后创建用户
+- 用户在你的应用帐户系统功能有限的情况下创建一个帐户进行体验
+- 用户在体验产品应用的功能后创建一个账户，例如保存进度、设置个人资料信息等
+- 用户以访客身份完成购买后创建用户
 
 **移动端：**
 
@@ -234,53 +236,53 @@ Apple 介绍的一些使用场景：
 
 1. 在应用的登陆页面添加 “Sign In With Apple” 登陆按钮:
 
-```swift
-// Add “Sign In with Apple” button to your login view
-    func setupProviderLoginView() {
-        let authorizationButton = ASAuthorizationAppleIDButton()
-        authorizationButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
-        self.loginProviderStackView.addArrangedSubview(authorizationButton)
-    }
-```
+    ```swift
+    // Add “Sign In with Apple” button to your login view
+        func setupProviderLoginView() {
+            let authorizationButton = ASAuthorizationAppleIDButton()
+            authorizationButton.addTarget(self, action: #selector(handleAuthorizationAppleIDButtonPress), for: .touchUpInside)
+            self.loginProviderStackView.addArrangedSubview(authorizationButton)
+        }
+    ```
 
 2. 绑定按钮点击事件，给苹果发送授权请求:
 
-```swift
-// Configure request, setup delegates and perform authorization request    
-func handleAuthorizationAppleIDButtonPress() {
-        let appleIDProvider = ASAuthorizationAppleIDProvider()
-        let request = appleIDProvider.createRequest()
-        request.requestedScopes = [.fullName, .email]
-        
-        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-        authorizationController.delegate = self
-        authorizationController.presentationContextProvider = self
-        authorizationController.performRequests()
-    }
+    ```swift
+    // Configure request, setup delegates and perform authorization request    
+    func handleAuthorizationAppleIDButtonPress() {
+            let appleIDProvider = ASAuthorizationAppleIDProvider()
+            let request = appleIDProvider.createRequest()
+            request.requestedScopes = [.fullName, .email]
+            
+            let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+            authorizationController.delegate = self
+            authorizationController.presentationContextProvider = self
+            authorizationController.performRequests()
+        }
 
-```
+    ```
 
 3. 针对苹果授权请求响应进行处理，成功即可在系统创建对应账号、保存账号到 keychain 等操作。
 
-```swift
-extension LoginViewController: ASAuthorizationControllerDelegate {
-    // 授权成功处理，拿到授权反馈后可以直接创建账号了
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-        if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
-            
-            let userIdentifier = appleIDCredential.user
-            let fullName = appleIDCredential.fullName
-            let email = appleIDCredential.email
-            // Create an account in your system.
+    ```swift
+    extension LoginViewController: ASAuthorizationControllerDelegate {
+        // 授权成功处理，拿到授权反馈后可以直接创建账号了
+        func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+            if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+                
+                let userIdentifier = appleIDCredential.user
+                let fullName = appleIDCredential.fullName
+                let email = appleIDCredential.email
+                // Create an account in your system.
+            }
         }
-    }
-    // 授权失败处理
-    func authorizationController(_: ASAuthorizationController, 
-                didCompleteWithError error: Error) {
-        // Handle error
-    }
-} 
-```
+        // 授权失败处理
+        func authorizationController(_: ASAuthorizationController, 
+                    didCompleteWithError error: Error) {
+            // Handle error
+        }
+    } 
+    ```
 
 **网页端**：
 
@@ -292,7 +294,7 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
 <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
 ```
 
-2. 可以使用 meta 标签或在 JavaScript 代码中配置授权 API 字段，并提供 Apple 登录按钮，如下例子所示:
+1. 可以使用 meta 标签或在 JavaScript 代码中配置授权 API 字段，并提供 Apple 登录按钮，如下例子所示:
 
 ```html
 <html>
@@ -314,14 +316,14 @@ extension LoginViewController: ASAuthorizationControllerDelegate {
 </html>
 ```
 
-3. 处理认证信息回调，Apple 处理授权请求后会将一个包含授权结果的HTTP POST请求发送到redirectURI 中提供的 URL 中。具体配置可以查看官方文档，参考使用官方提供的 demo。
+1. 处理认证信息回调，Apple 处理授权请求后会将一个包含授权结果的HTTP POST请求发送到redirectURI 中提供的 URL 中。具体配置可以查看官方文档，参考使用官方提供的 demo。
 
 ## LaunchImage 弃用
 
 启动页的图片设置方式有两种：
 
-  - 通过 LaunchScreen.storyboard 设置
-  - 通过 Assets.xcassets 增加 iOS Launch Image 设置启动页图片，苹果设备的尺寸增多，意味着我们需要在对应的 assets 里放入对应尺寸的启动图。
+- 通过 LaunchScreen.storyboard 设置
+- 通过 Assets.xcassets 增加 iOS Launch Image 设置启动页图片，苹果设备的尺寸增多，意味着我们需要在对应的 assets 里放入对应尺寸的启动图。
 
 > 'UILaunchImages' has been deprecated, use launch storyboards instead.
 

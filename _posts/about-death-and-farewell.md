@@ -17,8 +17,7 @@ Hi，见信好，这是 321来信发出的第 21 封信。
 - 新冠后遗症的定义、咖啡馆提升学习效率、创业获得的教训
 - 关键字：新冠、创业、大脑记忆
 
-## 👍 推荐：
-
+## 👍 推荐
 
 ## [📃 说说我是如何解读新冠后遗症的新闻与研究 - Y博的科普园](https://mp.weixin.qq.com/s/YSBXbXHGVzyTaSDNJtoxcA)
 
@@ -31,7 +30,6 @@ Hi，见信好，这是 321来信发出的第 21 封信。
 - 新冠后遗症没有精确定义，其实就是说新冠康复后还有症状没消失或者又出现了新症状。像CDC 的定义是感染一个月后还有症状就可以归为后遗症，或者说新冠后综合征。
 - 后遗症与感染时的病情高度相关，相比重症，轻症的后遗症比例、严重程度都更低。
 - 新冠后遗症的三个表现：持续疲劳、认知问题以及呼吸道症状，面对网上对新冠后遗症的各种骇人描述，另一个需要注意的是辨别是非，大量研究都显示新冠后遗症是可以逐渐好转的。
-
 
 ## [📃 为什么一到咖啡馆，我的学习效率就直线上升 - 中国日报双语新闻](https://mp.weixin.qq.com/s/S5Rg0IxqpKoDYC5PoJXA3w)
 
@@ -51,16 +49,17 @@ Hi，见信好，这是 321来信发出的第 21 封信。
 作者罗列了57条他创业过程获得的教训，结合之前做开发的经验，选了几条觉得挺有道理的。
 
 > Ask two questions for every product feature. Will people buy because of this feature? Will people not buy because of lack of this feature? No amount of the latter will make up for lack of the former. Don’t build features if the answer to both questions is “no”.
-
+>
 > 针对每个产品功能提出两个问题。人们会因为这个功能而购买吗？人们会因为缺乏这个功能而不购买吗？后者的任何数量都无法弥补前者的不足。如果两个问题的答案都是“否”，则不要构建功能。
-
+>
 > Don’t build something that already exists. Customers won’t buy it just because it’s yours.
  不要构建已经存在的东西。客户不会因为它是你的而购买它。
-
+>
 > Minimize complexity. The simpler the product, the more likely you are to actually ship it, and the more likely you are to fix problems quickly.
 > 尽量减少复杂性。产品越简单，你就越有可能实际发布它，你就越有可能快速解决问题。
 
 ## 👀 碎片
+
 - Elon Musk 收购 Twitter 后立马解雇了 CEO 和其它的几个高层，工程师还被告知要打印他们最近 30 到 60 天的代码，这样他们就可以向 Elon Musk 本人展示代码，后面又被告知粉碎掉打印的代码，他只想看下大家执行任务的效率... 不过也有报道说是假新闻，只是万圣节恶作剧。
 ![](https://assets.wuxinhua.com/blog/assets/newsletter/20-elon-musk.png)
 

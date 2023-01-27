@@ -11,7 +11,6 @@ date: '2021-02-18 20:04:46'
 
 出于工作的需要，今年才真正开始接触到Docker，买了一些容器相关的书，读了大牛一系列的文章博客，希望深入了解Docker的一些核心概念，Docker运行原理等，并在公司同事的帮助下玩一把容器技术，了解学习Docker最好的方法是阅读[文档](https://docs.docker.com/)，本篇主要记录下这个学习过程中积累的一些知识，通过这篇可以了解到Docker相关的基础知识。
 
-
 ### 容器
 
 在介绍Docker前，先了解一下容器的概念：
@@ -19,7 +18,7 @@ date: '2021-02-18 20:04:46'
 
 有了容器，把软件运行所需的所有资源(代码和依赖资源)打包到一个隔离的容器中，多个容器能够在一台机器上运行，并且共享操作系统内核。
 
-### 什么是Docker   
+### 什么是Docker
 
 根据官方的定义，Docker是世界领先的软件容器平台。
 > an open platform to build, ship, and run any app, anywhere  
@@ -33,10 +32,10 @@ Docker正式发布开源版本是在2013年3月，Docker并不是一项新技术
 ### Docker能为我们做什么
 
 从Docker公司的员工[Jérôme Petazzoni](https://twitter.com/jpetazzo)分享的slide[Docker: automation for the rest of us](https://www.slideshare.net/jpetazzo/docker-automation-for-the-rest-of-us)中，很明确地说明了Docker为我们做的事情：
-> 
+>
  Get a well-defined, reproducible environment。  
- Define this environment in a Dockerfile。    
- Build this Dockerfile into a container image。    
+ Define this environment in a Dockerfile。
+ Build this Dockerfile into a container image。
  Run this container image anywhere Same behavior, guaranteed 。
 
 Docker是一个提供能在任何地方构建、发布、运行应用的能力的开放平台。通过 Dockerfile 定义一个可复用的环境，并且利用Dockerfile构建容器的镜像，动态运行同一个Dockerfile编译的镜像能够确保容器行为的一致性，开发过程中需要面对的常见一个问题就是环境的构建，经常听到开发调侃说：我这里能跑起来啊！很多时候开发、测试、线上的环境都存在差异，Docker的镜像提供了初内核外的完整运行所需资源，确保了应用运行环境的一致性，所以也不用担心系统的升级、迁移导致的环境变化而无法正常运行的情况。
@@ -58,6 +57,7 @@ Docker背后的思想是创建软件程序可移植的轻量容器，让其可�
 再来看下Docker的架构，底部两层类似于vm，同样需要物理环境、操作系统层，这个host层没有限制，能跑Docker的即可，之上Docker daemon取代了Hypervisor，Docker daemon是一个用于运行在底层OS环境中用于管理任何和Docker相关的服务。在上层类似于vm，相应的lib、bin和我们的App应用，所需的这些会在Dockefile中申明，构建成独立的Docker images镜像， Docker daemon则运行管理这些由images镜像构建生成的容器。  
 
 总结一下二者的异同：
+
 - Docker 容器并不是轻量的虚拟机，两者有本质上的区别。
 - 在资源隔离上，虚拟机是高度隔离，而 Docker 达不到虚拟机所能提供的资源隔离水平。
 - 你可能需要花很长时间去安装虚拟机准备环境，但是花很短时间运行 Docker 容器（毫秒和分钟的区别）。
@@ -66,6 +66,7 @@ Docker背后的思想是创建软件程序可移植的轻量容器，让其可�
 - Docker 运行于Linux上，但目前已经实现在OS X或Windows上运行Docker。
 
 ### 镜像和容器
+
 Docker 有两个很重要的部分：构建前的叫 image 镜像，构建后的是 container 容器。
 
 Docker 容器使用 cgroup 实现了CPU、内存、文件系统等资源的隔离，那 Docker 没有文件系统怎么运行，其实Docker镜像就是一个特殊的文件系统，镜像文件描述了容器运行所需的初始文件系统，包含所需环境依赖，而镜像是通过 Dockerfile 来构建的，在 Dockerfile 中， 每一条指令都会创建一个镜像层，继而会增加整体镜像的大小。所以严格来说，镜像并非是像一个 ISO 那样的打包文件，镜像只是一个虚拟的概念，其实际体现并非由一个文件组成，而是由多层文件系统联合组成，镜像是只读的，创建容器是在镜像上新建可写层，不需要复制整个文件系统，因此可以实现毫秒级的创建。
@@ -73,7 +74,9 @@ Docker 容器使用 cgroup 实现了CPU、内存、文件系统等资源的隔�
 Docker把整个应用、操作系统、配置打包成一个静态的镜像，这个镜像可以快速得启动、运行、关闭形成一个动态的运行容器，容器可以理解为是镜像运行时的实体。
 
 ### Dockerfile
+
 通过上面我们可以了解到，镜像的定制实际上就是定制每一层所添加的配置、文件。我们把每一层修改、安装、构建、操作的命令都写入一个脚本，用这个脚本来构建、定制镜像，而这个脚本就是Dockerfile。Dockerfile提供以下指令，指令具体的参数、用法参见文档：
+
 ```shell
 ADD
 COPY
@@ -91,9 +94,11 @@ CMD
 ENTRYPOINT
 ONBUILD
 ```
+
 顺带提一下 .dockerignore 文件，.dockerignore 类似于我们日常使用到的 .gitignore 文件一样，用来排除构建镜像时不需要的文件或目录，在Docker CLI将脚本内容发送给Docker daemon前，它会先寻找.dockerignore文件，如果文件存在，CLI会根据.dockerignore将内容进行过滤，避免在使用ADD、COPY时将体积较大、有影响的文件添加进daemon中。
 
 ### Play With Docker  
+
 在开始前，推荐一下非常炫酷的[PWD](https://labs.play-with-docker.com/)在线实验室上,我在上面简单的实践了一下，Play With Docker(Docker在线实验室) 是一个运行在浏览器中的Docker Playground，无需安装任何环境，就可以在线体验 Docker。进入实验室后点击左侧“增加一个实例”，PWD会帮我们生成一个节点，在面板上会显示当前节点的相关信息：  
 
 ![PWD面板](https://assets.wuxinhua.com/blog/assets/dive-into-docker/pwd_portal.png)
@@ -107,12 +112,15 @@ ONBUILD
 docker run hello-world
 
 ```
+
 ![helloworld](https://assets.wuxinhua.com/blog/assets/dive-into-docker/pwd_helloworld.png)
 Docker daemon会在本地搜索hello-world镜像，没有找到再去远程拉取镜像，并构建容器环境。
 紧接着我需要在容器中构建Nginx环境，输入：
+
 ```shell
 docker  run -d -p 8080:80 nginx
 ```
+
 同样的Docker下载镜像并且运行容器，-d将容器置于后端运行，-p用于暴露端口，点击上方`8080`即可访问web应用路径。  
 
 ![helloworld](https://assets.wuxinhua.com/blog/assets/dive-into-docker/pwd_nginx.png)  
@@ -120,6 +128,7 @@ docker  run -d -p 8080:80 nginx
 ### Docker Hello World
 
 #### Nodejs 应用
+
 又到了程序员最爱的Hello World环节 😆，这个例子足够的简单：我们使用express监听 80 端口，在浏览器端访问后，node端返回Hello world即可,开始我们的docker之旅：
 
 ```bash
@@ -130,6 +139,7 @@ cd hello-world
 npm init
 
 ```
+
 我们只需安装`express`依赖，创建index.js文件用来启动、监听服务。
 
 ```bash
@@ -138,6 +148,7 @@ npm i express --save
 touch index.js .gitignore Dockerfile .dockerignore
 
 ```
+
 在index.js文件中粘贴以下代码并保存文件：
 
 ```JavaScript
@@ -156,6 +167,7 @@ app.listen(post, function () {
 })
 
 ```
+
 创建.gitignore 文件：
 
 ```shell
@@ -165,6 +177,7 @@ app.listen(post, function () {
 ```
 
 加入.dockerignore 文件：
+
 ```shell
 # git DS_Store etc
 .git
@@ -224,6 +237,7 @@ CMD node index.js
 EXPOSE 80
 
 ```
+
 #### 构建镜像
 
 ```shell

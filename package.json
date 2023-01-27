@@ -9,7 +9,9 @@
     "typecheck": "tsc",
     "sitemap": "ts-node ./scripts/sitemap.ts",
     "rss": "ts-node ./scripts/rss.ts",
-    "seo": "pnpm rss && pnpm sitemap"
+    "seo": "pnpm rss && pnpm sitemap",
+    "lint:md": "markdownlint ./_posts/*.md && README.md",
+    "lint:md:fix": "markdownlint ./_posts/*.md --fix && README.md --fix"
   },
   "dependencies": {
     "@next/env": "^13.0.6",
@@ -32,6 +34,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.7",
+    "markdownlint-cli": "^0.33.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4",
     "ts-node": "^10.9.1"

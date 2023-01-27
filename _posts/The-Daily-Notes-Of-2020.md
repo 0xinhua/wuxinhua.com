@@ -92,7 +92,7 @@ tags: 年终总结 知识碎片 字节跳动
   - 一本编辑相关的书[《故事》- 罗伯特麦基](https://book.douban.com/subject/1115748//)
 
 - 06-06
-  - [THE ART OF BALANCING STONES 我如何能把石头玩得这么 6 ](https://www.youtube.com/watch?v=UqU19dR0bFE)这个博主很有意思，北欧版李子柒 \~
+  - [THE ART OF BALANCING STONES 我如何能把石头玩得这么 6](https://www.youtube.com/watch?v=UqU19dR0bFE)这个博主很有意思，北欧版李子柒 \~
 
 - 06-07
   - [TC39 的 Podcast](https://tc39er.us/)
@@ -189,7 +189,7 @@ tags: 年终总结 知识碎片 字节跳动
 # # 7 月
 
 - 07-01
-  - https://uidesigndaily.com/ 开源的 UI 设计网站
+  - <https://uidesigndaily.com/> 开源的 UI 设计网站
   - [ntl](https://www.npmjs.com/package/ntl) 省时小工具，列出当前 Package.json 中的 script 命令：
 
     ```
@@ -199,7 +199,7 @@ tags: 年终总结 知识碎片 字节跳动
     ![](https://assets.wuxinhua.com//blog/assets/notes-2020/07-01.png)
 
 - 07-02
-  - https://dev.to/richharris/in-defense-of-the-modern-web-2nia
+  - <https://dev.to/richharris/in-defense-of-the-modern-web-2nia>
 
 - 07-04
   - \+ 运算符的一些特殊用法，+ 可以取代 JavaScript Number() 的一些用法
@@ -259,11 +259,11 @@ tags: 年终总结 知识碎片 字节跳动
 
     > “北”指的是沪深两证券交易所，南指的是香港证券交易所，因为 A 股市场有管制，不允许外资直接参与，在 14 年和 16 年分别开通了沪港通和深港通，实现 A 股和港股的资金互流，因为内地在香港的北面，所以形成了北向资金的说法，北向资金也有“聪明的资金”之称，买入和卖出有一定参考价值
 
- - 带有歧视性软件术语名单
+- 带有歧视性软件术语名单
 
     ![](https://assets.wuxinhua.com//blog/assets/notes-2020/07-17.png)
 
- - macOS 系统里使用 Ctrl + Command + Space 可以在编辑的位置直接调起 emoji 选项板 👏
+- macOS 系统里使用 Ctrl + Command + Space 可以在编辑的位置直接调起 emoji 选项板 👏
 
 - 07-18
   - 即刻真的是个神奇的 APP，奇怪的知识又增加了
@@ -313,11 +313,10 @@ tags: 年终总结 知识碎片 字节跳动
      > 我并没有创新什么，我只是在复刻历史
 
     > augment our collective intellect - Doug Engelbart
-    
-    > amplify imagination - Alan Kay
-    
-    > expand our thoughts far beyond text on paper - Ted Nelson
 
+    > amplify imagination - Alan Kay
+
+    > expand our thoughts far beyond text on paper - Ted Nelson
 
 # # 8 月
 
@@ -335,7 +334,7 @@ tags: 年终总结 知识碎片 字节跳动
   - [git-2-28](https://github.blog/2020-07-27-highlights-from-git-2-28/)
 
     ```shell
-    $ git config --global init.defaultBranch main // 支持默认分支名自定义 master => main
+    git config --global init.defaultBranch main // 支持默认分支名自定义 master => main
     ```
 
 - 08-07
@@ -357,7 +356,7 @@ tags: 年终总结 知识碎片 字节跳动
   - [Notion 搭建博客](https://fruitionsite.com/)
 
 - 08-18
-  - MongoDB 已经不再开源 brew 已经无法直接安装 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+  - MongoDB 已经不再开源 brew 已经无法直接安装 <https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/>
 
 - 08-19
   - [puppeteer-recorder](https://github.com/checkly/puppeteer-recorder)
@@ -394,7 +393,7 @@ tags: 年终总结 知识碎片 字节跳动
 
   > 中午收到邮件 “巴斯光年” Kevin Mayer 离职了
 
-   - Ubisoft 出周边又翻车，但大家还是买账，论如何反向营销 [#育碧联名杯子# ​​​​](https://assets.wuxinhua.com//blog/assets/notes-2020/08-27.png)
+  - Ubisoft 出周边又翻车，但大家还是买账，论如何反向营销 [#育碧联名杯子# ​​​​](https://assets.wuxinhua.com//blog/assets/notes-2020/08-27.png)
 
     ![](https://assets.wuxinhua.com/blog/assets/notes-2020/08-27-1.png)
 
@@ -541,7 +540,7 @@ tags: 年终总结 知识碎片 字节跳动
   > 性能优化有个 20% 定律，即优化幅度达到 20% 提升时，用户就能够确实感受到页面速度变快了
 
 - 10-16
-  - Google 开发的开源工具图片在线压缩实时预览 https://squoosh.app/
+  - Google 开发的开源工具图片在线压缩实时预览 <https://squoosh.app/>
 
 - 10-17
   - [深度剖析 Css Baseline](https://zhuanlan.zhihu.com/p/30169829)
@@ -738,7 +737,7 @@ tags: 年终总结 知识碎片 字节跳动
 - 12-03
   - [抖音内幕：时间熔炉的诞生](http://www.myzaker.com/article/5f976e0a8e9f0965fe5cdc1a)
 
-  - [《详谈》贝壳左晖 ](https://www.ljsw.io/knowl/article/su.html)
+  - [《详谈》贝壳左晖](https://www.ljsw.io/knowl/article/su.html)
 
 - 12-06
   - [一人公司 - 021 如何制作播客](https://pca.st/qarctkc9)
@@ -750,7 +749,7 @@ tags: 年终总结 知识碎片 字节跳动
 - 12-07
   - [太阳照在我身上暖暖的，但我的心还是冰冰的。](https://www.bilibili.com/video/BV1jf4y1i7da)
   - [Big Sur 替换应用 icon](https://www.ithome.com/0/518/436.htm)
-  - 免费的 [MacOS icon ](https://macosicons.com/)
+  - 免费的 [MacOS icon](https://macosicons.com/)
 
 - 12-08
   - [滑雪老司机 SnowSense 的教学视频](https://space.bilibili.com/486442591/channel/detail?cid=96964)
@@ -799,7 +798,7 @@ tags: 年终总结 知识碎片 字节跳动
 
 - 12-27
   - 推荐一家日烧，鳗鱼/和牛烧烤/招牌炸鸡 [虎兵卫](http://www.dianping.com/shop/13668932) 📍 三元桥霄云路
-  - 制作一个 notion 风格的头像 => https://www\.openpeeps.com/
+  - 制作一个 notion 风格的头像 => <https://www\.openpeeps.com/>
   - [麦克米伦谈期权](https://book.douban.com/subject/2970855/)
   - [华章经典·金融投资](https://book.douban.com/series/12464?page=1)
 
@@ -812,7 +811,6 @@ tags: 年终总结 知识碎片 字节跳动
   - [BBC The Men Who Made Us Spend](https://www.bbc.co.uk/programmes/p01zxm9b)
 
 - 12-31
- - 用时间胶囊节目的那句话总结一下 2020： "There are decades where nothing happens; and there are weeks where decades happen" -- Vladimir Ilyich Lenin
-
+- 用时间胶囊节目的那句话总结一下 2020： "There are decades where nothing happens; and there are weeks where decades happen" -- Vladimir Ilyich Lenin
 
 如果你看到这里，希望以上对你有一些启发或收获 ~ ❤️

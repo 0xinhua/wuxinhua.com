@@ -15,85 +15,85 @@ tags: rss订阅
 
 更新日志：
 
-- 2022-04-20： 我也开始进行了 newsletter 创作 => [321 来信](https://321laixin.zhubai.love/)：包含 3 个阅读推荐，2 个碎片知识，1 个思考；希望你喜欢我推送的内容 ~ 
+- 2022-04-20： 我也开始进行了 newsletter 创作 => [321 来信](https://321laixin.zhubai.love/)：包含 3 个阅读推荐，2 个碎片知识，1 个思考；希望你喜欢我推送的内容 ~
 
 ### #News
 
 1. 南方周末  
-  https://rsshub.app/infzm/2
+  <https://rsshub.app/infzm/2>
 
-1. 中国日报双语  
-  http://feedmaker.kindle4rss.com/feeds/language-news.chinadaily.xml
+2. 中国日报双语  
+  <http://feedmaker.kindle4rss.com/feeds/language-news.chinadaily.xml>
 
-2. 华尔街日报  
-  http://feedmaker.kindle4rss.com/feeds/cn-all.wsj.xml
+3. 华尔街日报  
+  <http://feedmaker.kindle4rss.com/feeds/cn-all.wsj.xml>
 
-3. [网易新闻·有态度](http://news.163.com)  
-  http://news.163.com/special/00011K6L/rss_newsattitude.xml
+4. [网易新闻·有态度](http://news.163.com)  
+  <http://news.163.com/special/00011K6L/rss_newsattitude.xml>
 
-4. [虎嗅网](https://www.huxiu.com)   
-  https://www.huxiu.com/rss/
+5. [虎嗅网](https://www.huxiu.com)  
+  <https://www.huxiu.com/rss/>
 
-5. [钛媒体](http://www.tmtpost.com/)   
-  http://www.tmtpost.com/rss.xml
+6. [钛媒体](http://www.tmtpost.com/)  
+  <http://www.tmtpost.com/rss.xml>
 
-6. [Engadget 中文版](https://chinese.engadget.com)   
-  https://chinese.engadget.com/
+7. [Engadget 中文版](https://chinese.engadget.com)  
+  <https://chinese.engadget.com/>
 
-7. [月光博客](https://www.williamlong.info)
-  https://www.williamlong.info/rss.xml
+8. [月光博客](https://www.williamlong.info)
+  <https://www.williamlong.info/rss.xml>
 
-### #Tech   
+### #Tech
 
 1. [36氪](http://www.36kr.com/)  
-  http://www.36kr.com/feed
+  <http://www.36kr.com/feed>
 
 2. [知乎每日精选](https://www.zhihu.com/)  
-  https://www.zhihu.com/rss
+  <https://www.zhihu.com/rss>
 
 3. [知乎日报](https://daily.zhihu.com/)  
-  https://link.jianshu.com/?t=http://feeds.feedburner.com/zhihu-daily
+  <https://link.jianshu.com/?t=http://feeds.feedburner.com/zhihu-daily>
 
 4. [极客公园](www.geekpark.net)  
-  https://www.geekpark.net/rss
+  <https://www.geekpark.net/rss>
 
 5. [InfoQ中国](https://www.infoq.cn/)  
-  https://feed.infoq.com/cn
+  <https://feed.infoq.com/cn>
 
 6. [开源中国](http://www.oschina.net)  
-  http://www.oschina.net/news/rss
+  <http://www.oschina.net/news/rss>
 
 7. [Ithome](https://www.ithome.com)  
-  https://www.ithome.com/rss/
+  <https://www.ithome.com/rss/>
 
 8. [Iteye](http://www.iteye.com)  
-  http://www.iteye.com/rss
+  <http://www.iteye.com/rss>
 
 9. [湾区日报](https://wanqu.co)  
-  https://wanqu.co/feed/  
+  <https://wanqu.co/feed/>  
 
 10. [techweb](http://www.techweb.com.cn)  
-  http://www.techweb.com.cn/rss/hotnews.xml  
+  <http://www.techweb.com.cn/rss/hotnews.xml>  
 
 11. [linux中国](https://linux.cn/)  
-  https://linux.cn/rss.xml
+  <https://linux.cn/rss.xml>
 
 ### #Program  
 
 1. [Ruby China社区](https://ruby-china.org)  
-  https://ruby-china.org/topics/feed
+  <https://ruby-china.org/topics/feed>
 
 2. [博客园](http://cnblogs.com)  
-  http://feed.cnblogs.com/blog/sitehome/rss
+  <http://feed.cnblogs.com/blog/sitehome/rss>
 
-3. [V2EX](https://www.v2ex.com)   
-  https://www.v2ex.com/index.xml
+3. [V2EX](https://www.v2ex.com)
+  <https://www.v2ex.com/index.xml>
 
-4. [掘金](https://juejin.im)    
-  https://juejin.im/rss
+4. [掘金](https://juejin.im)
+  <https://juejin.im/rss>
 
-5. [css-tricks](https://css-tricks.com)    
-  https://css-tricks.com/feed/
+5. [css-tricks](https://css-tricks.com)
+  <https://css-tricks.com/feed/>
 
 6. [CSDN](https://www.csdn.net/)
 
@@ -106,40 +106,40 @@ tags: rss订阅
 ### #个人博客(中文)
 
 1. [byvoid](https://www.byvoid.com/zht/blog)  
-  https://www.byvoid.com/zht/feed
+  <https://www.byvoid.com/zht/feed>
 
-2. [阮一峰的网络日志](http://www.ruanyifeng.com)   
-  http://www.ruanyifeng.com/blog/atom.xml
- 
+2. [阮一峰的网络日志](http://www.ruanyifeng.com)
+  <http://www.ruanyifeng.com/blog/atom.xml>
+
 3. [酷 壳 Coolshell](http://coolshell.cn)  
-  http://coolshell.cn/feed
+  <http://coolshell.cn/feed>
 
 4. [MacTalk-池建强](http://macshuo.com)  
-  http://macshuo.com/?feed=rss2
+  <http://macshuo.com/?feed=rss2>
 
-5. [张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/)   
-  http://www.zhangxinxu.com/wordpress/feed/
+5. [张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/)
+  <http://www.zhangxinxu.com/wordpress/feed/>
 
 6. [Livid](https://livid.v2ex.com/)  
-  https://livid.v2ex.com/feed.xml
+  <https://livid.v2ex.com/feed.xml>
 
 7. [唐巧的博客](http://blog.devtang.com/)  
-  http://blog.devtang.com/atom.xml
+  <http://blog.devtang.com/atom.xml>
 
 8. [小胡子哥的个人网站](https://www.barretlee.com/)  
-  https://www.barretlee.com/rss2.xml
+  <https://www.barretlee.com/rss2.xml>
 
 9. [云风的 BLOG](https://blog.codingnow.com)  
-  http://blog.codingnow.com/atom.xml
+  <http://blog.codingnow.com/atom.xml>
 
 10. [人人都是产品经理——iamsujie](http://iamsujie.com)  
-  http://iamsujie.com/feed/  
+  <http://iamsujie.com/feed/>  
 
 11. [火丁笔记](https://blog.huoding.com/)  
-  https://blog.huoding.com/feed  
+  <https://blog.huoding.com/feed>  
 
-12. [风雪之隅 ](http://www.laruence.com/)  
-  http://www.laruence.com/feed  
+12. [风雪之隅](http://www.laruence.com/)  
+  <http://www.laruence.com/feed>  
 
 ### # 个人博客（英文）
 
@@ -150,24 +150,24 @@ tags: rss订阅
 ### # 团队博客
 
 1. [奇舞团](https://75team.com/)  
-  https://75team.com/rss
+  <https://75team.com/rss>
 
 2. [淘系前端团队](https://fed.taobao.org/)  
-  https://fed.taobao.org/atom.xml  
+  <https://fed.taobao.org/atom.xml>  
 
 3. [AlloyTeam](http://www.alloyteam.com/)  
-  http://www.alloyteam.com/feed/
+  <http://www.alloyteam.com/feed/>
 
 4. [FEX](http://fex.baidu.com/)  
-  http://fex.baidu.com/feed.xml  
+  <http://fex.baidu.com/feed.xml>  
 
 5. [凹凸实验室](https://aotu.io/)  
-  https://aotu.io/atom.xml
+  <https://aotu.io/atom.xml>
 
 6. [360 核心安全技术博客](http://blogs.360.cn/)  
-  http://blogs.360.cn/rss.html
+  <http://blogs.360.cn/rss.html>
 
-### #一些质量比较好的 Weekly 周报，每周更新：
+### #一些质量比较好的 Weekly 周报，每周更新
 
 1. [JavaScript Weekly](http://javascriptweekly.com/)
 
@@ -210,18 +210,18 @@ tags: rss订阅
 
     腾讯新闻前端团队每周提供高质量的关于小程序、h5等前端领域的文章和项目
 
-10. [阿里云前端技术周刊](https://github.com/aliyunfe/weekly/releases.atom) 
+11. [阿里云前端技术周刊](https://github.com/aliyunfe/weekly/releases.atom)
 
     阿里云智能商业中台体验技术团队整理
 
-21. [IVWEB技术周刊](https://github.com/iv-web/weekly)
+12. [IVWEB技术周刊](https://github.com/iv-web/weekly)
 
     由腾讯IVWEB出品的《IVWEB技术周刊》
 
-22. [frontendDaily](https://github.com/kujian/frontendDaily)  
+13. [frontendDaily](https://github.com/kujian/frontendDaily)  
     开发者用爬虫爬取的文章链接
 
-23. [Web Design Weekly](https://web-design-weekly.com/archive/)
+14. [Web Design Weekly](https://web-design-weekly.com/archive/)
 
 ### RSS阅读器
 

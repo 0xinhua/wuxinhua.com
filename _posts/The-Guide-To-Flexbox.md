@@ -31,15 +31,18 @@ display: flex;
 display: grid;
 
 ```
+
 事实上每一个HTML标签都有一个默认的 `display` 属性值，例如：`<div>`、`<p>`、`<ul>` 等默认是`block` 块状元素，而 `span`、`img`、`svg` 等默认 `inline` 行内元素，二者比较大的区别：
 
 block元素：
+
 1. block 块状元素会占满整行的空间；
 2. 常规布局中块级是基于竖直方向的，即紧接着的另一个块级元素会另起一行排列；
 3. 能被设置 width、height 宽高；
 4. 能作为其它块状元素、行内元素的父标签；
 
 inline元素：
+
 1. inline 行内元素则刚好相反，只占用它们需要的空间;
 2. 内联基于水平方向，行内元素一个紧挨着另一个；
 3. 不能被设置 width、height 宽高；
@@ -89,6 +92,7 @@ flexbox 主要由 flex 容器和 flex 子项目组成，对应的有分别作用
 flex-direction: row(默认) | row-reverse | column | column-reverse
 
 ```
+
 `row` flex容器的主轴与文本方向相同，以行（水平）方向排列:
 ![](https://assets.wuxinhua.com//blog/assets/flexbox/flex-direction-row.png)
 `column` 以列（垂直）方向排列:  
@@ -104,6 +108,7 @@ flex-direction: row(默认) | row-reverse | column | column-reverse
 ```css
 flex-wrap: wrap(默认) | nowrap | wrap-reverse
 ```
+
 决定 flex项目在容器内是否不换行排列，`nowrap` 默认是项目不进行换行:
 
 ![](https://assets.wuxinhua.com//blog/assets/flexbox/flex-wrap-nowrap.png)
@@ -112,7 +117,7 @@ flex-wrap: wrap(默认) | nowrap | wrap-reverse
 
 ![](https://assets.wuxinhua.com//blog/assets/flexbox/flex-wrap-wrap.png)
 
-wrap-reverse 同样是多行排列，只是方向是相反的: 
+wrap-reverse 同样是多行排列，只是方向是相反的:
 
 ![](https://assets.wuxinhua.com//blog/assets/flexbox/flex-wrap-wrap-reverse.png)
 
@@ -136,12 +141,12 @@ flex-wrap: wrap
 justify-content: flex-start | flex-end | center | space-between | space-around
 
 ```
+
 justify-content: flex-start 起始处左对齐
 ![](https://assets.wuxinhua.com/blog/assets/flexbox/justify-content-flex-start.png)  
 
 justify-content: center 居中对齐
 ![](https://assets.wuxinhua.com/blog/assets/flexbox/justify-content-center.png)
-
 
 justify-content: center 右对齐  
 ![](https://assets.wuxinhua.com/blog/assets/flexbox/justify-content-flex-end.png)
@@ -149,9 +154,8 @@ justify-content: center 右对齐
 justify-content: space-between 两端对齐
 ![](https://assets.wuxinhua.com/blog/assets/flexbox/justify-content-space-between.png)  
 
-justify-content: space-between 间隔相等 
+justify-content: space-between 间隔相等
 ![](https://assets.wuxinhua.com/blog/assets/flexbox/justify-content-space-around.png)  
-
 
 ### # align-items
 
@@ -179,10 +183,10 @@ flex-basis
 flex
 align-self
 ```
+
 ### # order
 
 `order`定义项目在容器里的排列顺序，默认为 0，数字越小，排得越前
-
 
 如何控制容器内的“剩余空间”，这里需要使用到三个很重要的属性：
 flex-basis、flex-grow、flex-shrink

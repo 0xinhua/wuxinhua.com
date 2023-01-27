@@ -12,6 +12,7 @@ tags: 'ECMAScript6.0'
 ### #目录  
 
 ECMAScript 6.0已经在2015年6月17日正式发布（以下简称ES6）到现在已经过去了2年时间，发布的很多新的特征已成为了标准，如今ES8草案也公布了，Javascript的未来还是值得期待的；我从去年下半年开始接触ES6的，在代码上搭配babel来开发基于React框架的应用，发现其中许多特性确实简化了很多代码的编写，之前一直没有系统性得去学习这些新的特征，这篇博客算是我的ES6学习笔记，从简单的数组的一些新方法开始，ES6模块系统、class类...到较复杂的generator函数结束。完成之后，我会再陆续记录ES7、ES8..学习笔记。本篇包含以下内容：
+
 * 数组方法扩展
 * 解构赋值
 * let和const
@@ -26,22 +27,25 @@ ECMAScript 6.0已经在2015年6月17日正式发布（以下简称ES6）到现�
 * Proxy
 * Generator
 
-
 ### #数组方法扩展
 
 #### Array.prototype.includes
 
 新增includes方法，类似于[String.prototype.includes](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/includes)，在这之前我们一般是使用下面这样的代码来判断数组中是否存在某个元素,
+
 ```javascript
 if (arr.indexOf(el) !== -1) {
     ...
 }
 ```
+
 这里用indexOf有两个问题：
- - 违背“所见即所得”原则，indexOf方法它是用来返回下标位置的，并不能直观表达是否存在包含关系。
- - 无法判断NaN,[NaN].indexOf(NaN) > 0 // false
+
+* 违背“所见即所得”原则，indexOf方法它是用来返回下标位置的，并不能直观表达是否存在包含关系。
+* 无法判断NaN,[NaN].indexOf(NaN) > 0 // false
 
 注意：includes只接受两个参数，接收2参数，查询的项以及查询起始位置
+
 ```javascript
 // include 返回boolean值
 [1, 2].includes(3);  // false
@@ -52,8 +56,10 @@ if (arr.indexOf(el) !== -1) {
 ```
 
 #### Array.prototype.from
+
 from 方法用于将类似数组的对象（key-value结构）和可遍历（iterable）的对象（包括ES6新增的数据结构Set和Map）转换成数组。
 例如：
+
 ```javascript
 console.log(Array.from('hello')); // [ 'h', 'e', 'l', 'l', 'o' ]
 
@@ -63,6 +69,7 @@ console.log(Array.from('hello')); // [ 'h', 'e', 'l', 'l', 'o' ]
 const objLike = { 0: 0,  1: 1,  2: 2, length: 3 }; 
 console.log(Array.from(objLike)); // [0, 1, 2]
 ```
+
 from还接受第二个方法类型的参数，类似map方法返回经方法处理过的值。
 
 ```javascript
@@ -71,8 +78,10 @@ console.log(Array.from(objLike, (k) => k+=1;))); // [1, 2, 3]
 ```
 
 #### Array.prototype.of
+
 of方法比from更简单，将一组值转换成数组,为了弥补使用new Array()构造数组的奇怪行为。
 先看下new Array为我们做了什么？
+
 ```javascript
 // 构造函数 new Array
 console.log(new Array()); // []
@@ -88,9 +97,10 @@ console.log(Array.of(1,2,3)); // [1,2,3]
 console.log(Array.of(undefined)); // [undefined]
 ```
 
-####   Array.prototype.keys 、values 、entries
+#### Array.prototype.keys 、values 、entries
 
 keys 、values很好理解，分别代表获取数组的索引和对应的值,entries则是输出这两个值。
+
 ```javascript
 // keys
 for(let a of [1, 2, 3, 4, 5].keys()) {
@@ -106,12 +116,13 @@ for(let a of ['a', 'b'].entries()) {
 }
 ```
 
-####   Array.prototype.find 和 findIndex
+#### Array.prototype.find 和 findIndex
 
 注意：
-- find方法默认返回第一个符合条件的值,如果没找到则返回undefined,findIndex默认返回第一个符合条件的值的下标,如果没找到返回-1;  
-- 二者接收参数必须得是方法,该回调函数可以接受三个参数，依次为当前的值、当前的位置和原数组。
-- 这两个方法都可以z找到NaN.
+
+* find方法默认返回第一个符合条件的值,如果没找到则返回undefined,findIndex默认返回第一个符合条件的值的下标,如果没找到返回-1;  
+* 二者接收参数必须得是方法,该回调函数可以接受三个参数，依次为当前的值、当前的位置和原数组。
+* 这两个方法都可以z找到NaN.
 
 ```javascript
 const arr = [1, 4, -5, 10, NaN];
@@ -120,7 +131,7 @@ console.log(arr.findIndex((k) => k > 1));  // 1
 console.log(arr.find((k) => Object.is(NaN, k) )); // NaN
 ```
 
-####   Array.prototype.fill 和 copyWithin
+#### Array.prototype.fill 和 copyWithin
 
 fill可以理解为数组元素替换，可以指定填充开始位置和结束位置，copyWithin则可以理解为用指定元素填充到数组的对应位置，
 arr.copyWithin(target, start, end) target: 从指定下标开始 index:复制元素的下标 end: 复制元素结束下标
@@ -141,10 +152,11 @@ console.log([1, 2, 3, 4, 5, 6, 7].copyWithin(2)); // [1, 2, 1, 2, 3, 4, 5] 未�
 console.log([1, 2, 3, 4, 5, 6].copyWithin(2, 1, 4)); // [1, 2, 2, 3, 4, 6] 可以理解为从下标为2元素开始，复制下标1-4的数组进行替换填充原数组
 ```
 
-####   Array.prototype.find
+#### Array.prototype.find
 
 ### [#解构赋值](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
-使用类似数组或对象字面量的语法将数组和对象的属性赋给各种变量;   
+
+使用类似数组或对象字面量的语法将数组和对象的属性赋给各种变量;
 可以很方便得将值和从数组中、属性从对象中提取到不同的变量中：
 在写React的过程中，也会用到JSX的一个类型写法（Spread Attributes），中文名延展属性，例如子组件需要需要父组件传递a、b、c参数：
 
@@ -212,16 +224,17 @@ fn(1, 2, 3, 4, 5 ); // [3, 4, 5]
 
 扩展运算符和剩余操作符都是以三点省略号开头，二者很像，用法上还是有一定区别。扩展运算类似于使用‘...’分解数组中的值、对象属性；而剩余操作符是使用‘...’是用来解构和提取数据，多个元素合成一个元素。
 
-###  #let和const
+### #let和const
 
 这里将var、let和const进行简单对比：
-- let和const均不能重复声明进行覆盖，而var可以；
-- let和const存在暂存死区,不存在变量提示,而var存在变量提升；
-- const一旦声明，不可更改，let和var可以更改；
-- let定义的变量只存在于块级作用域；
-- const只定义不赋值，会报错，var、let返回undefined；
-- let和const 声明的变量不再属于window的属性，可以在下面的例子中体现;
-- const除了声明的是常量外，其它和let是一样的;
+
+* let和const均不能重复声明进行覆盖，而var可以；
+* let和const存在暂存死区,不存在变量提示,而var存在变量提升；
+* const一旦声明，不可更改，let和var可以更改；
+* let定义的变量只存在于块级作用域；
+* const只定义不赋值，会报错，var、let返回undefined；
+* let和const 声明的变量不再属于window的属性，可以在下面的例子中体现;
+* const除了声明的是常量外，其它和let是一样的;
 
 ```javascript
 // let和const均不能重复声明
@@ -261,7 +274,9 @@ console.log(a); // undefined
 const PI = 3.14159;
 console.log(window.c); // undefined
 ```
+
 关于`暂存死区`：在下面的这个例子，在let初始化之前，使用let重复定义在块中的变量，这时会抛错，因为这个变量存在于定义到待初始化处理的一个'暂存死区'中，具体可以查看[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let)上的解释。
+
 ```javascript
 if (x) {
   let foo;
@@ -270,6 +285,7 @@ if (x) {
 ```
 
 ### #箭头函数
+
 在ES6中利用语法糖使用“箭头”（=>）定义函数。
 
 ```javascript
@@ -295,14 +311,17 @@ var f = function () { return true };
 });
 
 ```
+
 箭头函数与普通函数的区别：
-- 箭头函数的this是它定义时的所在的对象；
-- 没有arguments对象，要访问可以使用剩余操作符代替；
-- 不能使用yield命令，所以箭头函数不能用作Generator函数；
+
+* 箭头函数的this是它定义时的所在的对象；
+* 没有arguments对象，要访问可以使用剩余操作符代替；
+* 不能使用yield命令，所以箭头函数不能用作Generator函数；
 
 ### #字符串模板
 
 ES6引入了一种新型的反撇号（`）字符串字面量语法；
+
 ```javascript
 // 利用ES6反引号定义
 `<div>
@@ -314,6 +333,7 @@ ES6引入了一种新型的反撇号（`）字符串字面量语法；
 ```
 
 ### #Promise
+
 什么是Promise?  
 Promise是抽象异步处理对象以及对其进行各种操作的组件;
 Promise对象出现避免了使用层层嵌套的回调函数，再也不用担心陷入地狱回调了，Promise的意义就在于 then 链式调用 ，它避免了异步函数之间的层层嵌套，将原来异步函数的嵌套关系 转变为便于阅读和理解的 链式步骤关系，代码也更加直观。
@@ -356,6 +376,7 @@ a.then(b.then())
 ```
 
 想要创建一个Promise对象，可以使用new来构造一个新的promise对象,例如：
+
 ```javascript
 var promise = new Promise(function(resolve, reject) {
  // 必须给定一个function作为参数，不然会报错；
@@ -364,26 +385,28 @@ var promise = new Promise(function(resolve, reject) {
 ```
 
 大概流程是：
+
 1. new Promise(fn) 返回一个promise对象;
 2. 在 fn 中指定异步等处理  
     • 处理结果正常的话，调用 resolve(处理结果值);
     • 处理结果错误的话，调用 reject(Error对象);
 
 Promise对象有以下几个特点：
-- 1.有三种状态：
-    - pending: 初始状态，不是成功或失败状态;
-    - fulfilled: 意味着操作成功完成;
-    - rejected: 意味着操作失败;   
+
+* 1.有三种状态：
+  * pending: 初始状态，不是成功或失败状态;
+  * fulfilled: 意味着操作成功完成;
+  * rejected: 意味着操作失败;
     状态的变化只能是从 Pending 变为 Resolved 和从 Pending 变为 Rejected;
-- 2.Promise的prototype对象上有以下几个方法：
-    - Promise.then()
-    - Promise.catch()
-    - Promise.all()
-    - Promise.race()
-    - Promise.resolve()
-    - Promise.reject()
-    - Promise.done()
-    - Promise.finally()  
+* 2.Promise的prototype对象上有以下几个方法：
+  * Promise.then()
+  * Promise.catch()
+  * Promise.all()
+  * Promise.race()
+  * Promise.resolve()
+  * Promise.reject()
+  * Promise.done()
+  * Promise.finally()  
 
 Promise方法链:
 其实就是在在Promise里把调用的多个方法连在一起作为一个方法链，例如：
@@ -405,7 +428,9 @@ promise
  .then(taskB)
  .catch(onRejected)
 ```
+
 正常流程A task成功->B task成功-> C task,如果B task失败，将绕过C直接到catch方法，看下面这个例子：
+
 ```javascript
 function taskA(value) {
     return value +1;
@@ -456,9 +481,10 @@ promise
 ```
 
 之前碰到了一个面试题，都知道promise好用，那Promise有哪些缺点：
-- 1.Promise无法终止，一旦建立了就会立即执行；
-- 2.必须严格要求接口规定方法编写代码，例如：不设置回调函数，会抛出错误，不能像回调函数方式那样可以自己自由的定义回调函数参数等；
-- 3.当它处于Pengding状态时候，无法得知目前进行到哪一个阶段了；
+
+* 1.Promise无法终止，一旦建立了就会立即执行；
+* 2.必须严格要求接口规定方法编写代码，例如：不设置回调函数，会抛出错误，不能像回调函数方式那样可以自己自由的定义回调函数参数等；
+* 3.当它处于Pengding状态时候，无法得知目前进行到哪一个阶段了；
 
 关于Promise这一节可以参照[promise小人书](http://liubin.org/promises-book/);
 
@@ -477,31 +503,33 @@ console.log(new Set([1,2,3]))
 ```
 
 Set内置的方法和属性：
- - add(); // 添加  
- - clear(); // 清除Set  
- - delete(); // 删除Set某个值  
- - has() // 查找某个项  
- - forEach() // 循环每一项  
- - keys() // 遍历 key  
- - values() // 遍历 value  
- - entries() // 遍历key 和value  
- - siez 属性，类似于数组的length  
+
+* add(); // 添加  
+* clear(); // 清除Set  
+* delete(); // 删除Set某个值  
+* has() // 查找某个项  
+* forEach() // 循环每一项  
+* keys() // 遍历 key  
+* values() // 遍历 value  
+* entries() // 遍历key 和value  
+* siez 属性，类似于数组的length  
 
 #### Map
 
 Map是于对象类似的集合类型数据结构，map与object的不同在与，Object是一种“字符串-值”的对应，Map是“值-值”的对应，map没这个限制。
 
 Map内置的方法和属性：
- - set(); // 添加
- - clear(); // 清除Set
- - delete(); // 删除Set某个值
- - has() // 查找某个项
- - forEach() // 循环每一项
- - keys() // 遍历 key
- - values() // 遍历 value
- - entries() // 遍历key 和value
- - siez 属性，类似于数组的length
- 
+
+* set(); // 添加
+* clear(); // 清除Set
+* delete(); // 删除Set某个值
+* has() // 查找某个项
+* forEach() // 循环每一项
+* keys() // 遍历 key
+* values() // 遍历 value
+* entries() // 遍历key 和value
+* siez 属性，类似于数组的length
+
 ### #Symbol
 
 Symbol既不是值也不是对象，它是第七种原始类型，是可以用来作为对象属性键的值。
@@ -547,8 +575,9 @@ for(var i in a ){console.log(i)} // a, b
 ```
 
 Symbol类型的一些应用途径：
- - 1.由于它的唯一性，每一个Symbol值都不相等，这意味着Symbol值可以作为标识符用于对象的属性名，不会出现同名的属性。(如果你定义同名属性对象，其实是被覆盖的，得的是后定义的属性值)
- - 2.Symbol类型的属性名无法被for...in等方法遍历到，可以用于定义一些私有属性。
+
+* 1.由于它的唯一性，每一个Symbol值都不相等，这意味着Symbol值可以作为标识符用于对象的属性名，不会出现同名的属性。(如果你定义同名属性对象，其实是被覆盖的，得的是后定义的属性值)
+* 2.Symbol类型的属性名无法被for...in等方法遍历到，可以用于定义一些私有属性。
 
 ### #模块module
 
@@ -580,20 +609,24 @@ inc(a); // 2
 ```
 
 CommonJs原先叫ServerJS,仅看名字就知道这个库服务于后端，也就是说在Nodejs等环境下用是没有问题的，但不适用于浏览器端，到了浏览器中，这样引用会出现问题：
-- 浏览器环境并不提供module、require等外部直接引用变量。
-- nodejs环境中require一个模块是直接从硬盘或内存中读取该文件，但到了浏览器中你需要从服务器中去下载这个文件，这就得发送http请求，require资源需要请求完才能执行。  
+
+* 浏览器环境并不提供module、require等外部直接引用变量。
+* nodejs环境中require一个模块是直接从硬盘或内存中读取该文件，但到了浏览器中你需要从服务器中去下载这个文件，这就得发送http请求，require资源需要请求完才能执行。  
 
 社区在解决这个问题的时候产生了分歧：
-- Modules/1.x 流派：   
+
+* Modules/1.x 流派：
     1.x规范已经够用了，只需移植到浏览器端即可。例如工具Browserify就能将你的CommonJS代码转换成浏览器端也能执行的代码；
-- Modules/Async 流派  
+* Modules/Async 流派  
     这个观点觉得浏览器有自身的特征，不应该直接用 Modules/1.x 规范。这个观点下的典型代表是 AMD 规范及其实现 RequireJS。
 
 #### AMD和CMD
+
 AMD(异步模块定义)规范既然在浏览器端不支持，那么就改进CommonJS规范，先定义好你需要引用的模块，进行异步加载，在回调函数里执行逻辑代码，制定了一个Modules/Wrappings规范，具体二者有什么区别点击[这里](https://www.zhihu.com/question/20351507)  
 AMD标准是requireJs定义的标准，而CMD是seaJS定义的标准，这两者有什么区别：
- - 对于依赖的模块，AMD是提前执行，CMD是延迟执行；
- - CMD依赖就近，也就是说需要用到时才写,AMD依赖前置，一开始就得把所需依赖写好；
+
+* 对于依赖的模块，AMD是提前执行，CMD是延迟执行；
+* CMD依赖就近，也就是说需要用到时才写,AMD依赖前置，一开始就得把所需依赖写好；
 
 ```javascript
 define(["require"], function(require) {
@@ -657,13 +690,15 @@ helloword(); // 'hello world'
 ```
 
 关于default：
-- export default是输出一个叫做default的变量或方法；它的后面不能再跟变量声明语句；
-- export default导出的模块，不能使用大括号方式导入；
-- 一个文件内不能使用多个export default；
+
+* export default是输出一个叫做default的变量或方法；它的后面不能再跟变量声明语句；
+* export default导出的模块，不能使用大括号方式导入；
+* 一个文件内不能使用多个export default；
 
 ### #Class类
 
 #### 类的声明
+
 class是创建类对象与实现类继承的语法糖，旨在让ES5中对象原型的写法更加清晰，易读。
 在ES6前，如果想实现class面向对象的例子，我们通常使用function来模拟：
 
@@ -822,6 +857,7 @@ class Woman extends People {
 ### # Generator
 
 #### Generator的定义
+
 形式上，Generator 函数是一个普通函数，但是有两个特征。一是，function关键字与函数名之间有一个星号；二是，函数体内部使用yield语句，定义不同的内部状态。Generator函数的调用方法与普通函数不同的是，调用Generator函数后，该函数并不执行，返回的也不是函数运行结果，而是一个指向内部状态的指针对象，我们可以通过调用 next 方法，使得指针移向下一个状态。如下例子：
 
 ```javascript
@@ -838,7 +874,7 @@ g1.next(); // Object {value: "it is a generator", done: true}
 g1.next(); // Object {value: undefined, done: true}
 ```
 
-* 实际上function* stepGenerator 和 function * stepGenerator 或者 function *stepGenerator得到的结果是一样的，只是写法不一样；
+* 实际上function*stepGenerator 和 function* stepGenerator 或者 function *stepGenerator得到的结果是一样的，只是写法不一样；
 
 调用stepGenerator对象的时候，Generator并没有被立即执行，调用next方法时，函数开始执行，next 方法返回一个拥有 value 和 done 两个字段的对象,下次调用 next，函数会从 yield 的下一个语句继续执行,等到整个函数执行完，next 方法返回的 done 字段会变成true。
 
@@ -859,14 +895,12 @@ g1.next(); // Object {value: undefined, done: true}
 
 #### Generator的输入输出
 
-
-
 总结一下Generator与常见的函数有一些共同点，但也有一些差异：
 
-- 通常函数以Function开始，Generator以Function*开始；
-- 常见的函数一旦执行不能暂停，但是Generator可以，并且通过yield关键字来暂停执行；
-- generator内部多了yield关键字，yield类似于普通函数的return，但是不同的是可以有多个yield暂停Generator函数的执行；
-- 常见的函数执行之后会返回结果，Generator执行之后返回Generator对象;
+* 通常函数以Function开始，Generator以Function*开始；
+* 常见的函数一旦执行不能暂停，但是Generator可以，并且通过yield关键字来暂停执行；
+* generator内部多了yield关键字，yield类似于普通函数的return，但是不同的是可以有多个yield暂停Generator函数的执行；
+* 常见的函数执行之后会返回结果，Generator执行之后返回Generator对象;
 
 更多关于Generator:
 [迭代器和生成器](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Iterators_and_Generators)
@@ -880,15 +914,16 @@ Proxy 可以理解成，在目标对象之前架设一层“拦截”，外界�
 
 Proxy 已经被几乎所有的现代化浏览器兼容。（当然IE不是一个现代化浏览器）,Proxy 接收两个对象参数，一个是需要代理的 object 对象，另一个handler也是一个对象，在这个对象里定义对所代理的对象进行设置的方法。
 例子：
+
 ```javascript
 let obj = {
   a: 1,
   b: 2
 }
 let handler = {
-	gets (obj, prop) {
-	console.log(obj)
-	console.log(prop)
+ gets (obj, prop) {
+ console.log(obj)
+ console.log(prop)
   }
 }
 proxy = new Proxy(obj, handler)
@@ -897,7 +932,8 @@ console.log(proxy.a) // {a: 1, b: 2} a
 ```
 
 ### 附录
-- [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/module)
-- [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import)
-- [ECMAScript 6 — New Features](http://es6-features.org/#BlockScopedVariables) 
-- [ECMAScript6 features Github](https://github.com/lukehoban/es6features)
+
+* [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/module)
+* [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import)
+* [ECMAScript 6 — New Features](http://es6-features.org/#BlockScopedVariables)
+* [ECMAScript6 features Github](https://github.com/lukehoban/es6features)
