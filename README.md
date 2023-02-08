@@ -1,4 +1,6 @@
 # <https://wuxinhua.com>
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xinhua%2Fwuxinhua.com.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xinhua%2Fwuxinhua.com?ref=badge_shield)
+
 
 ![](./assets/screenshot.jpeg)
 
@@ -46,3 +48,6 @@ pnpm build && pnpm start
 ## MIT License
 
 You can use all the code after removing my personal information and original posts.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xinhua%2Fwuxinhua.com.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xinhua%2Fwuxinhua.com?ref=badge_large)
