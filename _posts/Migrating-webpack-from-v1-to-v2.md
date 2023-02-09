@@ -1,10 +1,9 @@
 ---
-
 title: 'webpack v2升级踩坑笔记'
-excerpt: '前端模块打包技术日新月异，webpack 在今年 1 月份和 6 月份左右接连更新了 v2 和 v3 版本,为了减少冗余模块，缩减bundle文件大小，webpack v2 中也加入了 tree-shacking, 关于 tree-shacking 的特征，可以查看知乎如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术的讨论'
+excerpt: '前端模块打包技术日新月异，webpack 在今年 1 月份和 6 月份左右接连更新了 v2 和 v3 版本,为了减少冗余模块，缩减 bundle 文件大小，webpack v2 中也加入了 tree-shacking, 关于 tree-shacking 的特征，可以查看知乎如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术的讨论'
 coverImage: ''
 date: '2017-07-14 17:37:22'
-tags: 'Webpack升级'
+tags: 'Webpack升级 webpack'
 ---
 
 从 Grunt -> gulp -> webpack, 再到目前当红明星 [rollup](https://rollupjs.org/)，前端模块打包技术日新月异，webpack 在今年 1 月份和 6 月份左右接连更新了 v2 和 v3 版本,为了减少冗余模块，缩减bundle 文件大小，webpack v2 中也加入了 tree-shacking 特征, 关于 tree-shacking 的介绍，可以查看知乎[如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术？](https://www.zhihu.com/question/41922432)的讨论。
