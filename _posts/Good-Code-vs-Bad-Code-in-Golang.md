@@ -4,6 +4,7 @@ title: 'Good Code vs Bad Code in Golang'
 excerpt: '最近我被问到关于`Golang`好代码和不好的代码的一些细节问题，我发现这个问题非常有趣，有趣到可以就这个问题写一篇文章'
 coverImage: ''
 date: '2018-04-30 14:04:21'
+tags: 'golang'
 
 
 ---

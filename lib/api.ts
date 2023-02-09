@@ -33,7 +33,6 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
       items[field] = data[field]
     }
   })
-
   return items
 }
 

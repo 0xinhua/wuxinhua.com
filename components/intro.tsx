@@ -1,6 +1,6 @@
 const Intro = () => {
   return (
-    <section className="flex-col md:flex-col flex items-start md:justify-between mt-16 mb-16 md:mb-12">
+    <section className="flex-col md:flex-col flex items-start md:justify-between mt-16 md:mb-16 md:mb-10 mb-8">
       <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
         Notes
       </h1>

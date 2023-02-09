@@ -2,7 +2,7 @@
 title: '从面试题“输入URL...发生了什么”学到的(下)'
 excerpt: '较详细地描述了输入URL到页面展现的过程，而下篇将扩展补充这一过程涉及的另一些知识点'
 date: '2017-10-24 00:15:09'
-tags:
+tags: '面试 输入URL到页面展现过程'
 ---
 在[上篇](http://wuxinhua.com/2017/10/13/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out/)里，较详细地描述了输入URL到页面展现的过程，而下篇将扩展补充这一过程涉及的另一些知识点。  
 
