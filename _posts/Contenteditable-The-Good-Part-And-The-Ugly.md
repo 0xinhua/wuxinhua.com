@@ -3,6 +3,7 @@ title: 'contenteditable 踩坑记'
 excerpt: '实现一个富文本编辑器需要填很多的坑，contenteditable，而使用contenteditable无疑是最简单的一种方式，但是 DOM 的处理存在很多兼容性的问题，并且处理起来异常麻烦'
 coverImage:
 date: '2018-07-05 23:33:21'
+tags: 'contenteditable'
 
 ---
 

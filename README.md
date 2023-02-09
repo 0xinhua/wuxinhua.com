@@ -1,16 +1,16 @@
-# <https://wuxinhua.com>
-
-![](./assets/screenshot.jpeg)
+# [wuxinhua.com](https://wuxinhua.com)
 
 My personal Blog using [Next.js](https://nextjs.org/), Markdown, TypeScript, [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) and deploy it to the cloud with [Vercel](https://vercel.com/).
 
+![](./assets/screenshot.jpeg)
+
 ## Feature
 
-- Markdown
-- Rss and Sitemap
-- Dark mode
-- Good SEO([lighthouse performance score](./assets/lighthouse.jpeg) 100 🎉)
-- Search(not suport yet)
+- Markdown ✅
+- Rss and Sitemap ✅
+- Dark mode ✅
+- Good SEO([lighthouse performance score](./assets/lighthouse.jpeg) 100 🎉) ✅
+- Search ✅
 
 ## Structure
 
