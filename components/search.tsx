@@ -14,7 +14,7 @@ const searchClient = algoliasearch(
 
 const Hit = ({ hit }) => {
   const { slug, excerpt } = hit;
-  return (<div className="flex flex-col">
+  return (<div className="flex flex-col text-gray-600 dark:text-gray-400">
     <Link as={`/posts/${slug}`} href="/posts/[slug]" legacyBehavior>
     <a className="hover:underline underline mb-1 text-base">
       <Highlight attribute="title" hit={hit}>
