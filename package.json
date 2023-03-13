@@ -11,7 +11,7 @@
     "rss": "ts-node ./scripts/rss.ts",
     "algolia": "ts-node ./scripts/algolia.ts",
     "seo": "pnpm rss && pnpm sitemap",
-    "lint:md": "markdownlint ./_posts/*.md && README.md",
+    "lint:md": "markdownlint ./_posts/*.md",
     "lint:md:fix": "markdownlint ./_posts/*.md --fix && markdownlint README.md --fix"
   },
   "dependencies": {
