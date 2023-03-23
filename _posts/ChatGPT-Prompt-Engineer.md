@@ -1,9 +1,8 @@
 ---
 title: '#25 人人都可以成为 AI 工程师'
 excerpt: 'YC、OpenAI 背后的天选之子 Sam Altman，ChatGPT 是互联网的有损压缩，巨大摇摆之后，中国疫后社会重建的支点， AI 工程师变成了 Prompt 工程师'
-coverImage:
 date: '2023-03-14 01:05:49'
-tags: '321来信 ChatGPT AI Sam Altman prompt 项飙'
+tags: 'prompt prompt工程师 ChatGPT GPT-4 AI Sam Altman'
 ---
 
 ![DALL·E](https://assets.wuxinhua.com/blog/assets/newsletter/25-dalle.png "DALL·E")
@@ -16,13 +15,13 @@ Hi，见信好，这是 321来信发出的第 26 封信，这一期 AI 相关的
 
 - YC、OpenAI 背后的天选之子 Sam Altman，ChatGPT 是互联网的有损压缩
 - 巨大摇摆之后，中国疫后社会重建的支点， AI 工程师变成了 Prompt 工程师
-- 关键字：ChatGPT AI Sam Altman prompt 项飙
+- 关键字：ChatGPT prompt工程师 AI Sam Altman prompt 项飙
 
 ## 💡 想法
 
 春节后我回到北京开始投入到工作中，到现在整整过了一个多月，最近确实有点忙碌，大部分时间都在编程，最近在看一本技术相关的书 《Go in action》序言中开头的一句话让我很有感触 ，“当人们聚在一起，纯粹是为了让世界变得更好的时候，往往也是他们处于最佳状态的时候”。最近大概也是这样的一个感受，不管是生活还是工作上，最近我的状态一直很好，我跟小伙伴在做一款很有意思的产品，不出意外这月底我们会发布新的版本，如果订阅 newsletter 的读者中有从事互联网行业，特别是编程工作的程序员，可以关注一下我后面推送的来信，我会向你们介绍我做的东西，并且期待你们利用它去实现自己的想法做一些很酷的东西，同时如果方便也可以反馈问题和建议，帮助我们去迭代下一个版本。
 
-这期我想分享一下最近使用 ChatGPT 的一些体验以及想法。
+这期我想分享一下最近使用 ChatGPT 的一些体验以及想法，人人都可以成为 prompt 工程师。
 
 在之前的几封来信里，我有介绍过当前最火爆的语言模型 ChatGPT，这段时间你也一定被各种 ChatGPT 新闻刷屏了，OpenAI 最近已经开放了最新的 gpt-3.5-turbo 模型，我们第一时间购入了更稳定、更多特征的 [ChatGPT Plus](https://openai.com/blog/chatgpt-plus)，并且尝试用它的接口来做一些工具以及有趣的事情，例如我们搭建了基于 ChatGPT 的飞书机器人，在飞书群里帮忙回答问题，我开始利用它纠正日常英语拼写问题回复用户邮件，目前它基本已替代了我经常使用的一款英语写作助手 [Grammarly](https://app.grammarly.com/)，我的同事还把它集成到了我们的项目 issues 管理流程中，通过分析问题描述帮忙分类问题的类型，自动标记成 featrue 或 bug，以及修复问题的紧急程度，如果是 bug 还可以给出相应的修复建议；我们利用它分析日志报错，查找对应文档内容并给出报错原因；通过快捷指令 + Siri 能实现在 iPhone 中与 ChatGPT 语音对话。
 
