@@ -12,7 +12,7 @@
     "algolia": "ts-node ./scripts/algolia.ts",
     "seo": "pnpm rss && pnpm sitemap",
     "lint:md": "markdownlint ./_posts/*.md",
-    "lint:md:fix": "markdownlint ./_posts/*.md --fix && markdownlint README.md --fix"
+    "lint:md:fix": "markdownlint ./_posts/*.md --fix"
   },
   "dependencies": {
     "@next/env": "^13.0.6",
