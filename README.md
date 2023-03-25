@@ -1,4 +1,4 @@
-![](./assets/screenshot.jpeg)
+![](./assets/screenshot.png)
 
 # wuxinhua.com
 
