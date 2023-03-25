@@ -30,7 +30,10 @@ const Navigator = (props: { links: Link[] }) => {
             transition-all`, isActive(link.path) ? `font-medium text-base text-gray-800 dark:text-gray-200` : `font-normal
             text-base
             dark:text-gray-400`)} 
-            href={link.path}>{link.label}
+            href={link.path}
+            title={link.label}
+          >
+              {link.label}
           </a>
           </li>)
       )}

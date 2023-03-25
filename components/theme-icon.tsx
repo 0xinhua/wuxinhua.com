@@ -13,7 +13,7 @@ const ThemeModeIcon = (props) => {
       onClick={() => setTheme(theme)}
       placeholder={alt}
       alt={alt}
-      src={theme === 'dark' ? darkIcon : lightIcon}
+      src={theme === 'dark' ? lightIcon : darkIcon}
       {...props}
     />
   );
