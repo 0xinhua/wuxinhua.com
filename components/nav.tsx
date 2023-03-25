@@ -27,7 +27,7 @@ const Navigator = (props: { links: Link[] }) => {
             sm:px-2
             sm:py-2
             rounded-lg
-            transition-all`, isActive(link.path) ? `font-semibold text-gray-800 dark:text-gray-200` : `font-normal
+            transition-all`, isActive(link.path) ? `font-medium text-base text-gray-800 dark:text-gray-200` : `font-normal
             text-base
             dark:text-gray-400`)} 
             href={link.path}>{link.label}

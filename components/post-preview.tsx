@@ -26,9 +26,9 @@ const PostPreview = ({
 }: Props) => {
   return (
     <div className="mb-8">
-      <h3 className="text-2xl mb-3 leading-snug">
+      <h3 className="text-xl mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]" legacyBehavior>
-          <a className="hover:underline underline">{title}</a>
+          <a className="hover:underline hover:text-blue-600 underline-offset-4">{title}</a>
         </Link>
       </h3>
       <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-2">{excerpt}</p>

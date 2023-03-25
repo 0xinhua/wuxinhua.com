@@ -36,7 +36,7 @@ export default function Changelogs({ allPosts }: Props) {
                     <time dateTime={post.date}>{formatDate(post.date, 'yyyy-MM-dd')}</time>
                   </dd>
                 </dl>
-                <Link className="underline" href={`/posts/${encodeURIComponent(post.slug)}`}>{post.title}</Link>
+                <Link className="hover:underline hover:text-blue-600 underline-offset-4" href={`/posts/${encodeURIComponent(post.slug)}`}>{post.title}</Link>
               </div>
             )
           })}

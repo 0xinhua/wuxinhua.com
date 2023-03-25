@@ -12,7 +12,7 @@ const Alert = ({ preview }: Props) => {
   const links = [
     {
       path: '/',
-      label: 'Home'
+      label: '首页'
     },
     // TODO
     // {
@@ -21,11 +21,11 @@ const Alert = ({ preview }: Props) => {
     // },
     {
       path: '/changelogs/',
-      label: 'Changelogs',
+      label: '日志',
     },
     {
       path: '/about/',
-      label: 'About'
+      label: '关于我'
     }
   ]
   return (

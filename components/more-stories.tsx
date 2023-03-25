@@ -17,8 +17,8 @@ const MoreStories = ({ posts }: Props) => {
 
   return (
     <section>
-      <h2 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-        更多文章
+      <h2 className="mt-8 mb-4 text-xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+        {/* 更多文章 */}
       </h2>
       <div className={style.moreStories}>
         {filteredPosts.map((post) => (
