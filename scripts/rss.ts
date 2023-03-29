@@ -5,8 +5,6 @@ import { CMS_NAME, SITE_URL } from '../lib/constants';
 
 const genRssFeed = async () => {
 
-  // console.log(' process.env', process.env.HOSTNAME, process.env.PORT)
-
   const allPosts = getAllPosts([
     'title',
     'date',

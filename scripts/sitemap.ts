@@ -1,6 +1,6 @@
-import { writeFileSync } from "fs";
-import { getAllPosts } from './../lib/api';
-import { SITE_URL } from '../lib/constants';
+import { writeFileSync } from "fs"
+import { getAllPosts } from './../lib/api'
+import { SITE_URL } from '../lib/constants'
 
 const generate = async () => {
 

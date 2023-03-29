@@ -8,8 +8,6 @@ import Post from '@/interfaces/post'
 import { formatDate } from "@/lib/utils"
 import Head from "next/head"
 import { CMS_NAME } from "@/lib/constants"
-// import Image from 'next/image'
-// import CommitIcon from '@/assets/commit.svg'
 
 type Props = {
   allPosts: Post[]
