@@ -1,5 +1,5 @@
 ---
-title: '用 JavaScript 开发企业微信 ChatGPT 聊天应用'
+title: 'ChatGPT 机器人系列 - 用 JavaScript 开发企业微信 ChatGPT 聊天应用'
 excerpt: '你将学会如何创建企业微信应用，如何配置接收消息 URL、企业可信 IP、解密消息，给聊天应用接入 ChatGPT 能力'
 date: '2023-04-01 02:00:00'
 tags: 'AirCode 企业微信 ChatGPT 企业微信Openapi'
