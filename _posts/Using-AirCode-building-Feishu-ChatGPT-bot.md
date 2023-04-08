@@ -98,7 +98,7 @@ tags: 'AirCode ChatGPT 飞书'
   <p align="center"><img src="https://docs-cn.aircode.io/_images/tutorials/feishu-chatGPT/22-demo-chatGPT-bot.png" width="580px" /></p>
 
 ## 问题反馈
-  1. 可以加入我们的[飞书用户群](https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=6dem4ab3-d523-4562-9c63-9fb46d565b10)
+  1. 可以加入我们的[微信、钉钉、飞书、Discord 用户交流群](https://docs-cn.aircode.io/help/)
   2. 来到我们的 [GitHub 仓库](https://github.com/aircodelabs/aircode)，可以提 issue 或者直接贡献代码
   3. 欢迎加入我们的 [Discord 讨论区](https://discord.com/invite/XrMVdYdEuY)
 
