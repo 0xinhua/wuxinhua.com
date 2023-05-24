@@ -3,7 +3,7 @@ title: '快速上手 Midjourney AI 做图'
 excerpt: 'Midjourney AI 做图及 Midjourney 上手教程'
 coverImage:
 date: '2023-05-25 01:32:01'
-tags: 'Midjourney Midjourney Prompt midjourney做图 AI做图 Midjourney教程 Midjourney中文教程'
+tags: 'Midjourney Prompt midjourney做图 AI做图 Midjourney中文教程'
 ---
 
 通过本文，你将学习到使用利用AI通过几行简单的命令制造精美的图片。
