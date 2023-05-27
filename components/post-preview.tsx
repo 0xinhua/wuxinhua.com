@@ -28,7 +28,7 @@ const PostPreview = ({
     <div className="mb-8">
       <h3 className="text-xl mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]" legacyBehavior>
-          <a className="text-blue-500 dark:text-sky-300 hover:underline hover:text-blue-600 underline-offset-4" title={title}>{title}</a>
+          <a className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" title={title}>{title}</a>
         </Link>
       </h3>
       <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-2">{excerpt}</p>

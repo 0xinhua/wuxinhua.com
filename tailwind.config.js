@@ -10,6 +10,7 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        'highlight-link': 'var(--link-color)',
       },
       spacing: {
         28: '7rem',
@@ -33,6 +34,21 @@ module.exports = {
       listStyleType: {
         disc: 'disc',
       },
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              color: theme === 'dark' ? '#7dd3fc' : '#3b82f6',
+              textDecoration: 'none',
+              '&:hover': {
+                color: '#2563eb',
+                textDecorationLine: 'underline',
+                textUnderlineOffset: '4px'
+              },
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require('@tailwindcss/typography')],

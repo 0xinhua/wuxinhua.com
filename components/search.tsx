@@ -16,7 +16,7 @@ const Hit = ({ hit }) => {
   const { slug, excerpt } = hit;
   return (<div className="flex flex-col text-gray-600 dark:text-gray-400">
     <Link as={`/posts/${slug}`} href="/posts/[slug]" legacyBehavior>
-    <a className="text-blue-500 dark:text-sky-300 hover:text-blue-600 hover:underline mb-1 text-base underline-offset-4">
+    <a className="text-blue-500  hover:text-blue-600 hover:underline mb-1 text-base underline-offset-4">
       <Highlight attribute="title" hit={hit}>
     </Highlight>
     </a>
