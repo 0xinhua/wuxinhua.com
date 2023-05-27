@@ -64,6 +64,9 @@ dependencies:
   typescript:
     specifier: ^4.7.4
     version: registry.npmmirror.com/typescript@4.9.4
+  unified:
+    specifier: ^10.1.2
+    version: registry.npmmirror.com/unified@10.1.2
 
 devDependencies:
   '@types/node':
