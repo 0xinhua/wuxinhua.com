@@ -29,6 +29,7 @@
     "react-dom": "^18.2.0",
     "react-instantsearch-hooks-web": "^6.39.3",
     "rehype-external-links": "^2.1.0",
+    "rehype-raw": "^6.1.1",
     "rehype-stringify": "^9.0.3",
     "remark-gfm": "^3.0.1",
     "remark-html": "^15.0.1",

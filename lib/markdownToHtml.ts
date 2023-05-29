@@ -6,6 +6,7 @@ import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
 import remarkHtml from 'remark-html'
 import remarkParse from 'remark-parse'
+import rehypeRaw from 'rehype-raw'
 
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
@@ -13,7 +14,8 @@ export default async function markdownToHtml(markdown: string) {
   .use(remarkHtml, { sanitize: false })
   .use(remarkGfm)
   .use(prism)
-  .use(remarkRehype)
+  .use(remarkRehype, {allowDangerousHtml: true})
+  .use(rehypeRaw)
   .use(rehypeExternalLinks, { rel: ['nofollow', 'noreferrer', 'noopener'], target: '_blank'})
   .use(rehypeStringify)
   .process(markdown)
