@@ -20,7 +20,7 @@ export default function About () {
         <p>Hi 👋 ，欢迎你访问我的网络日志，只要命运的齿轮沒有出差错，这个日志会一直更下去。</p>
         <p>你可以使用 <Link className="text-highlight-link  hover:underline hover:text-blue-600 underline-offset-4" target="_blank" href={`https://wuxinhua.com/rss.xml`}>RSS </Link>
         订阅日志动态，通过邮箱 <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`mailto:wuxinhua.cn@gmail.com`}>wuxinhua.cn@gmail.com</Link> 联系到我。</p>
-        <p> 0xinhua 是一个在北京工作生活的程序员<img src="https://assets.wuxinhua.com//blog/assets/coder.gif" width="30" alt="https://assets.wuxinhua.com//blog/assets/coder.gif" className="inline" />，之前在
+        <p> 在北京生活、工作<img src="https://assets.wuxinhua.com//blog/assets/coder.gif" width="30" alt="https://assets.wuxinhua.com//blog/assets/coder.gif" className="inline" />，之前在
           <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href="https://www.bytedance.com/zh" target="_blank"> 字节跳动 </Link>、
           <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://juejin.cn/`} target="_blank">掘金社区 </Link>写代码。
         </p>

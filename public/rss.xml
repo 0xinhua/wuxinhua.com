@@ -9,10 +9,74 @@
             <link>https://wuxinhua.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 26 Jan 2023 09:47:28 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Aug 2023 11:30:55 GMT</lastBuildDate>
         <atom:link href="https://wuxinhua.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 26 Jan 2023 09:47:28 GMT</pubDate>
+        <pubDate>Fri, 04 Aug 2023 11:30:55 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023]]></copyright>
+        <item>
+            <title><![CDATA[About AirCode]]></title>
+            <description><![CDATA[AirCode is an online platform for building and hosting Node.js apps.]]></description>
+            <link>https://wuxinhua.com/posts/AirCode-hello-world</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/AirCode-hello-world</guid>
+            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <pubDate>Wed, 02 Aug 2023 09:32:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[快速上手 Midjourney AI 做图]]></title>
+            <description><![CDATA[如何使用 Midjourney AI 做图及 Midjourney 上手教程]]></description>
+            <link>https://wuxinhua.com/posts/A-Step-by-Step-Guide-with-Midjourney-AI</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/A-Step-by-Step-Guide-with-Midjourney-AI</guid>
+            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <pubDate>Wed, 24 May 2023 17:32:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Building your first Discord ChatGPT Bot]]></title>
+            <description><![CDATA[In this tutorial, I will guide you through building your initial Discord app using JavaScript to interact with ChatGPT via slash commands. ]]></description>
+            <link>https://wuxinhua.com/posts/Building-your-first-Discord-ChatGPT-Bot</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Building-your-first-Discord-ChatGPT-Bot</guid>
+            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <pubDate>Wed, 17 May 2023 17:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ChatGPT 机器人系列 - 用 JavaScript，五分钟将 Siri 接入 ChatGPT]]></title>
+            <description><![CDATA[本文帮助你快速实现一个 iPhone Siri 对话机器人，并在其中接入 ChatGPT 的能力，直接语音唤醒，并且支持连续对话。]]></description>
+            <link>https://wuxinhua.com/posts/Using-AirCode-building-Siri-ChatGPT-bot</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Using-AirCode-building-Siri-ChatGPT-bot</guid>
+            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <pubDate>Sat, 08 Apr 2023 14:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ChatGPT 机器人系列 - 用 JavaScript 五分钟开发一个飞书 ChatGPT 机器人]]></title>
+            <description><![CDATA[本文帮助你快速实现一个飞书对话机器人，并在其中接入 ChatGPT 的能力，可以直接问它问题，也可以在群聊天中 at 它，返回 ChatGPT 的回答]]></description>
+            <link>https://wuxinhua.com/posts/Using-AirCode-building-Feishu-ChatGPT-bot</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Using-AirCode-building-Feishu-ChatGPT-bot</guid>
+            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <pubDate>Fri, 07 Apr 2023 12:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ChatGPT 机器人系列 - 用 JavaScript 开发企业微信 ChatGPT 聊天应用]]></title>
+            <description><![CDATA[你将学会如何创建企业微信应用，如何配置接收消息 URL、企业可信 IP、解密消息，给聊天应用接入 ChatGPT 能力]]></description>
+            <link>https://wuxinhua.com/posts/Using-AirCode-building-a-enterprise-wechat-ChatGPT-bot</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Using-AirCode-building-a-enterprise-wechat-ChatGPT-bot</guid>
+            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <pubDate>Fri, 31 Mar 2023 18:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[#26 SVB 硅谷银行为什么倒闭]]></title>
+            <description><![CDATA[银行的本质、 SVB 为什么会倒闭、美联储加息到底加的是什么息， 批判式忽略变得越来越重要、我们对于 ChatGPT 的想象中，可能缺少了「电梯]]]></description>
+            <link>https://wuxinhua.com/posts/Why-the-SVB-bank-failure</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Why-the-SVB-bank-failure</guid>
+            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <pubDate>Sun, 19 Mar 2023 13:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[#25 人人都可以成为 AI 工程师]]></title>
+            <description><![CDATA[YC、OpenAI 背后的天选之子 Sam Altman，ChatGPT 是互联网的有损压缩，巨大摇摆之后，中国疫后社会重建的支点， AI 工程师变成了 Prompt 工程师]]></description>
+            <link>https://wuxinhua.com/posts/ChatGPT-Prompt-Engineer</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/ChatGPT-Prompt-Engineer</guid>
+            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <pubDate>Mon, 13 Mar 2023 17:05:49 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[#24 Body]]></title>
             <description><![CDATA[关于程序员如何应对裁员，社交媒体正在转变为推荐媒体，Facebook 将变得越来越像 TikTok，中国奇谭《小妖怪的夏天》那不就是互联网民工被压榨的日常吗]]></description>
@@ -72,8 +136,8 @@
         <item>
             <title><![CDATA[macOS 前端开发环境配置]]></title>
             <description><![CDATA[当我们更换新的电脑或者入职新公司的时候，通常会需要重新配置一下电脑的开发环境，比较理想的方式就是能够复制我上一台设备的一些配置和软件，这样能快速地开始开发工作，这篇文档记录的是常用的软件、前端开发环境配置等，以及如果使用 dotfiles 重复利用这些配置]]></description>
-            <link>https://wuxinhua.com/posts/macOS-Front-end-Dev-Environment-Configuration</link>
-            <guid isPermaLink="true">https://wuxinhua.com/posts/macOS-Front-end-Dev-Environment-Configuration</guid>
+            <link>https://wuxinhua.com/posts/macOS-front-end-dev-environment-configuration</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/macOS-front-end-dev-environment-configuration</guid>
             <dc:creator><![CDATA[wuxinhua]]></dc:creator>
             <pubDate>Mon, 01 Aug 2022 04:32:49 GMT</pubDate>
         </item>
@@ -335,7 +399,7 @@
         </item>
         <item>
             <title><![CDATA[webpack v2升级踩坑笔记]]></title>
-            <description><![CDATA[前端模块打包技术日新月异，webpack在今年1月份和6月份左右接连更新了 v2 和 v3 版本,为了减少冗余模块，缩减bundle文件大小，webpack v2 中也加入了 tree-shacking,关于 tree-shacking 的特征，可以查看知乎如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术的讨论]]></description>
+            <description><![CDATA[前端模块打包技术日新月异，webpack 在今年 1 月份和 6 月份左右接连更新了 v2 和 v3 版本,为了减少冗余模块，缩减 bundle 文件大小，webpack v2 中也加入了 tree-shacking, 关于 tree-shacking 的特征，可以查看知乎如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术的讨论]]></description>
             <link>https://wuxinhua.com/posts/Migrating-webpack-from-v1-to-v2</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Migrating-webpack-from-v1-to-v2</guid>
             <dc:creator><![CDATA[wuxinhua]]></dc:creator>
