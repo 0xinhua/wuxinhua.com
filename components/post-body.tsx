@@ -13,7 +13,7 @@ const PostBody = ({ content }: Props) => {
       dark:prose-invert
       max-w-2xl
       mx-auto
-      mt-10">
+      mt-8">
       <div
         dangerouslySetInnerHTML={{ __html: content }}
       />

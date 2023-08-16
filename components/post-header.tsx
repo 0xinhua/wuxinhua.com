@@ -25,7 +25,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
         <div className="block md:hidden mb-4">
           {author && author?.name ? <Avatar name={author.name} picture={author.picture} /> : null }
         </div>
-        { date ? <div className="mb-4 text-base text-slate-600">
+        { date ? <div className="mb-4 text-base text-slate-600 dark:text-gray-400 mt-3">
           @0xinhua 发布于 <DateFormatter dateString={date} />
         </div> : null }
       </div>
