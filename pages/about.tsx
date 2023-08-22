@@ -29,7 +29,7 @@ export default function About () {
         <p>Newsletter：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://321laixin.zhubai.love/`} target="_blank">321来信</Link>（期待你加入与超过 400+ 🎉 订阅读者一起关注互联网最新科技动态）</p>
         <p>GitHub：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://github.com/0xinhua`} target="_blank">@0xinhua</Link></p>
         <p>即刻：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://web.okjike.com/u/BC942F46-A5E2-40A0-B419-5AB8B3A02BE1`} target="_blank">@0xinhua</Link></p>
-        <p>Twitter：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://twitter.com/0xinhua`} target="_blank">@0xinhua</Link></p>
+        <p>Twitter：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://twitter.com/intent/follow?screen_name=0xinhua`} target="_blank">@0xinhua</Link></p>
         <br />
         <hr />
         <p>👋 Hi there，It's Kevin ~ </p>
