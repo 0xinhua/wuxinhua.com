@@ -2,7 +2,7 @@
 title: '#27 创始人是公司灵魂的守护者'
 excerpt: '我最近在做什么，在创业公司工作的一些收获和想法'
 date: '2023-08-15 08:00:00'
-tags: 'AirCode 创业 Resend'
+tags: 'AirCode 创业'
 ---
 
 ![circus](https://assets.wuxinhua.com/blog/assets/newsletter/27-cover.jpg "circus")
