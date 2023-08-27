@@ -2,6 +2,16 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'wuxinhua.com',
+        port: '',
+        pathname: '/**/**',
+      },
+    ],
+  },
   trailingSlash: true,
   reactStrictMode: true,
   /* config options here */
