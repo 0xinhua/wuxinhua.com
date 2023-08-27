@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import { CMS_NAME } from '../lib/constants'
 
 const Meta = () => {
   return (
@@ -59,9 +59,14 @@ const Meta = () => {
       />
       <meta
         name="description"
-        content={`${CMS_NAME}'s Blog, Front-end developer, JavaScript, newsletter, 前端, wuxinhua.com`}
+        content={`${CMS_NAME}'s Blog, Tech blogger and software engineer sharing insights on development, tech trends, and entrepreneurship. Join 400+ for weekly updates.`}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta property="og:url" content="https://wuxinhua.com/" />
+      <meta property="og:title" content="wuxinhua.com" />
+      <meta property="og:description" content="Tech blogger and software engineer sharing insights on development, tech trends, and entrepreneurship. Join 400+ for weekly updates" />
+      <meta property="og:image" content="https://wuxinhua.com/assets/meta/og-image.png"  />
+      <meta property="og:image:url"  content="https://wuxinhua.com/assets/meta/og-image.png"  />
+      <meta property="twitter:image" content="https://wuxinhua.com/assets/meta/og-image.png"  />
     </Head>
   )
 }
