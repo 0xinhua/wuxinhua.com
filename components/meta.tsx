@@ -68,6 +68,7 @@ const Meta = () => {
       <meta property="og:image" content="https://wuxinhua.com/assets/meta/og-image.png"  />
       <meta property="og:image:url"  content="https://wuxinhua.com/assets/meta/og-image.png"  />
       <meta property="twitter:image" content="https://wuxinhua.com/assets/meta/og-image.png"  />
+      <meta content="summary_large_image" name="twitter:card" />
       <meta name="twitter:url" content="https://wuxinhua.com/" />
       <meta name="twitter:creator" content="@0xinhua" />
       <meta name="twitter:title" content="Blog about Engineering, Start-up Business, Tech trends | wuxinhua.com" />
