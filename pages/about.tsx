@@ -13,7 +13,7 @@ export default function About () {
         <Header />
         <Head>
           <title>
-            About me - {CMS_NAME}
+           {`About - ${CMS_NAME}`}
           </title>
         </Head>
         <div className={style.content}>

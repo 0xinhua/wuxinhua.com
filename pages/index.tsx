@@ -20,7 +20,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>{CMS_NAME}</title>
+          <title>{`Home - ${CMS_NAME}`}</title>
         </Head>
         <Container>
           <Intro />

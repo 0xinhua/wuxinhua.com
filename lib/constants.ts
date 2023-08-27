@@ -1,5 +1,5 @@
 export const EXAMPLE_PATH = 'blog-starter'
-export const CMS_NAME = 'wuxinhua'
+export const CMS_NAME = 'wuxinhua.com'
 export const CMS_AUTHOR = '0xinhua'
 
 export const SITE_URL = 'https://wuxinhua.com'

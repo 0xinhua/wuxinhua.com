@@ -22,7 +22,7 @@ export default function Changelogs({ allPosts }: Props) {
         <Header />
         <Head>
           <title>
-            Changelogs - {CMS_NAME}
+            {`Changelogs - ${CMS_NAME}`}
           </title>
         </Head>
           { allPosts.map(post => {
