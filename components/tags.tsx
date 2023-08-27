@@ -15,8 +15,8 @@ const Tags = (props) => {
         src={tagsIcon}
       />
       {
-        tagList.map(tag => {
-          return (<span key={tag} className='mr-1'>{tag}</span>)
+        tagList.map((tag, index) => {
+          return (<span key={tag + index} className='mr-1'>{tag}</span>)
         })
       }
     </div>: null
