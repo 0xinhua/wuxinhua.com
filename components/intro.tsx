@@ -7,7 +7,7 @@ const Intro = () => {
         alt={'cover image'}
         width={1200}
         height={600}
-        src="https://wuxinhua.com/assets/meta/og-image.png"
+        src="https://wuxinhua.com/assets/meta/og-image-2023.png"
       />
       {/* <h2 className="sm:text-center dark:text-gray-400 text-gray-600 md:text-left text-lg">
         Bloginng about Engineering, sharing insights on tech trends and Start-up business.

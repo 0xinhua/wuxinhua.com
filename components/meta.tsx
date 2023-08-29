@@ -65,9 +65,9 @@ const Meta = () => {
       <meta property="og:title" content="wuxinhua.com" />
       <meta property="og:type" content="website" />
       <meta property="og:description" content="Tech blogger and software engineer sharing insights on development, tech trends, and entrepreneurship. Join 500+ for weekly updates" />
-      <meta property="og:image" content="https://wuxinhua.com/assets/meta/og-image.png"  />
-      <meta property="og:image:url"  content="https://wuxinhua.com/assets/meta/og-image.png"  />
-      <meta property="twitter:image" content="https://wuxinhua.com/assets/meta/og-image.png"  />
+      <meta property="og:image" content="https://wuxinhua.com/assets/meta/og-image-2023.png"  />
+      <meta property="og:image:url"  content="https://wuxinhua.com/assets/meta/og-image-2023.png"  />
+      <meta property="twitter:image" content="https://wuxinhua.com/assets/meta/og-image-2023.png"  />
       <meta content="summary_large_image" name="twitter:card" />
       <meta name="twitter:url" content="https://wuxinhua.com/" />
       <meta name="twitter:creator" content="@0xinhua" />
