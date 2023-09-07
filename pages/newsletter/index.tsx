@@ -2,6 +2,8 @@ import Container from '@/components/container'
 import Layout from '@/components/layout'
 import Head from 'next/head'
 import { CMS_NAME } from 'lib/constants'
+import NewsletterHeader from '@/components/newsletter-header'
+import NewsletterList from '@/components/newsletter-List'
 
 export default function Index() {
   return (
@@ -11,7 +13,8 @@ export default function Index() {
           <title>{CMS_NAME}'s Blog</title>
         </Head>
         <Container>
-          <div>newsletter</div>
+        <NewsletterHeader />
+        <NewsletterList />
         </Container>
       </Layout>
     </>
