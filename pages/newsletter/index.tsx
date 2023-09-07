@@ -3,7 +3,7 @@ import Layout from '@/components/layout'
 import Head from 'next/head'
 import { CMS_NAME } from 'lib/constants'
 import NewsletterHeader from '@/components/newsletter-header'
-import NewsletterList from '@/components/newsletter-List'
+import NewsletterList from '@/components/newsletter-list'
 
 export default function Index() {
   return (
