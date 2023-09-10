@@ -19,7 +19,7 @@ export default function Index() {
             <div className="w-full border-t border-gray-300" />
           </div>
           <div className="relative flex justify-start">
-            <span className="bg-white dark:bg-black pr-2 pl-8 text-sm text-gray-500">往期来信</span>
+            <span className="bg-white dark:bg-[#121212] pr-2 pl-6 text-sm text-current">往期来信</span>
           </div>
         </div>
           <NewsletterList />
