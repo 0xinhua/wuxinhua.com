@@ -11,6 +11,8 @@ module.exports = {
         success: '#0070f3',
         cyan: '#79FFE1',
         'highlight-link': 'var(--link-color)',
+        'blue-color': 'var(--blue-600)',
+        'blue-700': 'var(--blue-700)'
       },
       spacing: {
         28: '7rem',

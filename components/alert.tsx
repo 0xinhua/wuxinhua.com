@@ -75,7 +75,7 @@ const Alert = ({ preview }: Props) => {
     },
     {
       path: '/newsletter',
-      label: '来信',
+      label: '321来信',
     },
     {
       path: '/about/',

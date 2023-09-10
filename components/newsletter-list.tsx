@@ -4,7 +4,7 @@ const posts = [
     title: '#27 创始人是公司灵魂的守护者',
     href: '/posts/What-I-learned-at-AirCode/',
     description:
-      '我最近在做什么，在创业公司工作的一些收获和想法',
+      '随着时间的推移，一家公司就会成为其创始人的反映，创始人的风格也是这家公司的风格。',
     date: 'Aug 15, 2023',
     datetime: '2023-08-15',
     category: { title: 'Start-up', href: '#' },
@@ -40,25 +40,25 @@ export default function Example() {
           <div className="mt-10 space-y-16 sm:mt-5">
             {posts.map((post) => (
               <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
-                <div className="flex items-center gap-x-4 text-xs">
-                  <time dateTime={post.datetime} className="text-gray-500">
-                    {post.date}
-                  </time>
-                  <a
-                    href={post.category.href}
-                    className="relative z-10 rounded-full px-3 py-1.5 font-medium text-gray-600"
-                  >
-                    {post.category.title}
-                  </a>
-                </div>
                 <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 group-hover:text-gray-600">
+                  <h3 className="mt-3 text-2xl font-semibold leading-6 group-hover:text-blue-600">
                     <a href={post.href}>
                       <span className="absolute inset-0" />
                       {post.title}
                     </a>
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
+                  <p className="mt-5 line-clamp-3 text-lg leading-6">{post.description}</p>
+                </div>
+                <div className="flex items-center gap-x-4 text-xs mt-3.5">
+                  <time dateTime={post.datetime} className="text-gray-500">
+                    {post.date}
+                  </time>
+                  <a
+                    href={post.category.href}
+                    className="relative z-10 rounded-full px-3 py-1.5 font-medium bg-gray-100 dark:bg-transparent"
+                  >
+                    {post.category.title}
+                  </a>
                 </div>
               </article>
             ))}

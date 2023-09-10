@@ -5,7 +5,9 @@ type Props = {
 }
 
 const Container = ({ children }: Props) => {
-  return <div className={style.postsContainer}>{children}</div>
+  return <div className={style.postsContainer}>
+    {children}
+  </div>
 }
 
 export default Container

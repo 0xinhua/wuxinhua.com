@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-    --link-color: #0070f3;
-  }
+  --link-color: #3b82f6;
+  --brand-color: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+}
