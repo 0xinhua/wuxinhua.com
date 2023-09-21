@@ -9,3 +9,7 @@
   --blue-600: #2563eb;
   --blue-700: #1d4ed8;
 }
+
+.text-effect {
+  transition: color 0.2s ease-in-out;
+}

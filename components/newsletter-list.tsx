@@ -41,7 +41,7 @@ export default function Example() {
             {posts.map((post) => (
               <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
                 <div className="group relative">
-                  <h3 className="mt-3 text-2xl font-semibold leading-6 group-hover:text-blue-600">
+                  <h3 className="mt-3 text-2xl font-semibold leading-6 group-hover:text-blue-600 text-effect">
                     <a href={post.href}>
                       <span className="absolute inset-0" />
                       {post.title}
