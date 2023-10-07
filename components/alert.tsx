@@ -73,10 +73,10 @@ const Alert = ({ preview }: Props) => {
       path: '/changelogs/',
       label: '日志',
     },
-    {
-      path: '/newsletter',
-      label: '321来信',
-    },
+    // {
+    //   path: '/newsletter',
+    //   label: '321来信',
+    // },
     {
       path: '/about/',
       label: '关于'
