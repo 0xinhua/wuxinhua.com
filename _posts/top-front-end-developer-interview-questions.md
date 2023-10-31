@@ -351,6 +351,13 @@ IIFE（立即调用函数表达式）是一个在定义时就会立即执行的 
 
 ## 原型及原型链
 
+原型及原型链主要涉及到这三个名词 __proto__、prototype、 constructor：
+
+1. __proto__、 constructor属性是对象所独有的，prototype属性是函数独有的；
+2. __proto__属性是从一个对象指向另一个对象，即从一个对象指向该对象的原型对象（也可以理解为父对象），它的含义就是告诉我们一个对象的原型对象是谁；
+3. constructor是从一个对象指向一个函数。指向的函数就是该对象的构造函数，谁构造了这个对象；
+4. prototype 属性可以看成是一块特殊的存储空间，存储了供子类、父类使用的方法和属性；
+
 每个js复杂数据类型（Object Function Array）等都会自带一个 prototype 对象，这个对象就是我们说的原型。
 
 _proto_ 访问器属性，它指向原型对象，所以不管你是 Function 还是 Object 都会有__proto__属性，这些最终都指向了Object.protoype原型对象，它也是对象，它也有 _proto_ ，它的原型对象指向了 null。
