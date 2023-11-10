@@ -33,7 +33,7 @@ const Navigator = (props: { links: Link[] }) => {
             href={link.path}
             title={link.label}
           >
-              {link.label}
+            {link.label}
           </a>
           </li>)
       )}

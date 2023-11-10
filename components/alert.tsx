@@ -55,7 +55,7 @@ function ThemeToggle() {
       className="group px-2 py-2 backdrop-blur transition dark:ring-white/10 dark:hover:ring-white/20"
       onClick={() => setTheme(otherTheme)}
     >
-      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-[#4B5563] transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-slate-400 [@media(prefers-color-scheme:dark)]:stroke-slate-400 [@media(prefers-color-scheme:dark)]:group-hover:fill-slate-300 [@media(prefers-color-scheme:dark)]:group-hover:stroke-slate-600" />
+      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-gray-400 transition group-hover:fill-gray-300 group-hover:stroke-zinc-500 dark:hidden [@media(prefers-color-scheme:dark)]:fill-slate-400 [@media(prefers-color-scheme:dark)]:stroke-slate-400 [@media(prefers-color-scheme:dark)]:group-hover:fill-slate-300 [@media(prefers-color-scheme:dark)]:group-hover:stroke-slate-600" />
       <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:hover:stroke-zinc-600 [@media_not_(prefers-color-scheme:dark)]:fill-slate-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-slate-400 [@media_not_(prefers-color-scheme:dark)]:hover:stroke-slate-300" />
     </button>
   )
