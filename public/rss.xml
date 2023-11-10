@@ -1,32 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[wuxinhua Blog | RSS Feed]]></title>
-        <description><![CDATA[Welcome to this wuxinhua's Blog]]></description>
+        <title><![CDATA[wuxinhua.com Blog | RSS Feed]]></title>
+        <description><![CDATA[Welcome to this wuxinhua.com's Blog]]></description>
         <link>https://wuxinhua.com</link>
         <image>
             <url>https://wuxinhua.com/logo.png</url>
-            <title>wuxinhua Blog | RSS Feed</title>
+            <title>wuxinhua.com Blog | RSS Feed</title>
             <link>https://wuxinhua.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 04 Aug 2023 11:30:55 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 10 Nov 2023 15:29:04 GMT</lastBuildDate>
         <atom:link href="https://wuxinhua.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Fri, 04 Aug 2023 11:30:55 GMT</pubDate>
+        <pubDate>Fri, 10 Nov 2023 15:29:04 GMT</pubDate>
         <copyright><![CDATA[All rights reserved 2023]]></copyright>
         <item>
-            <title><![CDATA[About AirCode]]></title>
-            <description><![CDATA[AirCode is an online platform for building and hosting Node.js apps.]]></description>
-            <link>https://wuxinhua.com/posts/AirCode-hello-world</link>
-            <guid isPermaLink="true">https://wuxinhua.com/posts/AirCode-hello-world</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
-            <pubDate>Wed, 02 Aug 2023 09:32:49 GMT</pubDate>
+            <title><![CDATA[Add AI Chatbox to your VitePress documentation site]]></title>
+            <description><![CDATA[This Tutorial will guide you how to quickly integrate VitePress Docs access to AI search.]]></description>
+            <link>https://wuxinhua.com/posts/Add-AI-Chatbox-to-VitePress-documentation</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Add-AI-Chatbox-to-VitePress-documentation</guid>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
+            <pubDate>Tue, 19 Sep 2023 01:32:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Building a Blog Subscription and Pusher with AirCode and Resend]]></title>
+            <description><![CDATA[Learn how to build subscription and push notification services in Node.js and Next.js, and send your first email using the Resend Node.js SDK on AirCode.]]></description>
+            <link>https://wuxinhua.com/posts/building-a-blog-subscription-and-pusher-with-aircode-and-resend</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/building-a-blog-subscription-and-pusher-with-aircode-and-resend</guid>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
+            <pubDate>Thu, 24 Aug 2023 00:32:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[#27 创始人是公司灵魂的守护者]]></title>
+            <description><![CDATA[我最近在做什么，在创业公司工作的一些收获和想法]]></description>
+            <link>https://wuxinhua.com/posts/What-I-learned-at-AirCode</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/What-I-learned-at-AirCode</guid>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
+            <pubDate>Tue, 15 Aug 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[快速上手 Midjourney AI 做图]]></title>
             <description><![CDATA[如何使用 Midjourney AI 做图及 Midjourney 上手教程]]></description>
             <link>https://wuxinhua.com/posts/A-Step-by-Step-Guide-with-Midjourney-AI</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/A-Step-by-Step-Guide-with-Midjourney-AI</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Wed, 24 May 2023 17:32:01 GMT</pubDate>
         </item>
         <item>
@@ -34,7 +50,7 @@
             <description><![CDATA[In this tutorial, I will guide you through building your initial Discord app using JavaScript to interact with ChatGPT via slash commands. ]]></description>
             <link>https://wuxinhua.com/posts/Building-your-first-Discord-ChatGPT-Bot</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Building-your-first-Discord-ChatGPT-Bot</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Wed, 17 May 2023 17:00:00 GMT</pubDate>
         </item>
         <item>
@@ -42,7 +58,7 @@
             <description><![CDATA[本文帮助你快速实现一个 iPhone Siri 对话机器人，并在其中接入 ChatGPT 的能力，直接语音唤醒，并且支持连续对话。]]></description>
             <link>https://wuxinhua.com/posts/Using-AirCode-building-Siri-ChatGPT-bot</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Using-AirCode-building-Siri-ChatGPT-bot</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sat, 08 Apr 2023 14:00:00 GMT</pubDate>
         </item>
         <item>
@@ -50,7 +66,7 @@
             <description><![CDATA[本文帮助你快速实现一个飞书对话机器人，并在其中接入 ChatGPT 的能力，可以直接问它问题，也可以在群聊天中 at 它，返回 ChatGPT 的回答]]></description>
             <link>https://wuxinhua.com/posts/Using-AirCode-building-Feishu-ChatGPT-bot</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Using-AirCode-building-Feishu-ChatGPT-bot</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 07 Apr 2023 12:00:00 GMT</pubDate>
         </item>
         <item>
@@ -58,7 +74,7 @@
             <description><![CDATA[你将学会如何创建企业微信应用，如何配置接收消息 URL、企业可信 IP、解密消息，给聊天应用接入 ChatGPT 能力]]></description>
             <link>https://wuxinhua.com/posts/Using-AirCode-building-a-enterprise-wechat-ChatGPT-bot</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Using-AirCode-building-a-enterprise-wechat-ChatGPT-bot</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 31 Mar 2023 18:00:00 GMT</pubDate>
         </item>
         <item>
@@ -66,7 +82,7 @@
             <description><![CDATA[银行的本质、 SVB 为什么会倒闭、美联储加息到底加的是什么息， 批判式忽略变得越来越重要、我们对于 ChatGPT 的想象中，可能缺少了「电梯]]]></description>
             <link>https://wuxinhua.com/posts/Why-the-SVB-bank-failure</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Why-the-SVB-bank-failure</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sun, 19 Mar 2023 13:00:00 GMT</pubDate>
         </item>
         <item>
@@ -74,7 +90,7 @@
             <description><![CDATA[YC、OpenAI 背后的天选之子 Sam Altman，ChatGPT 是互联网的有损压缩，巨大摇摆之后，中国疫后社会重建的支点， AI 工程师变成了 Prompt 工程师]]></description>
             <link>https://wuxinhua.com/posts/ChatGPT-Prompt-Engineer</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/ChatGPT-Prompt-Engineer</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 13 Mar 2023 17:05:49 GMT</pubDate>
         </item>
         <item>
@@ -82,7 +98,7 @@
             <description><![CDATA[关于程序员如何应对裁员，社交媒体正在转变为推荐媒体，Facebook 将变得越来越像 TikTok，中国奇谭《小妖怪的夏天》那不就是互联网民工被压榨的日常吗]]></description>
             <link>https://wuxinhua.com/posts/pay-attention-to-your-body</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/pay-attention-to-your-body</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sun, 22 Jan 2023 14:32:49 GMT</pubDate>
         </item>
         <item>
@@ -90,7 +106,7 @@
             <description><![CDATA[这是 321来信发出的第 24 封信，这也是 2022 年投递的最后一封信，包含以下内容：足球和自由，如何回忆疫情这三年，这三年创造出的新词，30 岁 30 条建议的清单，托尼·法德尔的《Build》，关于新冠、疫苗和阳了之后的一些科普]]></description>
             <link>https://wuxinhua.com/posts/be-positive</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/be-positive</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Wed, 28 Dec 2022 01:32:49 GMT</pubDate>
         </item>
         <item>
@@ -98,15 +114,15 @@
             <description><![CDATA[前端八股文是指前端面试过程中经常被问到的问题，基本也是必问的一些问题。相比于国外公司面试，国内互联网公司前端面试里，考八股文和手写代码是逃不了的两部分，这里汇总了最近面试被问到频率较高的一些基础题及我的简要回答]]></description>
             <link>https://wuxinhua.com/posts/top-front-end-developer-interview-questions</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/top-front-end-developer-interview-questions</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 26 Dec 2022 14:50:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[#22 AI 在殖民，社交媒体在衰退]]></title>
-            <description><![CDATA[AI 殖民以及AI 会不会取代我的工作，社交媒体公司陷入空前的混乱和衰退中，一段旋律好听或者好哭那么它大概率都是有原因的]]></description>
+            <description><![CDATA[AI 殖民以及 AI 会不会取代我的工作，社交媒体公司陷入空前的混乱和衰退中，一段旋律好听或者好哭那么它大概率都是有原因的]]></description>
             <link>https://wuxinhua.com/posts/AI-colonizing-social-media-declining</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/AI-colonizing-social-media-declining</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Tue, 13 Dec 2022 01:32:49 GMT</pubDate>
         </item>
         <item>
@@ -114,7 +130,7 @@
             <description><![CDATA[我在朋友圈发了征集信息，想让感染过新冠的朋友私信一下我，几分钟了解一下当时症状及后续是否受后遗症影响，前后收集了 15+ 好友的反馈，这期分享一下我了解到的新冠后遗症]]></description>
             <link>https://wuxinhua.com/posts/what-I-learned-about-the-long-covid</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/what-I-learned-about-the-long-covid</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Tue, 06 Dec 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
@@ -122,7 +138,7 @@
             <description><![CDATA[新冠后遗症的定义、咖啡馆提升学习效率、创业获得的教训，这期的关键字：新冠、创业、大脑记忆]]></description>
             <link>https://wuxinhua.com/posts/about-death-and-farewell</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/about-death-and-farewell</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Tue, 01 Nov 2022 02:32:01 GMT</pubDate>
         </item>
         <item>
@@ -130,7 +146,7 @@
             <description><![CDATA[AI 价值链上的 5 个环节，AI 价值圈的代表公司以及赢家，良好的休息并不是无所事事，Tim Cook 在一次哈佛毕业典礼的演讲中提到：你根本没法完全准备好]]></description>
             <link>https://wuxinhua.com/posts/it-will-never-be-ready</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/it-will-never-be-ready</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Wed, 19 Oct 2022 02:00:00 GMT</pubDate>
         </item>
         <item>
@@ -138,7 +154,7 @@
             <description><![CDATA[当我们更换新的电脑或者入职新公司的时候，通常会需要重新配置一下电脑的开发环境，比较理想的方式就是能够复制我上一台设备的一些配置和软件，这样能快速地开始开发工作，这篇文档记录的是常用的软件、前端开发环境配置等，以及如果使用 dotfiles 重复利用这些配置]]></description>
             <link>https://wuxinhua.com/posts/macOS-front-end-dev-environment-configuration</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/macOS-front-end-dev-environment-configuration</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 01 Aug 2022 04:32:49 GMT</pubDate>
         </item>
         <item>
@@ -146,7 +162,7 @@
             <description><![CDATA[321来信是我一周的阅读推荐及见闻思考，包括我看的书、文章、碎片化的知识、播客、音乐或者视频等，篇幅不会太长，希望对看到这封信的你有所启发。]]></description>
             <link>https://wuxinhua.com/posts/newsletter-321laixin</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/newsletter-321laixin</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Thu, 14 Apr 2022 13:33:23 GMT</pubDate>
         </item>
         <item>
@@ -154,7 +170,7 @@
             <description><![CDATA[Node.js 包管理历史，npm、yarn、pnpm 之间的关系区别，pnpm 的优势，npm install 后发生了什么? node_modules 为什么这么重]]></description>
             <link>https://wuxinhua.com/posts/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Node-js-Package-Manager-And-Npm-Dependency-Installation-Mechanism</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Wed, 23 Mar 2022 09:20:47 GMT</pubDate>
         </item>
         <item>
@@ -162,7 +178,7 @@
             <description><![CDATA[记录日常的问题、新知识、想法 💡，欢迎交流，没用的知识又增加了]]></description>
             <link>https://wuxinhua.com/posts/The-Daily-Notes-Of-2021</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-Daily-Notes-Of-2021</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 31 Dec 2021 09:19:42 GMT</pubDate>
         </item>
         <item>
@@ -170,7 +186,7 @@
             <description><![CDATA[订阅的 list 会持续更新，更多的资源详见上方提到的 Newsletter 导航]]></description>
             <link>https://wuxinhua.com/posts/Newsletter-List-I-Subscribed</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Newsletter-List-I-Subscribed</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 02 Aug 2021 10:32:21 GMT</pubDate>
         </item>
         <item>
@@ -178,7 +194,7 @@
             <description><![CDATA[Clubhouse 无疑是过去一个月互联网圈最热门的在线语音聊天软件,今天来聊一聊这款产品以及这段时间使用后的一些体验]]></description>
             <link>https://wuxinhua.com/posts/Discussion-On-The-Popularity-Of-Clubhouse</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Discussion-On-The-Popularity-Of-Clubhouse</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Thu, 18 Feb 2021 12:04:46 GMT</pubDate>
         </item>
         <item>
@@ -186,7 +202,7 @@
             <description><![CDATA[出于工作的需要，今年才真正开始接触到Docker，买了一些容器相关的书，读了大牛一系列的文章博客，希望深入了解Docker的一些核心概念，Docker运行原理等]]></description>
             <link>https://wuxinhua.com/posts/Dive-Into-Docker</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Dive-Into-Docker</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Thu, 18 Feb 2021 12:04:46 GMT</pubDate>
         </item>
         <item>
@@ -194,7 +210,7 @@
             <description><![CDATA[记录日常的问题、新知识、想法 💡，欢迎 comment、补充，奇怪的知识增加了]]></description>
             <link>https://wuxinhua.com/posts/The-Daily-Notes-Of-2020</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-Daily-Notes-Of-2020</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Thu, 31 Dec 2020 12:14:18 GMT</pubDate>
         </item>
         <item>
@@ -202,7 +218,7 @@
             <description><![CDATA[这篇将简单介绍 Web Components，了解它的标准，解决什么问题以及它的优势，它提供的接口 API、兼容程度、如何使用它写一个简单的组件等]]></description>
             <link>https://wuxinhua.com/posts/Web-Components</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Web-Components</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sun, 02 Aug 2020 08:58:01 GMT</pubDate>
         </item>
         <item>
@@ -210,7 +226,7 @@
             <description><![CDATA[这篇是 Linux 命令行学习、使用笔记中的一篇，主要介绍 Linux 下的任务管理 crontab，包括 cron服务、crontab 相关命令的使用]]></description>
             <link>https://wuxinhua.com/posts/Learning-Linux-Series-Command-Line-Crontab</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Learning-Linux-Series-Command-Line-Crontab</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Tue, 21 Jan 2020 06:04:21 GMT</pubDate>
         </item>
         <item>
@@ -218,7 +234,7 @@
             <description><![CDATA[年底了来复盘一下今年的读书情况，总结一下这一年读的一些书]]></description>
             <link>https://wuxinhua.com/posts/The-Books-I-Read-In-2019</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-Books-I-Read-In-2019</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 30 Dec 2019 11:43:48 GMT</pubDate>
         </item>
         <item>
@@ -226,7 +242,7 @@
             <description><![CDATA[声明一下！非原创，这是一篇翻译文章，发布于 GTCC 社区，一篇讲 CI 从 Travis 迁移到 GitHub-Actions 的英语文章， 我将它翻译成了中文，顺便学习了一下 GitHub Actions，如果你想了解作者和原文]]></description>
             <link>https://wuxinhua.com/posts/Migrating-from-travis-to-GitHub-Actions</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Migrating-from-travis-to-GitHub-Actions</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sat, 30 Nov 2019 06:02:06 GMT</pubDate>
         </item>
         <item>
@@ -234,7 +250,7 @@
             <description><![CDATA[Apple 在 10 月份推送了 iOS13 公开版后，iOS 用户进行更新版本，如果应用没有做适配会导致 Crash 、兼容适配等问题，这里记录一下当时适配过程遇到的一些问题以及体验移动开发的一些收获]]></description>
             <link>https://wuxinhua.com/posts/Whats-new-in-iOS-13-and-adapting-app-to-new-version</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Whats-new-in-iOS-13-and-adapting-app-to-new-version</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sat, 02 Nov 2019 15:56:46 GMT</pubDate>
         </item>
         <item>
@@ -242,7 +258,7 @@
             <description><![CDATA[使用 React Native 的开发经历，记录下了开发过程的常见的错误和解决方案，也算是从头趟了一遍 RN 开发过程的坑，本篇主要包括日常踩得一些坑以及我使用 React Native 开发体验总结]]></description>
             <link>https://wuxinhua.com/posts/The-common-issues-and-errors-I-have-faced-as-a-react-native-beginner</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-common-issues-and-errors-I-have-faced-as-a-react-native-beginner</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Wed, 31 Jul 2019 09:46:47 GMT</pubDate>
         </item>
         <item>
@@ -250,7 +266,7 @@
             <description><![CDATA[2019年1月末的时候，ECMA TC39终于确定了ES2019版JavaScript的新增内容，ES2019 将会增加arrays, objects, strings, symbols, try/catch 和 JSON 等方面的特征。]]></description>
             <link>https://wuxinhua.com/posts/A-Preview-Of-ECMAScript2019-ES10</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/A-Preview-Of-ECMAScript2019-ES10</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sat, 27 Apr 2019 04:32:49 GMT</pubDate>
         </item>
         <item>
@@ -258,7 +274,7 @@
             <description><![CDATA[本篇适用于所有刚接触到 flexbox 布局的同学，也适用于那些想更近一步了解 flexbox 的人，我将尽可能详细地用文字、图片、代码介绍、学习 flexbox 布局]]></description>
             <link>https://wuxinhua.com/posts/The-Guide-To-Flexbox</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-Guide-To-Flexbox</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 25 Feb 2019 10:47:45 GMT</pubDate>
         </item>
         <item>
@@ -266,7 +282,7 @@
             <description><![CDATA[年底了来复盘一下今年的读书情况]]></description>
             <link>https://wuxinhua.com/posts/The-Books-I-Read-In-2018</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-Books-I-Read-In-2018</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sat, 29 Dec 2018 02:46:46 GMT</pubDate>
         </item>
         <item>
@@ -274,7 +290,7 @@
             <description><![CDATA[这可能是我写的最长的一篇书评，共4587字，TL;DR。 这本书的电子版、纸质版我都有买，收获很大，颠覆了我对创业、资本、团队…的一些看法，我也浏览Blake Masters整理发布在网上的笔记，事实上讲义的内容更加精彩，建议大家网上自行获取阅读。 我会对这本书的章节和观点进行总结，也加入我自己的一些想法，希望这些能帮助你更好地理解这本书]]></description>
             <link>https://wuxinhua.com/posts/Book-Review-Zero-To-One-By-Peter-Thiel</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Book-Review-Zero-To-One-By-Peter-Thiel</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 28 Dec 2018 15:26:20 GMT</pubDate>
         </item>
         <item>
@@ -282,7 +298,7 @@
             <description><![CDATA[为什么域名的URL会需要带上www？有的网站二者都能访问，有的却不能？不加www的域名更加简短优雅，更容易被记住]]></description>
             <link>https://wuxinhua.com/posts/Story-behind-the-www-in-domain</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Story-behind-the-www-in-domain</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 16 Nov 2018 13:47:06 GMT</pubDate>
         </item>
         <item>
@@ -290,7 +306,7 @@
             <description><![CDATA[实现一个富文本编辑器需要填很多的坑，contenteditable，而使用contenteditable无疑是最简单的一种方式，但是 DOM 的处理存在很多兼容性的问题，并且处理起来异常麻烦]]></description>
             <link>https://wuxinhua.com/posts/Contenteditable-The-Good-Part-And-The-Ugly</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Contenteditable-The-Good-Part-And-The-Ugly</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Thu, 05 Jul 2018 15:33:21 GMT</pubDate>
         </item>
         <item>
@@ -298,7 +314,7 @@
             <description><![CDATA[最近我被问到关于`Golang`好代码和不好的代码的一些细节问题，我发现这个问题非常有趣，有趣到可以就这个问题写一篇文章]]></description>
             <link>https://wuxinhua.com/posts/Good-Code-vs-Bad-Code-in-Golang</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Good-Code-vs-Bad-Code-in-Golang</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 30 Apr 2018 06:04:21 GMT</pubDate>
         </item>
         <item>
@@ -306,7 +322,7 @@
             <description><![CDATA[这篇内容是对一些React面试题的思考总结]]></description>
             <link>https://wuxinhua.com/posts/The-questions-about-react-and-redux-in-interview</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-questions-about-react-and-redux-in-interview</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 16 Mar 2018 16:02:20 GMT</pubDate>
         </item>
         <item>
@@ -314,7 +330,7 @@
             <description><![CDATA[利用SVG可以做非常多炫酷的动画，结合HTML5、CSS3，SVG就变得更加强大;本篇是SVG实践总结，主要包含以下方面的内容]]></description>
             <link>https://wuxinhua.com/posts/The-svg-animation-in-action</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-svg-animation-in-action</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sat, 20 Jan 2018 03:13:03 GMT</pubDate>
         </item>
         <item>
@@ -322,7 +338,7 @@
             <description><![CDATA[仅仅罗列总结今年的阅读情况，老实说今年真没看几本书，我的阅读的时间基本集中在上下班的地铁上、等车、进站的排队过程中，书架陆陆续续加了37本书，到年底了才发现真正读完的只有16本]]></description>
             <link>https://wuxinhua.com/posts/The-reading-book-list-in-2017</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-reading-book-list-in-2017</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 22 Dec 2017 08:25:52 GMT</pubDate>
         </item>
         <item>
@@ -330,7 +346,7 @@
             <description><![CDATA[本文将详细地介绍、比较、实践我们常用到的几种排序算法:计数排序、桶排序、冒泡排序、插入排序等]]></description>
             <link>https://wuxinhua.com/posts/The-think-of-sort-algorithms</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-think-of-sort-algorithms</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Wed, 13 Dec 2017 03:53:11 GMT</pubDate>
         </item>
         <item>
@@ -338,7 +354,7 @@
             <description><![CDATA[Isomorphic JavaScript”表示JavaScript代码可以在Server及Client两端执行。SSR(Server side Render)服务端渲染，顾名思义页面的渲染工作将在服务端完成，目前通常有两种选择：SSR(服务器渲染) 与 CSR(客户端渲染)，无论哪种方式，最终用户所看到的页面是一致的。]]></description>
             <link>https://wuxinhua.com/posts/React-ssr-exploration</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/React-ssr-exploration</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 20 Nov 2017 03:16:30 GMT</pubDate>
         </item>
         <item>
@@ -346,7 +362,7 @@
             <description><![CDATA[较详细地描述了输入URL到页面展现的过程，而下篇将扩展补充这一过程涉及的另一些知识点]]></description>
             <link>https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out-part2</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out-part2</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 23 Oct 2017 16:15:09 GMT</pubDate>
         </item>
         <item>
@@ -354,7 +370,7 @@
             <description><![CDATA[较详细地描述了输入URL到页面展现的过程，而下篇将扩展补充这一过程涉及的另一些知识点]]></description>
             <link>https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/What-happen-from-input-the-URL-in-the-browser-to-the-page-bring-out</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 13 Oct 2017 08:47:45 GMT</pubDate>
         </item>
         <item>
@@ -362,7 +378,7 @@
             <description><![CDATA[ECMAScript 6.0已经在2015年6月17日正式发布（以下简称ES6）到现在已经过去了2年时间，发布的很多新的特征已成为了标准]]></description>
             <link>https://wuxinhua.com/posts/The-es6-features-learning-notes</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-es6-features-learning-notes</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 28 Aug 2017 09:54:57 GMT</pubDate>
         </item>
         <item>
@@ -370,7 +386,7 @@
             <description><![CDATA[Redux由Flux框架演变而来，但在Flux的基础上，Redux改变了整个框架中某些角色的作用，例如在Flux中你可以拥有多个store，每个store存储自己对应的那部分状态,在Redux中，你只能维护一个store,存储了整个应用的所有状态]]></description>
             <link>https://wuxinhua.com/posts/React-redux-connect-Explain-in-detail</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/React-redux-connect-Explain-in-detail</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sun, 30 Jul 2017 06:11:48 GMT</pubDate>
         </item>
         <item>
@@ -378,7 +394,7 @@
             <description><![CDATA[RSS 订阅列表推荐]]></description>
             <link>https://wuxinhua.com/posts/My-favorite-feed-RSS-feed-list</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/My-favorite-feed-RSS-feed-list</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 17 Jul 2017 06:35:13 GMT</pubDate>
         </item>
         <item>
@@ -386,7 +402,7 @@
             <description><![CDATA[这是一本很安静的书，跟随作者的文字，置身于仙气缭绕的终南深处，也是一次愉悦的体验。原版英文名《Road To Heaven,Encounters with Chinese Hermits》，中文版意译为“空谷幽兰”，境界确实提升一截]]></description>
             <link>https://wuxinhua.com/posts/Book-review-Road-to-Heaven</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Book-review-Road-to-Heaven</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Sat, 15 Jul 2017 16:39:30 GMT</pubDate>
         </item>
         <item>
@@ -394,7 +410,7 @@
             <description><![CDATA[关于git rerere先卖个关子，在文章的最后会介绍这个命令，可能大多数人对git的认识停留在日常的pull、commit等]]></description>
             <link>https://wuxinhua.com/posts/The-git-you-may-not-frequently-used</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-git-you-may-not-frequently-used</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 14 Jul 2017 18:02:37 GMT</pubDate>
         </item>
         <item>
@@ -402,7 +418,7 @@
             <description><![CDATA[前端模块打包技术日新月异，webpack 在今年 1 月份和 6 月份左右接连更新了 v2 和 v3 版本,为了减少冗余模块，缩减 bundle 文件大小，webpack v2 中也加入了 tree-shacking, 关于 tree-shacking 的特征，可以查看知乎如何评价 Webpack 2 新引入的 Tree-shaking 代码优化技术的讨论]]></description>
             <link>https://wuxinhua.com/posts/Migrating-webpack-from-v1-to-v2</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/Migrating-webpack-from-v1-to-v2</guid>
-            <dc:creator><![CDATA[wuxinhua]]></dc:creator>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Fri, 14 Jul 2017 09:37:22 GMT</pubDate>
         </item>
     </channel>
