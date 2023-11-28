@@ -26,7 +26,7 @@ export default function About () {
         </p>
         <p>喜欢开源，热爱互联网，一直想为这个世界变得更好做出微小的贡献。</p>
         <p style={{marginTop: '20px'}}>更多:</p>
-        <p>Newsletter：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://321laixin.zhubai.love/`} target="_blank">321来信</Link>（期待你加入与超过 500+ 🎉 订阅读者一起关注互联网最新科技动态）</p>
+        <p>Newsletter：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://321letter.substack.com/`} target="_blank">321来信</Link>（期待你加入与超过 500+ 🎉 订阅读者一起关注互联网最新科技动态）</p>
         <p>GitHub：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://github.com/0xinhua`} target="_blank">@0xinhua</Link></p>
         <p>即刻：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://web.okjike.com/u/BC942F46-A5E2-40A0-B419-5AB8B3A02BE1`} target="_blank">@0xinhua</Link></p>
         <p>Twitter：<Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://twitter.com/intent/follow?screen_name=0xinhua`} target="_blank">@0xinhua</Link></p>
@@ -42,7 +42,7 @@ export default function About () {
         <p>☕️ Hobbies : 📚 📈 🏂 🏊 🏋️ 🫕 🏍 Looking for more ～</p>
         <p>📮 Email: <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`mailto:wuxinhua.cn@gmail.com`}>wuxinhua.cn@gmail.com</Link></p>
         <p>More:</p>
-        <p>Newsletter: <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://321laixin.zhubai.love/`} target="_blank">321来信</Link>（Join with more than 500+ 🎉 subscribers to keep up with the latest Internet technology</p>
+        <p>Newsletter: <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://321letter.substack.com/`} target="_blank">321来信</Link>（Join with more than 500+ 🎉 subscribers to keep up with the latest Internet technology</p>
         <p>GitHub: <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://github.com/0xinhua`} target="_blank">@0xinhua</Link></p>
         <p>Twitter: <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://twitter.com/0xinhua`} target="_blank">@0xinhua</Link></p>
         </div>
