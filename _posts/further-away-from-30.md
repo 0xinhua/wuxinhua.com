@@ -1,6 +1,6 @@
 ---
 title: '#28 离 30 岁越来越远'
-excerpt: 'OpenAI 历史以及公司结构，Sam Altman的离职，消费者如何使用生成式人工智能的，如何度过自己的 30 岁'
+excerpt: 'OpenAI 历史以及公司结构，关于 Sam Altman 的离职，消费者如何使用生成式人工智能的，如何度过自己的 30 岁'
 date: '2023-11-28 09:00:00'
 tags: 'OpenAI 生成式人工智能 ChatGPT 30岁 Substack'
 ---
