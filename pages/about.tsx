@@ -20,7 +20,7 @@ export default function About () {
           <div className="mb-10 inline-block">
             <a href="https://321letter.substack.com/"><img className="border border-gray-300 border-solid rounded mb-5" src="https://assets.wuxinhua.com/blog/assets/newsletter/321-screenshot-20231128.png"></img></a>
               <p className="text-center mt-10">期待你订阅加入 - <a className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" target="_blank" href="https://321letter.substack.com/" title="Substack - 321来信">321来信</a></p>
-              <p className="text-center">与超过 500+ 🎉 订阅读者一起关注 AI 、创业以及互联网最新的资讯和思考 </p>
+              <p className="text-center">与超过 389+ 🎉 订阅读者一起关注 AI 、创业以及互联网最新的资讯和思考 </p>
           </div>
           <div className="text-center">
             <p>👋 欢迎你访问我的网络日志，之前在 
