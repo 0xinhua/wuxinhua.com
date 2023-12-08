@@ -3,6 +3,8 @@ title: '#29 微软与 OpenAI 合作内幕'
 excerpt: '微软与 OpenAI 合作内幕，Sam Altman 为何被解雇；把飞书做成AI 时代下的办公软件；晚点周末丨为什么孟岩说投资是生活的投影'
 date: '2023-12-05 10:00:00'
 tags: 'OpenAI 微软 ChatGPT Sam Altman 飞书齐俊元 乱翻书 潘乱'
+ogImage:
+  url: 'https://assets.wuxinhua.com/blog/assets/newsletter/29-microsoft-ceo.jpeg'
 ---
 
 ![](https://assets.wuxinhua.com/blog/assets/newsletter/29-microsoft-ceo.jpeg)

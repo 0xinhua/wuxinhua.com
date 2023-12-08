@@ -28,7 +28,17 @@ const PostPreview = ({
     <div className="mb-8">
       <h3 className="text-xl mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]" legacyBehavior>
-          <a className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" title={title}>{title}</a>
+          <a className="
+            hover:underline hover:text-blue-600 underline-offset-4 bg-gradient-to-r from-blue-200 to-blue-50 bg-[length:0px_10px] bg-left-bottom
+            bg-no-repeat
+            transition-[background-size]
+            duration-500
+            hover:bg-[length:100%_3px]
+            group-hover:bg-[length:100%_10px]
+            dark:from-purple-800 dark:to-purple-900
+            "
+          title={title}>{title}
+          </a>
         </Link>
       </h3>
       <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-2">{excerpt}</p>
@@ -39,10 +49,10 @@ const PostPreview = ({
         </div>
         : null
       }
-      <div className="text-sm mb-4 text-left text-gray-500 md:text-left md:mb-0 flex flex-col md:flex-row">
-        <DateFormatter dateString={date} /> <Tags tags={tags} />
+      <div className="flex flex-col text-sm mb-4 text-left text-gray-500 md:text-left md:mb-0 flex md:flex-col flex-row gap-3">
+        <Tags tags={tags} />
+        <DateFormatter dateString={date} />
       </div>
-      {/* {author && author?.name ? <Avatar name={author.name} picture={author.picture} /> : null} */}
     </div>
   )
 }
