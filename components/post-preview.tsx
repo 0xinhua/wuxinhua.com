@@ -29,7 +29,7 @@ const PostPreview = ({
       <h3 className="text-xl mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]" legacyBehavior>
           <a className="
-            hover:underline hover:text-blue-600 underline-offset-4 bg-gradient-to-r from-blue-200 to-blue-50 bg-[length:0px_10px] bg-left-bottom
+            hover:underline text-blue-600 underline-offset-4 bg-gradient-to-r from-blue-200 to-blue-50 bg-[length:0px_10px] bg-left-bottom
             bg-no-repeat
             transition-[background-size]
             duration-500
