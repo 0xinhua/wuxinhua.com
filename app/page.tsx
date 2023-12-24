@@ -28,6 +28,7 @@ export default function Home() {
   return (
       <>
         <Search />
+        {/* @ts-ignore */}
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </>
   )

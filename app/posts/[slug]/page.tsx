@@ -52,13 +52,13 @@ export default async function Post({ params }: Params) {
           </title>
           <meta name="description" content={post.excerpt} />
           <meta name="keywords" content={post.tags}></meta>
+          {/* @ts-ignore */}
           {post?.ogImage?.url ? <meta property="og:image" content={post.ogImage.url} /> : null}
         </Head>
         <PostHeader
           title={post.title}
           coverImage={post.coverImage}
           date={post.date}
-          author={post.author}
         />
         <PostBody content={post.content} />
       </article>
