@@ -11,10 +11,16 @@ const getgetISOWeek = (dateString: string) => {
 }
 
 const DateFormatter = ({ dateString }: Props) => {
+
+  if (!dateString) {
+    return null; // Return null instead of undefined
+  }
+
   if (dateString) {
     const date = parseISO(dateString)
     return <time dateTime={dateString}>{format(date, 'yyyy年MM月dd日')}</time>
   }
+  return null
 }
 
 export default DateFormatter
