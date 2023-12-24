@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react'
 import algoliasearch from "algoliasearch/lite"
 import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-hooks-web'
@@ -30,6 +32,7 @@ const Hit = ({ hit }) => {
 export default function Search() {
   const [visible, setVisible] = useState(false)
   return (
+    <div className="mt-5 mb-8">
     <InstantSearch
       searchClient={searchClient}
       indexName={INDEX_NAME}
@@ -46,5 +49,6 @@ export default function Search() {
       hitComponent={Hit}
     /> : null }
   </InstantSearch>
+  </div>
   )
 }
