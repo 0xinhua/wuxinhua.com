@@ -9,7 +9,7 @@
 
 # Use this template
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xinhua%2Fwuxinhua.com&project-name=my-blog&repository-name=my-blog&redirect-url=https%3A%2F%2Fgithub.com%2F0xinhua%2Fwuxinhua.com&demo-title=wuxinhua.com&demo-description=A%20blog%20site%20created%20with%20Next.js%2014%20by%200xinhua.&demo-url=https%3A%2F%2Fgithub.com%2F0xinhua%2Fwuxinhua.com)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xinhua%2Fwuxinhua.com&project-name=my-blog&repository-name=my-blog&demo-title=wuxinhua.com&demo-description=A%20blog%20site%20created%20with%20Next.js%2014%20by%200xinhua.&demo-url=https%3A%2F%2Fgithub.com%2F0xinhua%2Fwuxinhua.com)
 
 ## Feature
 
