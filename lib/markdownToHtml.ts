@@ -1,5 +1,5 @@
 import { unified } from 'unified'
-import prism from 'remark-prism'
+// import prism from 'remark-prism'
 import remarkGfm from "remark-gfm"
 import rehypeExternalLinks from 'rehype-external-links'
 import remarkRehype from 'remark-rehype'
@@ -13,7 +13,7 @@ export default async function markdownToHtml(markdown: string) {
   .use(remarkParse)
   .use(remarkHtml, { sanitize: false })
   .use(remarkGfm)
-  .use(prism)
+  // .use(prism)
   .use(remarkRehype, {allowDangerousHtml: true})
   .use(rehypeRaw)
   .use(rehypeExternalLinks, { rel: ['nofollow', 'noreferrer', 'noopener'], target: '_blank'})

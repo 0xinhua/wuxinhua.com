@@ -5,7 +5,7 @@ type Props = {
 }
 
 const Container = ({ children }: Props) => {
-  return <div className={style.postsContainer}>
+  return <div className="sm:max-w-[672px] w-full mx-auto">
     {children}
   </div>
 }

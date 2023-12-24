@@ -1,24 +1,25 @@
 import Link from "next/link"
-import style from './style.module.css'
-import Container from '@/components/container'
-import Header from '@/components/header'
-import Layout from '@/components/layout'
 import Head from 'next/head'
 import { CMS_NAME } from "@/lib/constants"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: `关于我 - ${CMS_NAME}`,
+  description: 'Blog about Engineering, Start-up Business, Tech trends | wuxinhua.com，321来信 - 关注 AI 、创业以及互联网最新的资讯和思考',
+}
 
 export default function About () {
+  
   return (
-    <Layout>
-      <Container>
-        <Header />
+      <>
         <Head>
           <title>
            {`About - ${CMS_NAME}`}
           </title>
         </Head>
-        <div className={style.content}>
+        <div>
           <div className="mb-10 inline-block">
-            <a href="https://321letter.substack.com/"><img className="border border-gray-300 border-solid rounded mb-5" src="https://assets.wuxinhua.com/blog/assets/newsletter/321-screenshot-20231128.png"></img></a>
+            <a href="https://321letter.substack.com/"><img className="rounded mb-5" src="https://assets.wuxinhua.com/blog/assets/newsletter/321-screenshot-20231128.png"></img></a>
               <p className="text-center mt-10">期待你订阅加入 - <a className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" target="_blank" href="https://321letter.substack.com/" title="Substack - 321来信">321来信</a></p>
               <p className="text-center">与超过 392+ 🎉 订阅读者一起关注 AI 、创业以及互联网最新的资讯和思考 </p>
           </div>
@@ -33,7 +34,6 @@ export default function About () {
             <span>RSS: <Link className="text-highlight-link  hover:underline hover:text-blue-600 underline-offset-4" target="_blank" href={`https://wuxinhua.com/rss.xml`}> rss.xml </Link></span>
           </div>
         </div>
-      </Container>
-    </Layout>
+    </>
   )
 }
