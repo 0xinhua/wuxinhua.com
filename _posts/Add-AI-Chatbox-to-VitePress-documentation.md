@@ -1,5 +1,5 @@
 ---
-title: 'Add AI Chatbox to your VitePress documentation site'
+title: 'Add AI Chatbox to your VitePress document site'
 excerpt: 'This Tutorial will guide you how to quickly integrate VitePress Docs access to AI search.'
 coverImage:
 date: '2023-09-19 09:32:49'
