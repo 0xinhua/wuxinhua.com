@@ -1,5 +1,4 @@
 import Container from "@/components/container"
-import Header from "@/components/header"
 import Layout from "@/components/layout"
 import { getAllPosts } from "@/lib/api"
 import Link from "next/link"
