@@ -4,41 +4,10 @@ import Container from '@/components/container'
 import { useTheme } from 'next-themes'
 import Nav from './nav'
 import { useEffect, useState } from 'react'
+import { IconGitHub, IconMoon, IconSun } from './icons'
 
 type Props = {
   preview?: boolean
-}
-
-function SunIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z" />
-      <path
-        d="M12.25 3v1.5M21.5 12.25H20M18.791 18.791l-1.06-1.06M18.791 5.709l-1.06 1.06M12.25 20v1.5M4.5 12.25H3M6.77 6.77 5.709 5.709M6.77 17.73l-1.061 1.061"
-        fill="none"
-      />
-    </svg>
-  )
-}
-
-function MoonIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
 }
 
 function ThemeToggle() {
@@ -54,15 +23,14 @@ function ThemeToggle() {
     <button
       type="button"
       aria-label={mounted ? `Switch to ${otherTheme} theme` : 'Toggle theme'}
-      className="group px-2 py-2 backdrop-blur transition dark:ring-white/10 dark:hover:ring-white/20"
+      className="flex"
       onClick={() => setTheme(otherTheme)}
     >
-      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-gray-400 transition group-hover:fill-gray-300 group-hover:stroke-zinc-500 dark:hidden [@media(prefers-color-scheme:dark)]:fill-slate-400 [@media(prefers-color-scheme:dark)]:stroke-slate-400 [@media(prefers-color-scheme:dark)]:group-hover:fill-slate-300 [@media(prefers-color-scheme:dark)]:group-hover:stroke-slate-600" />
-      <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:hover:stroke-zinc-600 [@media_not_(prefers-color-scheme:dark)]:fill-slate-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-slate-400 [@media_not_(prefers-color-scheme:dark)]:hover:stroke-slate-300" />
+      <IconMoon className="text-slate-500 hover:stroke-slate-300 dark:block hidden transition" />
+      <IconSun className="text-slate-500 dark:hidden hover:stroke-slate-600 transition" />
     </button>
   )
 }
-
 
 const Navbar = ({ preview }: Props) => {
   const { theme, setTheme } = useTheme()
@@ -75,10 +43,6 @@ const Navbar = ({ preview }: Props) => {
       path: '/changelogs/',
       label: '日志',
     },
-    // {
-    //   path: '/newsletter',
-    //   label: '321来信',
-    // },
     {
       path: '/about/',
       label: '关于'
@@ -88,7 +52,7 @@ const Navbar = ({ preview }: Props) => {
     <div
     >
       <Container>
-        <div className="lg:p-2 p-4 text-center text-lg bordeer-bottom border-solid">
+        <div className="py-4 lg:px-0 px-4 text-center text-lg bordeer-bottom border-solid">
             <div className='flex justify-between items-center'>
               <Nav links={links}/>
               <div className='flex justify-between items-center'>
@@ -97,7 +61,6 @@ const Navbar = ({ preview }: Props) => {
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                   title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
                 >
-                  {/* <ThemeModeIcon /> */}
                 </button>
                 <div className="flex justify-end md:flex-1">
                 <div className="pointer-events-auto">
@@ -108,16 +71,10 @@ const Navbar = ({ preview }: Props) => {
                 title='Star me on GitHub'
                 href="https://github.com/0xinhua/wuxinhua.com"
                 target="_blank"
-                className="ml-3 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300 block"
+                className="ml-3 text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 block"
               >
                 <span className="sr-only">Blog source code on GitHub</span>
-                <svg
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5"
-                  fill="currentColor"
-                >
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
-                </svg>
+                <IconGitHub />
               </a>
               </div>
             </div>

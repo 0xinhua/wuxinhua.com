@@ -10,6 +10,12 @@ const nextConfig = {
         port: '',
         pathname: '/**/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'assets.wuxinhua.com',
+        port: '',
+        pathname: '/**/**',
+      },
     ],
   },
   trailingSlash: true,

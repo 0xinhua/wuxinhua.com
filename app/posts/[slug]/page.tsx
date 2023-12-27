@@ -45,7 +45,7 @@ export default async function Post({ params }: Params) {
   // const content = await markdownToHtml(post.content || '')
   return (
     <>
-      <article className="mt-1 mb-32">
+      <article className="mt-1 mb-16">
         <Head>
           <title>
             {post.title} - {CMS_NAME}

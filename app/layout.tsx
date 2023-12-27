@@ -34,7 +34,7 @@ export default function RootLayout({
         `,
       }}
       />
-      <body className={inter.className}>
+      <body className={`${inter.className} antialiased`}>
         <Providers
           attribute="class"
           defaultTheme="light"
@@ -42,7 +42,7 @@ export default function RootLayout({
           disableTransitionOnChange
           >
             <Navbar />
-            <main className="flex min-h-screen flex-col items-center justify-between lg:p-16 sm:p-8 p-4 mx-auto">
+            <main className="flex flex-col items-center justify-between lg:p-16 sm:p-8 p-4 mx-auto">
               <Container>
                 {children}
               </Container>
