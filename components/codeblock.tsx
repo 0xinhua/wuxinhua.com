@@ -8,7 +8,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { coldarkDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 import { useCopyToClipboard } from '@/lib/hooks/use-copy-to-clipboard'
-import { IconCheck, IconCopy, IconDownload } from '@/components/icons'
+import { IconCheck, IconCopy } from '@/components/icons'
 import { Button } from '@/components/ui/button'
 
 interface Props {
