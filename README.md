@@ -9,6 +9,8 @@
 
 # Deploy
 
+You can use this template to deploy your own blog on vercel with the link below.
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xinhua%2Fwuxinhua.com&project-name=my-blog&repository-name=my-blog&demo-title=wuxinhua.com&demo-description=A%20blog%20site%20created%20with%20Next.js%2014%20by%200xinhua.&demo-url=https%3A%2F%2Fgithub.com%2F0xinhua%2Fwuxinhua.com)
 
 ## Feature
@@ -53,5 +55,3 @@ pnpm build && pnpm start
 ## MIT License
 
 You can use all the code after removing my personal information and original posts.
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2F0xinhua%2Fwuxinhua.com.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2F0xinhua%2Fwuxinhua.com?ref=badge_large)
