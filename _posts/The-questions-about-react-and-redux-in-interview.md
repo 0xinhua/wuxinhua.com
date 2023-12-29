@@ -119,8 +119,9 @@ function multiplyAdd (value) {
 
 ```
 
-<iframe height='466' scrolling='no' title='setState with Function' src='//codepen.io/amnEs1a/embed/LdyPdZ/?height=466&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/amnEs1a/pen/LdyPdZ/'>setState with Function</a> by kevin (<a href='https://codepen.io/amnEs1a'>@amnEs1a</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+代码地址：[https://codepen.io/amnEs1a/pen/LdyPdZ/](https://codepen.io/amnEs1a/pen/LdyPdZ/)
+
+![](https://assets.wuxinhua.com/blog/assets/redux.png)
 
 ##### props和state的区别？
 

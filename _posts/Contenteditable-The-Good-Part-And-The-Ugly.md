@@ -61,8 +61,10 @@ tags: 'contenteditable'
 
 具体查看下面的例子:
 
-<iframe height='333' scrolling='no' title='innerHTML vs innerText vs TextContent' src='//codepen.io/amnEs1a/embed/ajmYXo/?height=333&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/amnEs1a/pen/ajmYXo/'>innerHTML vs innerText vs TextContent</a> by kevin (<a href='https://codepen.io/amnEs1a'>@amnEs1a</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+CodePen 地址: [https://codepen.io/amnEs1a/pen/ajmYXo](https://codepen.io/amnEs1a/pen/ajmYXo)
+
+![](https://assets.wuxinhua.com/blog/assets/codepen.jpeg)
+
 
 ### 光标的位置
 

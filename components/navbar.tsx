@@ -52,7 +52,7 @@ const Navbar = ({ preview }: Props) => {
     <div
     >
       <Container>
-        <div className="py-4 lg:px-0 px-4 text-center text-lg bordeer-bottom border-solid">
+        <div className="py-4 sm:px-0 px-4 text-center text-lg bordeer-bottom border-solid">
             <div className='flex justify-between items-center'>
               <Nav links={links}/>
               <div className='flex justify-between items-center'>

@@ -28,10 +28,10 @@ export default function About () {
               <p className="text-center">与超过 392+ 🎉 订阅读者一起关注 AI 、创业以及互联网最新的资讯和思考。</p>
           </div>
           <div className="text-center">
-            <p className="mb-2">👋 欢迎你访问我的网络日志，之前在
+            <p className="mb-2">👋 欢迎你访问我的网络日志，0xinhua 之前在
             <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href="https://bytedance.com/" target="_blank"> ByteDance </Link>和
-            <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://juejin.cn/`} target="_blank"> juejin.cn </Link>写代码。</p>
-            <p>只要命运的齿轮沒有出差错，这个日志会一直更下去。</p>
+            <Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://juejin.cn/`} target="_blank"> juejin.cn </Link>写代码，目前在创业。</p>
+            <p>只要命运齿轮沒有出差错，这个日志会一直更下去。</p>
             <p style={{marginTop: '20px'}}></p>
             <span className="mr-5 gap-2 inline-flex"><IconGitHub className="inline-block text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" /><Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://github.com/0xinhua`} target="_blank">@0xinhua</Link></span>
             <span className="mr-5 gap-2 inline-flex"><IconTwitter className="inline-block text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" /><Link className="text-blue-500  hover:underline hover:text-blue-600 underline-offset-4" href={`https://twitter.com/intent/follow?screen_name=0xinhua`} target="_blank">@0xinhua</Link></span>

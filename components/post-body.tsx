@@ -2,6 +2,7 @@
 import { CodeBlock } from './codeblock'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
+import rehypeRaw from "rehype-raw"
 import ReactMarkdown, { Options } from 'react-markdown'
 
 type Props = {
@@ -24,6 +25,7 @@ const PostBody = ({ content }: Props) => {
         <ReactMarkdown
           className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0"
           remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
           components={{
             p({ children }) {
               return <p className="mb-2 last:mb-0">{children}</p>
@@ -50,7 +52,7 @@ const PostBody = ({ content }: Props) => {
             },
             a({ node, children, ...props }) {
               return (
-                <a className="text-blue-600 hover:underline underline-offset-4 no-underline font-normal" {...props}>
+                <a className="text-blue-600 hover:underline underline-offset-4 no-underline font-normal" target='_blank' rel="noopener noreferrer" {...props}>
                   {children}
                 </a>
               )

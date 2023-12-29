@@ -53,7 +53,7 @@ viewBox顾名思意“视区盒子”，viewBox和viewport有点让人傻傻分�
 ```html
 <!-- the viewport 大小为 300px 300px -->
 <svg class="circle-chart" width="300" height="300"  xmlns="http://www.w3.org/2000/svg">
-      <circle class="pie" stroke="#4285f4" stroke-width="20" stroke-dasharray="400,0" stroke-linecap="round" fill="none" cx="0" cy="0" r="63.66197723675813" />
+  <circle class="pie" stroke="#4285f4" stroke-width="20" stroke-dasharray="400,0" stroke-linecap="round" fill="none" cx="0" cy="0" r="63.66197723675813" />
 </svg>
 ```
 
@@ -151,9 +151,9 @@ let data = [
 
 环形图结果如下图#6所示：  
 
-<iframe height='375' scrolling='no' title='svg_pie_chart' src='//codepen.io/amnEs1a/embed/wpNWWq/?height=375&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/amnEs1a/pen/wpNWWq/'>svg_pie_chart</a> by kevin (<a href='https://codepen.io/amnEs1a'>@amnEs1a</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+代码地址: [https://codepen.io/amnEs1a/pen/wpNWWq/](https://codepen.io/amnEs1a/pen/wpNWWq/)
 
+![](https://assets.wuxinhua.com/blog/assets/svg-circle.png)
 #### SVG 动画  
 
 上面#4的例子就是使用css3的Animation来实现的，因为SVG类似于 HTML，所以CSS3的三大利器(Transitions, Transforms和Animation)同样适用于SVG；SVG的动画还可以通过定义animation elements标签来实现（#5例子），这些标签最初是在`SMIL`动画规范中定义的，CSS能做的SMIL都能做，如果你偏向于使用JavaScript，可以试试[snapsvg](http://snapsvg.io/)；
@@ -278,8 +278,9 @@ function getcirclePath(cx, cy, r){
 思路如下图所示，先利用path画一个正方形和两个圆，将圆分别向上和向右移动半径的距离，效果如下图所示[#codepen地址](https://codepen.io/amnEs1a/pen/ZvZOKr)，整个动画过程是使用SVG SMIL实现，可点击codepen的“return”按钮查看整个画图过程。  
 ![](https://assets.wuxinhua.com/heart.png)
 
-<iframe height='357' scrolling='no' title='svg_heart_animation' src='//codepen.io/amnEs1a/embed/ZvZOKr/?height=357&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/amnEs1a/pen/ZvZOKr/'>svg_heart_animation</a> by kevin (<a href='https://codepen.io/amnEs1a'>@amnEs1a</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+代码地址：[https://codepen.io/amnEs1a/pen/ZvZOKr/](https://codepen.io/amnEs1a/pen/ZvZOKr/)
+
+![](https://assets.wuxinhua.com/blog/assets/screenshot-heart.png)
 
 之前在网上看了很多很酷炫的HTML5/SVG动画，这次自己用代码算是简单体验了一下，SVG确实很强大，好好利用起来，可以创造出很多有意思的事情，希望以上对刚刚接触到SVG的童鞋能有所启发和帮助，这期间翻了很资料和博客内容，包括SVG动画、Canvas和SVG的对比、大漠、张鑫旭写的这方面的文章等等，具体我列在下面的附录列表上；
 
