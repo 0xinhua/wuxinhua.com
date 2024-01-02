@@ -8,13 +8,13 @@ tags: 'ECMAScript2019'
 
 ![](https://assets.wuxinhua.com//blog/assets/es10/es2019.png)
 
- 2019年1月末的时候，ECMA TC39终于确定了ES2019版JavaScript的新增内容，ES2019 将会增加arrays, objects, strings, symbols, try/catch 和 JSON 等方面的特征。
+2019 年 1 月末的时候，ECMA TC39 终于确定了 ES2019 版 JavaScript 的新增内容，ES2019 将会增加 arrays, objects, strings, symbols, try/catch 和 JSON 等方面的特征。
 
 ![](https://assets.wuxinhua.com//blog/assets/es10/mathias.png)
 
 ## Array#{flat,flatMap}
 
-Array的原型链上增加了新的两个方法：Array.flat([tc39 proposal](https://tc39.github.io/proposal-flatMap/)) 和 Array.flat([tc39 proposal](https://tc39.github.io/proposal-flatMap/#sec-Array.prototype.flat)) 能够进行扁平化多维数组：
+Array 的原型链上增加了新的两个方法：Array.flat([tc39 proposal](https://tc39.github.io/proposal-flatMap/)) 和 Array.flat([tc39 proposal](https://tc39.github.io/proposal-flatMap/#sec-Array.prototype.flat)) 能够进行扁平化多维数组：
 
 ```js
 var arr = [1, 2, 3, [4, 5, 6, [7, 8, 9, [10, 11, 12]]]]; 

@@ -1,4 +1,3 @@
-// import { MemoizedReactMarkdown } from '@/components/markdown'
 import { CodeBlock } from './codeblock'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
