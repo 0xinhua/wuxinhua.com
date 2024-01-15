@@ -51,6 +51,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/sitemap',
+        destination: '/sitemap.xml',
+        permanent: true,
+      },
+      {
         source: '/2022/04/14/newsletter-321laixin/',
         destination: '/posts/newsletter-321laixin',
         permanent: true,
