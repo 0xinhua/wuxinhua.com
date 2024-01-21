@@ -49,6 +49,10 @@ const PostBody = ({ content }: Props) => {
                 </code>
               )
             },
+            img({ node, src, ...props }) {
+              const newSrc = src + "?imageMogr2/auto-orient/format/webp/interlace/1/blur/1x0/quality/75|imageslim"
+              return <img src={newSrc} {...props} />
+            },
             a({ node, children, ...props }) {
               return (
                 <a className="text-blue-600 hover:underline underline-offset-4 no-underline font-normal" target='_blank' rel="noopener noreferrer" {...props}>

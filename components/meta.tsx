@@ -52,6 +52,13 @@ const Meta = () => {
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
+      <link rel="dns-prefetch" href="https://wuxinhua.com" />
+      <link rel="dns-prefetch" href="https://assets.wuxinhua.com" />
+      <link
+        rel="preload"
+        href="https://assets.wuxinhua.com/blog/assets/newsletter/321-screenshot-20231128.png?imageMogr2/auto-orient/format/webp/interlace/1/blur/1x0/quality/75|imageslim"
+        as="image"
+      />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <link
         href="/assets/style/prism-okaidia.css"
