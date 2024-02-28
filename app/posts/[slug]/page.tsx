@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import PostBody from '@/components/post-body'
 import PostHeader from '@/components/post-header'
-import { getPostBySlug, getAllPosts } from '../../../lib/api'
+import { getPostBySlug, getAllPosts } from '@/lib/api'
 import { CMS_NAME } from '@/lib/constants'
 
 type Params = {
