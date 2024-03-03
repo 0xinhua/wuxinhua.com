@@ -9,6 +9,8 @@ tags: 面试 前端面试题 前端八股文 前端面试八股文
 
 这里汇总了最近面试被问到频率较高的一些基础题及我的简要回答，主要包括 HTML 、JavaScript、前端框架三部分内容，如有错误或遗漏欢迎反馈斧正，后续有新问题会持续更新，希望大家在 2023 年都能找到合适满意的工作。
 
+更新：补充了面试新文章 -> [前端面试系列 - 手写代码](https://wuxinhua.com/posts/Top-front-end-developer-interview-whiteboard-code-questions/)
+
 ## Html
 
 ### DOM 和 BOM 的区别
