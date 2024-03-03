@@ -9,7 +9,7 @@ export default function TOC({ toc, className }) {
 
   return (
     <div className={cn("lg:flex flex-col w-52 max-h-80 overflow-y-auto text-[14px]", className)}>
-      { toc.length ? <span className="px-1 pb-2 font-medium text-base border-b mb-2">目录</span> : null }
+      { toc.length ? <span className="px-1 pb-2 font-medium text-base mb-2">目录</span> : null }
       <ul ref={tocRef} className={cn("p-0 m-0 overflow-y-auto")} suppressHydrationWarning>
         {toc.map(({level, id, title}) => (
           <li key={id} className={cn(`my-0`,

@@ -72,10 +72,10 @@ const CodeBlock: FC<Props> = memo(({ language, value }) => {
           <Button
             variant="ghost"
             size="icon"
-            className="text-xs hover:bg-zinc-800 focus-visible:ring-1 focus-visible:ring-slate-700 focus-visible:ring-offset-0"
+            className="text-xs hover:bg-zinc-800 h-6 w-6 focus-visible:ring-1 text-zinc-100 hover:text-zinc-100/70 focus-visible:ring-slate-700 focus-visible:ring-offset-0"
             onClick={onCopy}
           >
-            {isCopied ? <IconCheck /> : <IconCopy />}
+            {isCopied ? <IconCheck className="hover:text-zinc-100" /> : <IconCopy />}
             <span className="sr-only">Copy code</span>
           </Button>
         </div>
