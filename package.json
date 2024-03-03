@@ -30,6 +30,7 @@
     "gray-matter": "^4.0.3",
     "instantsearch.css": "^8.1.0",
     "lucide-react": "^0.298.0",
+    "mixpanel-browser": "^2.49.0",
     "next": "^14.0.4",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",

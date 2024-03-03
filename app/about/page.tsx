@@ -4,6 +4,7 @@ import { CMS_NAME } from "@/lib/constants"
 import { Metadata } from "next"
 import Image from "next/image"
 import { IconTwitter, IconRss, IconGitHub } from "@/components/icons"
+import mixpanel from 'mixpanel-browser'
 
 export const metadata: Metadata = {
   title: `关于我 - ${CMS_NAME}`,
@@ -11,6 +12,9 @@ export const metadata: Metadata = {
 }
 
 export default function About () {
+
+  mixpanel.init('39739eb6ec9042a8e2f6502b4db42554')
+  mixpanel.track_pageview({"page": "about", "url": "https://wuxinhua.com/about"})
   
   return (
       <>

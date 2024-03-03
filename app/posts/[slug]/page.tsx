@@ -3,6 +3,7 @@ import PostBody from '@/components/post-body'
 import PostHeader from '@/components/post-header'
 import { getPostBySlug, getAllPosts } from '@/lib/api'
 import { CMS_NAME } from '@/lib/constants'
+import mixpanel from 'mixpanel-browser'
 
 type Params = {
   params: {
@@ -35,6 +36,9 @@ export default async function Post({ params }: Params) {
     'excerpt',
     'tags'
   ])
+
+  mixpanel.init('39739eb6ec9042a8e2f6502b4db42554')
+  mixpanel.track_pageview({"page": "posts", "url": `https://wuxinhua.com/posts/${params.slug}`})
   
   return (
     <>
