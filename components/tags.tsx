@@ -6,7 +6,7 @@ const alt = `tag icon`;
 
 const Tags = (props) => {
   const { tags } = props
-  const tagList = tags ? tags.split(' ').filter(tag => tag) : []
+  const tagList = tags ? tags.split(' ').filter(tag => tag).map(tag => tag.replace(/\_/, " ")) : []
   return (
     tagList.length ? <div className="flex flex-wrap">
       {

@@ -2,7 +2,7 @@
 title: '#26 SVB 硅谷银行为什么倒闭'
 excerpt: '银行的本质、 SVB 为什么会倒闭、美联储加息到底加的是什么息， 批判式忽略变得越来越重要、我们对于 ChatGPT 的想象中，可能缺少了「电梯]'
 date: '2023-03-19 21:00:00'
-tags: '321来信 SVB 硅谷银行 ChatGPT ABC记者采访Altman'
+tags: '321来信 SVB 硅谷银行 ChatGPT ABC_记者采访_Altman'
 ---
 
 ![svb bank](https://assets.wuxinhua.com/blog/assets/newsletter/26-svb-bank.avif "svb bank")

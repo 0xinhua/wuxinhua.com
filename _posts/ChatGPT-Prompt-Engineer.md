@@ -2,7 +2,7 @@
 title: '#25 人人都可以成为 AI 工程师'
 excerpt: 'YC、OpenAI 背后的天选之子 Sam Altman，ChatGPT 是互联网的有损压缩，巨大摇摆之后，中国疫后社会重建的支点， AI 工程师变成了 Prompt 工程师'
 date: '2023-03-14 01:05:49'
-tags: 'prompt prompt工程师 ChatGPT GPT-4 AI Sam Altman'
+tags: 'prompt prompt_工程师 ChatGPT GPT-4 AI Sam_Altman'
 ---
 
 ![DALL·E](https://assets.wuxinhua.com/blog/assets/newsletter/25-dalle.png "DALL·E")
