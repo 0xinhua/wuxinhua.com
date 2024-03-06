@@ -243,15 +243,15 @@ console.log('a b', a, b)
 
 这里主要考察对 `JS` 常规的数据类型的掌握，目前 `JavaScript` 中的 typeof 方法用于获取一个变量的类型。它可以返回以下几种类型值：
 
-"undefined"：表示变量未定义。
-"boolean"：表示变量是布尔类型。
-"number"：表示变量是数字类型。
-"string"：表示变量是字符串类型。
-"object"：表示变量是对象类型。
-"function"：表示变量是函数类型。
-"symbol"：表示变量是 Symbol 类型。
+- "undefined"：表示变量未定义
+- "boolean"：布尔类型
+- "number"：数字类型
+- "string"：字符串类型
+- "object"：对象类型
+- "function"：函数类型
+- "symbol"： Symbol 类型
 
-我们可以是其它分一下数据类型判断来模拟 `typeof` 的使用，例如 `Object.prototype.toString` 方法返回对象的类型字符串，
+我们可以使用其它方式输出数据类型来模拟 `typeof` 的使用，例如 `Object.prototype.toString` 方法返回对象的类型字符串，
 
 ```js
 
