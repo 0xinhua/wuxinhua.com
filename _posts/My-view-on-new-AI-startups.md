@@ -3,7 +3,7 @@ title: '#30 AI 颠覆我对传统创业团队的认知'
 excerpt: 'AI 公司小团队却创造高质量产品及高估值；钱岳 - 我们为什么要结婚；谁在制造 Vision Pro？'
 coverImage:
 date: '2024-03-03 22:32:49'
-tags: '321来信 AI 月之暗面 Vision_Pro Kimi_Chat AI_创业公司'
+tags: '321来信 AI 月之暗面 Vision_Pro Kimi_Chat AI_创业'
 ---
 
 ![](https://assets.wuxinhua.com/blog/assets/newsletter/ai-vision-pro-newsletter.webp)

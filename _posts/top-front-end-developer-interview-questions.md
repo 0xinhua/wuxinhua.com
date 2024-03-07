@@ -11,7 +11,7 @@ tags: 面试 前端面试题 前端八股文 前端面试八股文
 
 更新：补充了面试新文章 -> [前端面试系列 - 手写代码](https://wuxinhua.com/posts/Top-front-end-developer-interview-whiteboard-code-questions/)
 
-## Html
+## HTML
 
 ### DOM 和 BOM 的区别
 
