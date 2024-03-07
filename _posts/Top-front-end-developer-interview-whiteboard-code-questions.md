@@ -50,7 +50,7 @@ tags: 前端面试 手撕代码 手写代码 前端手写代码
     }
   }
 
-  // or use arrow function
+  // or 使用箭头函数
   const add = a => b => c => a + b + c
   add(1)(2)(3) // 6
 
@@ -282,6 +282,8 @@ function myTypeOf(value) {
 
 题目：
 
+```js
+
 HardMan(“jack”) 输出:
 // I am jack
 
@@ -296,7 +298,7 @@ HardMan(“jack”).restFirst(5).learn(“chinese”) 输出:
 // Start learning after 5 seconds
 // I am jack
 // Learning chinese
-
+```
 
 思路：
 
@@ -353,7 +355,7 @@ class HardMan {
 
 ### 实现一个简单的 flat 函数，能将数组拍平
 
-这类题目主要考察面试者对 js 基础，例如判断元素是是否是数组，`prototype`、`this` 的用法等。
+这类题目主要考察面试者对 JS 基础，例如判断元素是是否是数组，`prototype`、`this` 的用法等。
 
 ```js
 function myFlat(arr) {
@@ -385,7 +387,9 @@ function myFlat(arr, depth = 1) {
 
 ### 实现一个 Promise.allSettled
 
-如果没有使用过 `allSettled` 方法，可以先询问一下面试官这个方法的使用，`allSettled` 是指当你请求多个 `Promise` 方法里，当所有 `Promise` 执行后执行，并且返回结果是一个数组对象分别有 `status`、`value` 、 `reason` 三个属性，参数是一个 `Promise` 数组。
+如果没有使用过 `allSettled` 方法，可以先询问一下面试官这个方法的使用，`allSettled` 是指当你请求多个 `Promise` 方法里，当所有 `Promise` 执行后才返回，结果是一个数组对象分别有 `status`、`value` 、 `reason` 三个属性，而参数是一个 `Promise` 数组。
+
+题目：
 
 ```js
 const results = allSettled([
@@ -402,6 +406,8 @@ const results = allSettled([
 //   { status: 'rejected', reason: Error: 一个错误 }
 // ]
 ```
+
+allSettled Ployfill 代码：
 
 ```js
 function allSettled(promises) {
@@ -455,7 +461,7 @@ function allSettled(promises) {
 }
 ```
 
-### 实现 lodash 的_.get 方法
+### 实现 lodash 的 _.get 方法
 
 题目：
 
@@ -503,6 +509,9 @@ function get(object, path, defaultValue) {
 ```
 
 ### 实现一个简单的 Promise， 能正常调用 then 和 catch 方法
+
+
+这个可能写起来比较复制一点，主要考察你对 Promise 的掌握情况。
 
 ```js
 // 新建一个 Promise 类
@@ -597,7 +606,7 @@ promise.then(value => {
 })
 ```
 
-### 实现 filter 方法
+### 实现 Array 的 filter 方法
 
 题目：实现数组 `filter` 方法的 `polyfill`， 例如 [1,2,3,4,5].myFilter(a => a !== 1) 输出 2 3 4 5
 
@@ -616,7 +625,7 @@ Array.prototype.myFilter = (callback, context) {
 
 ## 业务代码
 
-阿里巴巴前端面试过程曾遇到类似的两道题目，当然这不是原题，下面的答案和思路类似：
+业务代码题主要考察你的业务处理能力，阿里巴巴前端面试过程曾遇到类似的两道题目，当然这不是原题，思路类似：
 
 ### 实现 `parse` 方法， 从对像中取值替换对应标记例如：
 
@@ -654,6 +663,8 @@ function parse(tpl, data) {
 
 问题如下：
 
+```js
+
 let template = '你好，我们公司是{{company}}，我们属于{{group.name}}业务线，我们在招聘各种方向的人才，包括{{group.jobs[0]}}、{{group["jobs"][1]}}等。'
 
 let obj = {
@@ -669,6 +680,7 @@ function render(template, obj){
 }
 // 最终返回结果为 你好，我们公司是阿里巴巴，我们属于阿里云业务线，我们在招聘各种方向的人才，包括前端、后端等。
 
+```
 
 ```js
 function render (template, obj) {
@@ -711,7 +723,7 @@ function yellow() {
 }
 ```
 
-思路：使用 setTimeout + Promise then 将三个方法串联起来
+思路：使用 setTimeout + Promise then 将三个方法串联起来:
 
 ```js
 const light = () => {
@@ -753,11 +765,15 @@ const setLight = async () => {
 
 有这样的一个 url http://www.domain.com/?user=anonymous&id=123&id=456&id=4569&city=%E5%8C%97%E4%BA%AC&enabled 需要实现一个 parseParam(url) 方法以对象方式输出携带的数据，结果如下:
 
+
+```js
+
 { user: 'anonymous',
   id: [ 123, 456 ], // 重复出现的 key 要组装成数组，能被转成数字的就转成数字类型
   city: '北京', // 中文需解码
   enabled: true, // 未指定值得 key 约定为 true
 }
+```
 
 思路：使用正则匹配获取字段或者使用 `split` 截取后循环输出，注意中文转码和默认赋值
 

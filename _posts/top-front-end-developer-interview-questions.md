@@ -15,7 +15,7 @@ tags: 面试 前端面试题 前端八股文 前端面试八股文
 
 ### DOM 和 BOM 的区别
 
-- Document Object Model（文档对象模型）把「文档」当做一个「对象」来处理，即把 html 页面结构解析成一个对象，提供一个接口API，让你去操作所有的节点 dom，通过 document 属性就可以访问、检索、修改 XHTML 文档内容与结构。 最核心的对象是 document。
+- Document Object Model（文档对象模型）把「文档」当做一个「对象」来处理，即把 HTML 页面结构解析成一个对象，提供一个接口API，让你去操作所有的节点 dom，通过 document 属性就可以访问、检索、修改 XHTML 文档内容与结构。 最核心的对象是 document。
 - Browser Object Model（浏览器对象模型）,即把「浏览器」当做一个「对象」来看待，BOM 的最核心对象是 window 对象
 - BOM 的 window 包含了document，所以可以说 BOM 包含了 DOM。
 
@@ -23,19 +23,19 @@ tags: 面试 前端面试题 前端八股文 前端面试八股文
 
 - **static** 默认的定位类型，这个时候 top right 这些值无效，浏览器决定位置
 - **relative** 它必须搭配 top、bottom、left、right 这四个属性使用，用来指定偏移的方向和距离，相对于默认位置（即 static 时的位置）进行偏移
-- **absolute** 表示，相对于上级元素（一般是父元素）进行偏移，也是得搭配上下左右四个值来使用。（定位基点（一般是父元素）不能是 static 定位，否则会按 html 来计算）
+- **absolute** 表示，相对于上级元素（一般是父元素）进行偏移，也是得搭配上下左右四个值来使用。（定位基点（一般是父元素）不能是 static 定位，否则会按 HTML 来计算）
 - **fixed** 表示，相对于视口（viewport，浏览器窗口）进行偏移，即定位基点是浏览器窗口。这会导致元素的位置不随页面滚动而变化，好像固定在网页上一样。
 - **sticky** 很像 relative 和 fixed 的结合，实现吸顶效果，它的具体规则是，当页面滚动，父元素开始脱离视口时（即部分不可见），只要与 sticky 元素的距离达到生效门槛，relative 定位自动切换为 fixed 定位；等到父元素完全脱离视口时（即完全不可见），fixed 定位自动切换回 relative 定位
 
 ### H5 语义化
 
-html 语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；在没有样式 CCS 情况下也以一种文档格式显示，并且是容易阅读的。搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于 SEO。
+HTML 语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；在没有样式 CCS 情况下也以一种文档格式显示，并且是容易阅读的。搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于 SEO。
 
 ### 延迟加载，script 标签为什么放后面？引出 defer 和 async 区别
 
 前端加载 html，html 解析器运行于主线程中，如果遇到\<script> 标签后会阻塞，直到脚本从网络中下载并被执行，也就是说\<script>标签的脚本会阻塞浏览器的渲染。这里还涉及到页面生命周期：
 
-- **DOMContentLoaded** 页面已经完全加载了 html 并且构建了 dom 树，但样式和 img 这样的资源还没有加载完
+- **DOMContentLoaded** 页面已经完全加载了 HTML 并且构建了 dom 树，但样式和 img 这样的资源还没有加载完
 - **load** —— 浏览器不仅加载完成了 HTML，还加载完成了所有外部资源：图片，样式等。
 - **beforeunload/unload** —— 当用户正在离开页面时。
 
@@ -76,7 +76,7 @@ cookie 的属性：
 
 过程：
 
-- html 会解析成一个 dom 树
+- HTML 会解析成一个 dom 树
 - css 会被解析成一个 cssom 树
 - 结合这两个树，会生成一个渲染树 Render Tree 这个过程称为 Attachment
 - 生成布局，也就是在屏幕上画出渲染树节点的位置
@@ -160,10 +160,10 @@ div.style.top = curTop + 1 + 'px';
 
 触发条件：
 
-- 根元素，即 html
+- 根元素，即 HTML
 - 浮动元素：float 为 left right
 - position 为 absolute 或 fixed
-- overflow 不是 visible 的
+- overflow 不是 visible
 
 （创建BFC的方式：根元素、浮动元素和绝对定位元素，非块级盒子的块级容器，overflow 值不为 visiable 的块级盒子）
 
@@ -220,7 +220,7 @@ div.style.top = curTop + 1 + 'px';
 
 ### link 和 @import 的区别
 
-- 两种都是加载 css 的方式，link 是一个 html 标签，但 import 是 css 提供的
+- 两种都是加载 css 的方式，link 是一个 HTML 标签，但 import 是 css 提供的
 - link 会跟页面加载时同时加载，import 会等页面加载完再加载
 - link 的权重会高于 import
 
@@ -1269,7 +1269,7 @@ TCP 是一种面向连接的单播协议，在发送数据前，通信双方必�
 
 浏览器首先会按照资源默认的优先级确定加载顺序：
 
-1. html 、 css 、 font 这三种类型的资源优先级最高；
+1. HTML 、 CSS 、 font 这三种类型的资源优先级最高；
 2. 然后是 preload 资源（通过 link 标签 rel=“preload" 标签预加载）、 script 、 xhr 请求；
 3. 接着是图片、语音、视频；
 4. 最低的是 prefetch 预读取的资源。
