@@ -8,6 +8,7 @@ import Container from '@/components/container'
 import { Providers } from '@/components/providers'
 import Footer from '@/components/footer'
 import { CMS_NAME } from '@/lib/constants'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,6 +54,7 @@ export default function RootLayout({
             <main className="flex flex-col items-center justify-between lg:p-16 sm:p-8 p-4 mx-auto">
               <Container>
                 {children}
+                <SpeedInsights />
               </Container>
             </main>
         </Providers>
