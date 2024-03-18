@@ -19,7 +19,7 @@ tags: 面试 前端面试题 前端八股文 前端面试八股文
 - Browser Object Model（浏览器对象模型）,即把「浏览器」当做一个「对象」来看待，BOM 的最核心对象是 window 对象
 - BOM 的 window 包含了document，所以可以说 BOM 包含了 DOM。
 
-### position 取值
+### Position 取值
 
 - **static** 默认的定位类型，这个时候 top right 这些值无效，浏览器决定位置
 - **relative** 它必须搭配 top、bottom、left、right 这四个属性使用，用来指定偏移的方向和距离，相对于默认位置（即 static 时的位置）进行偏移
