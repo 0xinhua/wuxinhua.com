@@ -1,7 +1,7 @@
 
 import cn from 'classnames';
 import { usePathname } from 'next/navigation'
-import Link from "next/link"
+import { Link } from 'next-view-transitions'
 
 type Link = {
   path: string,

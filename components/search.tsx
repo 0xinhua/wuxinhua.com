@@ -3,7 +3,8 @@
 import React, { useState } from 'react'
 import algoliasearch from "algoliasearch/lite"
 import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-hooks-web'
-import Link from 'next/link'
+import { Link } from 'next-view-transitions'
+
 import { ALGOLIA_APP_ID, ALGOLIA_SERACH_API_KEY, INDEX_NAME } from '@/lib/constants'
 
 import 'instantsearch.css/themes/satellite.css'
