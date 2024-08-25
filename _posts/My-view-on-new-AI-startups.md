@@ -6,7 +6,7 @@ date: '2024-03-03 22:32:49'
 tags: '321来信 AI 月之暗面 Vision_Pro Kimi_Chat AI_创业'
 ---
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/ai-vision-pro-newsletter.webp)
+![](./assets/blog/ai-startups/ai-vision-pro-newsletter.png)
 
 封面图由 ChatGPT 根据这篇文章的关键字生成。
 
