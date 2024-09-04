@@ -15,10 +15,15 @@ export async function generateMetadata({ params }) {
   let post = getPostBySlug(params.slug, [
     'title',
     'excerpt',
+    'tags'
   ])
+
+  const keywords = post.tags && post.tags.length > 0 ? post.tags.split(' ').map((tag: string) => tag.replace(/_/g, ' ')).join(', ') : ['AI', 'Blog', 'JavaScript']
+
   return {
     title: `${post.title} - ${CMS_NAME}`,
-    description: `${post.excerpt} - ${CMS_NAME}`
+    description: `${post.excerpt} - ${CMS_NAME}`,
+    keywords,
   }
 }
 

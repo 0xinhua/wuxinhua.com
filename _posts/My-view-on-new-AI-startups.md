@@ -54,7 +54,7 @@ AI 让高营收估值小公司成为可能，越来越多的初创团队在 AI �
 
 [Obsidian 官网](https://obsidian.md/)
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/markdown-note-tool-obsidian.webp)
+![](./../../assets/blog/ai-startups/markdown-note-tool-obsidian.webp)
 
 我倒希望 Obsidian 不要火起来，保持这样小而美就很好，而且活得久一点。之前我一直用的是 Notion 来做日常笔记、保存优质内容链接到 Notion，但最近由于 block 存储被限制后，我直接放弃使用了，我利用一个插件将本地内容实时同步到 GitHub 上，Obsidian 用起来也很顺手。
 
@@ -64,7 +64,7 @@ AI 让高营收估值小公司成为可能，越来越多的初创团队在 AI �
 
 [Kimi Chat 官网](https://kimi.moonshot.cn/chat)
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/Moonshot-AI-KimiChat.png)
+![](./../../assets/blog/ai-startups/Moonshot-AI-KimiChat.png)
 
 AI 创业公司 Moonshot AI 月之暗面做的智能助手 Kimi Chat，它在阅读理解长文档、整理总结资料，特别是中文语境有优势，我自己最近也在用它来分析、总结 PDF 文档，体验不错。
 
@@ -77,7 +77,7 @@ AI 创业公司 Moonshot AI 月之暗面做的智能助手 Kimi Chat，它在阅
 
 DAN WANG 每一年年底的信值得一读，让我很有启发。上面链接是他 2023 年的信，我发现他去年去了中国附近的国家一些东南亚国家，对 “附近” 进行细微地观察，也在那里观察中国以及从国内出来的年轻人。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/DAN-WANG-2023-letter.webp)
+![](./../../assets/blog/ai-startups/DAN-WANG-2023-letter.webp)
 
 “大多数中国人会去三个亚洲国家。有志气、有创业精神的人都去新加坡。有钱有能力的人都去日本了。而那些没有这些东西的人——懒鬼、自由精神、想要放松的孩子——却在泰国闲逛。” 虽然说得有点夸张、绝对，但并无道理。
 
@@ -89,7 +89,7 @@ DAN WANG 每一年年底的信值得一读，让我很有启发。上面链接�
 
 这是我最近看到的很有意义的一个[演讲视频](https://www.yixi.tv/h5/speech/631/)，来自一席，我想分享给你们，作者来自社会学博士钱岳，她主要做婚姻家庭方面的研究。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/%E9%92%B1%E5%B2%B3-%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BB%93%E5%A9%9A.webp)
+![](./../../assets/blog/ai-startups/Why-did-we-get-married.webp)
 
 里面讲到婚姻意义的在演变，婚姻制度正在适应现代社会的变化，个人选择和自我实现成为婚姻中的重要因素：
 
@@ -115,7 +115,7 @@ DAN WANG 每一年年底的信值得一读，让我很有启发。上面链接�
 
 来自晚点团队的报道 [谁在制造 Vision Pro？](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247512345&idx=1&sn=31f76d4a6b19a3c4e3e85fbe582fb839&chksm=fcca0ea0cbbd87b63256d0cc271ab87e44652f5c84f9e36275bfa8655e88408c2de88a9abe76#rd)
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/Vision%20Pro%E4%BE%9B%E5%BA%94%E5%95%86.webp)
+![](./../../assets/blog/ai-startups/Vision-Pro-supply-chain.webp)
 
 你知道 Vision Pro 内部张什么样子吗？它又是被哪些工厂代工的，可以阅读这个链接。
 
