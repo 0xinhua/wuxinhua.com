@@ -7,7 +7,7 @@ ogImage:
   url: 'https://assets.wuxinhua.com/blog/assets/newsletter/29-microsoft-ceo.jpeg'
 ---
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/29-microsoft-ceo.jpeg)
+![](./../../assets/blog/story-of-microsoft-openai/29-microsoft-ceo.webp)
 
 微软 CEO Satya Nadella (R) 和 OpenAI CEO Sam Altman (L) 在 OpenAI DevDay. 图片来自 Justin Sullivan/Getty Images
 
@@ -85,7 +85,7 @@ Hi，见信如晤，这是 321来信发出的第 30 封信，欢迎阅读订阅�
 
 - 最近在推上很火的一个产品 [Pika](https://pika.art/)，一个利用 AI 把想法生成视频的平台，目前还在 waitlist 状态。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/29-pika.jpeg)
+![](./../../assets/blog/story-of-microsoft-openai/pika.webp)
 
 - “每当你认为别人毁了你的生活时，实际上是你自己毁了你的生活。受害者心态是一种非常有害的心态。如果你换一种心态：无论情况多糟糕，这始终是你自己的问题，并且你尽力来解决它。我认为这更有效。” -- 查理·芒格
 
@@ -93,7 +93,7 @@ Hi，见信如晤，这是 321来信发出的第 30 封信，欢迎阅读订阅�
 
 [微软与 OpenAI 合作的内幕 - 纽约客](https://www.newyorker.com/magazine/2023/12/11/the-inside-story-of-microsofts-partnership-with-openai)
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/29-newyorker.png)
+![](./../../assets/blog/story-of-microsoft-openai/newyorker.webp)
 
 如果你对 OpenAI 董事会解雇 CEO Sam Altman 整个事件的来龙去脉感兴趣，我强烈建议你阅读一下这篇文章。
 
@@ -137,7 +137,7 @@ OpenAI 需要巨量的算力以及雄厚的财力来支持未来的 AI 计划，
 
 [对话齐俊元：微软和Google之后，飞书如何思考第三代办公软件？- 乱翻书](https://www.xiaoyuzhoufm.com/episode/6566bbc79f440f5443cca804?s=eyJ1IjogIjVlN2NkYzcxYjNjNWJjYTVmNjQxYTI3OSJ9)
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/29-feishu.jpeg)
+![](./../../assets/blog/story-of-microsoft-openai/feishu-ai.webp)
 
 这期嘉宾齐俊元，飞书产品副总裁，原阿里云盘负责人、Teambition 创始人。
 
@@ -161,7 +161,7 @@ Teambition 于 2019 年被阿里巴巴以一亿美金收购，齐俊元也加入
 
 [晚点周末丨为什么孟岩说投资是生活的投影？](https://mp.weixin.qq.com/s/A88N0afRm068lIK64G8iXw)
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/29-mengyan.jpeg)
+![](./../../assets/blog/story-of-microsoft-openai/mengyan.webp)
 
 孟岩曾在 B 站推出过一个质量很高的讲解钱、投资的视频，投资是怎样赚钱的？ 感兴趣的可以去看下。
 
