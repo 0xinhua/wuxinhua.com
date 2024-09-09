@@ -18,21 +18,22 @@ tags: 'Prompt Prompt_engineering few-shot Chain-of-Thought 提示词工程'
 
 今年 6 月份的时候我计划从头开始学习 AI 大模型相关知识，制定了一个从易到难的路线图（如下图所示），准备从基础的大语言模型和 Prompt 入手，到微调再到搭建 Stable Diffusion 训练生成图片流程，目前为止，我已经构建并开源了一个用于处理日常工作任务的 AI 助手 - JoyChat，我用它定制自己常用的 Prompt 模板提升我的工作效率。
 
-![](./../../assets/blog/prompt-engineering/joychat-io.jpeg)
-（[JoyChat 助手](https://joychat.io/)）
 ![](./../../assets/blog/prompt-engineering/Learning-AI-roadmap-2024.jpeg)
 
 （[自学 AI Roadmap 推文](https://x.com/0xinhua/status/1801450547888984079)）
 
+![](./../../assets/blog/prompt-engineering/joychat-io.jpeg)
+（[JoyChat 助手](https://joychat.io/)）
+
 ## 从图灵测试到 AI 大模型
 
-1950 年艾伦·图灵在他的论文 [Computing machinery and intelligence](https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/t_article.pdf) 中提出 “机器能思考吗？” ，并且尝试去解答这个问题，由于这个问题中的“思考”很难定义，图灵绕开了它，他选择用另一个替代问题：”有没有数字计算机可以在模仿游戏中表现出色？“。图灵并没有把他的想法称为“图灵测试”，而是将其称为“模仿游戏”;自从图灵提出了图灵测试以后，它已经成为人工智能哲学中的一个重要概念，以确定一台计算机是否达到了连人类都无法区分人和机器的卓越水平。
+1950 年艾伦·图灵在他的论文 [Computing machinery and intelligence](https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/t_article.pdf) 中提出 “机器能思考吗？” ，并且尝试去解答这个问题，由于这个问题中的“思考”很难定义，图灵绕开了它，他选择用另一个替代问题：”有没有数字计算机可以在模仿游戏中表现出色？“。图灵并没有把他的想法称为“图灵测试”，而是将其称为“模仿游戏”。自从图灵提出了图灵测试以后，它已经成为人工智能哲学中的一个重要概念，以确定一台计算机是否达到了连人类都无法区分人和机器的卓越水平。
 
 图灵测试给了 AI 研究一个明确的目标，即让机器在某种程度上表现得像人类。图灵测试并不直接测试计算机的行为是否智能，它只测试计算机是否像人一样行为，如果一个人们已经无法准确辨认这是一台机器还是真人的表现，那么这个机器就可以被认为具有人类智能。
 
 然而，随着时间的推移，研究者们意识到仅仅模仿人类语言还不足以定义机器智能，即使通过图灵测试，并不能完全展示 AI 的潜力。Prompt Engineering 和图灵测试虽然没有直接联系，但 Prompt Engineering 则展示了另一种可能性，即通过精心设计输入，最大化发挥利用 AI 大模型的潜力，让它更像人类一样思考和处理问题，使其输出更符合人类的预期。
 
-**什么是 AI?**
+**那么什么是 AI?**
 
 我们直接来问 ChatGPT 这个问题，看下大语言模型自己是怎么理解 AI 的：
 
@@ -52,9 +53,9 @@ NLP 使得计算机能够理解、解释和生成人类语言。这项技术在�
 
 ## 什么是 Prompt engineering？
 
-Prompt engineering 是一项与生成式 AI 模型（如 GPT、ChatGPT 等）进行交互的技术，通过编写或优化提示（prompt），以引导模型生成更符合预期的结果，这项技能对于与 LLMs 进行交互、构建应用以及理解它们的能力非常重要。
+Prompt engineering 是一项与生成式 AI 模型（如 Gemini、ChatGPT 等）进行交互的技术，通过编写或优化提示（prompt），以引导模型生成更符合预期的结果，这项技能对于与 LLMs 进行交互、构建应用以及理解它们的能力非常重要。
 
-提示工程不仅仅是设计和优化提示词，它涵盖了一系列与 LLMs 交互和开发所需的技能和技术，例如理解 LLMs 的能力、LLMs 的安全性、如何将外部领域的知识和工具增强 LLms 的功能等等。
+提示工程不仅仅是设计和优化提示词，它涵盖了一系列与 LLMs 交互和开发所需的技能和技术，例如理解 LLMs 的能力、LLMs 的安全性、如何将外部领域的知识（RAG）和工具增强 LLMs 的功能等等。
 
 ## 为什么需要 Prompt？
 
@@ -72,15 +73,17 @@ Prompt engineering 是一项与生成式 AI 模型（如 GPT、ChatGPT 等）进
 
 ## ChatGPT 是如何被训练出来的？
 
-即使大语言模型已经能够帮我们生成各种文本内容，但还是不够好，这与大语言模型背后的原理有关，我们来探究一下大模型的核心以及它是怎么运作的。关于 ChatGPT 的原理其实也比较简单，就藏在它的名字里。ChatGPT 这个名称的全称是 **Chat Generative Pre-trained Transformer**，chat 很明显，指的是这是一个聊天对话式产品。
+即使大语言模型已经能够帮我们生成各种文本内容，但有时结果还是不够理想，这与大语言模型背后的原理有关，我们来探究一下大模型的核心以及它是怎么运作的。关于 ChatGPT 的原理其实也比较简单，就藏在它的名字里。
+
+ChatGPT 这个名称的全称是 **Chat Generative Pre-trained Transformer**，chat 很明显，指的是这是一个聊天对话式产品。
 
 **G (Generative)**，这里的 G 指的是从给定的输入来生成输出，这里的输入可以是我们给的文本，图像或任何其他类型的数据。
 
 **P(Pre-Training)** 预训练，预训练是指使用大量的未标注文本数据来训练 ChatGPT 模型，预训练模型通常使用互联网的大型语料库来进行训练。
 
-**T 指的是 “Transformer” 模型**。ChatGPT 严格意义上来说就是一种基于 Transformer 的自然语言处理模型，采用了预训练 Pretraining 及 Fintunning 微调的方法，从而使模型能够适应特定的自然语言处理任务，变成了一个拥有语言理解和文本生成能力的对话助手。
+**T 是 “Transformer” 模型**。ChatGPT 严格意义上来说就是一种基于 Transformer 的自然语言处理模型，采用了预训练 Pretraining 及 Fintunning 微调的方法，从而使模型能够适应特定的自然语言处理任务，变成了一个拥有语言理解和文本生成能力的对话助手。
 
-目前市面上几乎所有的这些大语言模型都是建立在这篇 [Attention is all you need](https://arxiv.org/abs/1706.03762) 的论文上，这是一篇介绍新的 Tanformer 算法架构的论文，这里我不会深入地去介绍这篇论文，我想以一个日常输入法打字的功能来简单解释大模型背后的工作原理，你很快就能理解大模型生成内容的原理。
+目前市面上几乎所有的这些大语言模型都是建立在这篇 [Attention is all you need](https://arxiv.org/abs/1706.03762) 的论文上，这是一篇介绍新的 Tanformer 算法架构的论文，这里我不会深入地去介绍这篇论文，我想以一个日常输入法打字的功能来简单解释大模型背后的工作原理，你很快就能理解大模型是怎么生成内容的。
 
 当我们日常使用输入法在输入框打字的时候，例如打出“输”字之后，下面会自动联想建议“入”字，键入“输入”之后，会出现“我”、“输出”、“密码” 等可能键入的字符，你会发现有一些是准确并且可能大概率是我们即将要输入的，例如“输出”、“法”，因为它会根据上一个字联系到后一个词。而大语言模型从左到右创造文字内容的过程与这个类似，最大的不同是它不仅仅根据前一个字符推断后一个字符，而是根据整个上下文以及它已有的知识内容（Pre-trained）。
 
@@ -96,13 +99,13 @@ ChatGPT 的训练过程分为两个阶段：
 
 **第一阶段：预训练**
 
-首先，需要下载大约 10TB 的文本数据，然后组建一个由大约 6000 个 GPU 组成的集群。接着将这些文本数据压缩到一个神经网络中，耗资约 200 万美元，并等待大约 12 天，以获得基础模型。预训练的模型还无法直接使用，它类似于一个大型的互联网文档采样器。奇怪的是这些知识不仅仅是存储，你必须通过某个特定的顺序来访问才能得到正确的答复。
+首先，需要下载大约 10TB 的文本数据，然后组建一个由大约 6000 个 GPU 组成的集群。接着将这些文本数据压缩到一个神经网络中，耗资约 200 万美元，并等待大约 12 天，以获得基础模型。预训练的模型还无法直接使用，它类似于一个大型的互联网文档采样器，奇怪的是这些知识不仅仅是存储，你必须通过某个特定的顺序来访问才能得到正确的答复。
 
 **第二阶段：微调**
 
 接下来通过编写标注指令，雇佣人员来收集 10 万个高质量的理想问答数据或对比数据。在这些数据上对基础模型进行微调，等待约 1 天后，得到一个聊天助手模型。随后进行大量的评估，部署模型，并持续监控和收集不良行为反馈，若有必要，回到第一步重新开始训练，这样你就得到了一个 AI 聊天助手。
 
-由于 GPT4 是闭源模型，我们无法访问权重及获得代码，这里以开源的 llama-2-70b 模型为例，实际上 llama-2-70b 模型只是文件系统上的两个文件，一个是参数文件，另一个是运行这些参数的代码 run.c，如果拿到了这两个文件，并且你的 macbook 能运行 c 语言的这个文件，那么你就在本地拥有了一个 70 亿参数的大模型，所以模型的运行所需的条件是比较简单的，难得是模型的训练部分，也就是这里里 70b 参数，Meta 在它的它的论文中介绍了这个训练过程，可以认为是它爬取了互联网网站大概 10 TB 文本的内容，然后用了 12 天在 GPU 上把它有损压缩成了一个“zip”文件（并不是真正的zip文件，因为 Zip 文件是无损的，这里的处理是有损压缩），一旦有了这个参数，之后大模型的运行成本变得很低。
+由于 GPT4 是闭源模型，我们无法访问权重及获得代码，这里以开源的 llama-2-70b 模型为例，实际上 llama-2-70b 模型只是文件系统上的两个文件，一个是参数文件，另一个是运行这些参数的代码 run.c，如果拿到了这两个文件，并且你的 macbook 能运行 c 语言的这个文件，那么你就在本地拥有了一个 70 亿参数的大模型，所以模型的运行所需的条件是比较简单的，难的是模型的训练部分，也就是这里的 70b 参数，Meta 在它的论文中介绍了这个训练过程，可以认为是它爬取了互联网网站大概 10 TB 文本的内容，然后用了 12 天在 GPU 上把它有损压缩成了一个“zip”文件（这里并不是真正的 Zip 文件，因为 Zip 文件是无损的，这里的处理是有损压缩），一旦有了这个参数，之后大模型的运行成本就变得很低。
 
 ![](./../../assets/blog/prompt-engineering/llama-2-70b.jpeg)
 
@@ -215,11 +218,11 @@ ChatGPT 的训练过程分为两个阶段：
 
 ### few-shot prompting
 
-从大语言模型 (LLM) 获取更好输出的最佳方法之一是在提示中包含示例。这种方法称为少样本提示 (few-shot prompting)（“样本”是一个示例）。通过提供示例，向模型清楚地展示你所希望的输出结构、语气和风格。
+从大语言模型 (LLM) 获取更好输出的最佳方法之一是在提示中包含示例。这种方法称为少样本提示 (few-shot prompting)（“样本”是一个问答示例）。通过提供示例，向模型清楚地展示你所希望的输出结构、语气和风格。
 
 **示例个数以会影响响应质量吗？**
 
-关于使用多少个例子最合适，来自[论文 Large Language Models as Analogical Reasoners](https://arxiv.org/abs/2310.01714)中的实验结果表明，自动生成 3 到 5 个例子（K=3 到 5）在各种任务中表现最好，增加更多的示例不一定能提高准确性；在某些情况下，反而可能会降低准确性。多项研究表明，在提供两个示例后，模型性能会显著提升，然后趋于一个稳定的水平。所以说越多的示例并不代表更好的答案，示例越多意味着你需要耗费更多的 Token。
+关于使用多少个例子最合适，来自论文 [ Large Language Models as Analogical Reasoners ](https://arxiv.org/abs/2310.01714)中的实验结果表明，自动生成 3 到 5 个例子（K=3 到 5）在各种任务中表现最好，增加更多的示例不一定能提高准确性；在某些情况下，反而可能会降低准确性。多项研究表明，在提供两个示例后，模型性能会显著提升，然后趋于一个稳定的水平。所以说越多的示例并不代表更好的答案，示例越多意味着你需要耗费更多的 Token。
 
 ![](./../../assets/blog/prompt-engineering/number-of-examples-few-shot-prompting.jpeg)
 
@@ -229,7 +232,7 @@ ChatGPT 的训练过程分为两个阶段：
 
 ### COT Chain-of-Thought Prompting
 
-思维链式提示是一种引导 LLMs 在处理难题时遵循推理过程的技术。通过向模型展示一些示例来实现的，其中一步一步的推理都是清晰的。然后，该模型被期望遵循 COT 的推理并得到正确的答案。下面是一个例子：
+思维链式提示是一种引导 LLMs 在处理难题时遵循推理过程的技术。通过向模型展示一些示例来实现的，其中一步一步的推理都是清晰的。然后该模型被期望遵循 COT 的推理并得到正确的答案。下面是一个例子：
 
 ![](./../../assets/blog/prompt-engineering/COT-Chain-of-Thought-Prompt.jpeg)
 
@@ -243,7 +246,11 @@ CoT 常见的场景是模型需要理解并遵循一些中间步骤才能得到�
 
 ### 用 CO-STAR 框架来提升你的 Prompt 提示词质量
 
-这是我最近学到的很有用一个优化 Prompt 框架及技巧。它来自 Sheila Teo 的一篇文章 [我是如何赢得新加坡GPT-4 Prompt Engineering 大赛冠军的](https://towardsdatascience.com/how-i-won-singapores-gpt-4-prompt-engineering-competition-34c195a93d41)，作者在新加坡首届 GPT-4 提示工程大赛中脱颖而出，战胜了超过 400 名优秀参赛者，荣获提示词大赛冠军！ 她在文章中详细介绍了她是如何运用了创新的 CO-STAR 框架来构建高效的提示，充分发挥大语言模型的潜力。
+这是我最近学到的很有用一个优化 Prompt 框架及技巧。它来自 Sheila Teo 的一篇文章 [我是如何赢得新加坡GPT-4 Prompt Engineering 大赛冠军的](https://towardsdatascience.com/how-i-won-singapores-gpt-4-prompt-engineering-competition-34c195a93d41)。
+
+![](./../../assets/blog/prompt-engineering/sheila-teo-Prompt-engineering.webp)
+
+作者在新加坡首届 GPT-4 提示工程大赛中脱颖而出，战胜了超过 400 名优秀参赛者，荣获提示词大赛冠军！ 她在文章中详细介绍了她是如何运用了创新的 CO-STAR 框架来构建高效的提示，充分发挥大语言模型的潜力。
 
 CO-STAR 分别代表：
 
@@ -256,7 +263,34 @@ CO-STAR 分别代表：
 
 通过综合考虑这些因素 CO-STAR 框架能够帮助用户构建更加有效的提示，从而获得更加精准和相关的AI响应，你也可以尝试使用这一框架来提升您的 AI 交互体验。
 
-## 一些特定场景的 prompts:
+一个普通的 Prompt：
+
+Write a facebook post to advertise my company’s new product. My company’s name is Alpha and the product is called Beta, a new ultra-fast hairdryer.
+
+COSTAR 格式 Prompt：
+
+```txt
+ # CONTEXT #
+  I want to advertise my company’s new product. My company’s name is Alpha and the product is called Beta, which is a new ultra-fast hairdryer.
+
+  # OBJECTIVE #
+  Create a Facebook post for me, which aims to get people to click on the product link to purchase it.
+
+  # STYLE #
+  Follow the writing style of successful companies that advertise similar products, such as Dyson.
+
+  # TONE #
+  Persuasive
+
+  # AUDIENCE #
+  My company’s audience profile on Facebook is typically the older generation. Tailor your post to target what this audience typically looks out for in hair products.
+
+  # RESPONSE #
+  The Facebook post, kept concise yet impactful.
+
+  ```
+
+## 分享我的一些特定场景 prompts:
 
 ### 社交媒体:
 
