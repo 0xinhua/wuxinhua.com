@@ -5,7 +5,7 @@ date: '2023-11-28 09:00:00'
 tags: 'OpenAI 生成式人工智能 ChatGPT 30岁 Substack'
 ---
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/28-cover.webp)
+![](./../../assets/blog/further-away-from-30/article-cover.png)
 
 图片来自拾荒者统治
 
@@ -22,8 +22,6 @@ Hi，见信如晤，这是 321来信发出的第 29 封信，欢迎你阅读订�
 最近拖更了比较久，很抱歉，由于竹白这个平台不再更新维护，比较可惜我其实还挺喜欢竹白这个工具的，最近把内容搬到了 Substack 上，Substack 作为头部的内容创作订阅平台确实做得很棒，很多细节都做的特别好，后续会逐渐转移到这个平台更新。
 
 如果你之前是使用微信订阅我的来信的话，需要你点击这个链接：[Substack - 321来信 ](https://321letter.substack.com/) 使用邮箱重新订阅一下，期待你的加入，与 392+ 订阅者，获得关于互联网、 AI 以及创业的最新资讯和思考。
-
-![](https://assets.wuxinhua.com/blog/assets/newsletter/28-321-screenshot.png)
 
 这样当我后续完全迁移到新平台后，你们也能继续收到邮件投递(如果之前是邮件订阅的可以不用再订阅，我会在 Substack 后台手动添加你们的邮箱地址)，短期内只要竹白还能正常使用我会先在竹白继续投递来信作为过渡。
 
@@ -49,11 +47,11 @@ Hi，见信如晤，这是 321来信发出的第 29 封信，欢迎你阅读订�
 
 分享一个快速推文截图的软件 [twittershots](https://twittershots.com/)，在任何推文的 url 加上 shots 即可快速生成推文截图，工具最大的特点就是无需登录及输入推文地址，直接从 URL 跳转就能快速截图﻿。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/28-twittershots.png)
+![](./../../assets/blog/further-away-from-30/twitter-screenshot-twittershots.png)
 
 [拾荒者统治 Scavengers Reign](https://movie.douban.com/subject/35932858/) 这应该是我今年看到的最好看的一部动画片了，剧中对于外星生物神秘诡谲的想象，天马行空令人叹为观止，如果你也喜欢阿凡达或者爱死亡机器人这种类型的电影或短剧，我很推荐你去看这部动画片。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/28-Scavengers-Reign.webp)
+![](./../../assets/blog/further-away-from-30/Scavengers-Reign.png)
 
 ## 👍 文章
 
@@ -61,7 +59,7 @@ Hi，见信如晤，这是 321来信发出的第 29 封信，欢迎你阅读订�
 
 消费者如何使用生成式人工智能? 这份来自 a16z 的调查报告研究了 Top50 的 C 端 AI 产品总结出了AI 产品的特点和机会。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/28-ai-Top50.webp)
+![](./../../assets/blog/further-away-from-30/how-are-consumers-using-generative-ai.png)
 
 自从 ChatGPT 发布 9 个月以来，它已经成为最快达到 1 亿用户的应用，标志着生成式 AI 的新时代。在前 50 名的生成式AI网站中，有 80% 在一年前并不存在，显示大多数引人注目的消费者 AI 体验都是全新的。只有 5 个来自大型科技公司，而 48% 是自筹资金的，突显了这一领域的快速创新增长。
 
@@ -77,7 +75,7 @@ ChatGPT 无与伦比的领先地位: ChatGPT 在前 50 名生成式 AI 网站中
 
 了解 OpenAI历史以及公司结构能更好知道为什么 Sam Altman 被离职。最近这两周硅谷闹得最火的事莫过于 OpenAI 高层的政治内耗；CEO Sam Altman 被董事会宣布解职，随后总裁 Greg Brockman 宣布也离职，微软 CEO 宣布将会把 Sam Altman 和 Greg Brockman 招入微软，随后 700 多名 OpenAI 的同事签署联名信逼宫董事会，反转之后再反转，结局是 Sam 回归 CEO 位置。
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/28-open-structure.webp)
+![](./../../assets/blog/openAI-structure.png)
 
 这篇文章介绍了 OpenAI 的历史以及董事会的结构，董事会控制了非盈利结构，非营利实体 OpenAI Inc 成为新的营利性实体 OpenAI Global LLC 的唯一控股股东，而微软投资的是后面这个有上限的盈利公司 OpenAI Global LLC，据说这个结构还是 Sam 当时一手设计的，从这个结构不能看出这个复杂的结构也一定程度助长了公司的动荡。
 

@@ -5,7 +5,7 @@ date: '2023-08-15 08:00:00'
 tags: 'AirCode 创业'
 ---
 
-![circus](https://assets.wuxinhua.com/blog/assets/newsletter/27-cover.jpg "circus")
+![](./../../assets/blog/What-I-learned-at-AirCode/27-cover.jpeg)
 
 2022-04 北京红砖博物馆 - 黄永砯作品 - 马戏团
 
@@ -51,6 +51,9 @@ Hi friends 👋，Happy Tuesday！
 
 - [Why Create AirCode?](https://aircode.io/blog/why-create-aircode)
 - [AirCode raised more than $2M](https://aircode.io/blog/aircode-angel-round)
+
+
+![AirCode Folder Feature](./../../assets/blog/What-I-learned-at-AirCode/AirCode-folder.png)
 
 另外想分享一下这半年里在创业公司的一些感受和想法：
 
@@ -107,9 +110,12 @@ Hi friends 👋，Happy Tuesday！
 ## 💡 碎片
 
 - 多伦多大学论文。研究员发现腾讯搜狗输入法会把你输入的每一个字传回服务器, 详见[推文](https://twitter.com/jsrailton/status/1689284044356235264)
+
+![](./../../assets/blog/What-I-learned-at-AirCode/tencent-keyboard-app.png)
+
 - 柴静发布了 6 集纪录片《陌生人——对话圣战分子》预告片 https://www.youtube.com/watch?v=anxhF36M000, 原来她还在做她喜欢做的事情，期待这个纪录片
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/27-stranger.png)
+![](./../../assets/blog/What-I-learned-at-AirCode/stranger.png)
 
 ## 👍 推荐
 
@@ -145,7 +151,7 @@ Hi friends 👋，Happy Tuesday！
 
 通过视觉符号传达品牌价值是设计的精髓。Grasser 运用简单圆滑的图形语言,赋予小蓝鸟开放、友善、包容的性格。它成为推特社区价值观的化身,也让推特与众不同的品牌个性一目了然。
 
-![Twitter](https://assets.wuxinhua.com/blog/assets/newsletter/27-twitter.png "Twitter blue bird")
+![Twitter](./../../assets/blog/What-I-learned-at-AirCode/twitter-logo.png "Twitter blue bird")
 
 但马斯克收购推特后就明确表态要抛弃小蓝鸟,他选中一个形似Unicode字符“X”的简洁图标取而代之,引发了用户的强烈不满。这一改动被视为马斯克试图重塑推特用户群的策略,但其效果和最终形态还有待观察。品牌视觉识别的变更往往需要经过深思熟虑,这场看似突兀的变革是否明智,我们拭目以待。
 
