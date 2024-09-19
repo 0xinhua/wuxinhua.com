@@ -9,10 +9,34 @@
             <link>https://wuxinhua.com</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 24 Dec 2023 07:50:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Sep 2024 10:44:53 GMT</lastBuildDate>
         <atom:link href="https://wuxinhua.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 24 Dec 2023 07:50:33 GMT</pubDate>
-        <copyright><![CDATA[All rights reserved 2023]]></copyright>
+        <pubDate>Thu, 19 Sep 2024 10:44:53 GMT</pubDate>
+        <copyright><![CDATA[All rights reserved 2024]]></copyright>
+        <item>
+            <title><![CDATA[一文搞懂 Prompt Engineering]]></title>
+            <description><![CDATA[详细介绍什么是 Prompt engineering，常见的 Prompt 框架 few-shot prompting 、 COT Chain-of-Thought Prompting 及分享高质量工作 Prompt]]></description>
+            <link>https://wuxinhua.com/posts/prompt-engineering</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/prompt-engineering</guid>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
+            <pubDate>Wed, 04 Sep 2024 00:32:01 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[#30 AI 颠覆我对传统创业团队的认知]]></title>
+            <description><![CDATA[AI 公司小团队却创造高质量产品及高估值；钱岳 - 我们为什么要结婚；谁在制造 Vision Pro？]]></description>
+            <link>https://wuxinhua.com/posts/My-view-on-new-AI-startups</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/My-view-on-new-AI-startups</guid>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
+            <pubDate>Sun, 03 Mar 2024 14:32:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[前端面试系列 - 手写代码]]></title>
+            <description><![CDATA[之前前端面试系列总结了前端八股文，这篇总结了一些前端手写代码题目，基本覆盖了字节、阿里、百度等大厂常出的题目]]></description>
+            <link>https://wuxinhua.com/posts/Top-front-end-developer-interview-whiteboard-code-questions</link>
+            <guid isPermaLink="true">https://wuxinhua.com/posts/Top-front-end-developer-interview-whiteboard-code-questions</guid>
+            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
+            <pubDate>Thu, 29 Feb 2024 14:50:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[#29 微软与 OpenAI 合作内幕]]></title>
             <description><![CDATA[微软与 OpenAI 合作内幕，Sam Altman 为何被解雇；把飞书做成AI 时代下的办公软件；晚点周末丨为什么孟岩说投资是生活的投影]]></description>
@@ -110,7 +134,7 @@
             <pubDate>Mon, 13 Mar 2023 17:05:49 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[#24 Body]]></title>
+            <title><![CDATA[#24 关注你身体的变化]]></title>
             <description><![CDATA[关于程序员如何应对裁员，社交媒体正在转变为推荐媒体，Facebook 将变得越来越像 TikTok，中国奇谭《小妖怪的夏天》那不就是互联网民工被压榨的日常吗]]></description>
             <link>https://wuxinhua.com/posts/pay-attention-to-your-body</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/pay-attention-to-your-body</guid>
@@ -127,7 +151,7 @@
         </item>
         <item>
             <title><![CDATA[前端面试系列 - 前端八股文]]></title>
-            <description><![CDATA[前端八股文是指前端面试过程中经常被问到的问题，基本也是必问的一些问题。相比于国外公司面试，国内互联网公司前端面试里，考八股文和手写代码是逃不了的两部分，这里汇总了最近面试被问到频率较高的一些基础题及我的简要回答]]></description>
+            <description><![CDATA[前端八股文是指前端面试过程中经常被问到的问题，基本也是必问的一些问题。国内互联网公司前端面试里，考八股文和手写代码是逃不了的两部分，这里汇总了最近面试被问到频率较高的一些基础题及我的简要回答]]></description>
             <link>https://wuxinhua.com/posts/top-front-end-developer-interview-questions</link>
             <guid isPermaLink="true">https://wuxinhua.com/posts/top-front-end-developer-interview-questions</guid>
             <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
@@ -252,14 +276,6 @@
             <guid isPermaLink="true">https://wuxinhua.com/posts/The-Books-I-Read-In-2019</guid>
             <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
             <pubDate>Mon, 30 Dec 2019 11:43:48 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[译文：从 Travis 迁移至 GitHub Actions]]></title>
-            <description><![CDATA[声明一下！非原创，这是一篇翻译文章，发布于 GTCC 社区，一篇讲 CI 从 Travis 迁移到 GitHub-Actions 的英语文章， 我将它翻译成了中文，顺便学习了一下 GitHub Actions，如果你想了解作者和原文]]></description>
-            <link>https://wuxinhua.com/posts/Migrating-from-travis-to-GitHub-Actions</link>
-            <guid isPermaLink="true">https://wuxinhua.com/posts/Migrating-from-travis-to-GitHub-Actions</guid>
-            <dc:creator><![CDATA[wuxinhua.com]]></dc:creator>
-            <pubDate>Sat, 30 Nov 2019 06:02:06 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[适配 iOS 13]]></title>

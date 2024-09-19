@@ -5,7 +5,8 @@ excerpt: '详细介绍什么是 Prompt engineering，常见的 Prompt 框架 few
 coverImage:
 date: '2024-09-04 08:32:01'
 tags: 'Prompt Prompt_engineering few-shot Chain-of-Thought 提示词工程'
-ogImage: 'https://wuxinhua.com/assets/blog/prompt-engineering/og-cover.png'
+ogImage: 
+  url: '/assets/blog/prompt-engineering/og-cover.png'
 ---
 
 ![](./../../assets/blog/prompt-engineering/cover.png)
