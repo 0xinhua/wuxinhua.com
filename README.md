@@ -1,6 +1,6 @@
 ![](./assets/screenshot.png)
 
-# wuxinhua.com
+# [wuxinhua.com](https://wuxinhua.com)
 
 - **Framework**: [Next.js 14 App Router](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
