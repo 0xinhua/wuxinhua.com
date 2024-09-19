@@ -15,18 +15,34 @@ export async function generateMetadata({ params }) {
   let post = getPostBySlug(params.slug, [
     'title',
     'excerpt',
-    'tags'
+    'tags',
+    'ogImage'
   ])
 
   const keywords = post.tags && post.tags.length > 0 ? post.tags.split(' ').map((tag: string) => tag.replace(/_/g, ' ')).join(', ') : ['AI', 'Blog', 'JavaScript']
 
-  return {
+  const metadata = {
     title: `${post.title} - ${CMS_NAME}`,
     description: `${post.excerpt} - ${CMS_NAME}`,
     keywords,
+    openGraph: {}
   }
-}
 
+  if (post.ogImage) {
+    metadata.openGraph = {
+      images: [
+        {
+          url: post.ogImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ]
+    }
+  }
+
+  return metadata
+}
 
 export default async function Post({ params }: Params) {
 
