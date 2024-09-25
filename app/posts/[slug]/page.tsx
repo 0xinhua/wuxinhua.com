@@ -15,18 +15,36 @@ export async function generateMetadata({ params }) {
   let post = getPostBySlug(params.slug, [
     'title',
     'excerpt',
-    'tags'
+    'tags',
+    'ogImage'
   ])
 
-  const keywords = post.tags && post.tags.length > 0 ? post.tags.split(' ').map((tag: string) => tag.replace(/_/g, ' ')).join(', ') : ['AI', 'Blog', 'JavaScript']
+  const keywords = post.tags && typeof post.tags === 'string' && post.tags.length > 0 ? post.tags.split(' ').map((tag: string) => tag.replace(/_/g, ' ')).join(', ') : ['AI', 'Blog', 'JavaScript']
 
-  return {
+  const metadata = {
+    metadataBase: new URL('https://wuxinhua.com'),
     title: `${post.title} - ${CMS_NAME}`,
     description: `${post.excerpt} - ${CMS_NAME}`,
     keywords,
+    openGraph: {}
   }
-}
 
+  if (post.ogImage && typeof post.ogImage === 'object') {
+    metadata.openGraph = {
+      images: [
+        {
+          // @ts-ignore
+          url: post.ogImage?.url,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ]
+    }
+  }
+
+  return metadata
+}
 
 export default async function Post({ params }: Params) {
 
