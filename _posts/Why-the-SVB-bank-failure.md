@@ -5,7 +5,7 @@ date: '2023-03-19 21:00:00'
 tags: '321来信 SVB 硅谷银行 ChatGPT ABC_记者采访_Altman'
 ---
 
-![svb bank](https://assets.wuxinhua.com/blog/assets/newsletter/26-svb-bank.avif "svb bank")
+![svb bank](./../../assets/blog/why-SVB-bank-failure/svb-bank.jpeg "svb bank")
 
 SVB logo from REUTERS
 
@@ -43,11 +43,11 @@ Hi，见信好，这是 321来信发出的第 27 封信。
 
 - 下面这种风格叫 Knolling 源于 19 世纪工厂管理员快速地找到自己的工具，[推文](https://twitter.com/ftium4/status/1637009748502642688)
 
-![Knolling](https://assets.wuxinhua.com/blog/assets/newsletter/26-knolling.png "Knolling")
+![Knolling](./../../assets/blog/why-SVB-bank-failure/knolling.png "Knolling")
 
 - [LET'S AI HACK](https://hack.okjike.com/admissions) 即刻官方的 AI Hackthon 活动，对 AI 感兴趣的可以报名参与
 
-![Hackthon](https://assets.wuxinhua.com/blog/assets/newsletter/26-ai-hackthon.png "jike Hackthon")
+![Hackthon](./../../assets/blog/why-SVB-bank-failure/ai-hackthon.png "jike Hackthon")
 
 ## 👍 推荐
 

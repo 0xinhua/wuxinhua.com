@@ -26,8 +26,8 @@ async function main(articleUrl: string, folderName: string): Promise<void> {
     const response = await axios.get(articleUrl);
     const $ = cheerio.load(response.data);
 
-    // 查找所有图片
-    const images = $('article img').map((i, el) => $(el).attr('src')).get();
+    // 查找所有图片，排除 class="navbar-buttons" 内的 img
+    const images = $('article img:not(.navbar-buttons img)').map((i, el) => $(el).attr('src')).get();
 
     // 下载图片
     for (let i = 0; i < images.length; i++) {

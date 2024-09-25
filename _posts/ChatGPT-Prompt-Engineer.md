@@ -5,7 +5,7 @@ date: '2023-03-14 01:05:49'
 tags: 'prompt prompt_工程师 ChatGPT GPT-4 AI Sam_Altman'
 ---
 
-![DALL·E](https://assets.wuxinhua.com/blog/assets/newsletter/25-dalle.png "DALL·E")
+![DALL·E](./../../assets/blog/anyone-can-be-AI-engineer/cover-dall.E.webp "DALL·E")
 
 Justin Jay Wang × DALL·E
 
@@ -27,7 +27,7 @@ Hi，见信好，这是 321来信发出的第 26 封信，这一期 AI 相关的
 
 在我的日常编码以及写文档工作中，AI 也充当了一个助手的角色，我让它帮我画文档中的时序图、编写代码的测试用例、编写匹配一些复杂条件的正则表达式（你可以理解为一套字符串匹配规则），写一个漂亮而又准确的正则对很多工程师来说一直不是一个很容易的事情，有了 ChatGPT 我再也没有自己写过正则表达式；而在日常生活中，ChatGPT 也出乎意料地好用，我让它帮忙规划旅行景点路线，出旅行攻略，当我不知道几点出发去机场时，我甚至让它计算规划一下出行时长和交通路线；我用它帮助朋友给毕业设计取了很棒的题目；当我去准备健身房但不知道该练哪些动作时，我第一时间想到的是让它帮我做个锻炼计划。
 
-![ChatGPT-gym](https://assets.wuxinhua.com/blog/assets/newsletter/25-gym.png "ChatGPT")
+![ChatGPT-gym](./../../assets/blog/anyone-can-be-AI-engineer/25-gym.png "ChatGPT")
 
 ChatGPT 离通用型人工智能还很远，但它给我们带来更多的可能性以及想象力，随着大语言模型的发展，AI 技术进一步影响我们的日常工作生活。在 OpenAI 公布 API 之后，已经诞生了一大批衍生产品，例如能检索 PDF 文件并且提供内容概括的 [chatpdf](https://www.chatpdf.com/)，上传 pdf 能让你通过跟它对话非常准确的从文章获取信息；在 Twitter 上被人们广泛转发的 [roomGPT](https://www.roomgpt.io/) 这个项目使用人工智能根据你当前房间照片生成新的设计。看过其中的一些项目的源码后会发现现在接入或使用 AI 的门槛已经很低，例如我最近在使用的一个辅助工具 [aicommits](https://github.com/Nutlope/aicommits#readme) ，它是一个终端的 CLI 辅助工具，使用 ChatGPT 根据你的代码变更生成简要描述当作 changelog，有了它可以不用自己写提交消息了(我们已经把它用在了生产环境)，当查看这个这个项目的源码后，你会发现最核心的代码是下面的这一句 prompt:
 
@@ -42,9 +42,9 @@ prompt 翻译成中文是提示，你也可以理解成语境，也就是说如�
 ## 💡 碎片
 
 - 福布斯记者统计了最受欢迎的 ChatGPT prompts，排名第一的是帮我生成文章摘要
-![ChatGPT Prompts](https://assets.wuxinhua.com/blog/assets/newsletter/25-prompts.jpeg "ChatGPT Prompts")
+![ChatGPT Prompts](./../../assets/blog/anyone-can-be-AI-engineer/most-popular-ChatGPT-prompts.jpeg "ChatGPT Prompts")
 - 北京街头汽车玻璃上爱的留言，他/她在生活中应该也是一个很有爱的人
-![I love you on car](https://assets.wuxinhua.com/blog/assets/newsletter/25-love.png "I love you on car")
+![I love you on car](./../../assets/blog/anyone-can-be-AI-engineer/love.png "I love you on car")
 
 ## 👍 推荐
 
