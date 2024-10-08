@@ -91,7 +91,7 @@ const PostBody = ({ content }: Props) => {
               )
             },
             img({ node, src, ...props }) {
-              const newSrc = src + "?imageMogr2/auto-orient/format/webp/interlace/1/blur/1x0/quality/75|imageslim"
+              const newSrc = src + "?"
               return <img src={newSrc} {...props} />
             },
             a({ node, children, ...props }) {

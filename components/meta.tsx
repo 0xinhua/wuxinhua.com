@@ -56,7 +56,7 @@ const Meta = () => {
       <link rel="dns-prefetch" href="https://assets.wuxinhua.com" />
       <link
         rel="preload"
-        href="https://assets.wuxinhua.com/blog/assets/newsletter/321-screenshot-20231128.png?imageMogr2/auto-orient/format/webp/interlace/1/blur/1x0/quality/75|imageslim"
+        href="https://assets.wuxinhua.com/blog/assets/newsletter/321-screenshot-20231128.png?"
         as="image"
       />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
