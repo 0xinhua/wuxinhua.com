@@ -6,7 +6,7 @@ date: '2022-11-01 10:32:01'
 tags: '321来信 新冠疫情 创业 大脑记忆 死亡'
 ---
 
-![taoyuan terrace](https://assets.wuxinhua.com/blog/assets/newsletter/20-titian.jpeg "taoyuan terrace")
+![taoyuan terrace](./../../assets/blog/death-and-farewell/titian.jpeg "taoyuan terrace")
 
 2022-08-13 桃源梯田-江西
 
@@ -61,11 +61,11 @@ Hi，见信好，这是 321来信发出的第 21 封信。
 ## 👀 碎片
 
 - Elon Musk 收购 Twitter 后立马解雇了 CEO 和其它的几个高层，工程师还被告知要打印他们最近 30 到 60 天的代码，这样他们就可以向 Elon Musk 本人展示代码，后面又被告知粉碎掉打印的代码，他只想看下大家执行任务的效率... 不过也有报道说是假新闻，只是万圣节恶作剧。
-![](https://assets.wuxinhua.com/blog/assets/newsletter/20-elon-musk.png)
+![](./../../assets/blog/death-and-farewell/elon-musk.png)
 
 - 我们经常会说老字号百年老店，据调查全球的创立 100年 以上的企业中，日本占了41.3%，200 年以上企业中，日本占了 65%，让我震惊的是日本有着 1340 家创业超 200 年的老店。
 
-![Japanese century-old shop](https://assets.wuxinhua.com/blog/assets/newsletter/20-jp-store.png "Japanese century-old shop")
+![Japanese century-old shop](./../../assets/blog/death-and-farewell/jp-store.png "Japanese century-old shop")
 
 ## 💡 思考
 
@@ -89,7 +89,7 @@ Hi，见信好，这是 321来信发出的第 21 封信。
 
 我们下周二见 👋
 
-@wutopia
+@0xinhua
 
 上期来信：
 

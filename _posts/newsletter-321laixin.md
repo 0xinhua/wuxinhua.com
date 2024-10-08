@@ -5,7 +5,7 @@ date: '2022-04-14 21:33:23'
 tags: 321来信 Newsletter 竹白 疫情、乌克兰 马斯克 太空艺术
 ---
 
-![](https://assets.wuxinhua.com/blog/assets/newsletter/321.jpg)
+![](./../../assets/blog/hello-world-321/321-newsletter.png)
 
 Hi，见信好，本期包含以下内容：
 

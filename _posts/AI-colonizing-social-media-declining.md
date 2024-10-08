@@ -6,7 +6,7 @@ date: '2022-12-13 09:32:49'
 tags: '321来信 AI 羊了个羊 Cornfield chase 社交网络'
 ---
 
-![DALL·E](https://assets.wuxinhua.com/newsletter/assets/22-ai.png "DALL·E")
+![DALL·E](./../../assets/blog/AI-colonizing-social-media-declining/ai.png "DALL·E")
 
 2022-12-13 DALL·E
 
@@ -40,11 +40,11 @@ AI 似乎有取代搜索引擎的能力和潜力，我也有体会到 AI 产品�
 
 - 如果你的 Chrome 升级到最新 108 版本，只需在地址栏中输入“@”即可帮助我们在 Chrome 标签页、书签和历史记录查找丢失的标签页 [](https://blog.google/products/chrome/search-your-tabs-bookmarks-and-history-in-the-chrome-address-bar/)
 
-![search bookmarks chrome](https://assets.wuxinhua.com/newsletter/assets/22-chrome.gif "search bookmarks chrome")
+![search bookmarks chrome](./../../assets/blog/AI-colonizing-social-media-declining/chrome.gif "search bookmarks chrome")
 
 - 好消息电影沙丘 2 已经完成了拍摄，视觉效果很震撼
 
-![dune 2](https://assets.wuxinhua.com/newsletter/assets/22-dune.png "dune 2")
+![dune 2](./../../assets/blog/AI-colonizing-social-media-declining/dune.png "dune 2")
 
 ## 👍 推荐
 
@@ -90,7 +90,7 @@ Twitter 可能是目前最大的也是真正的社交媒体网站，该站点不
 
 我们下周二见 👋
 
-Made with ❤️ by @wutopia
+Made with ❤️ by @0xinhua
 
 上期来信：
 

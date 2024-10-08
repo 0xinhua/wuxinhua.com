@@ -13,7 +13,7 @@ tags: npm node.js pnpm yarn packages.json node_modules
 - npm install 后发生了什么? 模块安装机制
 - Why node_modules are so heavy ? ( node_modules 为什么这么重）
 
-![](https://assets.wuxinhua.com/blog/assets/npm/image-1%20%281%29.png)
+![](./../../assets/blog/node-modules-npm-package/node-modules-so-big.png)
 
 - 对于不同的依赖中又共同依赖某一包的不同版本，包管理工具会采取什么样的策略？
 - 我在一个项目中用了yarn安装后，再使用 npm 安装后是否 ok，同理其他几种组合。
@@ -51,7 +51,7 @@ npm 主要包括两部分:
 
 npm 大致的组成结构如下图所示：
 
-![](https://assets.wuxinhua.com/blog/assets/npm/api.svg)
+![](./../../assets/blog/node-modules-npm-package/api.svg)
 
 主要发展历史：
 
@@ -117,7 +117,7 @@ Yarn 是一个快速可靠安全的依赖管理工具，由 Facebook 联合其�
 
 安装速率对比，以这个[仓库](https://github.com/pnpm/benchmarks-of-javascript-package-managers)为例， 主要对比一下 `pnpm`和 `yarn PnP`
 
-![](https://assets.wuxinhua.com/blog/assets/npm/npm.png)
+![](./../../assets/blog/node-modules-npm-package/benchmark-npm-yarn-pnpm.webp)
 
 图片来源（[为什么现在我更推荐 pnpm 而不是 npm/yarn?](https://juejin.cn/post/6932046455733485575#heading-0)）
 
@@ -175,7 +175,9 @@ npm install express --timing=true --loglevel=verbose
 
 通过上面的这个命令可以在命令行及log日志里看到整个安装过程，大致的流程如下：
 
-![](https://assets.wuxinhua.com/blog/assets/npm/npm_install.png)
+![](./../../assets/blog/node-modules-npm-package/npm-install.png) 
+
+图片来自 ConardLi 的剖析 NPM 的包管理机制
 
 ### preinstall
 
@@ -268,5 +270,5 @@ npm install express --timing=true --loglevel=verbose
 ## 附录
 
 - [关于现代包管理器的深度思考——为什么现在我更推荐 pnpm 而不是 npm/yarn?](https://juejin.cn/post/6932046455733485575#heading-0)
-- [剖析npm的包管理机制(完整版) | ConardLi的blog](http://www.conardli.top/blog/article/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96-%E5%89%96%E6%9E%90npm%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89.html#_1-3-%E4%BE%9D%E8%B5%96%E9%85%8D%E7%BD%AE)
+- [剖析npm的包管理机制(完整版) | ConardLi的blog](https://blog.conardli.top/2019/12/17/engineering/npm/)
 - [Flat node_modules is not the only way | pnpm 中文文档 | pnpm 中文网](https://www.pnpm.cn/blog/2020/05/27/flat-node-modules-is-not-the-only-way)
