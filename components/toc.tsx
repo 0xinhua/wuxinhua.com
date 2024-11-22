@@ -22,7 +22,7 @@ export default function TOC({ toc, className }) {
             }[level])}
           >
             <div className='my-1'>
-              <a href={`#${id}`} className='text-slate-600 font-normal no-underline hover:text-blue-600 hover:underline underline-offset-4'>{title}</a>
+              <a href={`#${id}`} className='text-slate-600 dark:text-slate-200 font-normal no-underline hover:text-blue-600 hover:underline underline-offset-4'>{title}</a>
             </div>
           </li>
         ))}

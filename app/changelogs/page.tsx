@@ -35,7 +35,7 @@ export default function Changelogs() {
                 <time dateTime={post.date}>{formatDate(post.date, 'yyyy-MM-dd')}</time>
               </dd>
             </dl>
-            <Link className="hover:underline hover:text-blue-600 text-blue-500  underline-offset-4" href={`/posts/${encodeURIComponent(post.slug)}`} title={post.title}>{post.title}</Link>
+            <Link className="hover:underline hover:text-blue-600 text-blue-500 dark:text-gray-200  underline-offset-4" href={`/posts/${encodeURIComponent(post.slug)}`} title={post.title}>{post.title}</Link>
           </div>
         )
       })}

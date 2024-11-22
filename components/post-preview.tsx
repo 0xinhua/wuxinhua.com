@@ -29,7 +29,7 @@ const PostPreview = ({
       <h3 className="text-xl mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]" legacyBehavior>
           <a className="
-            hover:underline text-blue-600 underline-offset-4 bg-gradient-to-r from-blue-200 to-blue-50 bg-[length:0px_10px] bg-left-bottom
+            hover:underline text-blue-600 dark:text-gray-100 underline-offset-4 bg-gradient-to-r from-blue-200 to-blue-50 bg-[length:0px_10px] bg-left-bottom
             bg-no-repeat
             transition-[background-size]
             duration-500
@@ -41,7 +41,7 @@ const PostPreview = ({
           </a>
         </Link>
       </h3>
-      <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-2">{excerpt}</p>
+      <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-2">{excerpt}</p>
       {
         coverImage
         ? <div className="mb-4">
