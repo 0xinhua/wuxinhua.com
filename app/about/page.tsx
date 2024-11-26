@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { CMS_NAME } from "@/lib/constants"
 import { Metadata } from "next"
 import Image from "next/image"
-import { IconTwitter, IconRss, IconGitHub, IconEmail } from "@/components/icons"
+import { IconTwitter, IconRss, IconGitHub, IconEmail, IconJike } from "@/components/icons"
 import mixpanel from 'mixpanel-browser'
 
 export const metadata: Metadata = {
@@ -57,13 +57,20 @@ export default function About () {
                 <IconTwitter className="inline-block text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" />
                 <Link className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4" href={`https://twitter.com/intent/follow?screen_name=0xinhua`} target="_blank">@0xinhua</Link>
               </span>
+              <span className="mr-5 gap-2 inline-flex mt-2 sm:mt-0">
+                <IconJike className="inline-block text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" />
+                <Link className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4" title="即刻 @0xinhua" href={`https://web.okjike.com/u/BC942F46-A5E2-40A0-B419-5AB8B3A02BE1`} target="_blank">@0xinhua</Link>
+              </span>
+            </div>
+            <p className="mt-5">
               <span className="mr-5 gap-2 inline-flex">
                 <IconEmail className="inline-block text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" />
                 <Link className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4" href={`mailto:wuxinhua.cn@gmail.com`} target="_blank">wuxinhua.cn@gmail.com</Link>
               </span>
-            </div>
-            <p className="mt-5"><span className="mr-5 gap-2 inline-flex"><IconRss className="inline-block text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" />
-              <Link className="text-blue-500 dark:text-blue-200 text-highlight-link  hover:underline hover:text-blue-600 underline-offset-4" target="_blank" href={`https://wuxinhua.com/rss.xml`}> rss.xml </Link></span>
+              <span className="mr-5 gap-2 inline-flex">
+                <IconRss className="inline-block text-slate-500 hover:text-slate-600 dark:hover:text-slate-300" />
+                <Link className="text-blue-500 dark:text-blue-200 text-highlight-link  hover:underline hover:text-blue-600 underline-offset-4" target="_blank" href={`https://wuxinhua.com/rss.xml`}> rss.xml </Link>
+              </span>
             </p>
           </div>
         </div>
