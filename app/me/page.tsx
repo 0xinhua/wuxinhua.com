@@ -8,6 +8,13 @@ const photosOfMe = [
     aspectRatio: 1.5,
     caption: "I (on the right) am meeting Chris, a digital nomad from Germany, in Busan, South Korea.",
   },
+  {
+    id: 2,
+    src: "/photos/img_v3_02m.JPG",
+    alt: "",
+    aspectRatio: 1.5,
+    caption: "At digital nomad event “Vibe Cafe” in Beijing, I shared how to land your first paying client.",
+  },
 ]
 
 const photos = [
