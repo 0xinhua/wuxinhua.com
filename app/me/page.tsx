@@ -1,5 +1,15 @@
 import { MasonryGallery } from "@/components/masonry-gallery";
 
+const photosOfMe = [
+  {
+    id: 1,
+    src: "/photos/IMG_6249.JPG",
+    alt: "meeting Chris Busan, South Korea",
+    aspectRatio: 1.5,
+    caption: "I (on the right) am meeting Chris, a digital nomad from Germany, in Busan, South Korea.",
+  },
+]
+
 const photos = [
   {
     id: 1,
@@ -30,12 +40,15 @@ export default function AboutPage() {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-light mb-8 text-balance">About</h1>
   
-          <p className="text-muted-foreground leading-relaxed mb-12">
-            Hi, I'm Kevin Wu, an independent developer based in Shanghai, China. I created this simple page to help you get to know me a bit better. Here you can find some of my photos
-            from China, a short video introducing myself, and projects I've been working on.
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Hi 👋, Arctic Digital Nomads community, I'm Kevin Wu based in Shanghai, China. I created this page to share my photos, a short intro video, and some of my projects.
           </p>
+
+          <div className="mt-4">
+            <MasonryGallery photos={photosOfMe} />
+          </div>
   
-          <section className="mb-10">
+          <section className="my-10">
             <h2 className="text-2xl font-light mb-4">What I Enjoy</h2>
             <p className="text-muted-foreground leading-relaxed">
               I love photography and road trips — meet locals and explore new places on the road
@@ -50,6 +63,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-light mb-4">My Projects</h2>
             <p className="text-muted-foreground leading-relaxed">
               I enjoy building creative tools that help people express ideas visually.
+              <br />
               I've currently worked on <a href="https://twittershots.com/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">TwitterShots</a>, a tool that helps people turn tweets into shareable content.
             </p>
           </section>
