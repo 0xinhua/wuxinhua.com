@@ -31,15 +31,15 @@ export default function AboutPage() {
           <h1 className="text-4xl font-light mb-8 text-balance">About</h1>
   
           <p className="text-muted-foreground leading-relaxed mb-12">
-            Hi, I'm Kevin Wu, an independent developer and creative maker based in Shanghai, China. I created this simple page to help you get to know me a bit better. Here you can find some of my photos
+            Hi, I'm Kevin Wu, an independent developer based in Shanghai, China. I created this simple page to help you get to know me a bit better. Here you can find some of my photos
             from China, a short video introducing myself, and projects I've been working on.
           </p>
   
           <section className="mb-10">
             <h2 className="text-2xl font-light mb-4">What I Enjoy</h2>
             <p className="text-muted-foreground leading-relaxed">
-              I love photography and road trips — capturing moments through my lens and exploring new places on the road
-              brings me a lot of joy and inspiration.
+              I love photography and road trips — meet locals and explore new places on the road
+              brings me joy and inspiration.
             </p>
             <div className="mt-4">
               <MasonryGallery photos={photos} />
