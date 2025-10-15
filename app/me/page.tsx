@@ -73,9 +73,9 @@ export default function AboutPage() {
               <br />
               1. I've currently worked on <a href="https://twittershots.com/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">TwitterShots</a>, a tool that helps people turn tweets into shareable content.
               <br />
-              2. My friends and I built a tech community called <a href="https://juejin.cn/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">Juejin.cn</a> to help developers in China write technical and career articles, and share knowledge and experiences.
+              2. I created a newsletter <a href="https://321letter.substack.com/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">321letter</a> (400+ subscribers) during the COVID-19 quarantine to help people <a href="https://321letter.substack.com/p/21" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">understand the virus</a> and replied to readers to help ease their feelings of depression.
               <br />
-              3. I created a newsletter <a href="https://321letter.substack.com/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">321letter</a> (400+ sub) during the COVID-19 quarantine to help people understand the virus and replied to readers to help ease their feelings of depression.
+              3. My friends and I built a tech community called <a href="https://juejin.cn/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">Juejin.cn</a> to help developers in China write technical and career articles, and share knowledge and experiences.
             </p>
           </section>
 
