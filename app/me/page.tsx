@@ -48,7 +48,7 @@ export default function AboutPage() {
           <h1 className="text-4xl font-light mb-8 text-balance">About</h1>
   
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Hi 👋, Arctic Digital Nomads community, I'm Kevin Wu based in Shanghai, China. I created this page to share my photos, a short intro video, and some of my projects.
+            Hi 👋, Arctic digital nomads community, I'm Kevin Wu based in Shanghai, China. I created this page to share my photos, a short intro video, and some of my projects.
           </p>
 
           <div className="mt-4">
@@ -74,6 +74,8 @@ export default function AboutPage() {
               1. I've currently worked on <a href="https://twittershots.com/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">TwitterShots</a>, a tool that helps people turn tweets into shareable content.
               <br />
               2. My friends and I built a tech community called <a href="https://juejin.cn/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">Juejin.cn</a> to help developers in China write technical and career articles, and share knowledge and experiences.
+              <br />
+              3. I created a newsletter <a href="https://321letter.substack.com/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">321letter</a> (400+ sub) during the COVID-19 quarantine to help people understand the virus and replied to readers to help ease their feelings of depression.
             </p>
           </section>
 
