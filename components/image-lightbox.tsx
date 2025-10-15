@@ -39,7 +39,6 @@ export function ImageLightbox({ src, alt, caption, onClose }: ImageLightboxProps
         <X className="w-6 h-6" />
       </button>
 
-      {/* Image container */}
       <div
         className="relative max-w-7xl max-h-[90vh] w-full flex flex-col items-center"
         onClick={(e) => e.stopPropagation()}
@@ -55,7 +54,6 @@ export function ImageLightbox({ src, alt, caption, onClose }: ImageLightboxProps
           />
         </div>
 
-        {/* Caption */}
         {caption && (
           <div className="mt-4 text-center">
             <p className="text-white/90 text-sm md:text-base leading-relaxed max-w-2xl">{caption}</p>
