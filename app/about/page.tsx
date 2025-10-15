@@ -35,7 +35,7 @@ export default function About () {
             <p className="text-center mb-2">
               <a className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4 font-semibold" target="_blank" href="https://twittershots.com/" title="twitter screenshots generator">
               TwitterShots.com </a>
-             - Making Pretty Twitter Screenshots.
+             - Making Stunning Twitter Screenshots.
             </p>
               <a href="https://twittershots.com/">
                 <Image alt="free twitter screenshot tool, download and share quickly" className="rounded mb-5 p-4 sm:p-9" src="/assets/site/twitter-screenshots-generator.png" width={670} height={420} />
