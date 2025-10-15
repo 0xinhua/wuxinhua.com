@@ -76,6 +76,14 @@ export default function AboutPage() {
               2. My friends and I built a tech community called <a href="https://juejin.cn/" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">Juejin.cn</a> to help developers in China write technical and career articles, and share knowledge and experiences.
             </p>
           </section>
+
+          <section className="mt-8">
+            <h2 className="text-2xl font-light mb-4">Social Media</h2>
+            <p className="text-muted-foreground leading-[2.6]">
+              𝕏 <a href="https://x.com/0xinhua" target="_blank" className="text-blue-500 dark:text-blue-200  hover:underline hover:text-blue-600 underline-offset-4">@0xinhua</a>
+              <br />
+            </p>
+          </section>
         </div>
       </div>
     )
