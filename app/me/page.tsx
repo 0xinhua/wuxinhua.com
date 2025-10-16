@@ -4,14 +4,14 @@ const photosOfMe = [
   {
     id: 1,
     src: "/photos/IMG_6249.JPG",
-    alt: "meeting Chris Busan, South Korea",
+    alt: "Meeting Chris Busan, South Korea",
     aspectRatio: 1.5,
     caption: "I (on the right) am meeting Chris, a digital nomad from Germany, in Busan, South Korea.",
   },
   {
     id: 2,
     src: "/photos/img_v3_02m.JPG",
-    alt: "",
+    alt: "Share on Vibe Cafe",
     aspectRatio: 1.5,
     caption: "At digital nomad event “Vibe Cafe” in Beijing, I shared how to land your first paying client.",
   },
@@ -21,23 +21,30 @@ const photos = [
   {
     id: 1,
     src: "/photos/IMG_0369.JPG",
-    alt: "Fashion portrait with red fabric",
+    alt: "阿里地区 Ngari region of Tibet",
     aspectRatio: 1.5,
     caption: "Locals in the Ngari region of Tibet are pushing a bicycle, which is actually a shared bike from the city.",
   },
   {
     id: 2,
     src: "/photos/IMG_6246.JPG",
-    alt: "Elegant woman in golden silk",
+    alt: "大理 Dali, Yunnan",
     aspectRatio: 1.5,
     caption: "This is a rice field in Dali, Yunnan, which is a gathering place for digital nomads in China.",
   },
   {
     id: 3,
     src: "/photos/IMG_9646.JPG",
-    alt: "Abstract geometric blue cube",
+    alt: "喜马拉雅 Root of Himalayas",
     aspectRatio: 1,
     caption: "At the foothills of the Himalayas, I’m currently driving to the highest point I’ve reached so far.",
+  },
+  {
+    id: 4,
+    src: "/photos/IMG_Zhagana.jpeg",
+    alt: "扎尕那 The Road of Joseph Rock",
+    aspectRatio: 1,
+    caption: "The Road of Joseph Rock is about 100km long stretching from Zhagana to Zhagulu in Gansu China.",
   },
 ]
 

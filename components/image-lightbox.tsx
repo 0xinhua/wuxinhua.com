@@ -32,7 +32,10 @@ export function ImageLightbox({ src, alt, caption, onClose }: ImageLightboxProps
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4" onClick={onClose}>
       {/* Close button */}
       <button
-        onClick={onClose}
+        onClick={(e) => {
+          e.stopPropagation()
+          onClose()
+        }}
         className="absolute top-4 right-4 z-10 p-2 text-white hover:bg-white/10 rounded-full transition-colors"
         aria-label="Close lightbox"
       >

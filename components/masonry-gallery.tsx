@@ -30,21 +30,26 @@ export function MasonryGallery({ photos }: MasonryGalleryProps) {
         {photos.map((photo) => (
           <div
             key={photo.id}
-            className="break-inside-avoid mb-4 relative overflow-hidden bg-muted cursor-pointer group transition-all duration-300"
+            className="break-inside-avoid mb-4 cursor-pointer group transition-all duration-300"
             style={{
               opacity: loadedImages.has(photo.id) ? 1 : 0.5,
             }}
             onClick={() => setSelectedPhoto(photo)}
           >
-            <Image
-              src={photo.src || "/placeholder.svg"}
-              alt={photo.alt}
-              width={400}
-              height={400 * photo.aspectRatio}
-              className="w-full h-auto object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-              onLoad={() => handleImageLoad(photo.id)}
-            />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            <div className="relative overflow-hidden bg-muted">
+              <Image
+                src={photo.src || "/placeholder.svg"}
+                alt={photo.alt}
+                width={400}
+                height={400 * photo.aspectRatio}
+                className="w-full h-auto object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                onLoad={() => handleImageLoad(photo.id)}
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+            </div>
+            <span className="block text-center text-xs text-muted-foreground mt-2">
+              {photo.alt}
+            </span>
           </div>
         ))}
       </div>
