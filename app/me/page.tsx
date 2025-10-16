@@ -19,6 +19,13 @@ const photosOfMe = [
 
 const photos = [
   {
+    id: 0,
+    src: "/photos/IMG_6078.jpeg",
+    alt: "Where I grew up",
+    aspectRatio: 1.5,
+    caption: "My hometown with terraced fields, Jiangxi, China. The place I like and miss the most.",
+  },
+  {
     id: 1,
     src: "/photos/IMG_0369.JPG",
     alt: "阿里地区 Ngari region of Tibet",
@@ -27,25 +34,39 @@ const photos = [
   },
   {
     id: 2,
+    src: "/photos/DJI_20240502.jpg",
+    alt: "Fly drones with kids",
+    aspectRatio: 1.5,
+    caption: "I taught local kids in Kurdenin Uygur how to fly a drones.",
+  },
+  {
+    id: 3,
     src: "/photos/IMG_6246.JPG",
     alt: "大理 Dali, Yunnan",
     aspectRatio: 1.5,
     caption: "This is a rice field in Dali, Yunnan, which is a gathering place for digital nomads in China.",
   },
   {
-    id: 3,
+    id: 4,
     src: "/photos/IMG_9646.JPG",
     alt: "喜马拉雅 Root of Himalayas",
     aspectRatio: 1,
     caption: "At the foothills of the Himalayas, I’m currently driving to the highest point I’ve reached so far.",
   },
   {
-    id: 4,
+    id: 5,
     src: "/photos/IMG_Zhagana.jpeg",
     alt: "扎尕那 The Road of Joseph Rock",
     aspectRatio: 1,
     caption: "The Road of Joseph Rock is about 100km long stretching from Zhagana to Zhagulu in Gansu China.",
   },
+  {
+    id: 6,
+    src: "/photos/IMG_3641.jpeg",
+    alt: "Fish-lantern dance",
+    aspectRatio: 1.5,
+    caption: "Learning how to perform Fish-lantern dance in Anhui, China.",
+  }
 ]
 
 export default function AboutPage() {
