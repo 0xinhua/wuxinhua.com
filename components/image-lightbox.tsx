@@ -52,7 +52,7 @@ export function ImageLightbox({ src, alt, caption, onClose }: ImageLightboxProps
             alt={alt}
             width={1920}
             height={1080}
-            className="max-w-full max-h-[80vh] w-auto h-auto object-contain"
+            className="max-w-full max-h-[80vh] w-auto h-auto object-contain rounded-[2px]"
             priority
           />
         </div>

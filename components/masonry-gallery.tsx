@@ -42,7 +42,7 @@ export function MasonryGallery({ photos }: MasonryGalleryProps) {
                 alt={photo.alt}
                 width={400}
                 height={400 * photo.aspectRatio}
-                className="w-full h-auto object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                className="w-full h-auto object-cover transition-transform duration-500 ease-out group-hover:scale-110 rounded-[2px]"
                 onLoad={() => handleImageLoad(photo.id)}
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />

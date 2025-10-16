@@ -52,7 +52,7 @@ export default function AboutPage() {
     return (
       <div className="min-h-screen">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-light mb-8 text-balance">About</h1>
+          <h1 className="text-4xl font-light mb-8 text-balance">About Kevin</h1>
   
           <p className="text-muted-foreground leading-relaxed mb-4">
             Hi 👋, Arctic digital nomads community, I'm Kevin Wu based in Shanghai, China. I created this page to share my photos, a short intro video, and some of my projects.
@@ -65,7 +65,8 @@ export default function AboutPage() {
           <section className="my-10">
             <h2 className="text-2xl font-light mb-4">What I Enjoy</h2>
             <p className="text-muted-foreground leading-relaxed">
-              I love photography and road trips — meet locals and explore new places on the road
+              I love photography and road trips, I’ve traveled across most parts of China by car.
+              — meet locals and explore new places on the road
               brings me joy and inspiration.
             </p>
             <div className="mt-4">

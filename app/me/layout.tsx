@@ -13,7 +13,7 @@ export default function MeLayout({
 }) {
   return (
     <div className="flex min-h-screen">
-      <main className="flex-1 ml-0 pt-16 md:pt-0">{children}</main>
+      <main className="flex-1 ml-0 sm:pt-16 pt-8 md:pt-0">{children}</main>
     </div>
   )
 }
